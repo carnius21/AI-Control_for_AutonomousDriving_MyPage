@@ -22,8 +22,7 @@ def main():
                 binary("sumo-gui" if args.command == "gui" else "sumo"),
                 "-c",
                 str(cfg),
-                "--start",
-                "--quit-on-end",
+                
             ],
             check=True,
         )

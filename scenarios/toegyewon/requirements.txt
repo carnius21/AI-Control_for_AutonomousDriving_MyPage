@@ -1,0 +1,3 @@
+# Additional tools for geographic coordinates and the optional comparison plot.
+pyproj>=3.6,<4
+matplotlib>=3.8,<4

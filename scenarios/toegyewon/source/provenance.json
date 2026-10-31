@@ -1,0 +1,27 @@
+{
+  "retrieved_date": "2026-10-31",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL 1.0",
+  "copyright_url": "https://www.openstreetmap.org/copyright",
+  "sources": [
+    {
+      "file": "area.osm.xml",
+      "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Axml%5D%5Btimeout%3A25%5D%3Bway%5Bhighway%5D%2837.631%2C127.132%2C37.646%2C127.153%29%3B%28._%3B%3E%3B%29%3Bout+body%3B",
+      "query": "[out:xml][timeout:25];way[highway](37.631,127.132,37.646,127.153);(._;>;);out body;",
+      "sha256": "69f72c435b74b44df96d3780937c6f34f766cb98e8ea33b3636390129f04108f"
+    },
+    {
+      "file": "north.osm.xml",
+      "url": "https://api.openstreetmap.org/api/0.6/way/86198728/full",
+      "discovered_via": "https://api.openstreetmap.org/api/0.6/node/498837378/ways",
+      "sha256": "a4a9237a058344aac2060859ab97b177977b36fa701c64b50052564c0b62ec74"
+    }
+  ],
+  "scope_reference": "User-provided 퇴계원 IC 모델링 범위 및 주요 상호작용 표시.pdf",
+  "scope_reference_sha256": "b09b5c0d200ec4ce3863c217077ebb275dbc7cd6b5a24bc241eadf0ecab6f0c6",
+  "notes": [
+    "Google Maps was not needed or requested over HTTP; user map and accessible OSM used.",
+    "One broad follow-up Overpass query returned HTTP 406, another 502, a small follow-up timed out. Official OSM API supplied the missing north way.",
+    "OSM source tags are community data, not a field survey."
+  ]
+}

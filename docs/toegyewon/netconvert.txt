@@ -1,0 +1,4 @@
+Success.
+Warning: Shape for junction 'E_MERGE' has distance 30.64 to its given position.
+Warning: Shape for junction 'N_SPLIT' has distance 52.44 to its given position.
+Warning: Shape for junction 'S_MERGE' has distance 51.68 to its given position.

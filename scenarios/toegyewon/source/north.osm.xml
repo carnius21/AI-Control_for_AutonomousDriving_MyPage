@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3768410 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="436256826" visible="true" version="5" changeset="168811862" timestamp="2025-07-11T19:35:13Z" user="aaei924" uid="10626814" lat="37.6437335" lon="127.1304169"/>
+ <node id="498837378" visible="true" version="8" changeset="174407139" timestamp="2025-11-09T08:59:14Z" user="aaei924" uid="10626814" lat="37.6417861" lon="127.1319138">
+  <tag k="highway" v="motorway_junction"/>
+  <tag k="name" v="퇴계원"/>
+  <tag k="name:en" v="Toegyewon"/>
+  <tag k="name:ko" v="퇴계원"/>
+  <tag k="ref" v="12"/>
+  <tag k="wikidata" v="Q16098292"/>
+  <tag k="wikipedia" v="ko:퇴계원 나들목"/>
+ </node>
+ <node id="1000493463" visible="true" version="3" changeset="54292078" timestamp="2017-12-03T09:16:49Z" user="Artemis64" uid="6651133" lat="37.6424585" lon="127.1314775"/>
+ <node id="3763690357" visible="true" version="2" changeset="54292078" timestamp="2017-12-03T09:16:49Z" user="Artemis64" uid="6651133" lat="37.6420105" lon="127.1317845"/>
+ <node id="3763690363" visible="true" version="1" changeset="34323777" timestamp="2015-09-29T12:41:52Z" user="matx17" uid="602634" lat="37.6430269" lon="127.1310310"/>
+ <node id="5261629021" visible="true" version="1" changeset="54292078" timestamp="2017-12-03T09:16:46Z" user="Artemis64" uid="6651133" lat="37.6422470" lon="127.1316310"/>
+ <way id="86198728" visible="true" version="21" changeset="185379508" timestamp="2026-07-09T02:08:10Z" user="Tewuzij" uid="16194143">
+  <nd ref="436256826"/>
+  <nd ref="3763690363"/>
+  <nd ref="1000493463"/>
+  <nd ref="5261629021"/>
+  <nd ref="3763690357"/>
+  <nd ref="498837378"/>
+  <tag k="alt_name:de" v="Erste Ringautobahn in der Metropolregion Hauptstadt"/>
+  <tag k="alt_name:en" v="Capital Region First Ring Expressway"/>
+  <tag k="bridge" v="yes"/>
+  <tag k="highway" v="motorway"/>
+  <tag k="lanes" v="5"/>
+  <tag k="layer" v="1"/>
+  <tag k="maxspeed" v="100"/>
+  <tag k="maxspeed:hgv" v="80"/>
+  <tag k="minspeed" v="50"/>
+  <tag k="name" v="수도권제1순환고속도로"/>
+  <tag k="name:de" v="Expressway 100"/>
+  <tag k="name:el" v="Αυτοκινητόδρομος Σούντοκουον Τζε 1(ιλ) Σούνχουαν"/>
+  <tag k="name:en" v="Sudogwon Je1sunhwan Expressway"/>
+  <tag k="name:ko" v="수도권제1순환고속도로"/>
+  <tag k="name:ko-Hani" v="首都圈第一循環高速道路"/>
+  <tag k="name:ko-Latn" v="Sudogwonjeilsunhwangosokdoro"/>
+  <tag k="name:nl" v="Capital Region First Ring Expressway"/>
+  <tag k="name:vi" v="Đường cao tốc vành đai 1 vùng thủ đô Seoul"/>
+  <tag k="name:zh" v="首都圈一環高速公路"/>
+  <tag k="name:zh-Hans" v="首都圈一环高速公路"/>
+  <tag k="name:zh-Hant" v="首都圈一環高速公路"/>
+  <tag k="old_name" v="서울외곽순환고속도로"/>
+  <tag k="old_name:en" v="Seoul Ring Expressway"/>
+  <tag k="old_name:ko" v="서울외곽순환고속도로"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="operator" v="서울고속도로주식회사"/>
+  <tag k="operator:en" v="SEOUL BELTWAY CORPORATION"/>
+  <tag k="operator:ko" v="서울고속도로주식회사"/>
+  <tag k="operator:type" v="private"/>
+  <tag k="operator:wikidata" v="Q12601153"/>
+  <tag k="owner" v="대한민국 정부"/>
+  <tag k="ownership" v="national"/>
+  <tag k="owner:wikidata" v="Q626814"/>
+  <tag k="ref" v="100"/>
+  <tag k="start_date" v="2006-06-30"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="toll" v="no"/>
+  <tag k="wikidata" v="Q482928"/>
+  <tag k="wikipedia" v="ko:수도권제1순환고속도로"/>
+ </way>
+</osm>

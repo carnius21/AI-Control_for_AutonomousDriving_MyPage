@@ -1,0 +1,32 @@
+{
+  "projection": "EPSG:32652",
+  "origin_lon_lat": [
+    127.131,
+    37.636
+  ],
+  "boundaries": {
+    "north_lat": 37.642,
+    "south_lat": 37.6362,
+    "west_lon": 127.1331,
+    "east_lon": 127.1373
+  },
+  "relocated_west_diverge_lon": 127.1334319,
+  "assumed_ramp_speed_kmh": 40,
+  "assumed_trunk_lanes": 2,
+  "assumed_ramp_lanes": 1,
+  "step_length": 0.2,
+  "lane_change_duration": 1.0,
+  "seed": 21,
+  "traffic": {
+    "period": 30,
+    "end": 180
+  },
+  "test_vehicles": {
+    "pink_depart": 0,
+    "green_depart": 17.4
+  },
+  "no_lane_change_edges": [
+    "main_s_bridge",
+    "main_n_bridge"
+  ]
+}

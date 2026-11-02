@@ -1,0 +1,32 @@
+{
+  "injected_disconnect_after_real_steps": 1,
+  "preserved_incomplete_records": 1,
+  "resumed_with_new_attempt": true,
+  "completed_resume_skips_collection": true,
+  "checksum_corruption_rejected": true,
+  "validation": {
+    "valid": true,
+    "run_id": "41de946c47b449d18bdd2b891c27d151",
+    "episodes": [
+      {
+        "episode": 0,
+        "transitions": 3,
+        "status": "timeout",
+        "return": -5.037791973733534,
+        "vehicle_types": [
+          "AV",
+          "BUS",
+          "HV"
+        ],
+        "bus_detection_records": 3,
+        "weave_bus_detection_records": 0,
+        "lane_requests_submitted": 0,
+        "lane_requests_rejected": 0,
+        "physical_lane_changes": 0,
+        "shards": 2
+      }
+    ],
+    "transitions": 3
+  },
+  "note": "Controlled exception test, not a hard process/power kill."
+}

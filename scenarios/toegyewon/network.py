@@ -14,6 +14,9 @@ from pathlib import Path
 from pyproj import Transformer
 from sumolib import checkBinary
 
+from .traffic import demand_plan, route_features
+from .vehicles import background_demand, bus_ratio, write_types
+
 HERE = Path(__file__).resolve().parent
 
 
@@ -321,12 +324,26 @@ def routes():
     }
 
 
-def build(output, config_path=None):
+def build(output, config_path=None, traffic_overrides=None, seed=None, bus_share=None, av_overrides=None):
     out = Path(output).resolve()
     out.mkdir(parents=True, exist_ok=True)
     config = json.loads(
         Path(config_path or HERE / "config.json").read_text(encoding="utf-8")
     )
+    config["traffic"].update(traffic_overrides or {})
+    if seed is not None:
+        config["seed"] = seed
+    if bus_share is not None:
+        config.setdefault("buses", {}).update(ratio=bus_share, route_ratios={})
+    unknown = set(config.get("buses", {}).get("route_ratios", {})) - set(routes())
+    if unknown:
+        raise ValueError(f"Unknown bus routes: {sorted(unknown)}")
+    for route in routes():
+        bus_ratio(config, route)
+    config.setdefault("av", {}).update(av_overrides or {})
+    if config["av"].get("enabled") and config["av"].get("route", "green") not in routes():
+        raise ValueError("AV route must be one of the 12 declared routes")
+    plan = demand_plan(config, routes())
     edges = layout(config)
     links = connections(edges)
     nodes = ET.Element("nodes")
@@ -347,7 +364,7 @@ def build(output, config_path=None):
             "numLanes": str(e["lanes"]),
             "speed": str(e["speed_kmh"] / 3.6),
             "priority": str(3 if "main" in e["id"] else 2),
-            "allow": "passenger",
+            "allow": "passenger bus",
             "shape": " ".join(f"{x:.3f},{y:.3f},0" for x, y in e["shape"]),
         }
         child = ET.SubElement(edg, "edge", attrs)
@@ -400,6 +417,8 @@ def build(output, config_path=None):
         "connections": links,
         "routes": routes(),
         "nodes": positions,
+        "route_features": route_features(routes(), edges),
+        "demand": plan,
     }
     (out / "manifest.json").write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
@@ -412,23 +431,7 @@ def write_demand(out, manifest, vehicles=None, background=True, stem="toegyewon"
     out = Path(out)
     cfg = manifest["config"]
     root = ET.Element("routes")
-    ET.SubElement(
-        root,
-        "vType",
-        id="HV",
-        vClass="passenger",
-        carFollowModel="Krauss",
-        laneChangeModel="LC2013",
-        accel="2.6",
-        decel="4.5",
-        emergencyDecel="9",
-        sigma="0",
-        tau="1",
-        minGap="2.5",
-        length="5",
-        speedFactor="1",
-        speedDev="0",
-    )
+    write_types(root, cfg)
     for name, route in manifest["routes"].items():
         ET.SubElement(root, "route", id=name, edges=" ".join(route))
     if vehicles is None:
@@ -448,6 +451,11 @@ def write_demand(out, manifest, vehicles=None, background=True, stem="toegyewon"
                 "color": "0,0.9,0.2",
             },
         ]
+        av = cfg.get("av", {})
+        if av.get("enabled"):
+            vehicles.append({"id": av.get("id", "av_toegyewon"), "type": "AV",
+                             "route": av.get("route", "green"), "depart": av.get("depart", 17.4),
+                             "departLane": "best", "color": "1,0,0"})
     demand = []
     for vehicle in vehicles:
         attrs = {
@@ -457,19 +465,7 @@ def write_demand(out, manifest, vehicles=None, background=True, stem="toegyewon"
         }
         demand.append((float(attrs["depart"]), ET.Element("vehicle", attrs)))
     if background:
-        for i, name in enumerate(manifest["routes"]):
-            attrs = {
-                "id": "flow_" + name,
-                "type": "HV",
-                "route": name,
-                "begin": str(i * 2),
-                "end": str(cfg["traffic"]["end"]),
-                "period": str(cfg["traffic"]["period"]),
-                "departLane": "best",
-                "departSpeed": "max",
-                "color": "0.6,0.65,0.7",
-            }
-            demand.append((i * 2, ET.Element("flow", attrs)))
+        demand.extend(background_demand(cfg, demand_plan(cfg, manifest["routes"])))
     root.extend(v for _, v in sorted(demand, key=lambda x: x[0]))
     write_xml(root, out / (stem + ".rou.xml"))
     conf = ET.Element("configuration")

@@ -1,0 +1,4663 @@
+{
+  "run_id": "055a58cc7284475289d1bda5027114eb",
+  "episode": 0,
+  "t": 262,
+  "observation": [
+    0.03169569745659828,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    0.0,
+    -0.003553656628355384,
+    -0.0,
+    -0.003553656628355384,
+    0.09885185956954956,
+    -0.03169569745659828,
+    -0.04289902746677399,
+    0.03148091584444046,
+    0.2803073227405548,
+    0.24116742610931396,
+    -1.0,
+    -1.0,
+    0.10035186260938644,
+    0.3016376495361328,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.15000000596046448,
+    -1.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.6008718609809875,
+    0.25,
+    0.6666666865348816,
+    0.5,
+    0.3333333432674408,
+    0.0,
+    0.6008718609809875
+  ],
+  "action_raw": [
+    -0.11477869004011154,
+    1.0
+  ],
+  "action": {
+    "accel_raw": -0.11477869004011154,
+    "lane_change_raw": 1.0,
+    "lane_change": 1,
+    "lane_change_applied": false,
+    "rejection": "insufficient_gap",
+    "requested_accel": -0.5165041051805019,
+    "requested_speed": 0.9531167214456135
+  },
+  "reward": -0.1114210916161511,
+  "terminated": false,
+  "truncated": false,
+  "state": {
+    "time": 142.6,
+    "ego_id": "av_toegyewon",
+    "ego_alive": true,
+    "ego": {
+      "id": "av_toegyewon",
+      "type": "AV",
+      "x": 325.6023508584898,
+      "y": 452.6557507019092,
+      "speed": 1.056417542481714,
+      "acceleration": -0.5715083330869675,
+      "allowed_speed": 11.11,
+      "edge": "weave",
+      "lane": "weave_2",
+      "lane_index": 2,
+      "lane_position": 0.11640684126642142,
+      "length": 5.0,
+      "route_id": "green",
+      "route": [
+        "S_in",
+        "green_approach",
+        "weave",
+        "upper_loop",
+        "W_out"
+      ],
+      "route_index": 2,
+      "destination": "W_out",
+      "relative_xy": [
+        0.0,
+        0.0
+      ],
+      "distance_to_ego": 0.0,
+      "relative_speed": 0.0
+    },
+    "vehicles": [
+      {
+        "id": "av_toegyewon",
+        "type": "AV",
+        "x": 325.6023508584898,
+        "y": 452.6557507019092,
+        "speed": 1.056417542481714,
+        "acceleration": -0.5715083330869675,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_2",
+        "lane_index": 2,
+        "lane_position": 0.11640684126642142,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 2,
+        "destination": "W_out",
+        "relative_xy": [
+          0.0,
+          0.0
+        ],
+        "distance_to_ego": 0.0,
+        "relative_speed": 0.0
+      },
+      {
+        "id": "bus_N_E_main.9",
+        "type": "BUS",
+        "x": 312.4749760175909,
+        "y": 410.7801126595334,
+        "speed": 7.054852311397397,
+        "acceleration": -1.1861173336446074,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 541.7974712595354,
+        "length": 12.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -13.12737484089888,
+          -41.87563804237578
+        ],
+        "distance_to_ego": 43.885043370942846,
+        "relative_speed": 5.998434768915683
+      },
+      {
+        "id": "bus_N_W.9",
+        "type": "BUS",
+        "x": 302.09128583730615,
+        "y": 383.659177110931,
+        "speed": 8.149703207240137,
+        "acceleration": -0.8656543416944462,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 512.6626401565226,
+        "length": 12.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -23.51106502118364,
+          -68.99657359097819
+        ],
+        "distance_to_ego": 72.89236822689735,
+        "relative_speed": 7.093285664758422
+      },
+      {
+        "id": "bus_S_E_main.9",
+        "type": "BUS",
+        "x": 338.54259213004974,
+        "y": 525.6355013389433,
+        "speed": 11.109206997207664,
+        "acceleration": 0.00016183730456198475,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 21.749914285110098,
+        "length": 12.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          12.940241271559955,
+          72.9797506370341
+        ],
+        "distance_to_ego": 74.11810741788987,
+        "relative_speed": 10.05278945472595
+      },
+      {
+        "id": "bus_S_E_ramp.9",
+        "type": "BUS",
+        "x": 345.1802801932877,
+        "y": 555.8403137595038,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 53.41202857142765,
+        "length": 12.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          19.577929334797886,
+          103.18456305759463
+        ],
+        "distance_to_ego": 105.02547010332809,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "bus_green.9",
+        "type": "BUS",
+        "x": 327.665225464191,
+        "y": 471.9887536472148,
+        "speed": 0.0,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_2",
+        "lane_index": 2,
+        "lane_position": 19.559,
+        "length": 12.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 2,
+        "destination": "W_out",
+        "relative_xy": [
+          2.062874605701211,
+          19.333002945305623
+        ],
+        "distance_to_ego": 19.44274812165304,
+        "relative_speed": -1.056417542481714
+      },
+      {
+        "id": "bus_pink.9",
+        "type": "BUS",
+        "x": 319.2311121313336,
+        "y": 438.17078143017426,
+        "speed": 5.2942582017982,
+        "acceleration": -1.351489597018638,
+        "allowed_speed": 11.11,
+        "edge": ":WEAVE_IN_3",
+        "lane": ":WEAVE_IN_3_0",
+        "lane_index": 0,
+        "lane_position": 3.5731049716224668,
+        "length": 12.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -6.3712387271561965,
+          -14.48496927173494
+        ],
+        "distance_to_ego": 15.824254096845145,
+        "relative_speed": 4.237840659316486
+      },
+      {
+        "id": "flow_E_W.6",
+        "type": "HV",
+        "x": 248.99790993788815,
+        "y": 604.3304409937888,
+        "speed": 19.44,
+        "acceleration": 0.0,
+        "allowed_speed": 19.44,
+        "edge": ":W_MERGE_1",
+        "lane": ":W_MERGE_1_0",
+        "lane_index": 0,
+        "lane_position": 38.326000000000064,
+        "length": 5.0,
+        "route_id": "E_W",
+        "route": [
+          "E_in",
+          "W_out"
+        ],
+        "route_index": 0,
+        "destination": "W_out",
+        "relative_xy": [
+          -76.60444092060163,
+          151.67469029187959
+        ],
+        "distance_to_ego": 169.92189983605863,
+        "relative_speed": 18.383582457518287
+      },
+      {
+        "id": "flow_N_E_main.10",
+        "type": "HV",
+        "x": 270.2189525916394,
+        "y": 338.17719690617605,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 456.8346509003374,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -55.383398266850406,
+          -114.47855379573315
+        ],
+        "distance_to_ego": 127.17177392309638,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_E_main.11",
+        "type": "HV",
+        "x": 185.15559417891276,
+        "y": 298.5902973498574,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 361.3468390170521,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -140.44675667957702,
+          -154.0654533520518
+        ],
+        "distance_to_ego": 208.47411201006605,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_E_main.12",
+        "type": "HV",
+        "x": 93.83194220850591,
+        "y": 328.26723727115257,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 261.2653629962609,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -231.7704086499839,
+          -124.38851343075663
+        ],
+        "distance_to_ego": 263.0399676841792,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_E_main.13",
+        "type": "HV",
+        "x": 84.6624293659537,
+        "y": 420.46566694119696,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 161.26972813264652,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -240.9399214925361,
+          -32.19008376071224
+        ],
+        "distance_to_ego": 243.08074226756656,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_E_main.14",
+        "type": "HV",
+        "x": 110.83277076326266,
+        "y": 516.2502292044948,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 61.27945380307346,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -214.76958009522713,
+          63.59447850258556
+        ],
+        "distance_to_ego": 223.98712067950692,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_E_main.15",
+        "type": "HV",
+        "x": 84.12353667390995,
+        "y": 625.6708974958385,
+        "speed": 20.024601530337655,
+        "acceleration": -3.8333333333333464,
+        "allowed_speed": 27.78,
+        "edge": "N_in",
+        "lane": "N_in_0",
+        "lane_index": 0,
+        "lane_position": 35.93251216796507,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 0,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -241.47881418457985,
+          173.01514679392932
+        ],
+        "distance_to_ego": 297.0627184958014,
+        "relative_speed": 18.96818398785594
+      },
+      {
+        "id": "flow_N_E_main.5",
+        "type": "HV",
+        "x": 501.20341890010593,
+        "y": 609.8332723760516,
+        "speed": 14.249893886653059,
+        "acceleration": 2.599999999999998,
+        "allowed_speed": 19.44,
+        "edge": "E_main_out",
+        "lane": "E_main_out_0",
+        "lane_index": 0,
+        "lane_position": 3.1686604372898013,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 5,
+        "destination": "E_main_out",
+        "relative_xy": [
+          175.60106804161614,
+          157.17752167414238
+        ],
+        "distance_to_ego": 235.6703384326967,
+        "relative_speed": 13.193476344171344
+      },
+      {
+        "id": "flow_N_E_main.6",
+        "type": "HV",
+        "x": 442.755650622515,
+        "y": 602.4313784751005,
+        "speed": 8.117201746726234,
+        "acceleration": 2.2117473722582703,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 172.3480125923848,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          117.15329976402523,
+          149.77562777319127
+        ],
+        "distance_to_ego": 190.15160877692594,
+        "relative_speed": 7.06078420424452
+      },
+      {
+        "id": "flow_N_E_main.7",
+        "type": "HV",
+        "x": 384.49648540193584,
+        "y": 594.3914495976014,
+        "speed": 7.813058555040046,
+        "acceleration": -0.181035756052923,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 111.87782390855877,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          58.89413454344606,
+          141.73569889569222
+        ],
+        "distance_to_ego": 153.48461624889921,
+        "relative_speed": 6.756641012558331
+      },
+      {
+        "id": "flow_N_E_main.8",
+        "type": "HV",
+        "x": 331.0723205976272,
+        "y": 473.70984259278475,
+        "speed": 9.094527824638826,
+        "acceleration": 2.599999999999998,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_1",
+        "lane_index": 1,
+        "lane_position": 21.631772344060956,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 2,
+        "destination": "E_main_out",
+        "relative_xy": [
+          5.469969739137412,
+          21.054091890875554
+        ],
+        "distance_to_ego": 21.753053907360012,
+        "relative_speed": 8.038110282157112
+      },
+      {
+        "id": "flow_N_S.7",
+        "type": "HV",
+        "x": 213.61676192192414,
+        "y": 226.6431899082245,
+        "speed": 27.78,
+        "acceleration": 0.0,
+        "allowed_speed": 27.78,
+        "edge": "S_out",
+        "lane": "S_out_2",
+        "lane_index": 2,
+        "lane_position": 110.85199999999998,
+        "length": 5.0,
+        "route_id": "N_S",
+        "route": [
+          "N_in",
+          "main_s_bridge",
+          "main_s",
+          "S_out"
+        ],
+        "route_index": 3,
+        "destination": "S_out",
+        "relative_xy": [
+          -111.98558893656565,
+          -226.01256079368468
+        ],
+        "distance_to_ego": 252.23490988756586,
+        "relative_speed": 26.723582457518287
+      },
+      {
+        "id": "flow_N_W.10",
+        "type": "HV",
+        "x": 251.95684689153083,
+        "y": 323.1691678934702,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 433.03208144105173,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -73.64550396695896,
+          -129.48658280843898
+        ],
+        "distance_to_ego": 148.96454404305103,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.11",
+        "type": "HV",
+        "x": 159.41726444944962,
+        "y": 297.78797607715,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 335.52199999999965,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -166.18508640904017,
+          -154.8677746247592
+        ],
+        "distance_to_ego": 227.15965874689405,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.12",
+        "type": "HV",
+        "x": 78.51846463411188,
+        "y": 348.8121658490081,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 235.53200000000027,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -247.08388622437792,
+          -103.84358485290107
+        ],
+        "distance_to_ego": 268.0185384387487,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.13",
+        "type": "HV",
+        "x": 94.74610846983514,
+        "y": 444.12553968689264,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 135.5419999999999,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -230.85624238865466,
+          -8.530211015016562
+        ],
+        "distance_to_ego": 231.01378562711358,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.14",
+        "type": "HV",
+        "x": 110.09351550486758,
+        "y": 541.9543041389272,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 35.55200000000001,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -215.5088353536222,
+          89.29855343701803
+        ],
+        "distance_to_ego": 233.27728085139069,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.3",
+        "type": "HV",
+        "x": 281.4638954639968,
+        "y": 618.8149042151501,
+        "speed": 3.64,
+        "acceleration": 2.6,
+        "allowed_speed": 15.28,
+        "edge": ":W_MERGE_0",
+        "lane": ":W_MERGE_0_0",
+        "lane_index": 0,
+        "lane_position": 2.810999999999986,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -44.13845539449301,
+          166.15915351324094
+        ],
+        "distance_to_ego": 171.92169014073943,
+        "relative_speed": 2.583582457518286
+      },
+      {
+        "id": "flow_N_W.4",
+        "type": "HV",
+        "x": 307.26334726968946,
+        "y": 626.1628945166057,
+        "speed": 6.730248908627564,
+        "acceleration": -2.1762922210256663,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 393.24604637864826,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -18.339003588800324,
+          173.50714381469646
+        ],
+        "distance_to_ego": 174.4736312666295,
+        "relative_speed": 5.6738313661458495
+      },
+      {
+        "id": "flow_N_W.5",
+        "type": "HV",
+        "x": 398.2659043879835,
+        "y": 653.533458500446,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 297.2319999999976,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          72.6635535294937,
+          200.87770779853685
+        ],
+        "distance_to_ego": 213.6161171399011,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.6",
+        "type": "HV",
+        "x": 354.39161718917376,
+        "y": 698.4754511503338,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 197.24199999999772,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          28.789266330683972,
+          245.8197004484246
+        ],
+        "distance_to_ego": 247.49979188761404,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.7",
+        "type": "HV",
+        "x": 332.7972790895593,
+        "y": 602.691818737605,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 97.25199999999752,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          7.194928231069525,
+          150.0360680356958
+        ],
+        "distance_to_ego": 150.20848412743595,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_N_W.8",
+        "type": "HV",
+        "x": 322.84235140901103,
+        "y": 456.9319433613253,
+        "speed": 0.937974169412108,
+        "acceleration": -1.5635431727066385,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_3",
+        "lane_index": 3,
+        "lane_position": 4.074912029928987,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 2,
+        "destination": "W_out",
+        "relative_xy": [
+          -2.759999449478755,
+          4.276192659416097
+        ],
+        "distance_to_ego": 5.089540315349427,
+        "relative_speed": -0.11844337306960595
+      },
+      {
+        "id": "flow_S_E_main.10",
+        "type": "HV",
+        "x": 328.5420224619754,
+        "y": 437.88966092703185,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": ":WEAVE_IN_0",
+        "lane": ":WEAVE_IN_0_0",
+        "lane_index": 0,
+        "lane_position": 3.893999999999059,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          2.9396716034856354,
+          -14.766089774877344
+        ],
+        "distance_to_ego": 15.055865181917545,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_main.11",
+        "type": "HV",
+        "x": 306.7217694733978,
+        "y": 341.65434091246004,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 304.41399999999993,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -18.880581385092,
+          -111.00140978944916
+        ],
+        "distance_to_ego": 112.59568965410844,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_main.12",
+        "type": "HV",
+        "x": 265.21620722165954,
+        "y": 252.07865146004949,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 204.42400000000015,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -60.38614363683024,
+          -200.5770992418597
+        ],
+        "distance_to_ego": 209.4699479247721,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_main.13",
+        "type": "HV",
+        "x": 270.96415792904924,
+        "y": 152.55944276625087,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 104.43399999999991,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -54.63819292944055,
+          -300.09630793565833
+        ],
+        "distance_to_ego": 305.0297135742815,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_main.14",
+        "type": "HV",
+        "x": 271.5537939544276,
+        "y": 52.602529479414926,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 4.443999999999999,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -54.048556904062195,
+          -400.05322122249424
+        ],
+        "distance_to_ego": 403.6877832111167,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_main.6",
+        "type": "HV",
+        "x": 484.3822126832838,
+        "y": 610.5288842195137,
+        "speed": 12.488674152119431,
+        "acceleration": 2.573856947407842,
+        "allowed_speed": 15.28,
+        "edge": ":E_MERGE_0",
+        "lane": ":E_MERGE_0_0",
+        "lane_index": 0,
+        "lane_position": 19.015871202712294,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 4,
+        "destination": "E_main_out",
+        "relative_xy": [
+          158.779861824794,
+          157.87313351760446
+        ],
+        "distance_to_ego": 223.9083982519817,
+        "relative_speed": 11.432256609637717
+      },
+      {
+        "id": "flow_S_E_main.7",
+        "type": "HV",
+        "x": 429.3413692581055,
+        "y": 600.9733891608636,
+        "speed": 7.051530100107443,
+        "acceleration": 1.8365020314465053,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 158.5499696584425,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          103.7390183996157,
+          148.31763845895438
+        ],
+        "distance_to_ego": 180.9969773685652,
+        "relative_speed": 5.995112557625729
+      },
+      {
+        "id": "flow_S_E_main.8",
+        "type": "HV",
+        "x": 370.5693534505475,
+        "y": 587.6118422411555,
+        "speed": 8.078880788082408,
+        "acceleration": -0.27539772429228115,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 95.983723436154,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          44.967002592057725,
+          134.9560915392463
+        ],
+        "distance_to_ego": 142.25040585412597,
+        "relative_speed": 7.022463245600694
+      },
+      {
+        "id": "flow_S_E_ramp.10",
+        "type": "HV",
+        "x": 333.0352254641909,
+        "y": 461.9368786472139,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_0",
+        "lane_index": 0,
+        "lane_position": 10.13399999999905,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 2,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          7.432874605701102,
+          9.281127945304718
+        ],
+        "distance_to_ego": 11.890624913821497,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_ramp.11",
+        "type": "HV",
+        "x": 317.73616653326803,
+        "y": 363.4393905322595,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 328.8559999999997,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -7.866184325221752,
+          -89.2163601696497
+        ],
+        "distance_to_ego": 89.56246857785365,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_ramp.12",
+        "type": "HV",
+        "x": 270.06306401832796,
+        "y": 276.29178252788086,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 229.17400000000023,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -55.53928684016182,
+          -176.36396817402834
+        ],
+        "distance_to_ego": 184.9023029948612,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_ramp.13",
+        "type": "HV",
+        "x": 268.9814549991119,
+        "y": 176.89157353061807,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 128.87599999999986,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -56.62089585937787,
+          -275.7641771712911
+        ],
+        "distance_to_ego": 281.5169750812156,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_ramp.14",
+        "type": "HV",
+        "x": 271.40784444319536,
+        "y": 77.34433969892879,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 29.194000000000006,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -54.19450641529443,
+          -375.31141100298044
+        ],
+        "distance_to_ego": 379.2040344651484,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_S_E_ramp.7",
+        "type": "HV",
+        "x": 471.4906712171284,
+        "y": 603.6516098457328,
+        "speed": 11.095360656393897,
+        "acceleration": 2.599999999999998,
+        "allowed_speed": 11.11,
+        "edge": "E_ramp_out",
+        "lane": "E_ramp_out_0",
+        "lane_index": 0,
+        "lane_position": 0.30281511378893455,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 4,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          145.88832035863862,
+          150.99585914382357
+        ],
+        "distance_to_ego": 209.95988068115818,
+        "relative_speed": 10.038943113912183
+      },
+      {
+        "id": "flow_S_E_ramp.8",
+        "type": "HV",
+        "x": 414.4261104340685,
+        "y": 600.3955402695216,
+        "speed": 7.145700333629204,
+        "acceleration": 0.7994433142143498,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 143.27604447578216,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          88.82375957557872,
+          147.73978956761238
+        ],
+        "distance_to_ego": 172.38534069526503,
+        "relative_speed": 6.08928279114749
+      },
+      {
+        "id": "flow_S_N.7",
+        "type": "HV",
+        "x": 207.8973281220135,
+        "y": 417.7953276027497,
+        "speed": 27.78,
+        "acceleration": 0.0,
+        "allowed_speed": 27.78,
+        "edge": "main_n",
+        "lane": "main_n_0",
+        "lane_index": 0,
+        "lane_position": 374.8319999999999,
+        "length": 5.0,
+        "route_id": "S_N",
+        "route": [
+          "S_in",
+          "main_n",
+          "main_n_after",
+          "main_n_bridge",
+          "N_out"
+        ],
+        "route_index": 1,
+        "destination": "N_out",
+        "relative_xy": [
+          -117.70502273647628,
+          -34.860423099159505
+        ],
+        "distance_to_ego": 122.75879388478371,
+        "relative_speed": 26.723582457518287
+      },
+      {
+        "id": "flow_W_E.6",
+        "type": "HV",
+        "x": 551.1692567153134,
+        "y": 604.9731814090269,
+        "speed": 19.44,
+        "acceleration": 0.0,
+        "allowed_speed": 19.44,
+        "edge": "E_main_out",
+        "lane": "E_main_out_0",
+        "lane_index": 0,
+        "lane_position": 53.37600000000018,
+        "length": 5.0,
+        "route_id": "W_E",
+        "route": [
+          "W_in",
+          "east_main",
+          "E_main_out"
+        ],
+        "route_index": 2,
+        "destination": "E_main_out",
+        "relative_xy": [
+          225.5669058568236,
+          152.3174307071177
+        ],
+        "distance_to_ego": 272.1783031673148,
+        "relative_speed": 18.383582457518287
+      },
+      {
+        "id": "flow_W_E.7",
+        "type": "HV",
+        "x": 210.4215826446281,
+        "y": 568.1951270661157,
+        "speed": 19.44,
+        "acceleration": 0.0,
+        "allowed_speed": 19.44,
+        "edge": "W_in",
+        "lane": "W_in_0",
+        "lane_index": 0,
+        "lane_position": 12.876,
+        "length": 5.0,
+        "route_id": "W_E",
+        "route": [
+          "W_in",
+          "east_main",
+          "E_main_out"
+        ],
+        "route_index": 0,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -115.18076821386168,
+          115.53937636420648
+        ],
+        "distance_to_ego": 163.1439758525122,
+        "relative_speed": 18.383582457518287
+      },
+      {
+        "id": "flow_W_N.5",
+        "type": "HV",
+        "x": 210.492717928747,
+        "y": 428.1708383790101,
+        "speed": 0.0,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_to_n",
+        "lane": "west_to_n_0",
+        "lane_index": 0,
+        "lane_position": 119.609,
+        "length": 5.0,
+        "route_id": "W_N",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_n",
+          "main_n_after",
+          "main_n_bridge",
+          "N_out"
+        ],
+        "route_index": 3,
+        "destination": "N_out",
+        "relative_xy": [
+          -115.10963292974279,
+          -24.484912322899106
+        ],
+        "distance_to_ego": 117.68491205197114,
+        "relative_speed": -1.056417542481714
+      },
+      {
+        "id": "flow_W_N.6",
+        "type": "HV",
+        "x": 307.4186452133037,
+        "y": 504.7785502459453,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_south",
+        "lane": "west_south_0",
+        "lane_index": 0,
+        "lane_position": 13.551999999999905,
+        "length": 5.0,
+        "route_id": "W_N",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_n",
+          "main_n_after",
+          "main_n_bridge",
+          "N_out"
+        ],
+        "route_index": 2,
+        "destination": "N_out",
+        "relative_xy": [
+          -18.18370564518608,
+          52.12279954403613
+        ],
+        "distance_to_ego": 55.203563139516135,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_W_S.3",
+        "type": "HV",
+        "x": 192.75190627329053,
+        "y": 308.13582064035967,
+        "speed": 18.389999999999993,
+        "acceleration": 2.599999999999998,
+        "allowed_speed": 27.78,
+        "edge": "S_out",
+        "lane": "S_out_0",
+        "lane_index": 0,
+        "lane_position": 27.065082119885872,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 4,
+        "destination": "S_out",
+        "relative_xy": [
+          -132.85044458519926,
+          -144.51993006154953
+        ],
+        "distance_to_ego": 196.30397553661584,
+        "relative_speed": 17.33358245751828
+      },
+      {
+        "id": "flow_W_S.4",
+        "type": "HV",
+        "x": 88.18566341526505,
+        "y": 361.001064594884,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_to_s",
+        "lane": "west_to_s_0",
+        "lane_index": 0,
+        "lane_position": 316.6650821198874,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 3,
+        "destination": "S_out",
+        "relative_xy": [
+          -237.41668744322473,
+          -91.65468610702521
+        ],
+        "distance_to_ego": 254.49413541748106,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_W_S.5",
+        "type": "HV",
+        "x": 258.8396112529273,
+        "y": 344.1190561866189,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_to_s",
+        "lane": "west_to_s_0",
+        "lane_index": 0,
+        "lane_position": 116.68508211988754,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 3,
+        "destination": "S_out",
+        "relative_xy": [
+          -66.7627396055625,
+          -108.53669451529032
+        ],
+        "distance_to_ego": 127.42636091463021,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_W_S.6",
+        "type": "HV",
+        "x": 309.56801463199656,
+        "y": 531.0417326046742,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_turn",
+        "lane": "west_turn_0",
+        "lane_index": 0,
+        "lane_position": 98.03508211988766,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 1,
+        "destination": "S_out",
+        "relative_xy": [
+          -16.034336226493224,
+          78.38598190276497
+        ],
+        "distance_to_ego": 80.00913758493357,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_green.10",
+        "type": "HV",
+        "x": 323.32866093264175,
+        "y": 443.17980332366534,
+        "speed": 2.105676466868477,
+        "acceleration": -0.8844472363275435,
+        "allowed_speed": 11.11,
+        "edge": ":WEAVE_IN_0",
+        "lane": ":WEAVE_IN_0_2",
+        "lane_index": 2,
+        "lane_position": 8.981455414347728,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -2.273689925848032,
+          -9.475947378243859
+        ],
+        "distance_to_ego": 9.744908649861706,
+        "relative_speed": 1.0492589243867632
+      },
+      {
+        "id": "flow_green.11",
+        "type": "HV",
+        "x": 316.51486534952807,
+        "y": 385.17990694568135,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 351.0759999999995,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -9.08748550896172,
+          -67.47584375622785
+        ],
+        "distance_to_ego": 68.08503421083418,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_green.12",
+        "type": "HV",
+        "x": 271.5150563847741,
+        "y": 296.730868765782,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 251.08600000000033,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -54.0872944737157,
+          -155.92488193612718
+        ],
+        "distance_to_ego": 165.03940205381755,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_green.13",
+        "type": "HV",
+        "x": 260.2188460007519,
+        "y": 199.01633335363664,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 151.09599999999995,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -65.38350485773788,
+          -253.63941734827256
+        ],
+        "distance_to_ego": 261.9312061214796,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_green.14",
+        "type": "HV",
+        "x": 264.8776440747582,
+        "y": 99.22140951395527,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 51.106000000000016,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -60.72470678373156,
+          -353.4343411879539
+        ],
+        "distance_to_ego": 358.6130554580148,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_green.5",
+        "type": "HV",
+        "x": 290.3487006274547,
+        "y": 621.509194963533,
+        "speed": 1.9957196628313136,
+        "acceleration": 2.38856067433724,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 410.7891364046024,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -35.25365023103507,
+          168.8534442616238
+        ],
+        "distance_to_ego": 172.4943636575568,
+        "relative_speed": 0.9393021203495997
+      },
+      {
+        "id": "flow_green.6",
+        "type": "HV",
+        "x": 323.6120925322451,
+        "y": 630.6608985323492,
+        "speed": 8.154162989356362,
+        "acceleration": -1.883083696646466,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 376.289883118562,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -1.9902583262447138,
+          178.00514783043997
+        ],
+        "distance_to_ego": 178.0162739255655,
+        "relative_speed": 7.097745446874647
+      },
+      {
+        "id": "flow_green.7",
+        "type": "HV",
+        "x": 407.49768262577317,
+        "y": 669.1951169943492,
+        "speed": 11.109994070059967,
+        "acceleration": 1.8531062373483564e-06,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 278.6210189758057,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          81.89533176728338,
+          216.53936629243998
+        ],
+        "distance_to_ego": 231.50840701712087,
+        "relative_speed": 10.053576527578253
+      },
+      {
+        "id": "flow_green.8",
+        "type": "HV",
+        "x": 344.43284389339885,
+        "y": 683.0210330291927,
+        "speed": 11.10990924876581,
+        "acceleration": 2.8359760682050705e-05,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 178.6312904039471,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          18.83049303490907,
+          230.36528232728352
+        ],
+        "distance_to_ego": 231.13362102832812,
+        "relative_speed": 10.053491706284095
+      },
+      {
+        "id": "flow_pink.10",
+        "type": "HV",
+        "x": 286.19323807140546,
+        "y": 356.60913286892816,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 481.26017056233826,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -39.409112787084325,
+          -96.04661783298104
+        ],
+        "distance_to_ego": 103.81729609183552,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_pink.11",
+        "type": "HV",
+        "x": 212.0313307958912,
+        "y": 304.3045497757535,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 388.84999999999917,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -113.57102006259859,
+          -148.35120092615568
+        ],
+        "distance_to_ego": 186.83269364405092,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_pink.12",
+        "type": "HV",
+        "x": 115.00712742058953,
+        "y": 310.8240606750956,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 288.86000000000007,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -210.59522343790024,
+          -141.8316900268136
+        ],
+        "distance_to_ego": 253.90269086939836,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_pink.13",
+        "type": "HV",
+        "x": 75.35159969547279,
+        "y": 394.63433451507416,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 188.8700000000001,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -250.25075116301701,
+          -58.02141618683504
+        ],
+        "distance_to_ego": 256.88893162995595,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_pink.14",
+        "type": "HV",
+        "x": 107.6145692773511,
+        "y": 488.8584178455545,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 88.87999999999995,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -217.98778158113868,
+          36.20266714364533
+        ],
+        "distance_to_ego": 220.9735414636327,
+        "relative_speed": 10.053582457518285
+      },
+      {
+        "id": "flow_pink.15",
+        "type": "HV",
+        "x": 99.94124092120832,
+        "y": 589.2482196109601,
+        "speed": 15.858933385717041,
+        "acceleration": -4.499999999999993,
+        "allowed_speed": 27.78,
+        "edge": "N_in",
+        "lane": "N_in_0",
+        "lane_index": 0,
+        "lane_position": 75.64106661428295,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 0,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -225.66110993728148,
+          136.59246890905087
+        ],
+        "distance_to_ego": 263.7810438617526,
+        "relative_speed": 14.802515843235327
+      },
+      {
+        "id": "flow_pink.6",
+        "type": "HV",
+        "x": 456.6482204213656,
+        "y": 603.9413526409738,
+        "speed": 9.493039065422012,
+        "acceleration": 2.429400568204274,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 186.63802704339508,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          131.0458695628758,
+          151.28560193906463
+        ],
+        "distance_to_ego": 200.15082633742827,
+        "relative_speed": 8.436621522940298
+      },
+      {
+        "id": "flow_pink.7",
+        "type": "HV",
+        "x": 399.4755796051607,
+        "y": 598.695983201495,
+        "speed": 7.372991805608261,
+        "acceleration": 0.19651406841889596,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 127.87086041469736,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          73.87322874667092,
+          146.04023249958578
+        ],
+        "distance_to_ego": 163.66124597469934,
+        "relative_speed": 6.316574263126547
+      },
+      {
+        "id": "flow_pink.8",
+        "type": "HV",
+        "x": 325.0572148541112,
+        "y": 477.6893667108729,
+        "speed": 0.4299999999999987,
+        "acceleration": -4.5,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_3",
+        "lane_index": 3,
+        "lane_position": 24.94999999999755,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 2,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -0.5451360043786053,
+          25.03361600896369
+        ],
+        "distance_to_ego": 25.03955078965102,
+        "relative_speed": -0.6264175424817152
+      }
+    ],
+    "expected_route": [
+      "S_in",
+      "green_approach",
+      "weave",
+      "upper_loop",
+      "W_out"
+    ],
+    "status": "running"
+  },
+  "detected_vehicles": [
+    {
+      "id": "bus_green.9",
+      "type": "BUS",
+      "x": 327.665225464191,
+      "y": 471.9887536472148,
+      "speed": 0.0,
+      "length": 12.0,
+      "relative_speed": -1.056417542481714,
+      "sightings": [
+        {
+          "lane_offset": 0,
+          "leader": true,
+          "gap": 4.94259315873358,
+          "bumper_gap": 4.94259315873358,
+          "longitudinal_overlap": false
+        }
+      ]
+    },
+    {
+      "id": "flow_N_E_main.8",
+      "type": "HV",
+      "x": 331.0723205976272,
+      "y": 473.70984259278475,
+      "speed": 9.094527824638826,
+      "length": 5.0,
+      "relative_speed": 8.038110282157112,
+      "sightings": [
+        {
+          "lane_offset": -1,
+          "leader": true,
+          "gap": 14.015365502794534,
+          "bumper_gap": 14.015365502794534,
+          "longitudinal_overlap": false
+        }
+      ]
+    },
+    {
+      "id": "flow_N_W.8",
+      "type": "HV",
+      "x": 322.84235140901103,
+      "y": 456.9319433613253,
+      "speed": 0.937974169412108,
+      "length": 5.0,
+      "relative_speed": -0.11844337306960595,
+      "sightings": [
+        {
+          "lane_offset": 1,
+          "leader": true,
+          "gap": 0.0,
+          "bumper_gap": -3.5414948113374347,
+          "longitudinal_overlap": true
+        },
+        {
+          "lane_offset": 1,
+          "leader": false,
+          "gap": -0.0,
+          "bumper_gap": -7.383593158733579,
+          "longitudinal_overlap": true
+        }
+      ]
+    },
+    {
+      "id": "flow_S_E_ramp.10",
+      "type": "HV",
+      "x": 333.0352254641909,
+      "y": 461.9368786472139,
+      "speed": 11.11,
+      "length": 5.0,
+      "relative_speed": 10.053582457518285,
+      "sightings": [
+        {
+          "lane_offset": -2,
+          "leader": true,
+          "gap": 5.017593158732629,
+          "bumper_gap": 5.017593158732629,
+          "longitudinal_overlap": false
+        }
+      ]
+    },
+    {
+      "id": "flow_green.10",
+      "type": "HV",
+      "x": 323.32866093264175,
+      "y": 443.17980332366534,
+      "speed": 2.105676466868477,
+      "length": 5.0,
+      "relative_speed": 1.0492589243867632,
+      "sightings": [
+        {
+          "lane_offset": 0,
+          "leader": false,
+          "gap": -2.144951426918695,
+          "bumper_gap": 2.144951426918695,
+          "longitudinal_overlap": false
+        }
+      ]
+    }
+  ],
+  "event": {
+    "collided": false,
+    "arrived": false,
+    "lane_before": 2,
+    "lane_after": 2,
+    "lane_changed": false,
+    "lane_delta": 0,
+    "status": "running",
+    "teleported": false,
+    "actual_acceleration": -0.5165041051805019
+  },
+  "next_observation": [
+    0.028596362099051476,
+    1.0,
+    1.0,
+    -1.0,
+    -1.0,
+    0.0,
+    -0.0021010725758969784,
+    -0.0,
+    -0.0021010725758969784,
+    0.09503939747810364,
+    -0.028596362099051476,
+    -0.03895368054509163,
+    0.02959306351840496,
+    0.31495293974876404,
+    0.259868323802948,
+    -1.0,
+    -1.0,
+    0.13737939298152924,
+    0.27773427963256836,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.30000001192092896,
+    0.15000000596046448,
+    0.15000000596046448,
+    0.15000000596046448,
+    -1.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5970593690872192,
+    0.25,
+    0.6666666865348816,
+    0.5,
+    0.3333333432674408,
+    0.0,
+    0.5970593690872192
+  ],
+  "next_state": {
+    "time": 142.8,
+    "ego_id": "av_toegyewon",
+    "ego_alive": true,
+    "ego": {
+      "id": "av_toegyewon",
+      "type": "AV",
+      "x": 325.62257614700854,
+      "y": 452.8452995777457,
+      "speed": 0.9531167214456135,
+      "acceleration": -0.5165041051805019,
+      "allowed_speed": 11.11,
+      "edge": "weave",
+      "lane": "weave_2",
+      "lane_index": 2,
+      "lane_position": 0.3070301855555442,
+      "length": 5.0,
+      "route_id": "green",
+      "route": [
+        "S_in",
+        "green_approach",
+        "weave",
+        "upper_loop",
+        "W_out"
+      ],
+      "route_index": 2,
+      "destination": "W_out",
+      "relative_xy": [
+        0.0,
+        0.0
+      ],
+      "distance_to_ego": 0.0,
+      "relative_speed": 0.0
+    },
+    "vehicles": [
+      {
+        "id": "av_toegyewon",
+        "type": "AV",
+        "x": 325.62257614700854,
+        "y": 452.8452995777457,
+        "speed": 0.9531167214456135,
+        "acceleration": -0.5165041051805019,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_2",
+        "lane_index": 2,
+        "lane_position": 0.3070301855555442,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 2,
+        "destination": "W_out",
+        "relative_xy": [
+          0.0,
+          0.0
+        ],
+        "distance_to_ego": 0.0,
+        "relative_speed": 0.0
+      },
+      {
+        "id": "bus_N_E_main.9",
+        "type": "BUS",
+        "x": 312.8398825971719,
+        "y": 412.0964158343657,
+        "speed": 6.833904549990325,
+        "acceleration": -1.1047388070353614,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 543.1642521695335,
+        "length": 12.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -12.782693549836665,
+          -40.74888374338002
+        ],
+        "distance_to_ego": 42.70677675405317,
+        "relative_speed": 5.880787828544712
+      },
+      {
+        "id": "bus_N_W.9",
+        "type": "BUS",
+        "x": 302.81745502372746,
+        "y": 385.076935998706,
+        "speed": 7.964513704411495,
+        "acceleration": -0.9259475141432105,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 514.2555428974049,
+        "length": 12.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -22.805121123281083,
+          -67.76836357903971
+        ],
+        "distance_to_ego": 71.50261989345871,
+        "relative_speed": 7.011396982965881
+      },
+      {
+        "id": "bus_S_E_main.9",
+        "type": "BUS",
+        "x": 338.87077228200945,
+        "y": 527.7833470489236,
+        "speed": 11.109238095356382,
+        "acceleration": 0.00015549074358744974,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 23.971761904181374,
+        "length": 12.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          13.24819613500091,
+          74.93804747117787
+        ],
+        "distance_to_ego": 76.10010288839274,
+        "relative_speed": 10.156121373910768
+      },
+      {
+        "id": "bus_S_E_ramp.9",
+        "type": "BUS",
+        "x": 345.9301173682744,
+        "y": 557.8673577269772,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 55.63402857142765,
+        "length": 12.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          20.307541221265865,
+          105.02205814923144
+        ],
+        "distance_to_ego": 106.96741993875501,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "bus_green.9",
+        "type": "BUS",
+        "x": 327.665225464191,
+        "y": 471.9887536472148,
+        "speed": 0.0,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_2",
+        "lane_index": 2,
+        "lane_position": 19.559,
+        "length": 12.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 2,
+        "destination": "W_out",
+        "relative_xy": [
+          2.042649317182452,
+          19.1434540694691
+        ],
+        "distance_to_ego": 19.25212325804245,
+        "relative_speed": -0.9531167214456135
+      },
+      {
+        "id": "bus_pink.9",
+        "type": "BUS",
+        "x": 319.51243479369214,
+        "y": 439.1287490839603,
+        "speed": 4.993032868448046,
+        "acceleration": -1.5061266667507667,
+        "allowed_speed": 11.11,
+        "edge": ":WEAVE_IN_3",
+        "lane": ":WEAVE_IN_3_0",
+        "lane_index": 0,
+        "lane_position": 4.571711545312076,
+        "length": 12.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -6.110141353316408,
+          -13.716550493785405
+        ],
+        "distance_to_ego": 15.015911054813554,
+        "relative_speed": 4.039916147002433
+      },
+      {
+        "id": "flow_E_W.6",
+        "type": "HV",
+        "x": 245.30913975155275,
+        "y": 603.0867639751552,
+        "speed": 19.44,
+        "acceleration": 0.0,
+        "allowed_speed": 19.44,
+        "edge": ":W_MERGE_1",
+        "lane": ":W_MERGE_1_0",
+        "lane_index": 0,
+        "lane_position": 42.21400000000006,
+        "length": 5.0,
+        "route_id": "E_W",
+        "route": [
+          "E_in",
+          "W_out"
+        ],
+        "route_index": 0,
+        "destination": "W_out",
+        "relative_xy": [
+          -80.3134363954558,
+          150.24146439740952
+        ],
+        "distance_to_ego": 170.36063421437768,
+        "relative_speed": 18.486883278554387
+      },
+      {
+        "id": "flow_N_E_main.10",
+        "type": "HV",
+        "x": 271.7886859356529,
+        "y": 339.7498588571747,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 459.0566509003374,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -53.83389021135565,
+          -113.09544072057105
+        ],
+        "distance_to_ego": 125.25440689679742,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_E_main.11",
+        "type": "HV",
+        "x": 187.3399318653743,
+        "y": 298.9977249568388,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 363.5688390170521,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -138.28264428163425,
+          -153.84757462090693
+        ],
+        "distance_to_ego": 206.8602570003637,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_E_main.12",
+        "type": "HV",
+        "x": 95.39592149349843,
+        "y": 326.68885291379826,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 263.48736299626086,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -230.2266546535101,
+          -126.15644666394746
+        ],
+        "distance_to_ego": 262.5257350200548,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_E_main.13",
+        "type": "HV",
+        "x": 83.73442365217744,
+        "y": 418.44672321275243,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 163.49172813264653,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -241.8881524948311,
+          -34.39857636499329
+        ],
+        "distance_to_ego": 244.32179676259125,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_E_main.14",
+        "type": "HV",
+        "x": 110.77212415025551,
+        "y": 514.029047003108,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 63.50145380307346,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -214.85045199675304,
+          61.18374742536224
+        ],
+        "distance_to_ego": 223.3924073737055,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_E_main.15",
+        "type": "HV",
+        "x": 85.65820565779978,
+        "y": 622.1370879627844,
+        "speed": 19.263063068799198,
+        "acceleration": -3.8076923076922853,
+        "allowed_speed": 27.78,
+        "edge": "N_in",
+        "lane": "N_in_0",
+        "lane_index": 0,
+        "lane_position": 39.78512478172491,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 0,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -239.96437048920876,
+          169.29178838503873
+        ],
+        "distance_to_ego": 293.6709190895261,
+        "relative_speed": 18.309946347353584
+      },
+      {
+        "id": "flow_N_E_main.5",
+        "type": "HV",
+        "x": 504.14318877804004,
+        "y": 609.5473260244319,
+        "speed": 14.769893886653058,
+        "acceleration": 2.599999999999998,
+        "allowed_speed": 19.44,
+        "edge": "E_main_out",
+        "lane": "E_main_out_0",
+        "lane_index": 0,
+        "lane_position": 6.122639214620413,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 5,
+        "destination": "E_main_out",
+        "relative_xy": [
+          178.5206126310315,
+          156.70202644668615
+        ],
+        "distance_to_ego": 237.53975293970635,
+        "relative_speed": 13.816777165207444
+      },
+      {
+        "id": "flow_N_E_main.6",
+        "type": "HV",
+        "x": 444.4205277108842,
+        "y": 602.6123328578526,
+        "speed": 8.562533064947965,
+        "acceleration": 2.2266565911086555,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 174.0605192053744,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          118.79795156387564,
+          149.7670332801069
+        ],
+        "distance_to_ego": 191.16254223382148,
+        "relative_speed": 7.609416343502351
+      },
+      {
+        "id": "flow_N_E_main.7",
+        "type": "HV",
+        "x": 385.91935727448265,
+        "y": 594.9434872174443,
+        "speed": 7.803393613504544,
+        "acceleration": -0.048324707677509515,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 113.43850263125968,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          60.296781127474105,
+          142.09818763969855
+        ],
+        "distance_to_ego": 154.361901856713,
+        "relative_speed": 6.850276892058931
+      },
+      {
+        "id": "flow_N_E_main.8",
+        "type": "HV",
+        "x": 331.91334505603436,
+        "y": 475.55379573091267,
+        "speed": 9.614527824638825,
+        "acceleration": 2.599999999999998,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_1",
+        "lane_index": 1,
+        "lane_position": 23.554677908988722,
+        "length": 5.0,
+        "route_id": "N_E_main",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 2,
+        "destination": "E_main_out",
+        "relative_xy": [
+          6.2907689090258145,
+          22.708496153166948
+        ],
+        "distance_to_ego": 23.56373423303624,
+        "relative_speed": 8.661411103193212
+      },
+      {
+        "id": "flow_N_S.7",
+        "type": "HV",
+        "x": 214.58192781192352,
+        "y": 221.16914706849312,
+        "speed": 27.78,
+        "acceleration": 0.0,
+        "allowed_speed": 27.78,
+        "edge": "S_out",
+        "lane": "S_out_2",
+        "lane_index": 2,
+        "lane_position": 116.40799999999997,
+        "length": 5.0,
+        "route_id": "N_S",
+        "route": [
+          "N_in",
+          "main_s_bridge",
+          "main_s",
+          "S_out"
+        ],
+        "route_index": 3,
+        "destination": "S_out",
+        "relative_xy": [
+          -111.04064833508502,
+          -231.6761525092526
+        ],
+        "distance_to_ego": 256.9121741454976,
+        "relative_speed": 26.826883278554387
+      },
+      {
+        "id": "flow_N_W.10",
+        "type": "HV",
+        "x": 253.9613599176827,
+        "y": 324.12794623668316,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 435.2540814410517,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -71.66121622932585,
+          -128.71735334106256
+        ],
+        "distance_to_ego": 147.3210336733833,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.11",
+        "type": "HV",
+        "x": 161.63707423723298,
+        "y": 297.6891181513783,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 337.74399999999963,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -163.98550190977556,
+          -155.15618142636743
+        ],
+        "distance_to_ego": 225.7535945924513,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.12",
+        "type": "HV",
+        "x": 79.6513705353262,
+        "y": 346.9006605253377,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 237.75400000000027,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -245.97120561168236,
+          -105.94463905240804
+        ],
+        "distance_to_ego": 267.81728946057524,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.13",
+        "type": "HV",
+        "x": 93.92507441696864,
+        "y": 442.0607802656863,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 137.7639999999999,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -231.6975017300399,
+          -10.784519312059444
+        ],
+        "distance_to_ego": 231.94835236477545,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.14",
+        "type": "HV",
+        "x": 110.25166660159815,
+        "y": 539.7379294833173,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 37.77400000000001,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -215.3709095454104,
+          86.8926299055716
+        ],
+        "distance_to_ego": 232.23901009590094,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.3",
+        "type": "HV",
+        "x": 280.6836610371185,
+        "y": 618.5262952884354,
+        "speed": 4.16,
+        "acceleration": 2.6,
+        "allowed_speed": 15.28,
+        "edge": ":W_MERGE_0",
+        "lane": ":W_MERGE_0_0",
+        "lane_index": 0,
+        "lane_position": 3.6429999999999865,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -44.93891510989005,
+          165.68099571068973
+        ],
+        "distance_to_ego": 171.66740643156317,
+        "relative_speed": 3.2068832785543866
+      },
+      {
+        "id": "flow_N_W.4",
+        "type": "HV",
+        "x": 306.03077710957615,
+        "y": 625.8237794688855,
+        "speed": 6.3918241212861115,
+        "acceleration": -1.6921239367072616,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 394.52441120290547,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -19.591799037432395,
+          172.97847989113978
+        ],
+        "distance_to_ego": 174.0844424265781,
+        "relative_speed": 5.438707399840498
+      },
+      {
+        "id": "flow_N_W.5",
+        "type": "HV",
+        "x": 396.6658626388074,
+        "y": 651.9916461187242,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 299.45399999999756,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          71.04328649179888,
+          199.14634654097853
+        ],
+        "distance_to_ego": 211.4389176480416,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.6",
+        "type": "HV",
+        "x": 356.11623697352405,
+        "y": 699.876524174471,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 199.46399999999772,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          30.49366082651551,
+          247.03122459672528
+        ],
+        "distance_to_ego": 248.90618569324528,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.7",
+        "type": "HV",
+        "x": 333.01464227678053,
+        "y": 604.903169515835,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 99.47399999999752,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          7.39206612977199,
+          152.05786993808925
+        ],
+        "distance_to_ego": 152.23744103135664,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_N_W.8",
+        "type": "HV",
+        "x": 322.86109067628047,
+        "y": 457.1075654317658,
+        "speed": 0.8830879700710144,
+        "acceleration": -0.2744309967054681,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_3",
+        "lane_index": 3,
+        "lane_position": 4.251529623943189,
+        "length": 5.0,
+        "route_id": "N_W",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 2,
+        "destination": "W_out",
+        "relative_xy": [
+          -2.7614854707280756,
+          4.262265854020086
+        ],
+        "distance_to_ego": 5.078652598415039,
+        "relative_speed": -0.07002875137459919
+      },
+      {
+        "id": "flow_S_E_main.10",
+        "type": "HV",
+        "x": 328.90042108498915,
+        "y": 440.04533016206665,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": ":WEAVE_IN_0",
+        "lane": ":WEAVE_IN_0_0",
+        "lane_index": 0,
+        "lane_position": 6.115999999999059,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          3.2778449379806034,
+          -12.799969415679072
+        ],
+        "distance_to_ego": 13.21300436992907,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_main.11",
+        "type": "HV",
+        "x": 307.88738441236814,
+        "y": 343.5436518782942,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 306.6359999999999,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -17.73519173464041,
+          -109.30164769945151
+        ],
+        "distance_to_ego": 110.73114835347582,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_main.12",
+        "type": "HV",
+        "x": 265.4259783884624,
+        "y": 254.2900276810151,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 206.64600000000016,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -60.19659775854615,
+          -198.55527189673063
+        ],
+        "distance_to_ego": 207.47970112685442,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_main.13",
+        "type": "HV",
+        "x": 270.9510549062631,
+        "y": 154.7807075059583,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 106.6559999999999,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -54.67152124074545,
+          -298.0645920717874
+        ],
+        "distance_to_ego": 303.0370873040102,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_main.14",
+        "type": "HV",
+        "x": 271.54069093164145,
+        "y": 54.8237942191224,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 6.665999999999999,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 1,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -54.081885215367095,
+          -398.0215053586233
+        ],
+        "distance_to_ego": 401.6789377555073,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_main.6",
+        "type": "HV",
+        "x": 486.982400925879,
+        "y": 610.5397183371912,
+        "speed": 12.997755498562283,
+        "acceleration": 2.545406732214257,
+        "allowed_speed": 15.28,
+        "edge": ":E_MERGE_0",
+        "lane": ":E_MERGE_0_0",
+        "lane_index": 0,
+        "lane_position": 21.61542230242475,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 4,
+        "destination": "E_main_out",
+        "relative_xy": [
+          161.35982477887046,
+          157.69441875944545
+        ],
+        "distance_to_ego": 225.6203066227575,
+        "relative_speed": 12.044638777116669
+      },
+      {
+        "id": "flow_S_E_main.7",
+        "type": "HV",
+        "x": 430.78379645163005,
+        "y": 601.1301656125863,
+        "speed": 7.4184638761728925,
+        "acceleration": 1.8346688803272482,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 160.03366243367708,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          105.16122030462151,
+          148.2848660348406
+        ],
+        "distance_to_ego": 181.78911890134614,
+        "relative_speed": 6.465347154727279
+      },
+      {
+        "id": "flow_S_E_main.8",
+        "type": "HV",
+        "x": 371.92067854928945,
+        "y": 588.4144997587476,
+        "speed": 8.036151600180325,
+        "acceleration": -0.213645939510414,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 97.59095375619006,
+        "length": 5.0,
+        "route_id": "S_E_main",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "east_join",
+          "E_main_out"
+        ],
+        "route_index": 3,
+        "destination": "E_main_out",
+        "relative_xy": [
+          46.298102402280904,
+          135.56920018100192
+        ],
+        "distance_to_ego": 143.25684040829833,
+        "relative_speed": 7.083034878734711
+      },
+      {
+        "id": "flow_S_E_ramp.10",
+        "type": "HV",
+        "x": 333.2518832891246,
+        "y": 463.96736870026433,
+        "speed": 10.209999999999999,
+        "acceleration": -4.500000000000002,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_0",
+        "lane_index": 0,
+        "lane_position": 12.17599999999905,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 2,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          7.6293071421160334,
+          11.12206912251861
+        ],
+        "distance_to_ego": 13.487281009707798,
+        "relative_speed": 9.256883278554385
+      },
+      {
+        "id": "flow_S_E_ramp.11",
+        "type": "HV",
+        "x": 318.2884825809272,
+        "y": 365.590933168735,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 331.0779999999997,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -7.334093566081322,
+          -87.25436640901074
+        ],
+        "distance_to_ego": 87.56205448636948,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_ramp.12",
+        "type": "HV",
+        "x": 270.58208936134815,
+        "y": 278.45159766496477,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 231.39600000000024,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -55.04048678566039,
+          -174.39370191278095
+        ],
+        "distance_to_ego": 182.87323055178513,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_ramp.13",
+        "type": "HV",
+        "x": 268.74929537297606,
+        "y": 179.1007115165905,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 131.09799999999987,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -56.87328077403248,
+          -273.74458806115524
+        ],
+        "distance_to_ego": 279.5901814420054,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_ramp.14",
+        "type": "HV",
+        "x": 271.39474142040916,
+        "y": 79.56560443863627,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_0",
+        "lane_index": 0,
+        "lane_position": 31.416000000000007,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -54.22783472659938,
+          -373.27969513910944
+        ],
+        "distance_to_ego": 377.19807642972125,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_ramp.7",
+        "type": "HV",
+        "x": 473.6969397091461,
+        "y": 603.4432882662967,
+        "speed": 11.11,
+        "acceleration": 0.07319671803051264,
+        "allowed_speed": 11.11,
+        "edge": "E_ramp_out",
+        "lane": "E_ramp_out_0",
+        "lane_index": 0,
+        "lane_position": 2.5248151137889345,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 4,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          148.07436356213753,
+          150.59798868855097
+        ],
+        "distance_to_ego": 211.2007844241328,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_S_E_ramp.8",
+        "type": "HV",
+        "x": 415.8615009393821,
+        "y": 600.4231629046755,
+        "speed": 7.340410508773373,
+        "acceleration": 0.9735508757208455,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 144.74412657753683,
+        "length": 5.0,
+        "route_id": "S_E_ramp",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          90.23892479237355,
+          147.57786332692973
+        ],
+        "distance_to_ego": 172.98060380235006,
+        "relative_speed": 6.38729378732776
+      },
+      {
+        "id": "flow_S_N.7",
+        "type": "HV",
+        "x": 206.343609453924,
+        "y": 423.1494038252017,
+        "speed": 27.78,
+        "acceleration": 0.0,
+        "allowed_speed": 27.78,
+        "edge": "main_n",
+        "lane": "main_n_0",
+        "lane_index": 0,
+        "lane_position": 380.38799999999986,
+        "length": 5.0,
+        "route_id": "S_N",
+        "route": [
+          "S_in",
+          "main_n",
+          "main_n_after",
+          "main_n_bridge",
+          "N_out"
+        ],
+        "route_index": 1,
+        "destination": "N_out",
+        "relative_xy": [
+          -119.27896669308456,
+          -29.695895752544004
+        ],
+        "distance_to_ego": 122.91996631921087,
+        "relative_speed": 26.826883278554387
+      },
+      {
+        "id": "flow_W_E.6",
+        "type": "HV",
+        "x": 555.0385550911591,
+        "y": 604.5968214217347,
+        "speed": 19.44,
+        "acceleration": 0.0,
+        "allowed_speed": 19.44,
+        "edge": "E_main_out",
+        "lane": "E_main_out_0",
+        "lane_index": 0,
+        "lane_position": 57.26400000000018,
+        "length": 5.0,
+        "route_id": "W_E",
+        "route": [
+          "W_in",
+          "east_main",
+          "E_main_out"
+        ],
+        "route_index": 2,
+        "destination": "E_main_out",
+        "relative_xy": [
+          229.41597894415054,
+          151.751521843989
+        ],
+        "distance_to_ego": 275.0640212330024,
+        "relative_speed": 18.486883278554387
+      },
+      {
+        "id": "flow_W_E.7",
+        "type": "HV",
+        "x": 214.0244090909091,
+        "y": 569.6581477272728,
+        "speed": 19.44,
+        "acceleration": 0.0,
+        "allowed_speed": 19.44,
+        "edge": "W_in",
+        "lane": "W_in_0",
+        "lane_index": 0,
+        "lane_position": 16.764,
+        "length": 5.0,
+        "route_id": "W_E",
+        "route": [
+          "W_in",
+          "east_main",
+          "E_main_out"
+        ],
+        "route_index": 0,
+        "destination": "E_main_out",
+        "relative_xy": [
+          -111.59816705609944,
+          116.81284814952704
+        ],
+        "distance_to_ego": 161.55306367594997,
+        "relative_speed": 18.486883278554387
+      },
+      {
+        "id": "flow_W_N.5",
+        "type": "HV",
+        "x": 210.492717928747,
+        "y": 428.1708383790101,
+        "speed": 0.0,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_to_n",
+        "lane": "west_to_n_0",
+        "lane_index": 0,
+        "lane_position": 119.609,
+        "length": 5.0,
+        "route_id": "W_N",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_n",
+          "main_n_after",
+          "main_n_bridge",
+          "N_out"
+        ],
+        "route_index": 3,
+        "destination": "N_out",
+        "relative_xy": [
+          -115.12985821826155,
+          -24.674461198735628
+        ],
+        "distance_to_ego": 117.74427072603115,
+        "relative_speed": -0.9531167214456135
+      },
+      {
+        "id": "flow_W_N.6",
+        "type": "HV",
+        "x": 307.1930634017083,
+        "y": 502.5681915825182,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_south",
+        "lane": "west_south_0",
+        "lane_index": 0,
+        "lane_position": 15.773999999999905,
+        "length": 5.0,
+        "route_id": "W_N",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_n",
+          "main_n_after",
+          "main_n_bridge",
+          "N_out"
+        ],
+        "route_index": 2,
+        "destination": "N_out",
+        "relative_xy": [
+          -18.429512745300258,
+          49.72289200477246
+        ],
+        "distance_to_ego": 53.028416244004966,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_W_S.3",
+        "type": "HV",
+        "x": 193.40754032778864,
+        "y": 304.4168285496538,
+        "speed": 18.909999999999993,
+        "acceleration": 2.599999999999998,
+        "allowed_speed": 27.78,
+        "edge": "S_out",
+        "lane": "S_out_0",
+        "lane_index": 0,
+        "lane_position": 30.847082119885872,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 4,
+        "destination": "S_out",
+        "relative_xy": [
+          -132.2150358192199,
+          -148.4284710280919
+        ],
+        "distance_to_ego": 198.77582023076832,
+        "relative_speed": 17.95688327855438
+      },
+      {
+        "id": "flow_W_S.4",
+        "type": "HV",
+        "x": 87.81630525323776,
+        "y": 363.19211155603625,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_to_s",
+        "lane": "west_to_s_0",
+        "lane_index": 0,
+        "lane_position": 318.8870821198874,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 3,
+        "destination": "S_out",
+        "relative_xy": [
+          -237.80627089377077,
+          -89.65318802170947
+        ],
+        "distance_to_ego": 254.14467651095404,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_W_S.5",
+        "type": "HV",
+        "x": 257.25916446389704,
+        "y": 342.5572302728644,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_to_s",
+        "lane": "west_to_s_0",
+        "lane_index": 0,
+        "lane_position": 118.90708211988753,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 3,
+        "destination": "S_out",
+        "relative_xy": [
+          -68.36341168311151,
+          -110.28806930488133
+        ],
+        "distance_to_ego": 129.75752112287324,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_W_S.6",
+        "type": "HV",
+        "x": 309.44233712828594,
+        "y": 528.8234665804688,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "west_turn",
+        "lane": "west_turn_0",
+        "lane_index": 0,
+        "lane_position": 100.25708211988766,
+        "length": 5.0,
+        "route_id": "W_S",
+        "route": [
+          "W_in",
+          "west_turn",
+          "west_south",
+          "west_to_s",
+          "S_out"
+        ],
+        "route_index": 1,
+        "destination": "S_out",
+        "relative_xy": [
+          -16.180239018722602,
+          75.97816700272307
+        ],
+        "distance_to_ego": 77.6819283733139,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_green.10",
+        "type": "HV",
+        "x": 323.4446906700277,
+        "y": 443.55518004322425,
+        "speed": 1.9394535252964533,
+        "acceleration": -0.8311147078601189,
+        "allowed_speed": 11.11,
+        "edge": ":WEAVE_IN_0",
+        "lane": ":WEAVE_IN_0_2",
+        "lane_index": 2,
+        "lane_position": 9.36934611940702,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -2.1778854769808618,
+          -9.290119534521466
+        ],
+        "distance_to_ego": 9.541986486918827,
+        "relative_speed": 0.9863368038508398
+      },
+      {
+        "id": "flow_green.11",
+        "type": "HV",
+        "x": 316.86055054605964,
+        "y": 387.3755700334073,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 353.2979999999995,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -8.762025600948903,
+          -65.4697295443384
+        ],
+        "distance_to_ego": 66.0534524399785,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_green.12",
+        "type": "HV",
+        "x": 272.4186726333112,
+        "y": 298.76161058228246,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 253.30800000000033,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -53.203903513697355,
+          -154.08368899546326
+        ],
+        "distance_to_ego": 163.01054739968657,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_green.13",
+        "type": "HV",
+        "x": 259.9865009366398,
+        "y": 201.22686505915152,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 153.31799999999996,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -65.63607521036874,
+          -251.6184345185942
+        ],
+        "distance_to_ego": 260.03832594179124,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_green.14",
+        "type": "HV",
+        "x": 264.8644981649651,
+        "y": 101.44407949282288,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "green_approach",
+        "lane": "green_approach_2",
+        "lane_index": 2,
+        "lane_position": 53.32800000000002,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 1,
+        "destination": "W_out",
+        "relative_xy": [
+          -60.75807798204346,
+          -351.40122008492284
+        ],
+        "distance_to_ego": 356.61514482316153,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_green.5",
+        "type": "HV",
+        "x": 289.8744819947915,
+        "y": 621.3787239530791,
+        "speed": 2.4591882824268274,
+        "acceleration": 2.317343097977569,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 411.28097406108776,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -35.74809415221705,
+          168.53342437533337
+        ],
+        "distance_to_ego": 172.28302692718162,
+        "relative_speed": 1.5060715609812139
+      },
+      {
+        "id": "flow_green.6",
+        "type": "HV",
+        "x": 322.1051940190562,
+        "y": 630.2463079656244,
+        "speed": 7.814427589294177,
+        "acceleration": -1.698677000310922,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 377.8527686364208,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          -3.5173821279523168,
+          177.40100838787868
+        ],
+        "distance_to_ego": 177.43587504805853,
+        "relative_speed": 6.861310867848564
+      },
+      {
+        "id": "flow_green.7",
+        "type": "HV",
+        "x": 406.93306534091187,
+        "y": 667.0460424538459,
+        "speed": 11.109994418879959,
+        "acceleration": 1.744099957790013e-06,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 280.8430178595817,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          81.31048919390332,
+          214.20074287610015
+        ],
+        "distance_to_ego": 229.11428131311465,
+        "relative_speed": 10.156877697434345
+      },
+      {
+        "id": "flow_green.8",
+        "type": "HV",
+        "x": 345.32819055717766,
+        "y": 685.0546498701788,
+        "speed": 11.109914587073709,
+        "acceleration": 2.669153949419467e-05,
+        "allowed_speed": 11.11,
+        "edge": "upper_loop",
+        "lane": "upper_loop_0",
+        "lane_index": 0,
+        "lane_position": 180.85327332136185,
+        "length": 5.0,
+        "route_id": "green",
+        "route": [
+          "S_in",
+          "green_approach",
+          "weave",
+          "upper_loop",
+          "W_out"
+        ],
+        "route_index": 3,
+        "destination": "W_out",
+        "relative_xy": [
+          19.70561441016912,
+          232.20935029243304
+        ],
+        "distance_to_ego": 233.043973538292,
+        "relative_speed": 10.156797865628095
+      },
+      {
+        "id": "flow_pink.10",
+        "type": "HV",
+        "x": 287.477165357221,
+        "y": 358.3979930293536,
+        "speed": 11.03262804918134,
+        "acceleration": -0.3868597540932939,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 483.4666961721745,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -38.14541078978755,
+          -94.44730654839213
+        ],
+        "distance_to_ego": 101.85954093047738,
+        "relative_speed": 10.079511327735727
+      },
+      {
+        "id": "flow_pink.11",
+        "type": "HV",
+        "x": 214.07386873076734,
+        "y": 305.17940243078675,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 391.07199999999915,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -111.5487074162412,
+          -147.66589714695897
+        ],
+        "distance_to_ego": 185.06304684201666,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_pink.12",
+        "type": "HV",
+        "x": 116.95236139319746,
+        "y": 309.7586860668236,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 291.08200000000005,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -208.67021475381108,
+          -143.08661351092212
+        ],
+        "distance_to_ego": 253.01588387179495,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_pink.13",
+        "type": "HV",
+        "x": 74.85707194184286,
+        "y": 392.4680541351795,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 191.0920000000001,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -250.76550420516568,
+          -60.37724544256622
+        ],
+        "distance_to_ego": 257.9316767411534,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_pink.14",
+        "type": "HV",
+        "x": 107.31201875477171,
+        "y": 486.65710197437346,
+        "speed": 11.11,
+        "acceleration": 0.0,
+        "allowed_speed": 11.11,
+        "edge": "pink_approach",
+        "lane": "pink_approach_0",
+        "lane_index": 0,
+        "lane_position": 91.10199999999995,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 1,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -218.31055739223683,
+          33.81180239662774
+        ],
+        "distance_to_ego": 220.9134161843,
+        "relative_speed": 10.156883278554385
+      },
+      {
+        "id": "flow_pink.15",
+        "type": "HV",
+        "x": 101.13528389192838,
+        "y": 586.5050895832906,
+        "speed": 14.958933385717048,
+        "acceleration": -4.499999999999966,
+        "allowed_speed": 19.45,
+        "edge": ":N_SPLIT_0",
+        "lane": ":N_SPLIT_0_0",
+        "lane_index": 0,
+        "lane_position": 0.08285329142636044,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 0,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -224.48729225508015,
+          133.65979000554483
+        ],
+        "distance_to_ego": 261.2651600354401,
+        "relative_speed": 14.005816664271434
+      },
+      {
+        "id": "flow_pink.6",
+        "type": "HV",
+        "x": 458.59154091996066,
+        "y": 604.1525708526781,
+        "speed": 9.994579264293499,
+        "acceleration": 2.5077009943574335,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 188.63694289625377,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          132.96896477295212,
+          151.30727127493236
+        ],
+        "distance_to_ego": 201.4314670885772,
+        "relative_speed": 9.041462542847885
+      },
+      {
+        "id": "flow_pink.7",
+        "type": "HV",
+        "x": 400.90717984496615,
+        "y": 598.9535261488489,
+        "speed": 7.441601741602185,
+        "acceleration": 0.34304967996962255,
+        "allowed_speed": 11.11,
+        "edge": "east_curve",
+        "lane": "east_curve_0",
+        "lane_index": 0,
+        "lane_position": 129.3591807630178,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 3,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          75.2846036979576,
+          146.10822657110322
+        ],
+        "distance_to_ego": 164.36357694365063,
+        "relative_speed": 6.488485020156572
+      },
+      {
+        "id": "flow_pink.8",
+        "type": "HV",
+        "x": 325.0773740053048,
+        "y": 477.8782957559657,
+        "speed": 0.9499999999999987,
+        "acceleration": 2.6,
+        "allowed_speed": 11.11,
+        "edge": "weave",
+        "lane": "weave_3",
+        "lane_index": 3,
+        "lane_position": 25.139999999997553,
+        "length": 5.0,
+        "route_id": "pink",
+        "route": [
+          "N_in",
+          "pink_approach",
+          "weave",
+          "east_curve",
+          "E_ramp_out"
+        ],
+        "route_index": 2,
+        "destination": "E_ramp_out",
+        "relative_xy": [
+          -0.5452021417037258,
+          25.032996178220003
+        ],
+        "distance_to_ego": 25.03893254581943,
+        "relative_speed": -0.003116721445614812
+      }
+    ],
+    "expected_route": [
+      "S_in",
+      "green_approach",
+      "weave",
+      "upper_loop",
+      "W_out"
+    ],
+    "status": "running"
+  }
+}

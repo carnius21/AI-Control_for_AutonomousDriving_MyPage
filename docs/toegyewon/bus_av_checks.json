@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "manifest_geometry_routes_connections_identical": true,
+    "net_xml_identical_except_permissions": true,
+    "traffic_settings_identical": true,
+    "no_bus_HV_trajectory_metrics_identical": true,
+    "highway_training_algorithms_utils_unchanged": true,
+    "source_OSM_sha256_identical": true
+  },
+  "unit_tests_passed": 11,
+  "trained_checkpoints_found": [],
+  "trained_policy_evaluated": false,
+  "policy_interface_smoke": [
+    {
+      "mode": "legacy",
+      "input_dimension": 31,
+      "action_dimension": 2,
+      "sumo_steps": 5,
+      "safety_modes": [
+        31,
+        1621
+      ],
+      "trained_policy": false
+    },
+    {
+      "mode": "route",
+      "input_dimension": 43,
+      "action_dimension": 2,
+      "sumo_steps": 5,
+      "safety_modes": [
+        31,
+        1621
+      ],
+      "trained_policy": false
+    }
+  ],
+  "original_regression_failures": [],
+  "gui_visual_verification": "Not completed: Windows Node runtime could not start (os error 3).",
+  "default_av": {
+    "status": "arrived",
+    "origin": "N_in",
+    "destination": "E_ramp_out",
+    "planned": 177,
+    "arrived": 177,
+    "av_min_acceleration": -3.7597015006938777,
+    "av_weave_bus_neighbor_seconds": 1.2,
+    "collisions": [],
+    "teleports": [],
+    "remaining": 0
+  }
+}

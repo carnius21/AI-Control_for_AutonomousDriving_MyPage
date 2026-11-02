@@ -1,0 +1,3457 @@
+{
+  "started_utc": "2026-11-01T15:50:26.306246+00:00",
+  "python": "3.12.9",
+  "sumo": "Eclipse SUMO sumo 1.27.1",
+  "config": {
+    "projection": "EPSG:32652",
+    "origin_lon_lat": [
+      127.131,
+      37.636
+    ],
+    "boundaries": {
+      "north_lat": 37.642,
+      "south_lat": 37.6362,
+      "west_lon": 127.1331,
+      "east_lon": 127.1373
+    },
+    "relocated_west_diverge_lon": 127.1334319,
+    "assumed_ramp_speed_kmh": 40,
+    "assumed_trunk_lanes": 2,
+    "assumed_ramp_lanes": 1,
+    "step_length": 0.2,
+    "lane_change_duration": 1.0,
+    "seed": 21,
+    "traffic": {
+      "profile": "medium",
+      "profiles": {
+        "low": {
+          "period": 30
+        },
+        "medium": {
+          "period": 12
+        },
+        "high": {
+          "period": 6
+        }
+      },
+      "end": 180,
+      "scale": 1,
+      "weave_factor": 2,
+      "route_weights": {
+        "N_S": 1,
+        "S_N": 1,
+        "pink": 1,
+        "N_E_main": 1,
+        "N_W": 1,
+        "green": 1,
+        "S_E_ramp": 1,
+        "S_E_main": 1,
+        "W_E": 1,
+        "E_W": 1,
+        "W_N": 1,
+        "W_S": 1
+      }
+    },
+    "validation": {
+      "time_limit": 600,
+      "hard_braking_threshold": -4.5,
+      "stopped_speed": 0.1
+    },
+    "test_vehicles": {
+      "pink_depart": 0,
+      "green_depart": 17.4
+    },
+    "no_lane_change_edges": [
+      "main_s_bridge",
+      "main_n_bridge"
+    ]
+  },
+  "structure": {
+    "edges": 25,
+    "lane_connections": 60,
+    "routes": 12,
+    "weave_length_m": 30.16,
+    "z_zero": true,
+    "exact_connections": true,
+    "two_route_specific_lane_changes_required": true
+  },
+  "source_sha256": {
+    "area.osm.xml": "550e3c6bf444ff95b7b4d26a4adf42014349dc7f0c6c0305af4ecb3bf742f1f2",
+    "north.osm.xml": "2ba927bdfbb6e15d6750063c95cb43b5d7185f185b870420fee83fad6faf0e27"
+  },
+  "route_features": {
+    "N_S": {
+      "merges": [
+        "S_MERGE"
+      ],
+      "diverges": [
+        "N_SPLIT"
+      ],
+      "weave": false,
+      "weave_lane_change_required": false
+    },
+    "S_N": {
+      "merges": [
+        "N_MERGE"
+      ],
+      "diverges": [
+        "S_SPLIT"
+      ],
+      "weave": false,
+      "weave_lane_change_required": false
+    },
+    "pink": {
+      "merges": [
+        "WEAVE_IN"
+      ],
+      "diverges": [
+        "N_SPLIT",
+        "WEAVE_OUT",
+        "E_SPLIT"
+      ],
+      "weave": true,
+      "weave_lane_change_required": true
+    },
+    "N_E_main": {
+      "merges": [
+        "WEAVE_IN",
+        "E_MERGE"
+      ],
+      "diverges": [
+        "N_SPLIT",
+        "WEAVE_OUT",
+        "E_SPLIT"
+      ],
+      "weave": true,
+      "weave_lane_change_required": true
+    },
+    "N_W": {
+      "merges": [
+        "WEAVE_IN",
+        "W_MERGE"
+      ],
+      "diverges": [
+        "N_SPLIT",
+        "WEAVE_OUT"
+      ],
+      "weave": true,
+      "weave_lane_change_required": false
+    },
+    "green": {
+      "merges": [
+        "WEAVE_IN",
+        "W_MERGE"
+      ],
+      "diverges": [
+        "S_SPLIT",
+        "WEAVE_OUT"
+      ],
+      "weave": true,
+      "weave_lane_change_required": true
+    },
+    "S_E_ramp": {
+      "merges": [
+        "WEAVE_IN"
+      ],
+      "diverges": [
+        "S_SPLIT",
+        "WEAVE_OUT",
+        "E_SPLIT"
+      ],
+      "weave": true,
+      "weave_lane_change_required": false
+    },
+    "S_E_main": {
+      "merges": [
+        "WEAVE_IN",
+        "E_MERGE"
+      ],
+      "diverges": [
+        "S_SPLIT",
+        "WEAVE_OUT",
+        "E_SPLIT"
+      ],
+      "weave": true,
+      "weave_lane_change_required": false
+    },
+    "W_E": {
+      "merges": [
+        "E_MERGE"
+      ],
+      "diverges": [
+        "W_SPLIT"
+      ],
+      "weave": false,
+      "weave_lane_change_required": false
+    },
+    "E_W": {
+      "merges": [
+        "W_MERGE"
+      ],
+      "diverges": [],
+      "weave": false,
+      "weave_lane_change_required": false
+    },
+    "W_N": {
+      "merges": [
+        "N_MERGE"
+      ],
+      "diverges": [
+        "W_SPLIT",
+        "W_RAMP_SPLIT"
+      ],
+      "weave": false,
+      "weave_lane_change_required": false
+    },
+    "W_S": {
+      "merges": [
+        "S_MERGE"
+      ],
+      "diverges": [
+        "W_SPLIT",
+        "W_RAMP_SPLIT"
+      ],
+      "weave": false,
+      "weave_lane_change_required": false
+    }
+  },
+  "cases": {
+    "baseline": {
+      "traffic": {
+        "period": 30,
+        "end": 180
+      },
+      "demand": {
+        "profile": "legacy",
+        "total_vehicles_per_hour": 1440.0,
+        "weave_share": 0.5,
+        "planned_background": 72,
+        "flows": [
+          {
+            "route": "N_S",
+            "begin": 0,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "S_N",
+            "begin": 2,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "pink",
+            "begin": 4,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "N_E_main",
+            "begin": 6,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "N_W",
+            "begin": 8,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "green",
+            "begin": 10,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "S_E_ramp",
+            "begin": 12,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "S_E_main",
+            "begin": 14,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "W_E",
+            "begin": 16,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "E_W",
+            "begin": 18,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "W_N",
+            "begin": 20,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          },
+          {
+            "route": "W_S",
+            "begin": 22,
+            "end": 180.0,
+            "period": 30.0,
+            "vehicles_per_hour": 120.0,
+            "planned": 6
+          }
+        ]
+      },
+      "metrics": {
+        "planned": 74,
+        "departed": 74,
+        "arrived": 74,
+        "completion_rate": 1.0,
+        "inserted_completion_rate": 1.0,
+        "not_inserted": 0,
+        "active_at_end": 0,
+        "remaining": 0,
+        "simulation_end": 265.6,
+        "collision_events": 0,
+        "collision_vehicles": 0,
+        "teleport_starts": 0,
+        "teleport_enabled": false,
+        "lane_changes": 70,
+        "weave_lane_changes": 32,
+        "lane_change_reasons": {
+          "speedGain": 5,
+          "keepRight": 12,
+          "strategic|urgent": 53
+        },
+        "weave_changes_with_neighbor": 24,
+        "weave_vehicles": 38,
+        "weave_lane_changes_per_vehicle": 0.8421052631578947,
+        "weave_both_origins_seconds": 5.4,
+        "weave_peak_vehicles": 2,
+        "weave_close_follow_vehicle_seconds": 20.59999999999996,
+        "weave_cross_origin_follow_vehicle_seconds": 1.0,
+        "hard_braking_threshold_mps2": -4.5,
+        "hard_braking_episodes": 6,
+        "hard_braking_vehicles": 5,
+        "hard_braking_episodes_per_100_departed": 8.108108108108109,
+        "weave_hard_braking_vehicles": 1,
+        "min_acceleration_mps2": -5.333333333333329,
+        "mean_speed_mps": 13.223669027601977,
+        "mean_completed_depart_delay_s": 0.0,
+        "max_completed_depart_delay_s": 0.0,
+        "mean_completed_time_loss_s": 1.8850000000000002,
+        "edges": {
+          "N_in": {
+            "samples": 462,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 20.818480947531313
+          },
+          "S_in": {
+            "samples": 144,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.84293600167249
+          },
+          ":N_SPLIT_1": {
+            "samples": 6,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          ":S_SPLIT_1": {
+            "samples": 6,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          "main_s_bridge": {
+            "samples": 72,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.77999999999998
+          },
+          "main_n": {
+            "samples": 420,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78000000000014
+          },
+          ":N_SPLIT_0": {
+            "samples": 78,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.160463014674994
+          },
+          "pink_approach": {
+            "samples": 4838,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109978251947421
+          },
+          ":SB_DROP_0": {
+            "samples": 12,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          "main_s": {
+            "samples": 180,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78000000000003
+          },
+          ":S_SPLIT_4": {
+            "samples": 28,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.594444444444447
+          },
+          ":S_MERGE_1": {
+            "samples": 24,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999987
+          },
+          "green_approach": {
+            "samples": 3426,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000426
+          },
+          "S_out": {
+            "samples": 732,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.27729508196727
+          },
+          ":S_SPLIT_0": {
+            "samples": 22,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.820267744204692
+          },
+          ":S_SPLIT_2": {
+            "samples": 20,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.559124602666206
+          },
+          "W_in": {
+            "samples": 180,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.103447205950502
+          },
+          ":N_MERGE_1": {
+            "samples": 84,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.780000000000005
+          },
+          ":W_SPLIT_1": {
+            "samples": 30,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000005
+          },
+          "E_in": {
+            "samples": 438,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.43999999999985
+          },
+          "east_main": {
+            "samples": 330,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.439999999999884
+          },
+          "main_n_after": {
+            "samples": 66,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 23.47181818181817
+          },
+          ":NB_BRIDGE_0": {
+            "samples": 24,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 25.565
+          },
+          "main_n_bridge": {
+            "samples": 108,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.966666666666693
+          },
+          ":W_SPLIT_0": {
+            "samples": 84,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.797785315780285
+          },
+          "N_out": {
+            "samples": 198,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          "west_turn": {
+            "samples": 594,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.1099999999999
+          },
+          ":E_MERGE_1": {
+            "samples": 60,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.44000000000003
+          },
+          "E_main_out": {
+            "samples": 336,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.599451808608016
+          },
+          ":W_MERGE_1": {
+            "samples": 108,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000037
+          },
+          "west_south": {
+            "samples": 288,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000017
+          },
+          "W_out": {
+            "samples": 133,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.637593984962425
+          },
+          ":W_RAMP_SPLIT_0": {
+            "samples": 48,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000008
+          },
+          "west_to_n": {
+            "samples": 336,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000024,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.708873626373665
+          },
+          ":W_RAMP_SPLIT_1": {
+            "samples": 48,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000008
+          },
+          "west_to_s": {
+            "samples": 1308,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000174
+          },
+          ":WEAVE_IN_0": {
+            "samples": 152,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999967
+          },
+          "weave": {
+            "samples": 538,
+            "stopped_vehicle_seconds": 0.2,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -5.333333333333329,
+            "hard_braking_episodes": 1,
+            "mean_speed_mps": 10.62045741341167
+          },
+          ":N_MERGE_0": {
+            "samples": 162,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 14.551524216524248
+          },
+          ":WEAVE_OUT_3": {
+            "samples": 138,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.99347826086954
+          },
+          "upper_loop": {
+            "samples": 2480,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000096,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.92792040809159
+          },
+          ":WEAVE_OUT_0": {
+            "samples": 268,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.827445160560908
+          },
+          ":WEAVE_IN_3": {
+            "samples": 171,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -3.1607421875002206,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.060449164144236
+          },
+          "east_curve": {
+            "samples": 2204,
+            "stopped_vehicle_seconds": 1.5999999999999999,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -4.5249999999999995,
+            "hard_braking_episodes": 5,
+            "mean_speed_mps": 10.798207241034682
+          },
+          ":E_SPLIT_0": {
+            "samples": 58,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.11000000000001
+          },
+          "E_ramp_out": {
+            "samples": 572,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999909
+          },
+          ":E_SPLIT_1": {
+            "samples": 81,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 5.3189966761635565
+          },
+          ":E_MERGE_0": {
+            "samples": 186,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.378376137303778
+          },
+          ":S_MERGE_0": {
+            "samples": 36,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.409999999999997
+          },
+          ":W_MERGE_0": {
+            "samples": 377,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.94577093050196
+          },
+          "east_join": {
+            "samples": 3,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 3.403525641025452
+          }
+        },
+        "routes": {
+          "pink": {
+            "planned": 7,
+            "departed": 7,
+            "arrived": 7
+          },
+          "green": {
+            "planned": 7,
+            "departed": 7,
+            "arrived": 7
+          },
+          "N_S": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "S_N": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "N_E_main": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "N_W": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "S_E_ramp": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "S_E_main": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "W_E": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "E_W": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "W_N": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          },
+          "W_S": {
+            "planned": 6,
+            "departed": 6,
+            "arrived": 6
+          }
+        },
+        "warnings": []
+      }
+    },
+    "low": {
+      "traffic": {
+        "profile": "low",
+        "profiles": {
+          "low": {
+            "period": 30
+          },
+          "medium": {
+            "period": 12
+          },
+          "high": {
+            "period": 6
+          }
+        },
+        "end": 180,
+        "scale": 1,
+        "weave_factor": 2,
+        "route_weights": {
+          "N_S": 1,
+          "S_N": 1,
+          "pink": 1,
+          "N_E_main": 1,
+          "N_W": 1,
+          "green": 1,
+          "S_E_ramp": 1,
+          "S_E_main": 1,
+          "W_E": 1,
+          "E_W": 1,
+          "W_N": 1,
+          "W_S": 1
+        }
+      },
+      "demand": {
+        "profile": "low",
+        "total_vehicles_per_hour": 1440.0,
+        "weave_share": 0.6666666666666666,
+        "planned_background": 72,
+        "flows": [
+          {
+            "route": "N_S",
+            "begin": 0,
+            "end": 180.0,
+            "period": 45.0,
+            "vehicles_per_hour": 80.0,
+            "planned": 4
+          },
+          {
+            "route": "S_N",
+            "begin": 2,
+            "end": 180.0,
+            "period": 45.0,
+            "vehicles_per_hour": 80.0,
+            "planned": 4
+          },
+          {
+            "route": "pink",
+            "begin": 4,
+            "end": 180.0,
+            "period": 22.5,
+            "vehicles_per_hour": 160.0,
+            "planned": 8
+          },
+          {
+            "route": "N_E_main",
+            "begin": 6,
+            "end": 180.0,
+            "period": 22.5,
+            "vehicles_per_hour": 160.0,
+            "planned": 8
+          },
+          {
+            "route": "N_W",
+            "begin": 8,
+            "end": 180.0,
+            "period": 22.5,
+            "vehicles_per_hour": 160.0,
+            "planned": 8
+          },
+          {
+            "route": "green",
+            "begin": 10,
+            "end": 180.0,
+            "period": 22.5,
+            "vehicles_per_hour": 160.0,
+            "planned": 8
+          },
+          {
+            "route": "S_E_ramp",
+            "begin": 12,
+            "end": 180.0,
+            "period": 22.5,
+            "vehicles_per_hour": 160.0,
+            "planned": 8
+          },
+          {
+            "route": "S_E_main",
+            "begin": 14,
+            "end": 180.0,
+            "period": 22.5,
+            "vehicles_per_hour": 160.0,
+            "planned": 8
+          },
+          {
+            "route": "W_E",
+            "begin": 16,
+            "end": 180.0,
+            "period": 45.0,
+            "vehicles_per_hour": 80.0,
+            "planned": 4
+          },
+          {
+            "route": "E_W",
+            "begin": 18,
+            "end": 180.0,
+            "period": 45.0,
+            "vehicles_per_hour": 80.0,
+            "planned": 4
+          },
+          {
+            "route": "W_N",
+            "begin": 20,
+            "end": 180.0,
+            "period": 45.0,
+            "vehicles_per_hour": 80.0,
+            "planned": 4
+          },
+          {
+            "route": "W_S",
+            "begin": 22,
+            "end": 180.0,
+            "period": 45.0,
+            "vehicles_per_hour": 80.0,
+            "planned": 4
+          }
+        ]
+      },
+      "metrics": {
+        "planned": 74,
+        "departed": 74,
+        "arrived": 74,
+        "completion_rate": 1.0,
+        "inserted_completion_rate": 1.0,
+        "not_inserted": 0,
+        "active_at_end": 0,
+        "remaining": 0,
+        "simulation_end": 273.2,
+        "collision_events": 0,
+        "collision_vehicles": 0,
+        "teleport_starts": 0,
+        "teleport_enabled": false,
+        "lane_changes": 82,
+        "weave_lane_changes": 42,
+        "lane_change_reasons": {
+          "speedGain": 3,
+          "keepRight": 11,
+          "strategic|urgent": 68
+        },
+        "weave_changes_with_neighbor": 32,
+        "weave_vehicles": 50,
+        "weave_lane_changes_per_vehicle": 0.84,
+        "weave_both_origins_seconds": 5.4,
+        "weave_peak_vehicles": 2,
+        "weave_close_follow_vehicle_seconds": 26.19999999999994,
+        "weave_cross_origin_follow_vehicle_seconds": 1.0,
+        "hard_braking_threshold_mps2": -4.5,
+        "hard_braking_episodes": 1,
+        "hard_braking_vehicles": 1,
+        "hard_braking_episodes_per_100_departed": 1.3513513513513513,
+        "weave_hard_braking_vehicles": 1,
+        "min_acceleration_mps2": -5.333333333333329,
+        "mean_speed_mps": 12.559764594491552,
+        "mean_completed_depart_delay_s": 0.032432432432432434,
+        "max_completed_depart_delay_s": 0.1,
+        "mean_completed_time_loss_s": 1.6770270270270269,
+        "edges": {
+          "N_in": {
+            "samples": 554,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 20.118875889122897
+          },
+          "S_in": {
+            "samples": 174,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 16.921362373020052
+          },
+          ":N_SPLIT_1": {
+            "samples": 4,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          ":S_SPLIT_1": {
+            "samples": 4,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          "main_s_bridge": {
+            "samples": 48,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999983
+          },
+          "main_n": {
+            "samples": 280,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999927
+          },
+          ":N_SPLIT_0": {
+            "samples": 102,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.162472837084463
+          },
+          "pink_approach": {
+            "samples": 6366,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109983472026784
+          },
+          ":SB_DROP_0": {
+            "samples": 8,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          "main_s": {
+            "samples": 120,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.780000000000065
+          },
+          ":S_SPLIT_4": {
+            "samples": 36,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.594444444444447
+          },
+          ":S_MERGE_1": {
+            "samples": 16,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999994
+          },
+          "green_approach": {
+            "samples": 4508,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000463
+          },
+          "S_out": {
+            "samples": 488,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.27729508196733
+          },
+          ":S_SPLIT_0": {
+            "samples": 44,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.685669360511735
+          },
+          ":S_SPLIT_2": {
+            "samples": 12,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.559124602666207
+          },
+          "W_in": {
+            "samples": 120,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.10344720595051
+          },
+          ":N_MERGE_1": {
+            "samples": 56,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.77999999999998
+          },
+          ":W_SPLIT_1": {
+            "samples": 20,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.44
+          },
+          "E_in": {
+            "samples": 292,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.43999999999992
+          },
+          "east_main": {
+            "samples": 220,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000026
+          },
+          "main_n_after": {
+            "samples": 44,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 23.471818181818175
+          },
+          ":NB_BRIDGE_0": {
+            "samples": 16,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 25.565
+          },
+          "main_n_bridge": {
+            "samples": 72,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.96666666666666
+          },
+          ":W_SPLIT_0": {
+            "samples": 56,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.797785315780288
+          },
+          "N_out": {
+            "samples": 132,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.780000000000076
+          },
+          "west_turn": {
+            "samples": 396,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000015
+          },
+          ":E_MERGE_1": {
+            "samples": 40,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.44000000000002
+          },
+          "E_main_out": {
+            "samples": 376,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.61614176299108
+          },
+          ":W_MERGE_1": {
+            "samples": 72,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000033
+          },
+          "west_south": {
+            "samples": 192,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999962
+          },
+          "W_out": {
+            "samples": 151,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.3634437086093
+          },
+          ":W_RAMP_SPLIT_0": {
+            "samples": 32,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000008
+          },
+          "west_to_n": {
+            "samples": 224,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000024,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.70887362637362
+          },
+          ":W_RAMP_SPLIT_1": {
+            "samples": 32,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000008
+          },
+          "west_to_s": {
+            "samples": 872,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.10999999999997
+          },
+          ":WEAVE_IN_0": {
+            "samples": 200,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999967
+          },
+          "weave": {
+            "samples": 700,
+            "stopped_vehicle_seconds": 0.2,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -5.333333333333329,
+            "hard_braking_episodes": 1,
+            "mean_speed_mps": 10.733751554879179
+          },
+          ":N_MERGE_0": {
+            "samples": 108,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 14.551524216524253
+          },
+          ":WEAVE_OUT_3": {
+            "samples": 180,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.020666666666624
+          },
+          "upper_loop": {
+            "samples": 3222,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000068,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.992002272985948
+          },
+          ":WEAVE_OUT_0": {
+            "samples": 352,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.89487301997254
+          },
+          ":WEAVE_IN_3": {
+            "samples": 225,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -3.1607421875002206,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.072341364749635
+          },
+          "east_curve": {
+            "samples": 2833,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.082641747989369
+          },
+          ":E_SPLIT_0": {
+            "samples": 76,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.11000000000001
+          },
+          "E_ramp_out": {
+            "samples": 748,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999868
+          },
+          ":E_SPLIT_1": {
+            "samples": 80,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 7.272238429534218
+          },
+          ":E_MERGE_0": {
+            "samples": 224,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.36023842953421
+          },
+          ":S_MERGE_0": {
+            "samples": 24,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.409999999999997
+          },
+          ":W_MERGE_0": {
+            "samples": 451,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.21586599508985
+          }
+        },
+        "routes": {
+          "pink": {
+            "planned": 9,
+            "departed": 9,
+            "arrived": 9
+          },
+          "green": {
+            "planned": 9,
+            "departed": 9,
+            "arrived": 9
+          },
+          "N_S": {
+            "planned": 4,
+            "departed": 4,
+            "arrived": 4
+          },
+          "S_N": {
+            "planned": 4,
+            "departed": 4,
+            "arrived": 4
+          },
+          "N_E_main": {
+            "planned": 8,
+            "departed": 8,
+            "arrived": 8
+          },
+          "N_W": {
+            "planned": 8,
+            "departed": 8,
+            "arrived": 8
+          },
+          "S_E_ramp": {
+            "planned": 8,
+            "departed": 8,
+            "arrived": 8
+          },
+          "S_E_main": {
+            "planned": 8,
+            "departed": 8,
+            "arrived": 8
+          },
+          "W_E": {
+            "planned": 4,
+            "departed": 4,
+            "arrived": 4
+          },
+          "E_W": {
+            "planned": 4,
+            "departed": 4,
+            "arrived": 4
+          },
+          "W_N": {
+            "planned": 4,
+            "departed": 4,
+            "arrived": 4
+          },
+          "W_S": {
+            "planned": 4,
+            "departed": 4,
+            "arrived": 4
+          }
+        },
+        "warnings": []
+      }
+    },
+    "medium_uniform": {
+      "traffic": {
+        "profile": "medium",
+        "profiles": {
+          "low": {
+            "period": 30
+          },
+          "medium": {
+            "period": 12
+          },
+          "high": {
+            "period": 6
+          }
+        },
+        "end": 180,
+        "scale": 1,
+        "weave_factor": 1,
+        "route_weights": {
+          "N_S": 1,
+          "S_N": 1,
+          "pink": 1,
+          "N_E_main": 1,
+          "N_W": 1,
+          "green": 1,
+          "S_E_ramp": 1,
+          "S_E_main": 1,
+          "W_E": 1,
+          "E_W": 1,
+          "W_N": 1,
+          "W_S": 1
+        }
+      },
+      "demand": {
+        "profile": "medium",
+        "total_vehicles_per_hour": 3600.0,
+        "weave_share": 0.5,
+        "planned_background": 174,
+        "flows": [
+          {
+            "route": "N_S",
+            "begin": 0,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 15
+          },
+          {
+            "route": "S_N",
+            "begin": 2,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 15
+          },
+          {
+            "route": "pink",
+            "begin": 4,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 15
+          },
+          {
+            "route": "N_E_main",
+            "begin": 6,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 15
+          },
+          {
+            "route": "N_W",
+            "begin": 8,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 15
+          },
+          {
+            "route": "green",
+            "begin": 10,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 15
+          },
+          {
+            "route": "S_E_ramp",
+            "begin": 12,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 14
+          },
+          {
+            "route": "S_E_main",
+            "begin": 14,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 14
+          },
+          {
+            "route": "W_E",
+            "begin": 16,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 14
+          },
+          {
+            "route": "E_W",
+            "begin": 18,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 14
+          },
+          {
+            "route": "W_N",
+            "begin": 20,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 14
+          },
+          {
+            "route": "W_S",
+            "begin": 22,
+            "end": 180.0,
+            "period": 12.0,
+            "vehicles_per_hour": 300.0,
+            "planned": 14
+          }
+        ]
+      },
+      "metrics": {
+        "planned": 176,
+        "departed": 176,
+        "arrived": 176,
+        "completion_rate": 1.0,
+        "inserted_completion_rate": 1.0,
+        "not_inserted": 0,
+        "active_at_end": 0,
+        "remaining": 0,
+        "simulation_end": 283.6,
+        "collision_events": 0,
+        "collision_vehicles": 0,
+        "teleport_starts": 0,
+        "teleport_enabled": false,
+        "lane_changes": 117,
+        "weave_lane_changes": 78,
+        "lane_change_reasons": {
+          "keepRight": 3,
+          "strategic|urgent": 113,
+          "speedGain": 1
+        },
+        "weave_changes_with_neighbor": 62,
+        "weave_vehicles": 90,
+        "weave_lane_changes_per_vehicle": 0.8666666666666667,
+        "weave_both_origins_seconds": 108.2,
+        "weave_peak_vehicles": 6,
+        "weave_close_follow_vehicle_seconds": 233.99999999999525,
+        "weave_cross_origin_follow_vehicle_seconds": 22.399999999999952,
+        "hard_braking_threshold_mps2": -4.5,
+        "hard_braking_episodes": 6,
+        "hard_braking_vehicles": 6,
+        "hard_braking_episodes_per_100_departed": 3.409090909090909,
+        "weave_hard_braking_vehicles": 1,
+        "min_acceleration_mps2": -5.377546296296438,
+        "mean_speed_mps": 9.08414041225493,
+        "mean_completed_depart_delay_s": 0.04772727272727273,
+        "max_completed_depart_delay_s": 0.6,
+        "mean_completed_time_loss_s": 30.029488636363634,
+        "edges": {
+          "N_in": {
+            "samples": 1128,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 20.827512322185438
+          },
+          "S_in": {
+            "samples": 366,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 15.378360944473334
+          },
+          ":N_SPLIT_1": {
+            "samples": 15,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999994
+          },
+          ":S_SPLIT_1": {
+            "samples": 43,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.22884664913795
+          },
+          "main_s_bridge": {
+            "samples": 180,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78000000000003
+          },
+          "main_n": {
+            "samples": 1092,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.541986481179745
+          },
+          ":N_SPLIT_0": {
+            "samples": 186,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.165422737717707
+          },
+          "pink_approach": {
+            "samples": 11716,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.108630725728926
+          },
+          ":SB_DROP_0": {
+            "samples": 30,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999983
+          },
+          "main_s": {
+            "samples": 450,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.780000000000175
+          },
+          ":S_SPLIT_4": {
+            "samples": 64,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.594444444444441
+          },
+          ":S_MERGE_1": {
+            "samples": 60,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.77999999999998
+          },
+          "green_approach": {
+            "samples": 7943,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.097629456987766
+          },
+          "S_out": {
+            "samples": 1766,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.326647791619017
+          },
+          ":S_SPLIT_0": {
+            "samples": 98,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.123108785983526
+          },
+          "W_in": {
+            "samples": 420,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.103447205950403
+          },
+          ":N_MERGE_1": {
+            "samples": 210,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999987
+          },
+          ":W_SPLIT_1": {
+            "samples": 70,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000033
+          },
+          "E_in": {
+            "samples": 1022,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.43999999999991
+          },
+          "east_main": {
+            "samples": 770,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000133
+          },
+          "main_n_after": {
+            "samples": 150,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 23.6348
+          },
+          ":NB_BRIDGE_0": {
+            "samples": 57,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 25.53105263157892
+          },
+          "main_n_bridge": {
+            "samples": 269,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.87338502226458
+          },
+          ":W_SPLIT_0": {
+            "samples": 196,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.797785315780304
+          },
+          "N_out": {
+            "samples": 469,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.76583108506502
+          },
+          "west_turn": {
+            "samples": 1386,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000197
+          },
+          ":E_MERGE_1": {
+            "samples": 140,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.44000000000004
+          },
+          "E_main_out": {
+            "samples": 806,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.591039687060288
+          },
+          ":W_MERGE_1": {
+            "samples": 252,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.439999999999973
+          },
+          "west_south": {
+            "samples": 672,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999875
+          },
+          "W_out": {
+            "samples": 306,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.587712418300693
+          },
+          ":W_RAMP_SPLIT_0": {
+            "samples": 112,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.10999999999999
+          },
+          "west_to_n": {
+            "samples": 4922,
+            "stopped_vehicle_seconds": 647.0000000000101,
+            "max_stopped_vehicles": 10,
+            "min_acceleration": -4.500000000000033,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 1.7115594512339958
+          },
+          ":W_RAMP_SPLIT_1": {
+            "samples": 112,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.10999999999999
+          },
+          "west_to_s": {
+            "samples": 3052,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000406
+          },
+          ":WEAVE_IN_0": {
+            "samples": 592,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 6.792425099010836
+          },
+          "weave": {
+            "samples": 2185,
+            "stopped_vehicle_seconds": 11.99999999999999,
+            "max_stopped_vehicles": 2,
+            "min_acceleration": -5.333333333333329,
+            "hard_braking_episodes": 1,
+            "mean_speed_mps": 6.127325904728824
+          },
+          ":WEAVE_OUT_3": {
+            "samples": 327,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.058124750127115
+          },
+          "upper_loop": {
+            "samples": 10468,
+            "stopped_vehicle_seconds": 532.9999999999842,
+            "max_stopped_vehicles": 14,
+            "min_acceleration": -4.500000000000326,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 6.177114204533378
+          },
+          ":WEAVE_OUT_0": {
+            "samples": 1721,
+            "stopped_vehicle_seconds": 29.399999999999928,
+            "max_stopped_vehicles": 3,
+            "min_acceleration": -3.0455594611864267,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 4.0089394076647995
+          },
+          ":WEAVE_IN_3": {
+            "samples": 433,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.630878506102748
+          },
+          "east_curve": {
+            "samples": 18571,
+            "stopped_vehicle_seconds": 1024.800000000096,
+            "max_stopped_vehicles": 19,
+            "min_acceleration": -5.377546296296438,
+            "hard_braking_episodes": 5,
+            "mean_speed_mps": 3.0248428967808247
+          },
+          ":E_SPLIT_0": {
+            "samples": 178,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 9.000957500261677
+          },
+          "E_ramp_out": {
+            "samples": 1314,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.993402765440958
+          },
+          ":E_SPLIT_1": {
+            "samples": 177,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 5.778500628984948
+          },
+          "east_join": {
+            "samples": 326,
+            "stopped_vehicle_seconds": 63.600000000000364,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -4.5000000000000036,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 0.049267760366458954
+          },
+          ":E_MERGE_0": {
+            "samples": 441,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.356232127624157
+          },
+          ":S_MERGE_0": {
+            "samples": 84,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.41
+          },
+          ":W_MERGE_0": {
+            "samples": 870,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.499213140779808
+          },
+          ":N_MERGE_0": {
+            "samples": 420,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.18682737252837
+          },
+          ":NB_END_0": {
+            "samples": 1,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.61882767889428
+          }
+        },
+        "routes": {
+          "pink": {
+            "planned": 16,
+            "departed": 16,
+            "arrived": 16
+          },
+          "green": {
+            "planned": 16,
+            "departed": 16,
+            "arrived": 16
+          },
+          "N_S": {
+            "planned": 15,
+            "departed": 15,
+            "arrived": 15
+          },
+          "S_N": {
+            "planned": 15,
+            "departed": 15,
+            "arrived": 15
+          },
+          "N_E_main": {
+            "planned": 15,
+            "departed": 15,
+            "arrived": 15
+          },
+          "N_W": {
+            "planned": 15,
+            "departed": 15,
+            "arrived": 15
+          },
+          "S_E_ramp": {
+            "planned": 14,
+            "departed": 14,
+            "arrived": 14
+          },
+          "S_E_main": {
+            "planned": 14,
+            "departed": 14,
+            "arrived": 14
+          },
+          "W_E": {
+            "planned": 14,
+            "departed": 14,
+            "arrived": 14
+          },
+          "E_W": {
+            "planned": 14,
+            "departed": 14,
+            "arrived": 14
+          },
+          "W_N": {
+            "planned": 14,
+            "departed": 14,
+            "arrived": 14
+          },
+          "W_S": {
+            "planned": 14,
+            "departed": 14,
+            "arrived": 14
+          }
+        },
+        "warnings": []
+      }
+    },
+    "medium": {
+      "traffic": {
+        "profile": "medium",
+        "profiles": {
+          "low": {
+            "period": 30
+          },
+          "medium": {
+            "period": 12
+          },
+          "high": {
+            "period": 6
+          }
+        },
+        "end": 180,
+        "scale": 1,
+        "weave_factor": 2,
+        "route_weights": {
+          "N_S": 1,
+          "S_N": 1,
+          "pink": 1,
+          "N_E_main": 1,
+          "N_W": 1,
+          "green": 1,
+          "S_E_ramp": 1,
+          "S_E_main": 1,
+          "W_E": 1,
+          "E_W": 1,
+          "W_N": 1,
+          "W_S": 1
+        }
+      },
+      "demand": {
+        "profile": "medium",
+        "total_vehicles_per_hour": 3600.0,
+        "weave_share": 0.6666666666666666,
+        "planned_background": 174,
+        "flows": [
+          {
+            "route": "N_S",
+            "begin": 0,
+            "end": 180.0,
+            "period": 18.0,
+            "vehicles_per_hour": 200.0,
+            "planned": 10
+          },
+          {
+            "route": "S_N",
+            "begin": 2,
+            "end": 180.0,
+            "period": 18.0,
+            "vehicles_per_hour": 200.0,
+            "planned": 10
+          },
+          {
+            "route": "pink",
+            "begin": 4,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 20
+          },
+          {
+            "route": "N_E_main",
+            "begin": 6,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 20
+          },
+          {
+            "route": "N_W",
+            "begin": 8,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 20
+          },
+          {
+            "route": "green",
+            "begin": 10,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 19
+          },
+          {
+            "route": "S_E_ramp",
+            "begin": 12,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 19
+          },
+          {
+            "route": "S_E_main",
+            "begin": 14,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 19
+          },
+          {
+            "route": "W_E",
+            "begin": 16,
+            "end": 180.0,
+            "period": 18.0,
+            "vehicles_per_hour": 200.0,
+            "planned": 10
+          },
+          {
+            "route": "E_W",
+            "begin": 18,
+            "end": 180.0,
+            "period": 18.0,
+            "vehicles_per_hour": 200.0,
+            "planned": 9
+          },
+          {
+            "route": "W_N",
+            "begin": 20,
+            "end": 180.0,
+            "period": 18.0,
+            "vehicles_per_hour": 200.0,
+            "planned": 9
+          },
+          {
+            "route": "W_S",
+            "begin": 22,
+            "end": 180.0,
+            "period": 18.0,
+            "vehicles_per_hour": 200.0,
+            "planned": 9
+          }
+        ]
+      },
+      "metrics": {
+        "planned": 176,
+        "departed": 176,
+        "arrived": 176,
+        "completion_rate": 1.0,
+        "inserted_completion_rate": 1.0,
+        "not_inserted": 0,
+        "active_at_end": 0,
+        "remaining": 0,
+        "simulation_end": 286.8,
+        "collision_events": 0,
+        "collision_vehicles": 0,
+        "teleport_starts": 0,
+        "teleport_enabled": false,
+        "lane_changes": 157,
+        "weave_lane_changes": 101,
+        "lane_change_reasons": {
+          "speedGain": 4,
+          "keepRight": 7,
+          "strategic|urgent": 145,
+          "strategic": 1
+        },
+        "weave_changes_with_neighbor": 92,
+        "weave_vehicles": 119,
+        "weave_lane_changes_per_vehicle": 0.8487394957983193,
+        "weave_both_origins_seconds": 105.4,
+        "weave_peak_vehicles": 5,
+        "weave_close_follow_vehicle_seconds": 112.20000000000105,
+        "weave_cross_origin_follow_vehicle_seconds": 49.600000000000165,
+        "hard_braking_threshold_mps2": -4.5,
+        "hard_braking_episodes": 9,
+        "hard_braking_vehicles": 6,
+        "hard_braking_episodes_per_100_departed": 5.113636363636363,
+        "weave_hard_braking_vehicles": 1,
+        "min_acceleration_mps2": -5.333333333333329,
+        "mean_speed_mps": 12.133193671989261,
+        "mean_completed_depart_delay_s": 0.0,
+        "max_completed_depart_delay_s": 0.0,
+        "mean_completed_time_loss_s": 4.225170454545455,
+        "edges": {
+          "N_in": {
+            "samples": 1377,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.616083934726625
+          },
+          "S_in": {
+            "samples": 409,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 16.698063203189275
+          },
+          ":N_SPLIT_1": {
+            "samples": 10,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          ":S_SPLIT_1": {
+            "samples": 10,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          "main_s_bridge": {
+            "samples": 120,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.780000000000065
+          },
+          "main_n": {
+            "samples": 700,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.780000000000058
+          },
+          ":N_SPLIT_0": {
+            "samples": 284,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.081852169839658
+          },
+          "pink_approach": {
+            "samples": 15519,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.108221023070108
+          },
+          ":SB_DROP_0": {
+            "samples": 20,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.77999999999999
+          },
+          "main_s": {
+            "samples": 300,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999934
+          },
+          ":S_SPLIT_4": {
+            "samples": 79,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.576258000091702
+          },
+          ":S_MERGE_1": {
+            "samples": 40,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999983
+          },
+          "green_approach": {
+            "samples": 10451,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.11000000000053
+          },
+          "S_out": {
+            "samples": 1156,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.352690311418424
+          },
+          ":S_SPLIT_0": {
+            "samples": 126,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.706729927632274
+          },
+          ":S_SPLIT_2": {
+            "samples": 16,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.611725227666204
+          },
+          "W_in": {
+            "samples": 279,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.146561812210123
+          },
+          ":N_MERGE_1": {
+            "samples": 140,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.780000000000083
+          },
+          ":W_SPLIT_1": {
+            "samples": 50,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000026
+          },
+          "E_in": {
+            "samples": 657,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.44000000000007
+          },
+          "east_main": {
+            "samples": 550,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.439999999999984
+          },
+          "main_n_after": {
+            "samples": 103,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 23.639126213592238
+          },
+          ":NB_BRIDGE_0": {
+            "samples": 38,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 25.68157894736842
+          },
+          "main_n_bridge": {
+            "samples": 171,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.009473684210572
+          },
+          ":W_SPLIT_0": {
+            "samples": 126,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.797785315780287
+          },
+          "N_out": {
+            "samples": 313,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999962
+          },
+          "west_turn": {
+            "samples": 891,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999982
+          },
+          ":E_MERGE_1": {
+            "samples": 100,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.44000000000004
+          },
+          "E_main_out": {
+            "samples": 927,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.440459441301424
+          },
+          ":W_MERGE_1": {
+            "samples": 162,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000044
+          },
+          "west_south": {
+            "samples": 432,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.109999999999987
+          },
+          "W_out": {
+            "samples": 334,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.26035928143714
+          },
+          ":W_RAMP_SPLIT_0": {
+            "samples": 72,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.11000000000001
+          },
+          "west_to_n": {
+            "samples": 600,
+            "stopped_vehicle_seconds": 11.199999999999992,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -4.500000000000024,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 9.066628205128184
+          },
+          ":W_RAMP_SPLIT_1": {
+            "samples": 72,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.11000000000001
+          },
+          "west_to_s": {
+            "samples": 1962,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.11000000000031
+          },
+          ":WEAVE_IN_0": {
+            "samples": 465,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -3.3000000000000096,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.090520160797707
+          },
+          "weave": {
+            "samples": 1710,
+            "stopped_vehicle_seconds": 0.2,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -5.333333333333329,
+            "hard_braking_episodes": 1,
+            "mean_speed_mps": 10.604868869428241
+          },
+          ":WEAVE_OUT_3": {
+            "samples": 423,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.03523330488534
+          },
+          ":N_MERGE_0": {
+            "samples": 331,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.492359981408303
+          },
+          "upper_loop": {
+            "samples": 7951,
+            "stopped_vehicle_seconds": 22.59999999999995,
+            "max_stopped_vehicles": 2,
+            "min_acceleration": -4.500000000000324,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.494361435722627
+          },
+          ":WEAVE_OUT_0": {
+            "samples": 897,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 9.939325036633313
+          },
+          ":WEAVE_IN_3": {
+            "samples": 535,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.221690125513593,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.950123425600285
+          },
+          "east_curve": {
+            "samples": 8138,
+            "stopped_vehicle_seconds": 4.800000000000002,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -4.5249999999999995,
+            "hard_braking_episodes": 8,
+            "mean_speed_mps": 9.262689387047134
+          },
+          ":E_SPLIT_0": {
+            "samples": 204,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.23419372893646
+          },
+          "E_ramp_out": {
+            "samples": 1753,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.039093026473438
+          },
+          ":E_SPLIT_1": {
+            "samples": 238,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000046,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 5.9411183045227585
+          },
+          ":E_MERGE_0": {
+            "samples": 582,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.628652202718321
+          },
+          ":S_MERGE_0": {
+            "samples": 54,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.409999999999998
+          },
+          ":W_MERGE_0": {
+            "samples": 1140,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.410753256837928
+          },
+          "east_join": {
+            "samples": 23,
+            "stopped_vehicle_seconds": 4.200000000000001,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -4.5000000000000036,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 0.051651111368161716
+          }
+        },
+        "routes": {
+          "pink": {
+            "planned": 21,
+            "departed": 21,
+            "arrived": 21
+          },
+          "green": {
+            "planned": 20,
+            "departed": 20,
+            "arrived": 20
+          },
+          "N_S": {
+            "planned": 10,
+            "departed": 10,
+            "arrived": 10
+          },
+          "S_N": {
+            "planned": 10,
+            "departed": 10,
+            "arrived": 10
+          },
+          "N_E_main": {
+            "planned": 20,
+            "departed": 20,
+            "arrived": 20
+          },
+          "N_W": {
+            "planned": 20,
+            "departed": 20,
+            "arrived": 20
+          },
+          "S_E_ramp": {
+            "planned": 19,
+            "departed": 19,
+            "arrived": 19
+          },
+          "S_E_main": {
+            "planned": 19,
+            "departed": 19,
+            "arrived": 19
+          },
+          "W_E": {
+            "planned": 10,
+            "departed": 10,
+            "arrived": 10
+          },
+          "E_W": {
+            "planned": 9,
+            "departed": 9,
+            "arrived": 9
+          },
+          "W_N": {
+            "planned": 9,
+            "departed": 9,
+            "arrived": 9
+          },
+          "W_S": {
+            "planned": 9,
+            "departed": 9,
+            "arrived": 9
+          }
+        },
+        "warnings": []
+      }
+    },
+    "high": {
+      "traffic": {
+        "profile": "high",
+        "profiles": {
+          "low": {
+            "period": 30
+          },
+          "medium": {
+            "period": 12
+          },
+          "high": {
+            "period": 6
+          }
+        },
+        "end": 180,
+        "scale": 1,
+        "weave_factor": 2,
+        "route_weights": {
+          "N_S": 1,
+          "S_N": 1,
+          "pink": 1,
+          "N_E_main": 1,
+          "N_W": 1,
+          "green": 1,
+          "S_E_ramp": 1,
+          "S_E_main": 1,
+          "W_E": 1,
+          "E_W": 1,
+          "W_N": 1,
+          "W_S": 1
+        }
+      },
+      "demand": {
+        "profile": "high",
+        "total_vehicles_per_hour": 7200.0,
+        "weave_share": 0.6666666666666666,
+        "planned_background": 344,
+        "flows": [
+          {
+            "route": "N_S",
+            "begin": 0,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 20
+          },
+          {
+            "route": "S_N",
+            "begin": 2,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 20
+          },
+          {
+            "route": "pink",
+            "begin": 4,
+            "end": 180.0,
+            "period": 4.5,
+            "vehicles_per_hour": 800.0,
+            "planned": 40
+          },
+          {
+            "route": "N_E_main",
+            "begin": 6,
+            "end": 180.0,
+            "period": 4.5,
+            "vehicles_per_hour": 800.0,
+            "planned": 39
+          },
+          {
+            "route": "N_W",
+            "begin": 8,
+            "end": 180.0,
+            "period": 4.5,
+            "vehicles_per_hour": 800.0,
+            "planned": 39
+          },
+          {
+            "route": "green",
+            "begin": 10,
+            "end": 180.0,
+            "period": 4.5,
+            "vehicles_per_hour": 800.0,
+            "planned": 38
+          },
+          {
+            "route": "S_E_ramp",
+            "begin": 12,
+            "end": 180.0,
+            "period": 4.5,
+            "vehicles_per_hour": 800.0,
+            "planned": 38
+          },
+          {
+            "route": "S_E_main",
+            "begin": 14,
+            "end": 180.0,
+            "period": 4.5,
+            "vehicles_per_hour": 800.0,
+            "planned": 37
+          },
+          {
+            "route": "W_E",
+            "begin": 16,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 19
+          },
+          {
+            "route": "E_W",
+            "begin": 18,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 18
+          },
+          {
+            "route": "W_N",
+            "begin": 20,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 18
+          },
+          {
+            "route": "W_S",
+            "begin": 22,
+            "end": 180.0,
+            "period": 9.0,
+            "vehicles_per_hour": 400.0,
+            "planned": 18
+          }
+        ]
+      },
+      "metrics": {
+        "planned": 346,
+        "departed": 346,
+        "arrived": 346,
+        "completion_rate": 1.0,
+        "inserted_completion_rate": 1.0,
+        "not_inserted": 0,
+        "active_at_end": 0,
+        "remaining": 0,
+        "simulation_end": 472.0,
+        "collision_events": 0,
+        "collision_vehicles": 0,
+        "teleport_starts": 0,
+        "teleport_enabled": false,
+        "lane_changes": 401,
+        "weave_lane_changes": 157,
+        "lane_change_reasons": {
+          "speedGain": 67,
+          "keepRight": 5,
+          "strategic|urgent": 329
+        },
+        "weave_changes_with_neighbor": 124,
+        "weave_vehicles": 233,
+        "weave_lane_changes_per_vehicle": 0.6738197424892703,
+        "weave_both_origins_seconds": 351.6,
+        "weave_peak_vehicles": 10,
+        "weave_close_follow_vehicle_seconds": 1671.600000000243,
+        "weave_cross_origin_follow_vehicle_seconds": 173.1999999999987,
+        "hard_braking_threshold_mps2": -4.5,
+        "hard_braking_episodes": 3,
+        "hard_braking_vehicles": 3,
+        "hard_braking_episodes_per_100_departed": 0.8670520231213873,
+        "weave_hard_braking_vehicles": 1,
+        "min_acceleration_mps2": -6.99999999999967,
+        "mean_speed_mps": 5.4898031782697965,
+        "mean_completed_depart_delay_s": 8.930057803468209,
+        "max_completed_depart_delay_s": 142.7,
+        "mean_completed_time_loss_s": 90.60531791907513,
+        "edges": {
+          "N_in": {
+            "samples": 11378,
+            "stopped_vehicle_seconds": 0.4,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 4.5268389579663815
+          },
+          "S_in": {
+            "samples": 910,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 14.47896564833852
+          },
+          ":N_SPLIT_1": {
+            "samples": 20,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.77999999999999
+          },
+          ":S_SPLIT_1": {
+            "samples": 2,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78
+          },
+          "main_s_bridge": {
+            "samples": 240,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.77999999999996
+          },
+          "main_n": {
+            "samples": 1506,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 25.784625216240887
+          },
+          ":N_SPLIT_0": {
+            "samples": 1455,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.5000000000000195,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 4.228796777962026
+          },
+          "pink_approach": {
+            "samples": 80827,
+            "stopped_vehicle_seconds": 33.99999999999994,
+            "max_stopped_vehicles": 4,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 4.1687457472017515
+          },
+          ":SB_DROP_0": {
+            "samples": 40,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999983
+          },
+          "main_s": {
+            "samples": 600,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.78000000000026
+          },
+          ":S_SPLIT_4": {
+            "samples": 155,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000028,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.603153899895414
+          },
+          ":S_MERGE_1": {
+            "samples": 80,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999994
+          },
+          "green_approach": {
+            "samples": 41234,
+            "stopped_vehicle_seconds": 2428.799999999982,
+            "max_stopped_vehicles": 42,
+            "min_acceleration": -5.064270380083886,
+            "hard_braking_episodes": 1,
+            "mean_speed_mps": 5.538014816975275
+          },
+          "S_out": {
+            "samples": 2312,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.35855103806173
+          },
+          ":S_SPLIT_0": {
+            "samples": 255,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.656795004714256
+          },
+          ":S_SPLIT_2": {
+            "samples": 8,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.925088255161311
+          },
+          "W_in": {
+            "samples": 549,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000011,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.962455353856857
+          },
+          ":N_MERGE_1": {
+            "samples": 280,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.779999999999927
+          },
+          ":W_SPLIT_1": {
+            "samples": 95,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000037
+          },
+          "E_in": {
+            "samples": 1314,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.43999999999964
+          },
+          "east_main": {
+            "samples": 1045,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.43999999999988
+          },
+          "main_n_after": {
+            "samples": 195,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 23.75287179487181
+          },
+          ":NB_BRIDGE_0": {
+            "samples": 73,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 25.467260273972563
+          },
+          "main_n_bridge": {
+            "samples": 355,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 26.869325552082145
+          },
+          ":S_SPLIT_3": {
+            "samples": 38,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 14.045080226539142
+          },
+          ":W_SPLIT_0": {
+            "samples": 252,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.797785315780319
+          },
+          "N_out": {
+            "samples": 614,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.769177164324987
+          },
+          "west_turn": {
+            "samples": 1782,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000282
+          },
+          ":E_MERGE_1": {
+            "samples": 190,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.440000000000044
+          },
+          "E_main_out": {
+            "samples": 1778,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 18.564791476973124
+          },
+          ":W_MERGE_1": {
+            "samples": 324,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 19.439999999999888
+          },
+          "west_south": {
+            "samples": 865,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -2.6100749292060943,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.100149387034518
+          },
+          "W_out": {
+            "samples": 656,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 17.274390243902396
+          },
+          ":W_RAMP_SPLIT_0": {
+            "samples": 148,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -3.3680155895281505,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.88511852497823
+          },
+          "west_to_n": {
+            "samples": 7253,
+            "stopped_vehicle_seconds": 944.4000000000777,
+            "max_stopped_vehicles": 15,
+            "min_acceleration": -4.500000000000033,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 1.4920662975049426
+          },
+          ":W_RAMP_SPLIT_1": {
+            "samples": 144,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.072035150259703
+          },
+          "west_to_s": {
+            "samples": 3924,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.110000000000445
+          },
+          ":WEAVE_IN_0": {
+            "samples": 5054,
+            "stopped_vehicle_seconds": 301.7999999999914,
+            "max_stopped_vehicles": 5,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 2.07699101314785
+          },
+          "weave": {
+            "samples": 10879,
+            "stopped_vehicle_seconds": 656.2000000000122,
+            "max_stopped_vehicles": 8,
+            "min_acceleration": -5.333333333333329,
+            "hard_braking_episodes": 1,
+            "mean_speed_mps": 3.227147838035952
+          },
+          ":WEAVE_OUT_3": {
+            "samples": 828,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.780388298947253
+          },
+          "upper_loop": {
+            "samples": 22753,
+            "stopped_vehicle_seconds": 844.0000000000549,
+            "max_stopped_vehicles": 20,
+            "min_acceleration": -4.500000000000326,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 7.154803187534315
+          },
+          ":WEAVE_OUT_0": {
+            "samples": 7161,
+            "stopped_vehicle_seconds": 504.3999999999799,
+            "max_stopped_vehicles": 4,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 2.4843234378737673
+          },
+          ":WEAVE_IN_3": {
+            "samples": 2770,
+            "stopped_vehicle_seconds": 90.40000000000074,
+            "max_stopped_vehicles": 3,
+            "min_acceleration": -4.500000000000002,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 3.9869642255917066
+          },
+          "east_curve": {
+            "samples": 52638,
+            "stopped_vehicle_seconds": 3638.199999998882,
+            "max_stopped_vehicles": 32,
+            "min_acceleration": -6.99999999999967,
+            "hard_braking_episodes": 1,
+            "mean_speed_mps": 2.8043955917250982
+          },
+          ":E_SPLIT_0": {
+            "samples": 431,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 10.039720255373936
+          },
+          "E_ramp_out": {
+            "samples": 3459,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.012819850783425
+          },
+          ":E_SPLIT_1": {
+            "samples": 398,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": -4.500000000000046,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 6.907870357997873
+          },
+          ":E_MERGE_0": {
+            "samples": 1088,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 11.11964900981597
+          },
+          ":S_MERGE_0": {
+            "samples": 109,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.426697247706432
+          },
+          ":N_MERGE_0": {
+            "samples": 533,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 13.41888655791642
+          },
+          ":W_MERGE_0": {
+            "samples": 2126,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 12.96710050664834
+          },
+          "east_join": {
+            "samples": 3,
+            "stopped_vehicle_seconds": 0.2,
+            "max_stopped_vehicles": 1,
+            "min_acceleration": -4.499999999999997,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 0.5366666666666117
+          },
+          ":NB_END_0": {
+            "samples": 1,
+            "stopped_vehicle_seconds": 0.0,
+            "max_stopped_vehicles": 0,
+            "min_acceleration": 0.0,
+            "hard_braking_episodes": 0,
+            "mean_speed_mps": 27.61882767889428
+          }
+        },
+        "routes": {
+          "pink": {
+            "planned": 41,
+            "departed": 41,
+            "arrived": 41
+          },
+          "green": {
+            "planned": 39,
+            "departed": 39,
+            "arrived": 39
+          },
+          "N_S": {
+            "planned": 20,
+            "departed": 20,
+            "arrived": 20
+          },
+          "S_N": {
+            "planned": 20,
+            "departed": 20,
+            "arrived": 20
+          },
+          "N_E_main": {
+            "planned": 39,
+            "departed": 39,
+            "arrived": 39
+          },
+          "N_W": {
+            "planned": 39,
+            "departed": 39,
+            "arrived": 39
+          },
+          "S_E_ramp": {
+            "planned": 38,
+            "departed": 38,
+            "arrived": 38
+          },
+          "S_E_main": {
+            "planned": 37,
+            "departed": 37,
+            "arrived": 37
+          },
+          "W_E": {
+            "planned": 19,
+            "departed": 19,
+            "arrived": 19
+          },
+          "E_W": {
+            "planned": 18,
+            "departed": 18,
+            "arrived": 18
+          },
+          "W_N": {
+            "planned": 18,
+            "departed": 18,
+            "arrived": 18
+          },
+          "W_S": {
+            "planned": 18,
+            "departed": 18,
+            "arrived": 18
+          }
+        },
+        "warnings": []
+      }
+    }
+  },
+  "failures": [],
+  "definitions": {
+    "completion_rate": "arrived / all planned, including vehicles never inserted",
+    "mean_speed_mps": "vehicle-time weighted samples, including stopped and unfinished vehicles",
+    "hard_braking": "episode starts at acceleration < threshold - 1e-6; not a sample count",
+    "weave_both_origins_seconds": "time with both pink-approach and green-approach traffic on weave",
+    "weave_cross_origin_follow_vehicle_seconds": "weave vehicle with other-approach leader within 20m; proxy, not proof of yielding",
+    "teleport": "disabled (-1); zero teleports alone is not evidence of no gridlock",
+    "completed_trip_metrics": "depart delay and time loss exclude unfinished trips; also inspect not_inserted and remaining"
+  }
+}

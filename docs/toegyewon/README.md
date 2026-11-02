@@ -1,5 +1,11 @@
 # 퇴계원IC — OSM 기반 평면 모델
 
+**POMDP 수집(2026-11-02):** [19개 필수 항목·43차원 schema·실제 데이터·재현성·중단 복구·CLI](data_collection.md). 관측 전용 휴리스틱으로 기본 조건 1,888개 전이를 수집했으며, 별도 혼잡 시간 초과 사례도 보존했습니다. 학습된 정책 성능을 의미하지 않습니다.
+
+**버스·AV 통합(2026-11-02):** [혼합 교통 실행·기존 AV 분석·새 인터페이스·실측 결과](bus_av.md)를 참고하세요. 기본 GUI 명령은 승용차 조건을 유지하며 `--bus-ratio 0.1 --av sumo`로 혼합 환경을 선택합니다. 현재 AV 완주는 SUMO 기본 모델 결과이고 학습된 PPO 성능은 미검증입니다. 아래 최초 구현 당시의 AV 미연결 설명은 이 문서로 갱신됩니다.
+
+**교통량 개선(2026-11-02):** 현재 기본값은 보통 교통량 + weave 비중 강화입니다. [설정·12개 Route 분류·증가 전후 실측 결과](traffic.md)를 참고하세요. 아래 7절의 74대 결과와 `validation.json`은 최초 구현의 기준 기록입니다.
+
 개인 Fork의 `origin/ljj`와 동일한 `be62cc79fcc248de1f307bf5e59a97aff5bb3df0`에서 시작한 독립 시나리오입니다. 기존 `env/road_builder.py`, 고속도로 XML, PPO/BC 및 데이터 수집 코드는 변경하지 않았습니다.
 
 ## 1. 출처와 해석
@@ -71,7 +77,7 @@ OSM 전체를 자동 변환한 후 불필요한 연결을 추측해 제거하는
 | `scenarios/toegyewon/source/` | 재현 가능한 원자료와 출처 |
 | `docs/toegyewon/` | 설명, 실제 검증 결과와 비교 그림 |
 
-기본 HV는 12개 경로 각각 30초 간격, 180초까지 생성합니다. 총 72대에 두 색상 차량을 더해 74대입니다. `traffic.period`를 늘리면 교통량이 줄고 `traffic.end`로 투입 기간을 바꿉니다. 경로 목록은 `network.py`의 `routes()`이며 각 OD를 직접 수정할 수 있습니다. 실제 관측 교통량이 아닌 검증용 수요입니다.
+현재 기본 HV는 `traffic.profile=medium`, `traffic.weave_factor=2`로 174대에 두 색상 차량을 더한 176대입니다. `--traffic low|medium|high`, `--weave-factor`, `--demand-scale`과 `traffic.route_weights`로 수요를 조절합니다. `traffic.end`는 예정 투입 기간입니다. 최초 구현의 12개 경로 각각 30초 간격/총 74대는 `--traffic low --weave-factor 1`로 재현할 수 있습니다. 실제 관측 교통량이 아닌 검증용 수요이며 자세한 계산과 검증 방법은 [교통량 안내](traffic.md)에 있습니다.
 
 ## 6. 실행 방법
 
@@ -88,6 +94,7 @@ python -m pip install eclipse-sumo==1.27.1
 python toegyewon.py build
 python toegyewon.py run
 python toegyewon.py validate
+python toegyewon.py compare
 python toegyewon.py plot
 python toegyewon.py gui
 ```

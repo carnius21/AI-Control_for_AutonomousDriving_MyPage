@@ -1,0 +1,2243 @@
+{
+  "config": {
+    "projection": "EPSG:32652",
+    "origin_lon_lat": [
+      127.131,
+      37.636
+    ],
+    "boundaries": {
+      "north_lat": 37.642,
+      "south_lat": 37.6362,
+      "west_lon": 127.1331,
+      "east_lon": 127.1373
+    },
+    "relocated_west_diverge_lon": 127.1334319,
+    "assumed_ramp_speed_kmh": 40,
+    "assumed_trunk_lanes": 2,
+    "assumed_ramp_lanes": 1,
+    "step_length": 0.2,
+    "lane_change_duration": 1.0,
+    "seed": 21,
+    "traffic": {
+      "profile": "medium",
+      "profiles": {
+        "low": {
+          "period": 30
+        },
+        "medium": {
+          "period": 12
+        },
+        "high": {
+          "period": 6
+        }
+      },
+      "end": 180,
+      "scale": 1,
+      "weave_factor": 2,
+      "route_weights": {
+        "N_S": 1,
+        "S_N": 1,
+        "pink": 1,
+        "N_E_main": 1,
+        "N_W": 1,
+        "green": 1,
+        "S_E_ramp": 1,
+        "S_E_main": 1,
+        "W_E": 1,
+        "E_W": 1,
+        "W_N": 1,
+        "W_S": 1
+      }
+    },
+    "validation": {
+      "time_limit": 600,
+      "hard_braking_threshold": -4.5,
+      "stopped_speed": 0.1
+    },
+    "buses": {
+      "ratio": 0,
+      "route_ratios": {},
+      "vehicle": {
+        "length": 12,
+        "width": 2.5,
+        "accel": 1.2,
+        "decel": 3,
+        "emergencyDecel": 7,
+        "tau": 1.5,
+        "minGap": 3,
+        "maxSpeed": 25,
+        "lcStrategic": 1,
+        "lcCooperative": 1,
+        "lcSpeedGain": 1,
+        "lcKeepRight": 1
+      }
+    },
+    "av": {
+      "enabled": false,
+      "id": "av_toegyewon",
+      "route": "pink",
+      "depart": 90,
+      "controller": "sumo",
+      "observation": "route",
+      "visibility": 50,
+      "speed_normalization": 33.33,
+      "time_limit": 600,
+      "insertion_timeout": 180,
+      "route_guard_distance": 50,
+      "min_lane_change_gap": 3,
+      "lane_change_headway": 0.5,
+      "policy_activation": "relu"
+    },
+    "test_vehicles": {
+      "pink_depart": 0,
+      "green_depart": 17.4
+    },
+    "no_lane_change_edges": [
+      "main_s_bridge",
+      "main_n_bridge"
+    ]
+  },
+  "cases": {
+    "av_empty_pink": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "pink",
+          "depart": 0,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "pink",
+      "origin": "N_in",
+      "destination": "E_ramp_out",
+      "visited_edges": [
+        "N_in",
+        "pink_approach",
+        "weave",
+        "east_curve",
+        "E_ramp_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "57.40",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "6.37",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "58.40",
+          "from": "weave_2",
+          "to": "weave_1",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "17.48",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "68.00",
+          "from": "east_curve_1",
+          "to": "east_curve_0",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "71.02",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "57.40",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "6.37",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "58.40",
+          "from": "weave_2",
+          "to": "weave_1",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "17.48",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_min_acceleration": -4.500000000000011,
+      "av_hard_braking_episodes": 0,
+      "av_mean_speed_mps": 11.57029345372457,
+      "av_weave_bus_neighbor_seconds": 0.0,
+      "av_weave_car_neighbor_seconds": 0.0,
+      "av_weave_bus_leader_seconds": 0.0,
+      "av_weave_braking_seconds": 0.0,
+      "av_weave_enter": 57.2,
+      "av_weave_exit": 59.6,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 1,
+      "departed": 1,
+      "arrived": 1,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 88.8,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        }
+      },
+      "all_lane_change_count": 3
+    },
+    "av_empty_green": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "green",
+          "depart": 0,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "green",
+      "origin": "S_in",
+      "destination": "W_out",
+      "visited_edges": [
+        "S_in",
+        "green_approach",
+        "weave",
+        "upper_loop",
+        "W_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "13.00",
+          "from": "green_approach_2",
+          "to": "green_approach_1",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "124.43",
+          "reason": "keepRight",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "19.80",
+          "from": "green_approach_1",
+          "to": "green_approach_2",
+          "dir": "1",
+          "speed": "11.11",
+          "pos": "199.98",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "40.00",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "11.11",
+          "pos": "5.38",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "40.00",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "11.11",
+          "pos": "5.38",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_min_acceleration": -4.500000000000028,
+      "av_hard_braking_episodes": 0,
+      "av_mean_speed_mps": 11.36271082461389,
+      "av_weave_bus_neighbor_seconds": 0.0,
+      "av_weave_car_neighbor_seconds": 0.0,
+      "av_weave_bus_leader_seconds": 0.0,
+      "av_weave_braking_seconds": 0.0,
+      "av_weave_enter": 39.8,
+      "av_weave_exit": 42.4,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 1,
+      "departed": 1,
+      "arrived": 1,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 89.4,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        }
+      },
+      "all_lane_change_count": 3
+    },
+    "av_hv_pink": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "pink",
+          "depart": 0,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "pink",
+      "origin": "N_in",
+      "destination": "E_ramp_out",
+      "visited_edges": [
+        "N_in",
+        "pink_approach",
+        "weave",
+        "east_curve",
+        "E_ramp_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "62.80",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "2.08",
+          "pos": "7.98",
+          "reason": "strategic|urgent",
+          "leaderGap": "2.65",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "4.73",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "2.65",
+          "origLeaderSecureGap": "0.00",
+          "origLeaderSpeed": "4.73"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "65.40",
+          "from": "weave_2",
+          "to": "weave_1",
+          "dir": "-1",
+          "speed": "8.84",
+          "pos": "22.85",
+          "reason": "strategic|urgent",
+          "leaderGap": "39.13",
+          "leaderSecureGap": "1.18",
+          "leaderSpeed": "11.11",
+          "followerGap": "7.56",
+          "followerSecureGap": "3.91",
+          "followerSpeed": "6.22",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "73.00",
+          "from": "east_curve_1",
+          "to": "east_curve_0",
+          "dir": "-1",
+          "speed": "8.85",
+          "pos": "49.13",
+          "reason": "strategic|urgent",
+          "leaderGap": "6.07",
+          "leaderSecureGap": "3.13",
+          "leaderSpeed": "11.11",
+          "followerGap": "10.60",
+          "followerSecureGap": "6.96",
+          "followerSpeed": "7.95",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "62.80",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "2.08",
+          "pos": "7.98",
+          "reason": "strategic|urgent",
+          "leaderGap": "2.65",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "4.73",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "2.65",
+          "origLeaderSecureGap": "0.00",
+          "origLeaderSpeed": "4.73"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "65.40",
+          "from": "weave_2",
+          "to": "weave_1",
+          "dir": "-1",
+          "speed": "8.84",
+          "pos": "22.85",
+          "reason": "strategic|urgent",
+          "leaderGap": "39.13",
+          "leaderSecureGap": "1.18",
+          "leaderSpeed": "11.11",
+          "followerGap": "7.56",
+          "followerSecureGap": "3.91",
+          "followerSpeed": "6.22",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_min_acceleration": -4.500000000000002,
+      "av_hard_braking_episodes": 0,
+      "av_mean_speed_mps": 10.631497654609023,
+      "av_weave_bus_neighbor_seconds": 0.0,
+      "av_weave_car_neighbor_seconds": 7.400000000000004,
+      "av_weave_bus_leader_seconds": 0.0,
+      "av_weave_braking_seconds": 1.7999999999999998,
+      "av_weave_enter": 59.0,
+      "av_weave_exit": 66.2,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 177,
+      "departed": 177,
+      "arrived": 177,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 286.8,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        },
+        "HV": {
+          "total": 176,
+          "arrived": 176
+        }
+      },
+      "all_lane_change_count": 160
+    },
+    "av_hv_green": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "green",
+          "depart": 17.4,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "green",
+      "origin": "S_in",
+      "destination": "W_out",
+      "visited_edges": [
+        "S_in",
+        "green_approach",
+        "weave",
+        "upper_loop",
+        "W_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "59.60",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "5.62",
+          "pos": "5.11",
+          "reason": "strategic|urgent",
+          "leaderGap": "15.32",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "8.44",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "10.80",
+          "origLeaderSecureGap": "5.42",
+          "origLeaderSpeed": "4.14"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "59.60",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "5.62",
+          "pos": "5.11",
+          "reason": "strategic|urgent",
+          "leaderGap": "15.32",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "8.44",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "10.80",
+          "origLeaderSecureGap": "5.42",
+          "origLeaderSpeed": "4.14"
+        }
+      ],
+      "av_min_acceleration": -4.500000000000002,
+      "av_hard_braking_episodes": 0,
+      "av_mean_speed_mps": 10.399213979498768,
+      "av_weave_bus_neighbor_seconds": 0.0,
+      "av_weave_car_neighbor_seconds": 5.8000000000000025,
+      "av_weave_bus_leader_seconds": 0.0,
+      "av_weave_braking_seconds": 1.9999999999999998,
+      "av_weave_enter": 59.2,
+      "av_weave_exit": 64.8,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 177,
+      "departed": 177,
+      "arrived": 177,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 286.8,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        },
+        "HV": {
+          "total": 176,
+          "arrived": 176
+        }
+      },
+      "all_lane_change_count": 158
+    },
+    "av_mix_pink": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0.1,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "pink",
+          "depart": 90,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "pink",
+      "origin": "N_in",
+      "destination": "E_ramp_out",
+      "visited_edges": [
+        "N_in",
+        "pink_approach",
+        "weave",
+        "east_curve",
+        "E_ramp_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "151.40",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "8.05",
+          "pos": "4.68",
+          "reason": "strategic|urgent",
+          "leaderGap": "15.15",
+          "leaderSecureGap": "12.58",
+          "leaderSpeed": "6.44",
+          "followerGap": "68.77",
+          "followerSecureGap": "15.98",
+          "followerSpeed": "11.11",
+          "origLeaderGap": "15.37",
+          "origLeaderSecureGap": "3.93",
+          "origLeaderSpeed": "11.11"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "152.40",
+          "from": "weave_2",
+          "to": "weave_1",
+          "dir": "-1",
+          "speed": "7.01",
+          "pos": "12.27",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "12.79",
+          "origLeaderSecureGap": "10.72",
+          "origLeaderSpeed": "5.66"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "153.80",
+          "from": "weave_1",
+          "to": "weave_0",
+          "dir": "-1",
+          "speed": "9.25",
+          "pos": "23.39",
+          "reason": "strategic|urgent",
+          "leaderGap": "7.31",
+          "leaderSecureGap": "3.10",
+          "leaderSpeed": "11.11",
+          "followerGap": "7.32",
+          "followerSecureGap": "3.37",
+          "followerSpeed": "10.21",
+          "origLeaderGap": "43.18",
+          "origLeaderSecureGap": "9.90",
+          "origLeaderSpeed": "7.69"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "151.40",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "8.05",
+          "pos": "4.68",
+          "reason": "strategic|urgent",
+          "leaderGap": "15.15",
+          "leaderSecureGap": "12.58",
+          "leaderSpeed": "6.44",
+          "followerGap": "68.77",
+          "followerSecureGap": "15.98",
+          "followerSpeed": "11.11",
+          "origLeaderGap": "15.37",
+          "origLeaderSecureGap": "3.93",
+          "origLeaderSpeed": "11.11"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "152.40",
+          "from": "weave_2",
+          "to": "weave_1",
+          "dir": "-1",
+          "speed": "7.01",
+          "pos": "12.27",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "12.79",
+          "origLeaderSecureGap": "10.72",
+          "origLeaderSpeed": "5.66"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "153.80",
+          "from": "weave_1",
+          "to": "weave_0",
+          "dir": "-1",
+          "speed": "9.25",
+          "pos": "23.39",
+          "reason": "strategic|urgent",
+          "leaderGap": "7.31",
+          "leaderSecureGap": "3.10",
+          "leaderSpeed": "11.11",
+          "followerGap": "7.32",
+          "followerSecureGap": "3.37",
+          "followerSpeed": "10.21",
+          "origLeaderGap": "43.18",
+          "origLeaderSecureGap": "9.90",
+          "origLeaderSpeed": "7.69"
+        }
+      ],
+      "av_min_acceleration": -3.7597015006938777,
+      "av_hard_braking_episodes": 0,
+      "av_mean_speed_mps": 7.473649429640427,
+      "av_weave_bus_neighbor_seconds": 1.2,
+      "av_weave_car_neighbor_seconds": 3.600000000000001,
+      "av_weave_bus_leader_seconds": 0.4,
+      "av_weave_braking_seconds": 1.7999999999999998,
+      "av_weave_enter": 151.2,
+      "av_weave_exit": 154.6,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 177,
+      "departed": 177,
+      "arrived": 177,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 290.6,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        },
+        "BUS": {
+          "total": 18,
+          "arrived": 18
+        },
+        "HV": {
+          "total": 158,
+          "arrived": 158
+        }
+      },
+      "all_lane_change_count": 162
+    },
+    "av_mix_green": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0.1,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "green",
+          "depart": 103,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "green",
+      "origin": "S_in",
+      "destination": "W_out",
+      "visited_edges": [
+        "S_in",
+        "green_approach",
+        "weave",
+        "upper_loop",
+        "W_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "161.80",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "0.93",
+          "pos": "12.85",
+          "reason": "strategic|urgent",
+          "leaderGap": "2.60",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "1.43",
+          "followerGap": "3.10",
+          "followerSecureGap": "0.00",
+          "followerSpeed": "0.00",
+          "origLeaderGap": "2.60",
+          "origLeaderSecureGap": "0.00",
+          "origLeaderSpeed": "1.43"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "161.80",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "0.93",
+          "pos": "12.85",
+          "reason": "strategic|urgent",
+          "leaderGap": "2.60",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "1.43",
+          "followerGap": "3.10",
+          "followerSecureGap": "0.00",
+          "followerSpeed": "0.00",
+          "origLeaderGap": "2.60",
+          "origLeaderSecureGap": "0.00",
+          "origLeaderSpeed": "1.43"
+        }
+      ],
+      "av_min_acceleration": -8.161662515564222,
+      "av_hard_braking_episodes": 1,
+      "av_mean_speed_mps": 9.308714156223349,
+      "av_weave_bus_neighbor_seconds": 22.59999999999995,
+      "av_weave_car_neighbor_seconds": 21.999999999999954,
+      "av_weave_bus_leader_seconds": 0.8,
+      "av_weave_braking_seconds": 2.4,
+      "av_weave_enter": 142.8,
+      "av_weave_exit": 165.2,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 177,
+      "departed": 177,
+      "arrived": 177,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 318.2,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        },
+        "BUS": {
+          "total": 18,
+          "arrived": 18
+        },
+        "HV": {
+          "total": 158,
+          "arrived": 158
+        }
+      },
+      "all_lane_change_count": 160
+    },
+    "av_green_bus_pink": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "green",
+          "depart": 17.6,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "green",
+      "origin": "S_in",
+      "destination": "W_out",
+      "visited_edges": [
+        "S_in",
+        "green_approach",
+        "weave",
+        "upper_loop",
+        "W_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "30.60",
+          "from": "green_approach_2",
+          "to": "green_approach_1",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "124.43",
+          "reason": "keepRight",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "37.40",
+          "from": "green_approach_1",
+          "to": "green_approach_2",
+          "dir": "1",
+          "speed": "11.11",
+          "pos": "199.98",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "74.80",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "0.80",
+          "pos": "12.82",
+          "reason": "strategic|urgent",
+          "leaderGap": "2.58",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "1.27",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "2.58",
+          "origLeaderSecureGap": "0.00",
+          "origLeaderSpeed": "1.27"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "74.80",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "0.80",
+          "pos": "12.82",
+          "reason": "strategic|urgent",
+          "leaderGap": "2.58",
+          "leaderSecureGap": "0.00",
+          "leaderSpeed": "1.27",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "2.58",
+          "origLeaderSecureGap": "0.00",
+          "origLeaderSpeed": "1.27"
+        }
+      ],
+      "av_min_acceleration": -6.37233350542024,
+      "av_hard_braking_episodes": 1,
+      "av_mean_speed_mps": 9.41589737711696,
+      "av_weave_bus_neighbor_seconds": 20.999999999999957,
+      "av_weave_car_neighbor_seconds": 0.0,
+      "av_weave_bus_leader_seconds": 0.8,
+      "av_weave_braking_seconds": 2.4,
+      "av_weave_enter": 57.4,
+      "av_weave_exit": 78.2,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 2,
+      "departed": 2,
+      "arrived": 2,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 125.4,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        },
+        "BUS": {
+          "total": 1,
+          "arrived": 1
+        }
+      },
+      "all_lane_change_count": 6
+    },
+    "av_pink_bus_green": {
+      "controller": "sumo",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "pink",
+          "depart": 0,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "pink",
+      "origin": "N_in",
+      "destination": "E_ramp_out",
+      "visited_edges": [
+        "N_in",
+        "pink_approach",
+        "weave",
+        "east_curve",
+        "E_ramp_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "67.80",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "3.38",
+          "pos": "29.21",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "3.34",
+          "followerSecureGap": "0.00",
+          "followerSpeed": "0.00",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "70.60",
+          "from": ":WEAVE_OUT_0_2",
+          "to": ":WEAVE_OUT_0_1",
+          "dir": "-1",
+          "speed": "9.07",
+          "pos": "14.98",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "77.60",
+          "from": "east_curve_1",
+          "to": "east_curve_0",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "69.19",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "67.80",
+          "from": "weave_3",
+          "to": "weave_2",
+          "dir": "-1",
+          "speed": "3.38",
+          "pos": "29.21",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "3.34",
+          "followerSecureGap": "0.00",
+          "followerSpeed": "0.00",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_min_acceleration": -5.333333333333337,
+      "av_hard_braking_episodes": 1,
+      "av_mean_speed_mps": 10.422010501355093,
+      "av_weave_bus_neighbor_seconds": 11.199999999999992,
+      "av_weave_car_neighbor_seconds": 0.0,
+      "av_weave_bus_leader_seconds": 0.0,
+      "av_weave_braking_seconds": 5.200000000000002,
+      "av_weave_enter": 57.2,
+      "av_weave_exit": 68.2,
+      "lane_requests_submitted": 0,
+      "rejected_actions": {},
+      "planned": 2,
+      "departed": 2,
+      "arrived": 2,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 122.6,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        },
+        "BUS": {
+          "total": 1,
+          "arrived": 1
+        }
+      },
+      "all_lane_change_count": 4
+    },
+    "av_unsafe_request_probe": {
+      "controller": "external",
+      "schema": "toegyewon-route43-v1",
+      "obs_dim": 43,
+      "action_dim": 2,
+      "config": {
+        "projection": "EPSG:32652",
+        "origin_lon_lat": [
+          127.131,
+          37.636
+        ],
+        "boundaries": {
+          "north_lat": 37.642,
+          "south_lat": 37.6362,
+          "west_lon": 127.1331,
+          "east_lon": 127.1373
+        },
+        "relocated_west_diverge_lon": 127.1334319,
+        "assumed_ramp_speed_kmh": 40,
+        "assumed_trunk_lanes": 2,
+        "assumed_ramp_lanes": 1,
+        "step_length": 0.2,
+        "lane_change_duration": 1.0,
+        "seed": 21,
+        "traffic": {
+          "profile": "medium",
+          "profiles": {
+            "low": {
+              "period": 30
+            },
+            "medium": {
+              "period": 12
+            },
+            "high": {
+              "period": 6
+            }
+          },
+          "end": 180,
+          "scale": 1,
+          "weave_factor": 2,
+          "route_weights": {
+            "N_S": 1,
+            "S_N": 1,
+            "pink": 1,
+            "N_E_main": 1,
+            "N_W": 1,
+            "green": 1,
+            "S_E_ramp": 1,
+            "S_E_main": 1,
+            "W_E": 1,
+            "E_W": 1,
+            "W_N": 1,
+            "W_S": 1
+          }
+        },
+        "validation": {
+          "time_limit": 600,
+          "hard_braking_threshold": -4.5,
+          "stopped_speed": 0.1
+        },
+        "buses": {
+          "ratio": 0,
+          "route_ratios": {},
+          "vehicle": {
+            "length": 12,
+            "width": 2.5,
+            "accel": 1.2,
+            "decel": 3,
+            "emergencyDecel": 7,
+            "tau": 1.5,
+            "minGap": 3,
+            "maxSpeed": 25,
+            "lcStrategic": 1,
+            "lcCooperative": 1,
+            "lcSpeedGain": 1,
+            "lcKeepRight": 1
+          }
+        },
+        "av": {
+          "enabled": true,
+          "id": "av_toegyewon",
+          "route": "green",
+          "depart": 17.6,
+          "controller": "sumo",
+          "observation": "route",
+          "visibility": 50,
+          "speed_normalization": 33.33,
+          "time_limit": 600,
+          "insertion_timeout": 180,
+          "route_guard_distance": 50,
+          "min_lane_change_gap": 3,
+          "lane_change_headway": 0.5,
+          "policy_activation": "relu"
+        },
+        "test_vehicles": {
+          "pink_depart": 0,
+          "green_depart": 17.4
+        },
+        "no_lane_change_edges": [
+          "main_s_bridge",
+          "main_n_bridge"
+        ]
+      },
+      "status": "arrived",
+      "route_id": "green",
+      "origin": "S_in",
+      "destination": "W_out",
+      "visited_edges": [
+        "S_in",
+        "green_approach",
+        "weave",
+        "upper_loop",
+        "W_out"
+      ],
+      "av_arrived": true,
+      "av_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "18.20",
+          "from": "S_in_2",
+          "to": "S_in_3",
+          "dir": "1",
+          "speed": "16.64",
+          "pos": "15.63",
+          "reason": "strategic|traci|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "30.40",
+          "from": "green_approach_2",
+          "to": "green_approach_1",
+          "dir": "-1",
+          "speed": "11.11",
+          "pos": "122.86",
+          "reason": "keepRight",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "31.40",
+          "from": "green_approach_1",
+          "to": "green_approach_2",
+          "dir": "1",
+          "speed": "11.11",
+          "pos": "133.97",
+          "reason": "traci|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "60.20",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "4.07",
+          "pos": "28.70",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "3.42",
+          "followerSecureGap": "0.00",
+          "followerSpeed": "2.86",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        },
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "107.60",
+          "from": "W_out_0",
+          "to": "W_out_1",
+          "dir": "1",
+          "speed": "16.84",
+          "pos": "11.94",
+          "reason": "traci|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "None",
+          "followerSecureGap": "None",
+          "followerSpeed": "None",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_weave_lane_changes": [
+        {
+          "id": "av_toegyewon",
+          "type": "AV",
+          "time": "60.20",
+          "from": "weave_2",
+          "to": "weave_3",
+          "dir": "1",
+          "speed": "4.07",
+          "pos": "28.70",
+          "reason": "strategic|urgent",
+          "leaderGap": "None",
+          "leaderSecureGap": "None",
+          "leaderSpeed": "None",
+          "followerGap": "3.42",
+          "followerSecureGap": "0.00",
+          "followerSpeed": "2.86",
+          "origLeaderGap": "None",
+          "origLeaderSecureGap": "None",
+          "origLeaderSpeed": "None"
+        }
+      ],
+      "av_min_acceleration": -4.500000000000002,
+      "av_hard_braking_episodes": 0,
+      "av_mean_speed_mps": 11.15509036679437,
+      "av_weave_bus_neighbor_seconds": 3.400000000000001,
+      "av_weave_car_neighbor_seconds": 0.0,
+      "av_weave_bus_leader_seconds": 0.0,
+      "av_weave_braking_seconds": 1.7999999999999998,
+      "av_weave_enter": 57.4,
+      "av_weave_exit": 60.6,
+      "lane_requests_submitted": 11,
+      "rejected_actions": {
+        "no_target_lane": 374,
+        "junction_or_lane_change_prohibited": 54,
+        "insufficient_gap": 15
+      },
+      "planned": 2,
+      "departed": 2,
+      "arrived": 2,
+      "not_inserted": 0,
+      "remaining": 0,
+      "simulation_end": 108.6,
+      "collisions": [],
+      "teleports": [],
+      "warnings": [],
+      "trips_by_type": {
+        "AV": {
+          "total": 1,
+          "arrived": 1
+        },
+        "BUS": {
+          "total": 1,
+          "arrived": 1
+        }
+      },
+      "all_lane_change_count": 8
+    }
+  },
+  "failures": [],
+  "safety_findings": {
+    "av_mix_green": {
+      "hard_braking_episodes": 1,
+      "min_acceleration_mps2": -8.161662515564222
+    },
+    "av_green_bus_pink": {
+      "hard_braking_episodes": 1,
+      "min_acceleration_mps2": -6.37233350542024
+    },
+    "av_pink_bus_green": {
+      "hard_braking_episodes": 1,
+      "min_acceleration_mps2": -5.333333333333337
+    }
+  },
+  "learned_policy_tested": false,
+  "note": "SUMO baselines and an explicit safety-gate probe; no learned policy performance claim.",
+  "archive_note": "All AV lane changes retained. Full background trips/changes and observation/action traces are in build/av_final."
+}

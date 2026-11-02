@@ -1,0 +1,470 @@
+{
+  "pink_final": {
+    "summary": {
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 21,
+          "attempt": "attempt_000",
+          "transitions": 642,
+          "return": 41.590948155480575,
+          "status": "arrived",
+          "route": "pink",
+          "collided": false,
+          "weave_bus_neighbor_seconds": 0.0,
+          "weave_car_neighbor_seconds": 3.600000000000001,
+          "lane_changes": 3,
+          "min_acceleration": -4.500000000000002
+        },
+        {
+          "episode": 1,
+          "seed": 22,
+          "attempt": "attempt_000",
+          "transitions": 642,
+          "return": 41.590948155480575,
+          "status": "arrived",
+          "route": "pink",
+          "collided": false,
+          "weave_bus_neighbor_seconds": 0.0,
+          "weave_car_neighbor_seconds": 3.600000000000001,
+          "lane_changes": 3,
+          "min_acceleration": -4.500000000000002
+        }
+      ],
+      "transitions": 1284,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "mean_return": 41.590948155480575
+    },
+    "validation": {
+      "valid": true,
+      "run_id": "d44c36c5f8a145d5b4c8f055c2abf473",
+      "episodes": [
+        {
+          "episode": 0,
+          "transitions": 642,
+          "status": "arrived",
+          "return": 41.590948155480575,
+          "vehicle_types": [
+            "AV",
+            "BUS",
+            "HV"
+          ],
+          "bus_detection_records": 124,
+          "weave_bus_detection_records": 0,
+          "lane_requests_submitted": 2,
+          "lane_requests_rejected": 0,
+          "physical_lane_changes": 3,
+          "shards": 3
+        },
+        {
+          "episode": 1,
+          "transitions": 642,
+          "status": "arrived",
+          "return": 41.590948155480575,
+          "vehicle_types": [
+            "AV",
+            "BUS",
+            "HV"
+          ],
+          "bus_detection_records": 124,
+          "weave_bus_detection_records": 0,
+          "lane_requests_submitted": 2,
+          "lane_requests_rejected": 0,
+          "physical_lane_changes": 3,
+          "shards": 3
+        }
+      ],
+      "transitions": 1284
+    },
+    "settings": {
+      "episodes": 2,
+      "policy": "heuristic",
+      "checkpoint": null,
+      "policy_activation": "relu",
+      "av_route": "pink",
+      "av_depart": 90,
+      "traffic": "medium",
+      "weave_factor": null,
+      "bus_ratio": 0.1,
+      "seed": 21,
+      "config": null,
+      "observation": "route",
+      "time_limit": 600,
+      "shard_size": 256,
+      "config_sha256": "5c055a18fe1fd7a2186de40917f83bb390b07c49b4c3c176ae1d5e165d9b24f1",
+      "checkpoint_sha256": null
+    },
+    "sumo": "Eclipse SUMO sumo 1.27.1",
+    "compressed_shard_bytes": 16953000,
+    "whole_run_bytes": 17956945,
+    "simulation_collisions": [
+      [],
+      []
+    ],
+    "simulation_teleports": [
+      [],
+      []
+    ],
+    "warnings": [
+      [],
+      []
+    ]
+  },
+  "green_final": {
+    "summary": {
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 21,
+          "attempt": "attempt_000",
+          "transitions": 604,
+          "return": 41.83658688565738,
+          "status": "arrived",
+          "route": "green",
+          "collided": false,
+          "weave_bus_neighbor_seconds": 9.999999999999996,
+          "weave_car_neighbor_seconds": 10.199999999999996,
+          "lane_changes": 3,
+          "min_acceleration": -4.500000000000002
+        }
+      ],
+      "transitions": 604,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "mean_return": 41.83658688565738
+    },
+    "validation": {
+      "valid": true,
+      "run_id": "055a58cc7284475289d1bda5027114eb",
+      "episodes": [
+        {
+          "episode": 0,
+          "transitions": 604,
+          "status": "arrived",
+          "return": 41.83658688565738,
+          "vehicle_types": [
+            "AV",
+            "BUS",
+            "HV"
+          ],
+          "bus_detection_records": 709,
+          "weave_bus_detection_records": 51,
+          "lane_requests_submitted": 0,
+          "lane_requests_rejected": 44,
+          "physical_lane_changes": 3,
+          "shards": 3
+        }
+      ],
+      "transitions": 604
+    },
+    "settings": {
+      "episodes": 1,
+      "policy": "heuristic",
+      "checkpoint": null,
+      "policy_activation": "relu",
+      "av_route": "green",
+      "av_depart": 90,
+      "traffic": "medium",
+      "weave_factor": null,
+      "bus_ratio": 0.1,
+      "seed": 21,
+      "config": null,
+      "observation": "route",
+      "time_limit": 600,
+      "shard_size": 256,
+      "config_sha256": "5c055a18fe1fd7a2186de40917f83bb390b07c49b4c3c176ae1d5e165d9b24f1",
+      "checkpoint_sha256": null
+    },
+    "sumo": "Eclipse SUMO sumo 1.27.1",
+    "compressed_shard_bytes": 8062409,
+    "whole_run_bytes": 8653424,
+    "simulation_collisions": [
+      []
+    ],
+    "simulation_teleports": [
+      []
+    ],
+    "warnings": [
+      []
+    ]
+  },
+  "green_stress_final": {
+    "summary": {
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 21,
+          "attempt": "attempt_000",
+          "transitions": 984,
+          "return": 0.9982542949468147,
+          "status": "timeout",
+          "route": "green",
+          "collided": false,
+          "weave_bus_neighbor_seconds": 4.400000000000001,
+          "weave_car_neighbor_seconds": 148.20000000000013,
+          "lane_changes": 2,
+          "min_acceleration": -4.500000000000002
+        }
+      ],
+      "transitions": 984,
+      "success_rate": 0.0,
+      "collision_rate": 0.0,
+      "mean_return": 0.9982542949468147
+    },
+    "validation": {
+      "valid": true,
+      "run_id": "d99212452dae46c5b2f788bb57765c19",
+      "episodes": [
+        {
+          "episode": 0,
+          "transitions": 984,
+          "status": "timeout",
+          "return": 0.9982542949468147,
+          "vehicle_types": [
+            "AV",
+            "BUS",
+            "HV"
+          ],
+          "bus_detection_records": 55,
+          "weave_bus_detection_records": 36,
+          "lane_requests_submitted": 0,
+          "lane_requests_rejected": 740,
+          "physical_lane_changes": 2,
+          "shards": 4
+        }
+      ],
+      "transitions": 984
+    },
+    "settings": {
+      "episodes": 1,
+      "policy": "heuristic",
+      "checkpoint": null,
+      "policy_activation": "relu",
+      "av_route": "green",
+      "av_depart": 103.0,
+      "traffic": "medium",
+      "weave_factor": null,
+      "bus_ratio": 0.1,
+      "seed": 21,
+      "config": null,
+      "observation": "route",
+      "time_limit": 300.0,
+      "shard_size": 256,
+      "config_sha256": "5c055a18fe1fd7a2186de40917f83bb390b07c49b4c3c176ae1d5e165d9b24f1",
+      "checkpoint_sha256": null
+    },
+    "sumo": "Eclipse SUMO sumo 1.27.1",
+    "compressed_shard_bytes": 7787891,
+    "whole_run_bytes": 8344937,
+    "simulation_collisions": [
+      []
+    ],
+    "simulation_teleports": [
+      []
+    ],
+    "warnings": [
+      []
+    ]
+  },
+  "recovery_final": {
+    "summary": {
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 21,
+          "attempt": "attempt_001",
+          "transitions": 3,
+          "return": -5.037791973733534,
+          "status": "timeout",
+          "route": "pink",
+          "collided": false,
+          "weave_bus_neighbor_seconds": 0.0,
+          "weave_car_neighbor_seconds": 0.0,
+          "lane_changes": 0,
+          "min_acceleration": -4.500000000000002
+        }
+      ],
+      "transitions": 3,
+      "success_rate": 0.0,
+      "collision_rate": 0.0,
+      "mean_return": -5.037791973733534
+    },
+    "validation": {
+      "valid": true,
+      "run_id": "41de946c47b449d18bdd2b891c27d151",
+      "episodes": [
+        {
+          "episode": 0,
+          "transitions": 3,
+          "status": "timeout",
+          "return": -5.037791973733534,
+          "vehicle_types": [
+            "AV",
+            "BUS",
+            "HV"
+          ],
+          "bus_detection_records": 3,
+          "weave_bus_detection_records": 0,
+          "lane_requests_submitted": 0,
+          "lane_requests_rejected": 0,
+          "physical_lane_changes": 0,
+          "shards": 2
+        }
+      ],
+      "transitions": 3
+    },
+    "settings": {
+      "episodes": 1,
+      "policy": "heuristic",
+      "checkpoint": null,
+      "policy_activation": "relu",
+      "av_route": "pink",
+      "av_depart": 90,
+      "traffic": "medium",
+      "weave_factor": null,
+      "bus_ratio": 0.1,
+      "seed": 21,
+      "config": null,
+      "observation": "route",
+      "time_limit": 90.8,
+      "shard_size": 2,
+      "config_sha256": "5c055a18fe1fd7a2186de40917f83bb390b07c49b4c3c176ae1d5e165d9b24f1",
+      "checkpoint_sha256": null
+    },
+    "sumo": "Eclipse SUMO sumo 1.27.1",
+    "compressed_shard_bytes": 61183,
+    "whole_run_bytes": 605640,
+    "simulation_collisions": [
+      []
+    ],
+    "simulation_teleports": [
+      []
+    ],
+    "warnings": [
+      []
+    ]
+  },
+  "pink_reproduction": {
+    "summary": {
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 21,
+          "attempt": "attempt_000",
+          "transitions": 642,
+          "return": 41.590948155480575,
+          "status": "arrived",
+          "route": "pink",
+          "collided": false,
+          "weave_bus_neighbor_seconds": 0.0,
+          "weave_car_neighbor_seconds": 3.600000000000001,
+          "lane_changes": 3,
+          "min_acceleration": -4.500000000000002
+        },
+        {
+          "episode": 1,
+          "seed": 22,
+          "attempt": "attempt_000",
+          "transitions": 642,
+          "return": 41.590948155480575,
+          "status": "arrived",
+          "route": "pink",
+          "collided": false,
+          "weave_bus_neighbor_seconds": 0.0,
+          "weave_car_neighbor_seconds": 3.600000000000001,
+          "lane_changes": 3,
+          "min_acceleration": -4.500000000000002
+        }
+      ],
+      "transitions": 1284,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "mean_return": 41.590948155480575
+    },
+    "validation": {
+      "valid": true,
+      "run_id": "74eb411bd5864d1cbd3090ccae0c2454",
+      "episodes": [
+        {
+          "episode": 0,
+          "transitions": 642,
+          "status": "arrived",
+          "return": 41.590948155480575,
+          "vehicle_types": [
+            "AV",
+            "BUS",
+            "HV"
+          ],
+          "bus_detection_records": 124,
+          "weave_bus_detection_records": 0,
+          "lane_requests_submitted": 2,
+          "lane_requests_rejected": 0,
+          "physical_lane_changes": 3,
+          "shards": 3
+        },
+        {
+          "episode": 1,
+          "transitions": 642,
+          "status": "arrived",
+          "return": 41.590948155480575,
+          "vehicle_types": [
+            "AV",
+            "BUS",
+            "HV"
+          ],
+          "bus_detection_records": 124,
+          "weave_bus_detection_records": 0,
+          "lane_requests_submitted": 2,
+          "lane_requests_rejected": 0,
+          "physical_lane_changes": 3,
+          "shards": 3
+        }
+      ],
+      "transitions": 1284
+    },
+    "settings": {
+      "episodes": 2,
+      "policy": "heuristic",
+      "checkpoint": null,
+      "policy_activation": "relu",
+      "av_route": "pink",
+      "av_depart": 90,
+      "traffic": "medium",
+      "weave_factor": null,
+      "bus_ratio": 0.1,
+      "seed": 21,
+      "config": null,
+      "observation": "route",
+      "time_limit": 600,
+      "shard_size": 256,
+      "config_sha256": "5c055a18fe1fd7a2186de40917f83bb390b07c49b4c3c176ae1d5e165d9b24f1",
+      "checkpoint_sha256": null
+    },
+    "sumo": "Eclipse SUMO sumo 1.27.1",
+    "compressed_shard_bytes": 16951963,
+    "whole_run_bytes": 17956289,
+    "simulation_collisions": [
+      [],
+      []
+    ],
+    "simulation_teleports": [
+      [],
+      []
+    ],
+    "warnings": [
+      [],
+      []
+    ]
+  },
+  "reproduction": {
+    "identical_decoded_transitions": true,
+    "transitions": 1284,
+    "left": "data\\toegyewon\\pink_final",
+    "right": "data\\toegyewon\\pink_reproduction"
+  },
+  "unit_tests": {
+    "passed": 18,
+    "command": "python -m unittest scenarios.toegyewon.test_data scenarios.toegyewon.test_av scenarios.toegyewon.test_traffic"
+  }
+}

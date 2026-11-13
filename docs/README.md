@@ -4,6 +4,7 @@
 
 | 문서 | 용도 |
 |---|---|
+| [LJJ 학습 실험 기록](experiments/ljj-learning-log.md) | ljj_aftermid 실험의 목적·조건·성능 변화·main 반영 의견 |
 | [후속 자동 실험](ic-next-stages-plan.md) | HV → 기존 AV 트래픽 → 공유 정책 → 트래픽 학습, 통과 기준 적용 |
 | [14번 완료 결과](ic-navigation-route14-results.md) | N0/N1/N2 모두 60/60 완주 |
 | [14번 검증·학습 진행](ic-navigation-route14-progress.md) | 사전 검증 완료, 동일 조건 비교 |

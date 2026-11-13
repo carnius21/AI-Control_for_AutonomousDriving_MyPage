@@ -1,0 +1,399 @@
+{
+  "status": "PASS",
+  "date": "2026-10-30",
+  "roads": 74,
+  "routes": 23,
+  "lane_connections": 140,
+  "flow_vehs_per_hour": 14420,
+  "runs": [
+    {
+      "seed": 42,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 3086.3999999999996,
+      "warning_log": ""
+    },
+    {
+      "seed": 7,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 1742.1999999999998,
+      "warning_log": ""
+    },
+    {
+      "seed": 23,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 2936.6000000000013,
+      "warning_log": ""
+    }
+  ],
+  "base_commit": "7ec5181",
+  "scope": "Sano carriageway separation, right-side loop merge, longer shared ramp",
+  "geometry": {
+    "opposing_carriageway_clearance": {
+      "sample_y_m": [
+        140,
+        199
+      ],
+      "min_envelope_gap_m": 7.335,
+      "samples": 59
+    },
+    "shared_ramp_length_m": 63.792,
+    "right_side_loop_merge": true
+  },
+  "route_and_demand_unchanged": true,
+  "modified_edges": [
+    "sano_nb_in",
+    "sano_nb_under_south",
+    "sano_nb_under_main",
+    "sano_nb_out",
+    "sano_se_loop",
+    "sano_nb_to_east",
+    "sano_sb_to_west",
+    "sano_nb_to_west",
+    "sano_west_ramp_split",
+    "sano_to_west_main",
+    "sano_to_collector"
+  ],
+  "unconnected_geometric_crossings": [
+    [
+      "sb_bridge",
+      "east_main",
+      37.63,
+      102.56,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "west_accel",
+      32.46,
+      115.62,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "return_ramp",
+      40.34,
+      95.48,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_main",
+      "south_loop_bridge",
+      111.05,
+      -136.24,
+      0.0,
+      8.0
+    ],
+    [
+      "sb_main",
+      "return_bridge",
+      108.56,
+      -127.38,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "south_loop_bridge",
+      128.53,
+      -129.3,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "return_bridge",
+      126.19,
+      -119.9,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_accel",
+      "east_main",
+      54.69,
+      109.95,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "west_accel",
+      49.38,
+      122.7,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "return_ramp",
+      57.79,
+      102.42,
+      8.0,
+      0.0
+    ],
+    [
+      "east_in",
+      "outer_bridge",
+      -30.61,
+      71.61,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "south_exit",
+      12.86,
+      91.85,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "flyover",
+      231.58,
+      178.31,
+      0.0,
+      7.81
+    ],
+    [
+      "west_in",
+      "flyover",
+      232.32,
+      187.83,
+      0.0,
+      8.0
+    ],
+    [
+      "west_accel",
+      "south_exit",
+      10.82,
+      106.56,
+      0.0,
+      8.0
+    ],
+    [
+      "west_out",
+      "outer_bridge",
+      -27.83,
+      87.29,
+      0.0,
+      8.0
+    ],
+    [
+      "south_exit",
+      "return_ramp",
+      13.48,
+      85.2,
+      8.0,
+      0.0
+    ],
+    [
+      "south_loop_bridge",
+      "return_loop",
+      104.0,
+      -137.78,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_eb_bridge",
+      "sano_sb_under_main",
+      700.52,
+      153.44,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_eb_bridge",
+      "sano_nb_under_main",
+      720.01,
+      151.7,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_sb_under_main",
+      697.54,
+      128.13,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_nb_under_south",
+      716.5,
+      127.35,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_eb_to_south",
+      664.98,
+      129.47,
+      16.0,
+      1.26
+    ],
+    [
+      "sano_service_bridge",
+      "sano_se_loop",
+      724.95,
+      127.0,
+      16.0,
+      0.81
+    ],
+    [
+      "sano_service_bridge",
+      "sano_se_loop",
+      776.38,
+      124.85,
+      16.0,
+      8.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_nb_to_east",
+      823.68,
+      122.78,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_wb_bridge",
+      "sano_sb_under_main",
+      702.32,
+      163.31,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_wb_bridge",
+      "sano_nb_under_main",
+      722.15,
+      161.58,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_sb_under_north",
+      711.93,
+      185.65,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nb_under_main",
+      728.02,
+      183.29,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nw_loop",
+      700.73,
+      187.29,
+      16.0,
+      1.53
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nw_loop",
+      644.91,
+      195.47,
+      16.0,
+      8.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_to_west_main",
+      584.29,
+      204.35,
+      16.0,
+      2.18
+    ],
+    [
+      "sano_nb_under_main",
+      "sano_nw_loop",
+      723.45,
+      167.09,
+      0.0,
+      8.0
+    ]
+  ],
+  "visual_review": "Native SUMO overview and Sano close-up inspected",
+  "source_sha256": {
+    "env/road_config.py": "fb2f90cd842cc4f7acbf397aabd1af89244a43bb5b6091ecb7f8c76c617ee981",
+    "env/road_builder.py": "4b6cd52b084d08cfa3b23efd86024c11652f6c57ed778adf1988f1b6d6e5e019",
+    "env/mdp_config.py": "6eaaddebdb30596d2b91a82691ba91d038147b4652527cd38f5344729338bbc2",
+    "view_road.py": "1db55efe4faf49ad2805d433fa7fa151a7f8e89b38574a2a7e484766e0cbc9c1"
+  },
+  "physical_xml_semantic_sha256": {
+    "highway.nod.xml": "0fcadff017275929ff581a5662877a777efb2f385e8237ed0fd23a1fc3529278",
+    "highway.edg.xml": "64f3d6d87a6329eab723c9e18644b231e915e265c84245bb8f0fbee64e4220f1",
+    "highway.con.xml": "3c8d54e04f6ee13f0e75701a3c9675abf1d1119baf639eb9930ec35d6db746bc",
+    "highway.net.xml": "0faca475b5d55632fa0d320e1c45cdd4904587e795b6f6b91b7781583e4b6ec5",
+    "highway.rou.xml": "3370edee297b4a8cd273f99ded6d22c3b6678baf02d63a333cb3d45035af514f",
+    "highway.sumocfg": "b2335a1cb7415bd2c18246c37233599146ec8a4608157f96581e89afe6cfae59"
+  }
+}

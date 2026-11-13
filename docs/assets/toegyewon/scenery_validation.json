@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "date": "2026-10-30",
+  "base_commit": "34057b4d3edec76449ac06f2643798e2ebac6c86",
+  "scope": "Visual map decoration only; no route, lane, vehicle or traffic changes.",
+  "physical_xml_unchanged": {
+    "highway.nod.xml": true,
+    "highway.edg.xml": true,
+    "highway.con.xml": true,
+    "highway.net.xml": true,
+    "highway.rou.xml": true,
+    "highway.sumocfg": true
+  },
+  "decoration_count": 910,
+  "trees": 248,
+  "buildings": 7,
+  "external_images_required": false,
+  "all_decoration_below_road_layer": true,
+  "toggle_and_seed_determinism": "PASS",
+  "traffic": {
+    "seed": 42,
+    "arrived": 1759,
+    "safety": {
+      "collisions": "0",
+      "emergencyStops": "0",
+      "emergencyBraking": "0"
+    },
+    "teleports": {
+      "total": "0",
+      "jam": "0",
+      "yield": "0",
+      "wrongLane": "0"
+    },
+    "vehicles": {
+      "loaded": "1759",
+      "inserted": "1759",
+      "running": "0",
+      "waiting": "0"
+    }
+  }
+}

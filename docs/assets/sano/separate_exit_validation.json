@@ -1,0 +1,385 @@
+{
+  "status": "PASS",
+  "date": "2026-10-30",
+  "roads": 74,
+  "routes": 23,
+  "lane_connections": 138,
+  "flow_vehs_per_hour": 14420,
+  "runs": [
+    {
+      "seed": 42,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 3374.8,
+      "warning_log": "",
+      "independent_exit_arrivals": 56
+    },
+    {
+      "seed": 7,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 1824.4000000000003,
+      "warning_log": "",
+      "independent_exit_arrivals": 56
+    },
+    {
+      "seed": 23,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 2941.3999999999996,
+      "warning_log": "",
+      "independent_exit_arrivals": 56
+    }
+  ],
+  "base_commit": "6cadc34b7329d0321584b70e66e16f65c5dc6302",
+  "scope": "Independent east collector outlet; remove merge into Geumgang-ro",
+  "changed_routes": [
+    "south_to_local",
+    "north_to_local"
+  ],
+  "demand_unchanged": true,
+  "service_terminal_edge": "sano_service_out",
+  "service_outgoing_connections": 0,
+  "main_outbound_lanes": 2,
+  "min_planar_pavement_gap_m": 13.42,
+  "grade_crossings": [
+    [
+      "sb_bridge",
+      "east_main",
+      37.63,
+      102.56,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "west_accel",
+      32.46,
+      115.62,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "return_ramp",
+      40.34,
+      95.48,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_main",
+      "south_loop_bridge",
+      111.05,
+      -136.24,
+      0.0,
+      8.0
+    ],
+    [
+      "sb_main",
+      "return_bridge",
+      108.56,
+      -127.38,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "south_loop_bridge",
+      128.53,
+      -129.3,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "return_bridge",
+      126.19,
+      -119.9,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_accel",
+      "east_main",
+      54.69,
+      109.95,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "west_accel",
+      49.38,
+      122.7,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "return_ramp",
+      57.79,
+      102.42,
+      8.0,
+      0.0
+    ],
+    [
+      "east_in",
+      "outer_bridge",
+      -30.61,
+      71.61,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "south_exit",
+      12.86,
+      91.85,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "flyover",
+      231.58,
+      178.31,
+      0.0,
+      7.81
+    ],
+    [
+      "west_in",
+      "flyover",
+      232.32,
+      187.83,
+      0.0,
+      8.0
+    ],
+    [
+      "west_accel",
+      "south_exit",
+      10.82,
+      106.56,
+      0.0,
+      8.0
+    ],
+    [
+      "west_out",
+      "outer_bridge",
+      -27.83,
+      87.29,
+      0.0,
+      8.0
+    ],
+    [
+      "south_exit",
+      "return_ramp",
+      13.48,
+      85.2,
+      8.0,
+      0.0
+    ],
+    [
+      "south_loop_bridge",
+      "return_loop",
+      104.0,
+      -137.78,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_eb_bridge",
+      "sano_sb_under_main",
+      700.52,
+      153.44,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_eb_bridge",
+      "sano_nb_under_main",
+      720.01,
+      151.7,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_sb_under_main",
+      697.54,
+      128.13,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_nb_under_south",
+      716.5,
+      127.35,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_eb_to_south",
+      664.98,
+      129.47,
+      16.0,
+      1.26
+    ],
+    [
+      "sano_service_bridge",
+      "sano_se_loop",
+      724.95,
+      127.0,
+      16.0,
+      0.81
+    ],
+    [
+      "sano_service_bridge",
+      "sano_se_loop",
+      776.38,
+      124.85,
+      16.0,
+      8.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_nb_to_east",
+      823.68,
+      122.78,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_wb_bridge",
+      "sano_sb_under_main",
+      702.32,
+      163.31,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_wb_bridge",
+      "sano_nb_under_main",
+      722.15,
+      161.58,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_sb_under_north",
+      711.93,
+      185.65,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nb_under_main",
+      728.02,
+      183.29,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nw_loop",
+      700.73,
+      187.29,
+      16.0,
+      1.53
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nw_loop",
+      644.91,
+      195.47,
+      16.0,
+      8.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_to_west_main",
+      584.29,
+      204.35,
+      16.0,
+      2.18
+    ],
+    [
+      "sano_nb_under_main",
+      "sano_nw_loop",
+      723.45,
+      167.09,
+      0.0,
+      8.0
+    ]
+  ],
+  "visual_review": "Native SUMO outlet and network overview inspected",
+  "source_sha256": {
+    "env/road_config.py": "bed4c831705569ac563853522924905287f611a84de0665309713550aca124f1",
+    "env/road_builder.py": "3795394555c68c4b2a0eb0b6a8db976db642d60da0f945a9f5140b8c90239368",
+    "env/mdp_config.py": "6eaaddebdb30596d2b91a82691ba91d038147b4652527cd38f5344729338bbc2",
+    "view_road.py": "1db55efe4faf49ad2805d433fa7fa151a7f8e89b38574a2a7e484766e0cbc9c1"
+  },
+  "physical_xml_semantic_sha256": {
+    "highway.nod.xml": "0aa8908c5ff6ccca8eef46debd9a5bb2998372fd64a2b2099952e02eee7c761d",
+    "highway.edg.xml": "f50ade47b12441c02b89c283488477036917fc9a2036d7ca12d1c1f7e256d300",
+    "highway.con.xml": "63904000b28a741cef05c4ec6725e8a6c45908e4185778709a1c989ec9f70554",
+    "highway.net.xml": "bbe145877fb47158d5fb87bd83010cc0aa90ea841c252d1ff09f3a668037c775",
+    "highway.rou.xml": "19dab7240277d5a3e7f877c95ee786c76f7b883cb1b427016e50302c4d7c6425",
+    "highway.sumocfg": "b2335a1cb7415bd2c18246c37233599146ec8a4608157f96581e89afe6cfae59"
+  }
+}

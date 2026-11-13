@@ -1,31 +1,7 @@
-"""도로 구조 확인 스크립트 — 학습 없이 도로만 눈으로 확인한다.
+"""Open the current OSM review map. Use --legacy only to reproduce the old hand-shaped map.
 
-env/road_config.py 를 수정한 뒤, 학습을 돌리기 전에
-"도로가 의도대로 만들어졌는지 / 교통 밀도가 적당한지"를
-sumo-gui 화면으로 빠르게 확인하는 용도.
-
-사용법:
-    python view_road.py             # sumo-gui로 도로를 띄운다 (정적 — 자동 재생 안 함)
-    python view_road.py --netedit   # netedit(SUMO 도로 편집기)로 도로망 열기
-    python view_road.py --nogui     # 화면 없이 설정 검증만 (GUI 없는 서버용)
-
-기본 모드(sumo-gui) 동작:
-    창이 뜨면 도로만 정적으로 보인다. 차를 움직이려면 상단의 ▶(플레이) 버튼을
-    직접 누르면 되고, 시뮬레이션이 끝나도 창이 저절로 닫히지 않는다.
-    (일시정지/한 스텝씩 진행 버튼으로 원하는 만큼 관찰 가능)
-
-관찰 포인트:
-    - 차선 수 / 도로 길이가 road_config.ROAD 대로인지  ← 재생 없이 바로 확인 가능
-    - (▶ 재생 후) 교통량(TRAFFIC["vehs_per_hour"])이 너무 한산하거나 막히지 않는지
-      → 정체가 심하면 학습 난이도가 급상승하니 여기서 미리 조정
-    - 재생 속도는 상단 Delay(ms) 값으로 조절 (크게 잡을수록 느리게)
-
-※ netedit 관련 주의:
-    netedit에서 도로를 수정하고 저장해도, 다음번 train.py 실행 시
-    road_builder가 env/road_config.py 기준으로 파일을 **덮어쓴다**.
-    이 프로젝트에서 도로의 원본(source of truth)은 어디까지나
-    env/road_config.py 이므로, 영구적인 수정은 그 파일에서 할 것.
-    (netedit은 구조를 뜯어보거나 좌표를 확인하는 용도로 쓰면 좋다)
+Rebuild current map: python -m utils.rebuild_osm_map
+PPO/data collection remain paused pending route/observation migration.
 """
 import argparse
 import os
@@ -49,7 +25,7 @@ def print_summary():
     print(f"  도로 길이      : {ROAD['length']} m")
     print(f"  차선 수        : {ROAD['num_lanes']}")
     print(f"  제한속도       : {ROAD['speed_limit']} m/s "
-          f"(≈ {float(ROAD['speed_limit']) * 3.6:.0f} km/h)")
+          f"(~ {float(ROAD['speed_limit']) * 3.6:.0f} km/h)")
     print(f"  배경 교통량    : {TRAFFIC['vehs_per_hour']} 대/시간")
     print(f"  배경차 최고속도: {TRAFFIC['max_speed']} m/s")
     print(f"  ego 가속/감속  : +{EGO['accel']} / -{EGO['decel']} m/s²")
@@ -65,7 +41,22 @@ if __name__ == "__main__":
     parser.add_argument("--seconds", type=int, default=120,
                         help="--nogui 검증 시 시뮬레이션 길이(초). 기본 120초. "
                              "(GUI 모드는 시간 제한 없이 사용자가 직접 제어)")
+    parser.add_argument("--legacy", action="store_true", help="과거 수작업 맵 재현 (학습 재개 아님)")
+    parser.add_argument("--rebuild", action="store_true", help="첨부 OSM으로 현재 맵 재생성")
     args = parser.parse_args()
+    if not args.legacy:
+        from utils.rebuild_osm_map import build, DEST
+        cfg = DEST / "review.sumocfg"
+        if args.rebuild or not cfg.exists(): build()
+        print("첨부 OSM 기반 현재 검토 맵. 학습/데이터 수집은 중단 상태입니다.")
+        if args.netedit:
+            command=[checkBinary("netedit"), str(DEST / "network.net.xml")]
+        elif args.nogui:
+            command=[checkBinary("sumo"), "-c", str(cfg), "--begin", "0", "--end", "0", "--no-step-log", "true"]
+        else:
+            command=[checkBinary("sumo-gui"), "-c", str(cfg)]
+        raise SystemExit(subprocess.run(command).returncode)
+
 
     # 1) road_config 기준으로 SUMO 파일 (재)생성 — 수정사항이 즉시 반영된다
     sumocfg = road_builder.build(ROAD, EGO, TRAFFIC, os.path.join(BASE, "env", "sumo"))

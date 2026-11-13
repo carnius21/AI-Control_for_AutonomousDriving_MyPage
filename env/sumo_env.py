@@ -54,7 +54,10 @@ if "SUMO_HOME" not in os.environ:
 
 sys.path.append(os.path.join(os.environ["SUMO_HOME"], "tools"))
 
-import traci
+if os.environ.get("IC_LIBSUMO") == "1":
+    import libsumo as traci
+else:
+    import traci
 from sumolib import checkBinary
 
 
@@ -90,12 +93,12 @@ class SumoHighwayEnv(gym.Env):
         # ----- 도로/차량 설정에서 필요한 값들 -----
         self.vmax = float(road["speed_limit"])   # 속도 정규화 기준
         self.num_lanes = int(road["num_lanes"])
-        self.ego = ego
-        self.ego_routes = list(ego.get("routes", ["r0"]))
-        self.current_route = "r0"
+        # 시작 차선: "center"면 중앙 차선(차선수//2)으로 자동 결정.
+        #   3차선 → 1번(가운데), 5차선 → 2번. 차선 수를 바꿔도 항상 가운데라
+        #   좌/우 양쪽으로 변경 여지가 대칭으로 생긴다 (탐험에 유리).
         _dl = ego["depart_lane"]
         if str(_dl).lower() == "center":
-            self.ego_depart_lane = "center"
+            self.ego_depart_lane = str(int(road["num_lanes"]) // 2)
         else:
             self.ego_depart_lane = str(_dl)
         # ---- 프리필(도로 전체 사전 배치) 설정 ----
@@ -196,7 +199,7 @@ class SumoHighwayEnv(gym.Env):
             "--no-warnings", "true",   # 콘솔 경고 끄기
             "--no-step-log", "true",   # 스텝 로그 끄기
             # 매 에피소드 다른 시드 → 배경 교통 패턴이 달라져서 과적합 방지
-            "--seed", str(np.random.randint(0, 100000)),
+            "--seed", str(self.sumo_seed if getattr(self, "sumo_seed", None) is not None else np.random.randint(0, 100000)),
         ]
         if self.gui:
             cmd += ["--quit-on-end"]      # 에피소드 종료 시 창 정리
@@ -271,44 +274,9 @@ class SumoHighwayEnv(gym.Env):
         for _ in range(self.warmup_steps):
             traci.simulationStep()
 
-        # ego 차량 다중 코스 선택 및 투입
-        available_routes = self.ego_routes if self.ego_routes else ["r0"]
-        if options and "route" in options:
-            selected_route = str(options["route"])
-        elif len(available_routes) > 1:
-            selected_route = str(self.np_random.choice(available_routes))
-        else:
-            selected_route = available_routes[0]
-        self.current_route = selected_route
-
-        # 첫 번째 엣지에서 다음 엣지로 갈 수 있는 유효 출발 차선 자동 계산
-        try:
-            route_edges = traci.route.getEdges(selected_route)
-            first_edge = route_edges[0]
-            first_edge_lanes = traci.edge.getLaneNumber(first_edge)
-            valid_depart_lanes = []
-            if len(route_edges) > 1:
-                next_edge = route_edges[1]
-                for lane_idx in range(first_edge_lanes):
-                    lane_id = f"{first_edge}_{lane_idx}"
-                    for lk in traci.lane.getLinks(lane_id):
-                        if lk[0].startswith(next_edge + "_"):
-                            valid_depart_lanes.append(lane_idx)
-                            break
-            if not valid_depart_lanes:
-                valid_depart_lanes = list(range(first_edge_lanes))
-
-            if self.ego_depart_lane == "center":
-                depart_lane = str(valid_depart_lanes[len(valid_depart_lanes) // 2])
-            elif self.ego_depart_lane.isdigit() and int(self.ego_depart_lane) in valid_depart_lanes:
-                depart_lane = str(self.ego_depart_lane)
-            else:
-                depart_lane = str(valid_depart_lanes[0])
-        except Exception:
-            depart_lane = "0"
-
-        traci.vehicle.add(self.ego_id, selected_route, typeID="ego_type",
-                          departLane=depart_lane,
+        # ego 차량 투입 — 반드시 "도로 시작점(0m)"에서 출발
+        traci.vehicle.add(self.ego_id, getattr(self, "episode_route", "r0"), typeID="ego_type",
+                          departLane=self.ego_depart_lane,
                           departPos="0",
                           departSpeed=self.ego_depart_speed)
 
@@ -328,12 +296,13 @@ class SumoHighwayEnv(gym.Env):
         # 에피소드가 진행되어 즉시 종료되는 버그가 되므로, 삽입될 때까지
         # (최대 30스텝) 기다린다. 지연되어도 요청한 차선은 유지된다.
         _wait = 0
-        while self.ego_id not in traci.vehicle.getIDList() and _wait < 30:
+        wait_limit = getattr(self, "insert_wait_steps", 30)
+        while self.ego_id not in traci.vehicle.getIDList() and _wait < wait_limit:
             traci.simulationStep()
             _wait += 1
         if self.ego_id not in traci.vehicle.getIDList():
             raise RuntimeError(
-                "ego 삽입 실패: 도로 입구가 30스텝 이상 막혀 있습니다. "
+                f"ego 삽입 실패: 경로 {getattr(self, 'episode_route', 'r0')}, {wait_limit}스텝 대기. "
                 "TRAFFIC['vehs_per_hour']를 낮추거나 depart_speed를 확인하세요.")
 
         # GUI 기본 시점: ego를 화면 중앙에서 추적하고 충분히 가까이 확대한다.
@@ -790,8 +759,10 @@ class SumoHighwayEnv(gym.Env):
             if same_lane_leader is not None:
                 ego_gap = same_lane_leader[0]
             reward = float(self.rw["speed_weight"]) * ego_speed / self.vmax
-            if (ego_gap is not None and
-                    ego_gap < float(self.rw["close_gap_threshold"])):
+            gap_threshold = float(self.rw["close_gap_threshold"])
+            if self.rw.get("time_gap_s") is not None:
+                gap_threshold = 2.5 + ego_speed * self.rw["time_gap_s"]
+            if ego_gap is not None and ego_gap < gap_threshold:
                 reward -= float(self.rw["close_gap_penalty"])
 
             # ---- 막힘 페널티: 느린 앞차 뒤에 갇혀 있는 동안 매 스텝 감점 ----
@@ -831,7 +802,6 @@ class SumoHighwayEnv(gym.Env):
             "gap": ego_gap,
             "accel_raw": accel_raw,
             "lane_change_raw": lane_raw,
-            "route": self.current_route,
             "lane_change": lane_change,
             "lane_change_applied": lane_change_applied,
             "lane_before": lane_before,

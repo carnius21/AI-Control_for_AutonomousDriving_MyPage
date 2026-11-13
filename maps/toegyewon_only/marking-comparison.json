@@ -1,0 +1,579 @@
+{
+  "reference": "network.net.xml (undecorated original)",
+  "source_sha256": "8486b8dc41b9dbc34badfb66570f7458e775040d42c189287a9a659d73fcb3a7",
+  "internal_boundaries": 81,
+  "solid": 7,
+  "dashed": 74,
+  "mismatches": 0,
+  "lane_permissions_and_connections_unchanged": true,
+  "satellite_source": "Previously saved Naver imagery, not a new live survey",
+  "boundaries": [
+    {
+      "edge": "1063527748",
+      "boundary": "1063527748_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "1063527748",
+      "boundary": "1063527748_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "1414146968",
+      "boundary": "1414146968_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "1414146971",
+      "boundary": "1414146971_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "1414146971",
+      "boundary": "1414146971_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "1414146971",
+      "boundary": "1414146971_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "1414146971",
+      "boundary": "1414146971_4_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "169728835",
+      "boundary": "169728835_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "verified_dashed"
+    },
+    {
+      "edge": "169929488#0",
+      "boundary": "169929488#0_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "169929488#0",
+      "boundary": "169929488#0_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "169929488#1",
+      "boundary": "169929488#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "169929503#0",
+      "boundary": "169929503#0_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "169929503#1",
+      "boundary": "169929503#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "169929503#2",
+      "boundary": "169929503#2_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "170059991",
+      "boundary": "170059991_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "170059991",
+      "boundary": "170059991_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "170059993#1",
+      "boundary": "170059993#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "170059994",
+      "boundary": "170059994_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "170059994",
+      "boundary": "170059994_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "170059994",
+      "boundary": "170059994_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "206426298",
+      "boundary": "206426298_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "206426298",
+      "boundary": "206426298_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "206426298",
+      "boundary": "206426298_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "206426298",
+      "boundary": "206426298_4_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "206426298#1",
+      "boundary": "206426298#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "206426298#1",
+      "boundary": "206426298#1_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "206426298#1",
+      "boundary": "206426298#1_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "372821396",
+      "boundary": "372821396_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "37927509",
+      "boundary": "37927509_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "37927509",
+      "boundary": "37927509_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "37927509",
+      "boundary": "37927509_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "37927512",
+      "boundary": "37927512_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "37927512",
+      "boundary": "37927512_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "52873356",
+      "boundary": "52873356_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "52873356",
+      "boundary": "52873356_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "52873356",
+      "boundary": "52873356_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "544292616",
+      "boundary": "544292616_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "544292617",
+      "boundary": "544292617_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "544293888#0",
+      "boundary": "544293888#0_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "544295537",
+      "boundary": "544295537_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "544295537",
+      "boundary": "544295537_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "556956812#1",
+      "boundary": "556956812#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "781184662#1",
+      "boundary": "781184662#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "781184662#2",
+      "boundary": "781184662#2_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "781184662#3",
+      "boundary": "781184662#3_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "781184662#3",
+      "boundary": "781184662#3_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484877",
+      "boundary": "844484877_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484877",
+      "boundary": "844484877_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484877",
+      "boundary": "844484877_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484877",
+      "boundary": "844484877_4_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484877#1",
+      "boundary": "844484877#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484877#1",
+      "boundary": "844484877#1_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484877#1",
+      "boundary": "844484877#1_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484878#0",
+      "boundary": "844484878#0_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484878#0",
+      "boundary": "844484878#0_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484878#0",
+      "boundary": "844484878#0_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484878#1",
+      "boundary": "844484878#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484878#1",
+      "boundary": "844484878#1_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484878#1",
+      "boundary": "844484878#1_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "844484878#1",
+      "boundary": "844484878#1_4_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198708",
+      "boundary": "86198708_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198708",
+      "boundary": "86198708_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198708",
+      "boundary": "86198708_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198708",
+      "boundary": "86198708_4_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198708#1",
+      "boundary": "86198708#1_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198708#1",
+      "boundary": "86198708#1_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198708#1",
+      "boundary": "86198708#1_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "unverified"
+    },
+    {
+      "edge": "86198709",
+      "boundary": "86198709_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "86198709",
+      "boundary": "86198709_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "86198709",
+      "boundary": "86198709_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "86198722",
+      "boundary": "86198722_1_right",
+      "source_style": "solid",
+      "render_matches": true,
+      "satellite_status": "verified_solid"
+    },
+    {
+      "edge": "86198722",
+      "boundary": "86198722_2_right",
+      "source_style": "solid",
+      "render_matches": true,
+      "satellite_status": "verified_solid"
+    },
+    {
+      "edge": "86198722",
+      "boundary": "86198722_3_right",
+      "source_style": "solid",
+      "render_matches": true,
+      "satellite_status": "verified_solid"
+    },
+    {
+      "edge": "86198722",
+      "boundary": "86198722_4_right",
+      "source_style": "solid",
+      "render_matches": true,
+      "satellite_status": "verified_solid"
+    },
+    {
+      "edge": "86198725",
+      "boundary": "86198725_1_right",
+      "source_style": "solid",
+      "render_matches": true,
+      "satellite_status": "verified_solid"
+    },
+    {
+      "edge": "86198725",
+      "boundary": "86198725_2_right",
+      "source_style": "solid",
+      "render_matches": true,
+      "satellite_status": "verified_solid"
+    },
+    {
+      "edge": "86198725",
+      "boundary": "86198725_3_right",
+      "source_style": "solid",
+      "render_matches": true,
+      "satellite_status": "verified_solid"
+    },
+    {
+      "edge": "86198728",
+      "boundary": "86198728_1_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "86198728",
+      "boundary": "86198728_2_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "86198728",
+      "boundary": "86198728_3_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    },
+    {
+      "edge": "86198728",
+      "boundary": "86198728_4_right",
+      "source_style": "dashed_default",
+      "render_matches": true,
+      "satellite_status": "mixed_unresolved"
+    }
+  ]
+}

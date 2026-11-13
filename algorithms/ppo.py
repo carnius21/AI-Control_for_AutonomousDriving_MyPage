@@ -197,7 +197,7 @@ class PPO:
     # ==================================================================
     # 1단계) rollout 수집
     # ==================================================================
-    def collect_rollout(self, env, state, logger=None, ep_stats=None):
+    def collect_rollout(self, env, state, logger=None, ep_stats=None, steps=None):
         """현재 정책으로 n_steps만큼 경험을 모은다.
 
         Args:
@@ -210,7 +210,7 @@ class PPO:
         finished_returns = []
         self.buffer.clear()
 
-        for _ in range(self.n_steps):
+        for _ in range(self.n_steps if steps is None else steps):
             action, log_prob, value = self.act(obs)
             next_obs, reward, terminated, truncated, _ = env.step(action)
 
@@ -329,7 +329,7 @@ class PPO:
     # ==================================================================
     def learn(self, env, total_timesteps: int, logger=None,
               log_interval: int = 1, eval_interval: int = 0,
-              eval_episodes: int = 5):
+              eval_episodes: int = 5, exact_budget: bool = False):
         """학습 실행.
 
         Args:
@@ -344,7 +344,8 @@ class PPO:
         while self.num_timesteps < total_timesteps:
             # 1) rollout
             obs, last_value, finished = self.collect_rollout(
-                env, obs, logger=logger, ep_stats=ep_stats)
+                env, obs, logger=logger, ep_stats=ep_stats,
+                steps=min(self.n_steps, total_timesteps-self.num_timesteps) if exact_budget else None)
             recent_returns.extend(finished)
 
             # 2) advantage

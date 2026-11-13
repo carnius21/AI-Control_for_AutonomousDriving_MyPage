@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-30",
+  "base_commit": "662fd15d5cc789bcae25ae3563b125a0f5ab6374",
+  "projection_origin_lon_lat": [
+    127.132,
+    37.64
+  ],
+  "source_url": "https://api.openstreetmap.org/api/0.6/map?bbox=127.136,37.638,127.146,37.644",
+  "map_url": "https://www.openstreetmap.org/#map=17/37.6415/127.1402",
+  "license": "https://www.openstreetmap.org/copyright",
+  "attribution": "© OpenStreetMap contributors (ODbL); user-supplied Naver aerial screenshots used for visual reference.",
+  "source_osm_sha256": "fc306171def1ffb5a9b76f774955e7e538062be1d481fe37c9d7f231932bc9d0",
+  "edge_source_way_ids": {
+    "sano_eb_bridge": [
+      "556956811"
+    ],
+    "sano_eb_main": [
+      "597119332"
+    ],
+    "sano_eb_accel": [
+      "169929489"
+    ],
+    "sano_eb_finish": [
+      "169929489"
+    ],
+    "sano_eb_out": [
+      "844484875"
+    ],
+    "sano_service_bridge": [
+      "169929478"
+    ],
+    "sano_wb_in": [
+      "372832348"
+    ],
+    "sano_wb_main": [
+      "844484874"
+    ],
+    "sano_wb_exit_lane": [
+      "844484874"
+    ],
+    "sano_wb_bridge": [
+      "556956813"
+    ],
+    "sano_wb_descend": [
+      "556956812"
+    ],
+    "sano_wb_accel": [
+      "556956812"
+    ],
+    "sano_west_collector": [
+      "169929474",
+      "169929493"
+    ],
+    "sano_west_collector_bridge": [
+      "1413342573"
+    ],
+    "sano_west_collector_out": [
+      "544295537"
+    ],
+    "sano_collector_out": [],
+    "sano_sb_in": [
+      "596640907"
+    ],
+    "sano_sb_cross_approach": [
+      "597119334"
+    ],
+    "sano_sb_under_north": [
+      "597119333"
+    ],
+    "sano_sb_under_main": [
+      "72387791"
+    ],
+    "sano_sb_out": [
+      "72387791",
+      "558402929"
+    ],
+    "sano_nb_in": [
+      "841607178"
+    ],
+    "sano_nb_under_south": [
+      "841607184"
+    ],
+    "sano_nb_under_main": [
+      "841607184"
+    ],
+    "sano_nb_out": [
+      "841607184"
+    ],
+    "sano_eb_to_south": [
+      "169929484"
+    ],
+    "sano_nw_loop": [
+      "556956816",
+      "169929495"
+    ],
+    "sano_se_loop": [
+      "556956815",
+      "169929487"
+    ],
+    "sano_nb_to_east": [
+      "72387844"
+    ],
+    "sano_sb_to_west": [
+      "72387788"
+    ],
+    "sano_nb_to_west": [
+      "169929470"
+    ],
+    "sano_west_ramp_split": [
+      "72387788"
+    ],
+    "sano_to_west_main": [
+      "169929502"
+    ],
+    "sano_to_collector": [
+      "169728849"
+    ],
+    "sano_service_out": []
+  },
+  "assumptions": [
+    "Educational model, not a surveyed digital twin. Existing Toegyewon mainline/loops retained.",
+    "Donggureung-ro modeled with two through lanes and auxiliary turning/merging lanes. Unspecified lane counts are assumed.",
+    "Western collector modeled as two lanes despite some OSM sections tagged three; matching the four-lane upstream split avoids overlapping lane groups.",
+    "Both collector streams exit through a short synthetic northwest boundary buffer; their farther motorway connection is outside scope.",
+    "Partial interchange: six observed turns, north/south through movements, and northwest collector exits; unobserved turns are not invented.",
+    "14,420 veh/hour is synthetic demonstration demand, not measured counts. Existing east/west arterial demand is redistributed among new exits.",
+    "All trees and buildings are illustrative visual decoration; no additional traffic dynamics.",
+    "Current Sano northbound/turn overpass is 5 m above the southbound road (0 m), on separate nodes. Existing Geumgang-ro and outer collector levels remain 8 m and 16 m. Heights, approach grades, and moved west-ramp junction positions are educational design choices, not surveyed elevations."
+  ],
+  "corridor_refinement": {
+    "date": "2026-10-30",
+    "base_commit": "7ec5181",
+    "changes": [
+      "Northbound carriageway shifted outward with smooth transitions at both external boundaries.",
+      "Southeast loop merges to northbound lane 0 (right); two incoming through lanes map to lanes 1 and 2.",
+      "The 11 m common ramp is extended to 63.792 m before its two destinations diverge.",
+      "Priority-junction envelope widened to contain separated carriageways, while existing yield rules are retained."
+    ],
+    "modified_edges": [
+      "sano_nb_in",
+      "sano_nb_under_south",
+      "sano_nb_under_main",
+      "sano_nb_out",
+      "sano_se_loop",
+      "sano_nb_to_east",
+      "sano_sb_to_west",
+      "sano_nb_to_west",
+      "sano_west_ramp_split",
+      "sano_to_west_main",
+      "sano_to_collector"
+    ],
+    "routes_and_demand_unchanged": true,
+    "status": "historical; see grade_separation for current crossing and geometry"
+  },
+  "independent_east_exit": {
+    "date": "2026-10-30",
+    "requested_by_user": true,
+    "replaced_way_references": [
+      "169929482"
+    ],
+    "geometry": "Synthetic smooth independent outlet from the existing collector bridge to (1315,-175,0). It does not rejoin the arterial.",
+    "changed_routes": [
+      "south_to_local",
+      "north_to_local"
+    ],
+    "main_outbound_lanes": 2,
+    "terminal_lanes": 2
+  },
+  "protected_left_signal": {
+    "date": "2026-11-02",
+    "junction": "sano_local_cross",
+    "cycle_seconds": 52,
+    "assumption": "Synthetic protected left-turn plan to remove extreme yield delay; not observed real-world timing or confirmation of a real traffic signal.",
+    "road_geometry_routes_demand_unchanged": true,
+    "validation": "../docs/assets/sano/signal_validation.json",
+    "status": "historical; see grade_separation for current crossing and geometry"
+  },
+  "local_merge_refinement": {
+    "date": "2026-11-02",
+    "junction": "sano_local_merge",
+    "assumption": "Separate receiving lanes replace four overlapping incoming-to-outgoing connections; lane changes use the existing 63 m shared edge. Educational model refinement, not a surveyed marking change.",
+    "removed_connections": [
+      [
+        "sano_sb_to_west",
+        "sano_west_ramp_split",
+        0,
+        1
+      ],
+      [
+        "sano_nb_to_west",
+        "sano_west_ramp_split",
+        0,
+        0
+      ]
+    ],
+    "geometry_signal_routes_demand_preserved": true,
+    "validation": "../docs/assets/sano/merge_validation.json",
+    "status": "historical; see grade_separation for current crossing and geometry"
+  },
+  "grade_separation": {
+    "date": "2026-11-02",
+    "upper_z_m": 5,
+    "lower_z_m": 0,
+    "upper_node": "sano_nb_flyover_split",
+    "lower_node": "sano_sb_underpass",
+    "removed_node_and_signal": "sano_local_cross",
+    "modified_edges": [
+      "sano_sb_cross_approach",
+      "sano_sb_under_north",
+      "sano_nb_under_south",
+      "sano_nb_under_main",
+      "sano_nb_out",
+      "sano_se_loop",
+      "sano_sb_to_west",
+      "sano_nb_to_west",
+      "sano_west_ramp_split",
+      "sano_to_west_main",
+      "sano_to_collector"
+    ],
+    "physical_routes_demand_preserved": true,
+    "model_assumptions": "Upper/lower structure requested by user; numeric elevations and extended ramp geometry are synthetic.",
+    "validation": "../docs/assets/sano/grade_separation_validation.json"
+  },
+  "northwest_collector_removal": {
+    "removed_edges": [
+      "sano_collector_out",
+      "sano_to_collector",
+      "sano_west_collector",
+      "sano_west_collector_bridge",
+      "sano_west_collector_out"
+    ],
+    "removed_nodes": [
+      "sano_collector_boundary",
+      "sano_collector_join",
+      "sano_west_collector_bridge_end",
+      "sano_west_collector_bridge_start"
+    ],
+    "reassigned_flows": {
+      "sano_east_to_collector": {
+        "to": "west_through",
+        "vehs_per_hour": 350
+      },
+      "sano_north_to_collector": {
+        "to": "sano_north_to_west",
+        "vehs_per_hour": 160
+      }
+    },
+    "retained_west_auxiliary_exit": true,
+    "shared_local_ramp_lanes": 1,
+    "east_boundary_approach_lanes": 2,
+    "backup": "toegyewon-sano-with-west-exit-before-collector-removal-2026-11-05.zip",
+    "date": "2026-11-07",
+    "assumption": "User-requested educational simplification: remove the northwest collector and its feeder; reroute their demand to the existing westbound mainline. Not a claim of real-world road removal.",
+    "validation": "../docs/assets/sano/west_weave_collector_removal_validation.json"
+  },
+  "west_auxiliary_exit": {
+    "date": "2026-11-07",
+    "assumption": "Synthetic extension of the shared three-lane merge/diverge section to 228.24 m and an independent one-lane exit. Mainline arrivals must move into lane 0 to exit; ramp arrivals must move to lanes 1/2 to continue west. Normal SUMO HV lane-change behavior is used.",
+    "common_length_m": 228.2413080636159,
+    "exit_length_m": 166.15097251897498,
+    "exit_flow_vehicles_per_hour": 360,
+    "total_demand_unchanged": true,
+    "validation": "../docs/assets/sano/west_weave_collector_removal_validation.json"
+  }
+}

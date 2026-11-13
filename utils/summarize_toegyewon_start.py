@@ -1,0 +1,39 @@
+"""Summarize independently logged start and axis experiments without rerunning them."""
+import json,collections
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+def read(folder):return [json.loads(p.read_text()) for p in sorted((ROOT/'results'/folder/'cases').glob('*.json'))]
+def main():
+ rows=read('toegyewon_start_v1');axes=read('toegyewon_axes_v1');assert len(rows)==116 and len(axes)==12
+ assert len({r['case'] for r in rows})==116
+ assert len({r['network_sha256'] for r in rows+axes})==1
+ out=ROOT/'docs/experiments';out.mkdir(exist_ok=True)
+ starts=[]
+ for r in rows:
+  s={k:v for k,v in r.items() if k not in ('diagnostic','edges')}
+  d=r.get('diagnostic',{});s['timeout_category']=d.get('category') if r.get('timeout') else None
+  s['final_state']=d.get('samples',[None])[-1]
+  starts.append(s)
+ (out/'toegyewon-start-v1.json').write_text(json.dumps(starts,ensure_ascii=False,indent=2),encoding='utf8')
+ observations=[]
+ for r in rows:
+  if r['depart_lane']=='best' and r['training_seed']:
+   observations.append(dict(case=r['case'],policy_sha256=r['policy_sha256'],edges={e:s for e,s in r['edges'].items() if e in ('170059994','1063527748')}))
+ interventions=[]
+ for r in axes:
+  s={k:v for k,v in r.items() if k!='diagnostic'};d=r['diagnostic'];s['timeout_category']=d['category'] if r['timeout'] else None;s['final_state']=d['samples'][-1];interventions.append(s)
+ (out/'toegyewon-observation-axes-v1.json').write_text(json.dumps(dict(observations=observations,interventions=interventions),ensure_ascii=False,indent=2),encoding='utf8')
+ lines=['# 퇴계원 실패 경로: 출발 조건·관측·행동 축 진단','', '대상은 route_04(남쪽 북향 본선→동쪽 금강로), route_14(북쪽 남향 본선→동쪽 금강로). 새 학습 없이 기존 R0 seed11·22·33을 검사했다. 맵·보상·행동 제약·관측을 바꾸지 않았다.','', '## S: 시작 조건','', '각 시작 차로×속도0/10/max 및 기존 best/max. 출발위치0m, SUMO seed1001,900초. route_04는13조건, route_14는16조건이며, 각 조건에서 정책3개와 진단 제어를 각각 실행했다. 이 사례 수는 독립 확률 표본이나95% 신뢰도 보장을 뜻하지 않는다.','', '| 경로 | R0-11 | R0-22 | R0-33 | 같은 조건 진단 제어 |','|---|---:|---:|---:|---:|']
+ for route in ('route_04','route_14'):
+  vals=[]
+  for seed in (11,22,33,0):
+   rr=[r for r in rows if r['route']==route and r['training_seed']==seed];vals.append(f"{sum(r['arrival'] for r in rr)}/{len(rr)}")
+  lines.append('| '+route+' | '+' | '.join(vals)+' |')
+ av=[r for r in rows if r['training_seed']];diag=[r for r in rows if not r['training_seed']]
+ lines+=['',f"전체116건: 정책 {sum(r['arrival'] for r in av)}/{len(av)} 완주, 진단 {sum(r['arrival'] for r in diag)}/{len(diag)} 완주. 삽입 거부 {sum(r.get('insertion_failure',False) for r in rows)}건, 충돌 {sum(r['collision'] for r in rows)}건.",'', '출발 조건 변화만으로 실패가 해결되지 않았다. 동일 조건 진단 제어는 통과하므로 시험한 조건에서 물리적 통과 불능·출발 거부가 원인이라는 설명은 지지되지 않는다. 모든 가능한 위치·속도에 대한 보장은 아니다.','', '원자료: [시작 조건 사례](experiments/toegyewon-start-v1.json). 실행 코드 커밋 `adaec18`, 경로 `results/toegyewon_start_v1`.','', '## O: 실제 관측과 명령','', '| 확인 항목 | 실제 관측 결과 |','|---|---|','| 분기 거리·방향 | 두 실패 지점 모두 거리=-1, 방향=0. 기존 로직이 목표 차로0 단독 분기만 안내하기 때문 |','| best-lane offset | 잘못된 차로에서 올바른 복귀 방향은 별도로 입력됨 |','| 기본 연결성 | 목적지와 다른 도로로라도 연결되면1. 따라서 경로 부적합 차로도 연결성1로 표시됨 |','| 실선 제한 | 170059994·1063527748 모두 AV 실선 차로 변경 금지 목록에 없음 |','', '대표 route_04 best/max의 실제 행동:','', '- seed11: 170059994 진입 시2차로에서 오른쪽으로 이동해0차로가 됨. 다음1063527748에서는 목적지 연결 차로가2인데 왼쪽 안내(+2, 정규화+0.667)를 받고도 오른쪽 명령(-1)을 반복함.', '- seed22·33: 170059994의2차로에서 왼쪽3차로로 이동. 목적지는0·1·2차로로만 연결되므로 오른쪽 안내(-1, 정규화-0.333)가 주어지지만 복귀하지 않음.', '- 따라서 필요한 명령을 냈는데 실선 규칙이 막았다는 설명보다, 정책의 잘못된 명령 선택이 직접 관찰됨. 안내 누락도 존재하지만 입력이 완전히 없었던 것은 아님.','', '## X: 하나의 행동 축만 교체','', '| 진단 개입(best/max, 두 경로×정책3개) | 완주 |','|---|---:|']
+ for mode,label in [('lane_only','차로 선택만 안내, 가감속은 기존 정책'),('speed_only','속도만 제한속도 추종, 차로는 기존 정책')]:
+  rr=[r for r in axes if r['intervention']==mode];lines.append(f"| {label} | {sum(r['arrival'] for r in rr)}/{len(rr)} |")
+ lines+=['', '무개입 기준6건은0/6, 차로·속도 모두 안내한 앞선 진단6건은6/6이다. 개입은 정책 성능 개선 결과가 아니라 실패 원인을 분리하는 시험이다. 가감속을 유지하고 차로 선택만 바꾸어 완주한 것은 이 조건에서 차로 판단이 충분히 중요한 직접 원인임을 뒷받침한다. 속도 영향이 다른 조건에서도 없다는 뜻은 아니다.','', '원자료: [관측·독립 개입](experiments/toegyewon-observation-axes-v1.json). 실행 코드 `2cde268`, 경로 `results/toegyewon_axes_v1`.','', '## 결론과 다음 검증','', '1. 출발 차로·속도 부족: 시험한29조건에서는 주원인으로 확인되지 않음.', '2. 맵/행동 제약상 통과 불가능: 동일 조건 진단29/29 통과로 배제 가능한 범위가 확보됨.', '3. 정책 차로 선택 오류: 실제 명령과 차로만 개입한6/6 완주로 직접 확인.', '4. 관측의 목적지 안내 불완전: 코드와 실제 입력에서 확인. 다만 이것이 학습 실패의 유일한 원인인지는 아직 미확정.', '5. 다음은 두 경로 중 하나를 고정해 동일 시작 조건/학습량/seed에서 기존 관측과 경로별 연결 차로·남은 거리를 반영한 관측을 각각 처음부터 학습시키는 비교. 기존 정책에 수정 관측만 끼워 넣은 결과를 재학습 성능으로 보고하지 않는다.', '', '이번에는 진단만 완료했다. 보상 변경·새 학습·혼잡 교통·대량 수집은 실행하지 않았다. 전체 맵과 기존 정책/결과는 보존했다.']
+ (ROOT/'docs/ic-toegyewon-start-results.md').write_text('\n'.join(lines)+'\n',encoding='utf8')
+ print('Reports generated',len(rows),len(axes))
+if __name__=='__main__':main()

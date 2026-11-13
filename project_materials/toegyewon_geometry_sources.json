@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-29",
+  "projection_origin_lon_lat": [
+    127.132,
+    37.64
+  ],
+  "source_url": "https://www.openstreetmap.org/#map=17/37.640/127.132",
+  "license": "https://www.openstreetmap.org/copyright",
+  "edge_source_way_ids": {
+    "sb_in": [
+      "86198728"
+    ],
+    "sb_bridge": [
+      "86198725",
+      "86198709"
+    ],
+    "sb_main": [
+      "37927509"
+    ],
+    "sb_accel": [
+      "206426298"
+    ],
+    "sb_out": [
+      "844484877"
+    ],
+    "nb_in": [
+      "52873356"
+    ],
+    "nb_main": [
+      "844484878"
+    ],
+    "nb_accel": [
+      "844484878",
+      "86198722"
+    ],
+    "nb_out": [
+      "86198708"
+    ],
+    "east_in": [
+      "781184662"
+    ],
+    "east_main": [
+      "781184662"
+    ],
+    "east_accel": [
+      "781184662"
+    ],
+    "east_out": [
+      "169929497"
+    ],
+    "west_in": [
+      "556956812",
+      "169929503"
+    ],
+    "west_accel": [
+      "169929503"
+    ],
+    "west_out": [
+      "169929503"
+    ],
+    "south_exit": [
+      "37927508",
+      "86198720"
+    ],
+    "south_loop": [
+      "170059988"
+    ],
+    "south_loop_bridge": [
+      "170059996"
+    ],
+    "south_loop_join": [
+      "170059995"
+    ],
+    "north_exit": [
+      "37927512"
+    ],
+    "north_approach": [
+      "170059991"
+    ],
+    "weave": [
+      "170059994"
+    ],
+    "east_ramp": [
+      "1063527748"
+    ],
+    "east_join": [
+      "797789364"
+    ],
+    "east_service_out": [
+      "169728835"
+    ],
+    "flyover": [
+      "844484876",
+      "86198717"
+    ],
+    "north_loop": [
+      "170059992"
+    ],
+    "return_ramp": [
+      "170059993"
+    ],
+    "return_split": [
+      "544293888"
+    ],
+    "return_north": [
+      "37375274"
+    ],
+    "return_south": [
+      "544293888"
+    ],
+    "return_bridge": [
+      "86198710"
+    ],
+    "return_loop": [
+      "170059989"
+    ],
+    "outer_entry": [
+      "169929488"
+    ],
+    "outer_bridge": [
+      "1414146968"
+    ],
+    "outer_south": [
+      "372821396",
+      "544292617"
+    ],
+    "outer_join": [
+      "544292616"
+    ],
+    "north_exit_widen": [
+      "37927512"
+    ]
+  },
+  "lane_count_overrides_or_assumptions": {
+    "west_in/out": 2,
+    "east_accel/west_accel": 3,
+    "outer_entry/bridge/south/join": 1,
+    "sb_in": 6,
+    "east_main/out": 2,
+    "east_in": 3
+  },
+  "height_m": 8.0,
+  "lane_width_m": 3.5,
+  "scope": "Selected IC footprint: the western outer ramp now starts at the upper southbound highway and ends at a separate southern boundary. Excludes Galmae IC, the Sejong-Pocheon Expressway and roads upstream of the selected footprint. east_service_out is a separate local-direction boundary.",
+  "design_adjustments_2026_10_29": {
+    "reason": "User requested cleaner separation and allowed departure from exact IC geometry.",
+    "northbound_exit": "5-lane approach (4 through + 1 dedicated exit); 1-lane separated ramp expands to 3 after about 90m.",
+    "outer_exit": "outer_join is now a curved independent sink at (95,-565); no connection to sb_out.",
+    "unchanged": "Total demand, vehicle physics, bridge connectivity and skeleton interfaces.",
+    "outer_entry": "Both exit ramps now originate at the same upper highway node sb_exit. Approach sb_in has four through lanes plus two exit lanes; lane 0 goes to outer_entry and lane 1 to south_exit. Purple vehicles start at sb_in, not at the ramp. The outer ramp remains an independent sink at its southern end. This is a user-requested simplified arrangement, not a surveyed lane count.",
+    "east_lane_cleanup": "Only the tail of east_ramp, the alignment of east_join, and the head of east_service_out were adjusted to remove overlapping lane envelopes. Lane counts, routes and connections are unchanged. The joining lane keeps a separation of up to 4 m from the arterial that closes smoothly at east_merge.",
+    "west_lane_cleanup": "Western eastbound approach east_in now has two through lanes plus one dedicated departure lane. Its center is shifted outward by half a lane to preserve the through alignment. return_ramp starts in line with the new outer lane and diverges gently. All routes, the remaining road edges, and the bridge level relationships are retained; this is a presentation-oriented simplification, not a surveyed lane count."
+  }
+}

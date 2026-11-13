@@ -1,58 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
 <routes>
-    <vType id="ego_type" accel="5.4" decel="5.4" maxSpeed="33.33" color="1,0,0" vClass="passenger" guiShape="passenger/sedan"/>
-    <vTypeDistribution id="carDist">
-        <vType id="car_krauss" probability="0.3000" carFollowModel="Krauss" accel="2.0" decel="4.5" tau="1.0" minGap="2.5" maxSpeed="14.0" speedDev="0.15" color="1,1,0" vClass="passenger" guiShape="passenger/sedan" sigma="0.3" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0"/>
-        <vType id="car_idm" probability="0.3000" carFollowModel="IDM" accel="1.8" decel="3.5" tau="1.2" minGap="2.0" maxSpeed="16.0" speedDev="0.1" color="0,1,1" vClass="passenger" guiShape="passenger/hatchback" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0"/>
-        <vType id="car_eidm" probability="0.2500" carFollowModel="EIDM" accel="2.0" decel="4.0" tau="1.1" minGap="2.0" maxSpeed="16.5" speedDev="0.1" color="1,0.6,0" vClass="passenger" guiShape="passenger/wagon" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0"/>
-        <vType id="car_acc" probability="0.1500" carFollowModel="ACC" accel="2.0" decel="4.0" tau="1.5" minGap="2.0" maxSpeed="19.0" speedDev="0.05" color="1,0,1" vClass="passenger" guiShape="passenger/sedan" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0"/>
-    </vTypeDistribution>
-
-    <!-- 전체 네트워크 15개 경로 -->
-    <route id="r0" edges="37927512 170059994 1063527748 E1 781184662#1.411.12"/>
-    <route id="r1" edges="781184662#0 781184662#0-AddedOffRampEdge 781184662#1 E0 781184662#1.411.12"/>
-    <route id="r2" edges="169929488#0 169728799"/>
-    <route id="r3" edges="169929488#0 169929488#1"/>
-    <route id="r4" edges="169929503#0 169929503#1 543621237"/>
-    <route id="r5" edges="169929503#0 169929503#1 169929503#3"/>
-    <route id="r6" edges="37927512 170059994 844484876 169929503#1 543621237"/>
-    <route id="r7" edges="37927512 170059994 844484876 169929503#1 169929503#3"/>
-    <route id="r8" edges="781184662#0 781184662#0-AddedOffRampEdge 170059993 170059993-AddedOffRampEdge 37375274 844484878#1 86198722"/>
-    <route id="r9" edges="781184662#0 781184662#0-AddedOffRampEdge 170059993 170059993-AddedOffRampEdge 544293888#1 206426298"/>
-    <route id="r10" edges="844484878#0 844484878#1 86198722"/>
-    <route id="r11" edges="86198728 37927508 170059994 1063527748 E1 781184662#1.411.12"/>
-    <route id="r12" edges="86198728 37927508 170059994 844484876 169929503#1 543621237"/>
-    <route id="r13" edges="86198728 37927508 170059994 844484876 169929503#1 169929503#3"/>
-    <route id="r14" edges="86198728 86198725 37927509 206426298"/>
-
-    <!-- 경로별 교통 흐름 -->
-    <flow id="flow_r0" type="carDist" route="r0" begin="0" end="100000"
-          period="6.86" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r1" type="carDist" route="r1" begin="0" end="100000"
-          period="9.60" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r2" type="carDist" route="r2" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r3" type="carDist" route="r3" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r4" type="carDist" route="r4" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r5" type="carDist" route="r5" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r6" type="carDist" route="r6" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r7" type="carDist" route="r7" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r8" type="carDist" route="r8" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r9" type="carDist" route="r9" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r10" type="carDist" route="r10" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r11" type="carDist" route="r11" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r12" type="carDist" route="r12" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r13" type="carDist" route="r13" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
-    <flow id="flow_r14" type="carDist" route="r14" begin="0" end="100000"
-          period="16.00" departLane="random" departSpeed="8.0"/>
+  <vType id="car_krauss" vClass="passenger" length="4.8" carFollowModel="Krauss" accel="2.0" decel="4.5" emergencyDecel="9" tau="1.0" minGap="2.5" maxSpeed="33.33" speedFactor="1" speedDev="0.15" sigma="0.3" />
+  <vType id="car_idm" vClass="passenger" length="4.8" carFollowModel="IDM" accel="1.8" decel="3.5" emergencyDecel="9" tau="1.2" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" />
+  <vType id="car_eidm" vClass="passenger" length="4.8" carFollowModel="EIDM" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.1" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" />
+  <vType id="car_acc" vClass="passenger" length="4.8" carFollowModel="ACC" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.5" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.05" />
+  <vType id="car_krauss_violator" vClass="custom1" length="4.8" carFollowModel="Krauss" accel="2.0" decel="4.5" emergencyDecel="9" tau="1.0" minGap="2.5" maxSpeed="33.33" speedFactor="1" speedDev="0.15" sigma="0.3" guiShape="passenger/sedan" />
+  <vType id="car_idm_violator" vClass="custom1" length="4.8" carFollowModel="IDM" accel="1.8" decel="3.5" emergencyDecel="9" tau="1.2" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" guiShape="passenger/sedan" />
+  <vType id="car_eidm_violator" vClass="custom1" length="4.8" carFollowModel="EIDM" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.1" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" guiShape="passenger/sedan" />
+  <vType id="car_acc_violator" vClass="custom1" length="4.8" carFollowModel="ACC" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.5" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.05" guiShape="passenger/sedan" />
+  <vType id="bus_idm" vClass="bus" guiShape="bus" length="12" width="2.5" carFollowModel="IDM" accel="1.2" decel="3.5" emergencyDecel="7" tau="1.5" minGap="3" maxSpeed="25" />
+  <vTypeDistribution id="carDist" vTypes="car_krauss car_idm car_eidm car_acc car_krauss_violator car_idm_violator car_eidm_violator car_acc_violator bus_idm" probabilities="0.32585000000000003 0.27930000000000005 0.18620000000000003 0.13965000000000002 0.0066500000000000005 0.005700000000000001 0.003800000000000001 0.0028500000000000005 0.05" />
+  <vType id="ego_type" accel="5.4" decel="5.4" maxSpeed="27.78" color="1,.25,.28" vClass="passenger" length="4.8" minGap="2.5" guiShape="passenger/sedan" />
+  <route id="south_through" edges="sb_in sb_bridge sb_main sb_accel sb_out" />
+  <route id="north_through" edges="nb_in nb_main nb_accel nb_out" />
+  <route id="east_through" edges="east_in east_main east_accel east_out sano_eb_bridge sano_eb_main sano_eb_accel sano_eb_finish sano_eb_out" />
+  <route id="west_through" edges="sano_wb_in sano_wb_main sano_wb_exit_lane sano_wb_bridge sano_wb_descend sano_wb_accel west_in west_accel west_out" />
+  <route id="south_to_east" edges="sb_in south_exit south_loop south_loop_bridge south_loop_join weave east_ramp east_join east_accel east_out sano_eb_bridge sano_eb_main sano_eb_accel sano_eb_finish sano_eb_out" />
+  <route id="south_to_west" edges="sb_in south_exit south_loop south_loop_bridge south_loop_join weave flyover north_loop west_accel west_out" />
+  <route id="south_to_local" edges="sb_in south_exit south_loop south_loop_bridge south_loop_join weave east_ramp east_service_out sano_service_bridge sano_service_out" />
+  <route id="north_to_east" edges="nb_in north_exit north_exit_widen north_approach weave east_ramp east_join east_accel east_out sano_eb_bridge sano_eb_main sano_eb_accel sano_eb_finish sano_eb_out" />
+  <route id="north_to_west" edges="nb_in north_exit north_exit_widen north_approach weave flyover north_loop west_accel west_out" />
+  <route id="north_to_local" edges="nb_in north_exit north_exit_widen north_approach weave east_ramp east_service_out sano_service_bridge sano_service_out" />
+  <route id="east_to_north" edges="east_in return_ramp return_split return_north nb_accel nb_out" />
+  <route id="east_to_south" edges="east_in return_ramp return_split return_south return_bridge return_loop sb_accel sb_out" />
+  <route id="outer_to_south" edges="sb_in outer_entry outer_bridge outer_south outer_join" />
+  <route id="sano_west_to_south" edges="east_in east_main east_accel sano_eb_to_south sano_sb_out" />
+  <route id="sano_west_to_north" edges="east_in east_main east_accel east_out sano_eb_bridge sano_se_loop sano_nb_under_main sano_nb_out" />
+  <route id="sano_east_to_south" edges="sano_wb_in sano_wb_main sano_wb_exit_lane sano_nw_loop sano_sb_under_main sano_sb_out" />
+  <route id="sano_north_through" edges="sano_nb_in sano_nb_under_south sano_nb_under_main sano_nb_out" />
+  <route id="sano_south_through" edges="sano_sb_in sano_sb_cross_approach sano_sb_under_north sano_sb_under_main sano_sb_out" />
+  <route id="sano_south_to_east" edges="sano_nb_in sano_nb_to_east sano_eb_accel sano_eb_finish sano_eb_out" />
+  <route id="sano_south_to_west" edges="sano_nb_in sano_nb_under_south sano_nb_under_main sano_nb_to_west sano_west_ramp_split sano_to_west_main sano_wb_accel west_in west_accel west_out" />
+  <route id="sano_north_to_west" edges="sano_sb_in sano_sb_to_west sano_west_ramp_split sano_to_west_main sano_wb_accel west_in west_accel west_out" />
+  <route id="west_to_local" edges="sano_wb_in sano_wb_main sano_wb_exit_lane sano_wb_bridge sano_wb_descend sano_wb_accel west_in west_accel west_local_exit" />
+  <route id="r0" edges="nb_in north_exit north_exit_widen north_approach weave flyover north_loop west_accel west_out" />
+  <flow id="flow_south_through" type="carDist" route="south_through" begin="0" end="500.0" vehsPerHour="1600.0" departLane="best" departSpeed="max" color="0.86,0.90,0.96" />
+  <flow id="flow_north_through" type="carDist" route="north_through" begin="0" end="500.0" vehsPerHour="1600.0" departLane="best" departSpeed="max" color="0.86,0.90,0.96" />
+  <flow id="flow_east_through" type="carDist" route="east_through" begin="0" end="500.0" vehsPerHour="2100.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <flow id="flow_west_through" type="carDist" route="west_through" begin="0" end="500.0" vehsPerHour="1890.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <flow id="flow_south_to_east" type="carDist" route="south_to_east" begin="0" end="500.0" vehsPerHour="700.0" departLane="best" departSpeed="max" color="0.18,0.78,1" />
+  <flow id="flow_south_to_west" type="carDist" route="south_to_west" begin="0" end="500.0" vehsPerHour="500.0" departLane="best" departSpeed="max" color="0.18,0.78,1" />
+  <flow id="flow_south_to_local" type="carDist" route="south_to_local" begin="0" end="500.0" vehsPerHour="200.0" departLane="best" departSpeed="max" color="0.18,0.78,1" />
+  <flow id="flow_north_to_east" type="carDist" route="north_to_east" begin="0" end="500.0" vehsPerHour="500.0" departLane="best" departSpeed="max" color="0.16,1,0.62" />
+  <flow id="flow_north_to_west" type="carDist" route="north_to_west" begin="0" end="500.0" vehsPerHour="700.0" departLane="best" departSpeed="max" color="0.16,1,0.62" />
+  <flow id="flow_north_to_local" type="carDist" route="north_to_local" begin="0" end="500.0" vehsPerHour="200.0" departLane="best" departSpeed="max" color="0.16,1,0.62" />
+  <flow id="flow_east_to_north" type="carDist" route="east_to_north" begin="0" end="500.0" vehsPerHour="600.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <flow id="flow_east_to_south" type="carDist" route="east_to_south" begin="0" end="500.0" vehsPerHour="600.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <flow id="flow_outer_to_south" type="carDist" route="outer_to_south" begin="0" end="500.0" vehsPerHour="400.0" departLane="best" departSpeed="max" color="0.82,0.59,1" />
+  <flow id="flow_sano_west_to_south" type="carDist" route="sano_west_to_south" begin="0" end="500.0" vehsPerHour="200.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <flow id="flow_sano_west_to_north" type="carDist" route="sano_west_to_north" begin="0" end="500.0" vehsPerHour="200.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <flow id="flow_sano_east_to_south" type="carDist" route="sano_east_to_south" begin="0" end="500.0" vehsPerHour="250.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <flow id="flow_sano_north_through" type="carDist" route="sano_north_through" begin="0" end="500.0" vehsPerHour="500.0" departLane="best" departSpeed="max" color="1,0.60,0.32" />
+  <flow id="flow_sano_south_through" type="carDist" route="sano_south_through" begin="0" end="500.0" vehsPerHour="500.0" departLane="best" departSpeed="max" color="1,0.60,0.32" />
+  <flow id="flow_sano_south_to_east" type="carDist" route="sano_south_to_east" begin="0" end="500.0" vehsPerHour="240.0" departLane="best" departSpeed="max" color="1,0.60,0.32" />
+  <flow id="flow_sano_south_to_west" type="carDist" route="sano_south_to_west" begin="0" end="500.0" vehsPerHour="180.0" departLane="best" departSpeed="max" color="1,0.60,0.32" />
+  <flow id="flow_sano_north_to_west" type="carDist" route="sano_north_to_west" begin="0" end="500.0" vehsPerHour="400.0" departLane="best" departSpeed="max" color="1,0.60,0.32" />
+  <flow id="flow_west_to_local" type="carDist" route="west_to_local" begin="0" end="500.0" vehsPerHour="360.0" departLane="best" departSpeed="max" color="1,0.86,0.24" />
+  <vType id="ego_demo_type" vClass="passenger" length="4.8" minGap="2.5" accel="2.6" decel="4.5" emergencyDecel="9" tau="1.2" maxSpeed="33.33" speedFactor="1" speedDev="0.05" carFollowModel="Krauss" sigma="0" color="1,.25,.28" />
+  <vehicle id="ego_demo" type="ego_demo_type" route="north_to_west" depart="40" departLane="best" departSpeed="12" />
 </routes>

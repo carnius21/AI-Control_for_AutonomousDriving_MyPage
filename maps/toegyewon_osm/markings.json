@@ -1,0 +1,40 @@
+{
+  "review_date": "2026-11-07",
+  "source": "Naver satellite; imagery acquisition date unknown",
+  "solid": {
+    "1413342573": {
+      "evidence": "docs/assets/osm-audit/sano-bridge-satellite.png",
+      "basis": "Continuous white lane dividers on bridge; extent bounded by OSM bridge edge."
+    },
+    "169929478": {
+      "evidence": "docs/assets/osm-audit/sano-bridge-satellite.png",
+      "basis": "Continuous white lane dividers on bridge; extent bounded by OSM bridge edge."
+    },
+    "86198725": {
+      "evidence": "docs/assets/osm-audit/toegyewon-main-bridge.png",
+      "basis": "Continuous lane dividers visible on central mainline bridge; excludes mixed approach edge 86198728."
+    },
+    "86198722": {
+      "evidence": "docs/assets/osm-audit/toegyewon-main-bridge.png",
+      "basis": "Continuous lane dividers visible on central mainline bridge; excludes mixed approach edge 86198728."
+    }
+  },
+  "dashed": {
+    "169929493": {
+      "evidence": "docs/assets/osm-audit/sano-east-satellite.png",
+      "basis": "Dashed lane separators visible outside bridge span."
+    },
+    "169728835": {
+      "evidence": "docs/assets/osm-audit/sano-west-satellite.png",
+      "basis": "Dashed lane separators visible outside bridge span."
+    }
+  },
+  "unresolved": {
+    "170059994": "Weaving area includes dotted boundaries and painted gore; do not prohibit the entire weaving edge. Exact transition positions need roadview.",
+    "86198728": "Mixed dashed exit preparation and solid bridge markings; exact transition position not yet surveyed.",
+    "86198709": "Four-to-three lane transition: cannot enforce a whole-edge prohibition before precise transition survey."
+  },
+  "unknown_policy": "Keep SUMO default permissions; a rendered dashed line is NOT evidence of a verified real-world dashed marking.",
+  "solid_allowed_classes": "custom1",
+  "exception_note": "custom1 reserved for future explicit emergency/violator control. No vehicles or AV controls are added in this change."
+}

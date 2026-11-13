@@ -1,0 +1,428 @@
+{
+  "intentional_geometry_changes": [
+    {
+      "edge": "1063527748",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "1413342573",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "1414146968",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "1414146971",
+      "reason": "User requested earlier merge, original OSM geometry intentionally changed"
+    },
+    {
+      "edge": "169728799",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169728835",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169728849",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929474",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929478",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929482",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929484",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929487",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929488#0",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929488#1",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929493",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929495",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929497",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929503#0",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929503#1",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "169929503#2",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "170059988",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "170059989",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "170059989#1",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "170059991",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "170059992",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "170059995",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "170059996",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "280963368",
+      "reason": "User requested earlier merge, original OSM geometry intentionally changed"
+    },
+    {
+      "edge": "372821396",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "37375274",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "37927508",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "37927509",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "37927512",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "544292616",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "544292617",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "544293888#1",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "544295537",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "556956812#1",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "556956815",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "556956816",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "797789364",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "844484876",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "86198708",
+      "reason": "Auxiliary lane axis and split before north merge"
+    },
+    {
+      "edge": "86198708#1",
+      "reason": "Auxiliary lane axis and split before north merge"
+    },
+    {
+      "edge": "86198709",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "86198710",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "86198717",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "86198720",
+      "reason": "Reviewed local junction tangent/lane-group alignment"
+    },
+    {
+      "edge": "86198725",
+      "reason": "Southbound four-lane continuation after exclusive ramp fork"
+    },
+    {
+      "edge": "86198728",
+      "reason": "User requested earlier merge, original OSM geometry intentionally changed"
+    }
+  ],
+  "lane_continuity_checks": [
+    [
+      "544295537",
+      "169929488#0",
+      3
+    ],
+    [
+      "169929488#1",
+      "1414146968",
+      2
+    ],
+    [
+      "1414146968",
+      "372821396",
+      2
+    ],
+    [
+      "1413342573",
+      "544295537",
+      3
+    ],
+    [
+      "169929478",
+      "169929482",
+      2
+    ],
+    [
+      "597119334",
+      "597119333",
+      2
+    ],
+    [
+      "841607184#0",
+      "841607184#1",
+      2
+    ],
+    [
+      "372821396",
+      "544292617",
+      2
+    ],
+    [
+      "544292617",
+      "544292616",
+      2
+    ],
+    [
+      "169728799",
+      "280963368",
+      1
+    ],
+    [
+      "170059993#1",
+      "544293888#0",
+      2
+    ]
+  ],
+  "solid_edges_checked": 4,
+  "dashed_edges_checked": 2,
+  "status": "passed",
+  "geometry_deviations": [],
+  "no_simulation_steps_or_training": true,
+  "source_geometry_edges_checked": 40,
+  "max_projected_source_error_m": 2.2833002422626802,
+  "explicit_oneway_lane_tag_checks": 36,
+  "roads_with_unverified_lane_defaults": 28,
+  "routes": {
+    "west_fork_to_north_mainline": {
+      "edges": [
+        "169929488#0",
+        "169728799",
+        "280963368",
+        "1414146971"
+      ],
+      "length_m": 371.15999999999997
+    },
+    "south_ramp_through_taper": {
+      "edges": [
+        "169929488#1",
+        "1414146968",
+        "372821396",
+        "544292617",
+        "544292616",
+        "844484877",
+        "844484877#1"
+      ],
+      "length_m": 1459.8700000000001
+    },
+    "south_to_east": {
+      "edges": [
+        "86198728",
+        "37927508",
+        "86198720",
+        "170059988",
+        "170059996",
+        "170059995",
+        "170059994",
+        "1063527748"
+      ],
+      "length_m": 1038.46
+    },
+    "north_to_east": {
+      "edges": [
+        "52873356",
+        "37927512",
+        "170059991",
+        "170059994",
+        "1063527748"
+      ],
+      "length_m": 1188.3899999999999
+    },
+    "north_to_west": {
+      "edges": [
+        "52873356",
+        "37927512",
+        "170059991",
+        "170059994",
+        "844484876",
+        "86198717",
+        "170059992"
+      ],
+      "length_m": 1445.19
+    },
+    "outer_to_south": {
+      "edges": [
+        "169929488#0",
+        "169929488#1",
+        "1414146968",
+        "372821396",
+        "544292617",
+        "544292616",
+        "844484877"
+      ],
+      "length_m": 1191.2
+    },
+    "return_to_north": {
+      "edges": [
+        "170059993",
+        "170059993#1",
+        "544293888#0",
+        "37375274",
+        "844484878#1",
+        "86198722",
+        "86198708"
+      ],
+      "length_m": 763.3499999999999
+    },
+    "return_to_south": {
+      "edges": [
+        "170059993",
+        "170059993#1",
+        "544293888#0",
+        "544293888#1",
+        "86198710",
+        "170059989",
+        "170059989#1",
+        "206426298",
+        "206426298#1",
+        "844484877"
+      ],
+      "length_m": 1378.84
+    },
+    "toegyewon_to_sano": {
+      "edges": [
+        "86198728",
+        "37927508",
+        "86198720",
+        "170059988",
+        "170059996",
+        "170059995",
+        "170059994",
+        "1063527748",
+        "169728835",
+        "169929478",
+        "169929482"
+      ],
+      "length_m": 1799.44
+    },
+    "sano_to_toegyewon": {
+      "edges": [
+        "169929493",
+        "1413342573",
+        "544295537",
+        "169929488#0",
+        "169929488#1",
+        "1414146968",
+        "372821396",
+        "544292617",
+        "544292616",
+        "844484877"
+      ],
+      "length_m": 1869.2499999999998
+    },
+    "sano_north_to_south": {
+      "edges": [
+        "596640907",
+        "597119334",
+        "597119333",
+        "72387791#0",
+        "72387791#1"
+      ],
+      "length_m": 586.72
+    },
+    "sano_south_to_north": {
+      "edges": [
+        "841607178#15",
+        "841607184#0",
+        "841607184#1",
+        "841607184#2",
+        "841607184#3"
+      ],
+      "length_m": 486.64
+    }
+  },
+  "geometry_tolerances_m": {
+    "unchanged": 0.05,
+    "rounded_curves": 4.05,
+    "auxiliary_lane_drop_center_shift": 1.65
+  },
+  "limitations": [
+    "Lane-to-lane mapping and signals inferred by SUMO where OSM lacks detail",
+    "No measured road elevations; layer topology preserved without physical Z inference",
+    "Conversion warnings retained; no traffic-capacity or AV certification"
+  ]
+}

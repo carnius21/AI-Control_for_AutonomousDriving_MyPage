@@ -1,10 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
 <configuration>
-    <input>
-        <net-file value="highway.net.xml"/>
-        <route-files value="highway.rou.xml"/>
-        <additional-files value="highway.scenery.xml"/>
-    </input>
-    <gui_only>
-        <gui-settings-file value="highway.gui.xml"/>
-    </gui_only>
+  <input>
+    <net-file value="highway.net.xml" />
+    <route-files value="highway.rou.xml" />
+    <additional-files value="highway.scenery.xml" />
+  </input>
+  <time>
+    <begin value="0" />
+    <step-length value="0.2" />
+  </time>
+  <processing>
+    <time-to-teleport value="-1" />
+    <collision.action value="warn" />
+    <collision.check-junctions value="true" />
+  </processing>
+  <random_number>
+    <seed value="42" />
+  </random_number>
+  <gui_only>
+    <gui-settings-file value="highway.gui.xml" />
+    <window-size value="1180,1080" />
+  </gui_only>
 </configuration>

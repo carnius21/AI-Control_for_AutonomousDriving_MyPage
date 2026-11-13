@@ -1,0 +1,1041 @@
+{
+  "status": "PASS",
+  "date": "2026-11-02",
+  "scenario": "Sano grade separation replacing the shared surface crossing and signal.",
+  "upper_road_elevation_m": 5,
+  "lower_road_elevation_m": 0,
+  "elevation_is_design_assumption": true,
+  "removed_shared_junction": "sano_local_cross",
+  "separate_junctions": [
+    "sano_nb_flyover_split",
+    "sano_sb_underpass"
+  ],
+  "signal_controllers": 0,
+  "routes": 23,
+  "external_edges": 74,
+  "lane_connections": 136,
+  "routes_demand_vehicle_parameters_unchanged": true,
+  "generated_network_and_routes_match_tested_candidate": true,
+  "shared_westbound_lane_change_section_m": 70,
+  "maximum_source_grade_percent_by_modified_edge": {
+    "sano_sb_cross_approach": 0.0,
+    "sano_sb_under_north": 0.0,
+    "sano_nb_under_south": 1.543,
+    "sano_nb_under_main": 7.36,
+    "sano_nb_out": 4.014,
+    "sano_se_loop": 7.752,
+    "sano_sb_to_west": 0.0,
+    "sano_nb_to_west": 7.952,
+    "sano_west_ramp_split": 0.0,
+    "sano_to_west_main": 8.479,
+    "sano_to_collector": 4.003
+  },
+  "source_crossings": [
+    [
+      "sb_bridge",
+      "east_main",
+      37.626,
+      102.563,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "west_accel",
+      32.458,
+      115.617,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "return_ramp",
+      40.337,
+      95.483,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_main",
+      "south_loop_bridge",
+      111.048,
+      -136.24,
+      0.0,
+      8.0
+    ],
+    [
+      "sb_main",
+      "return_bridge",
+      108.56,
+      -127.384,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "south_loop_bridge",
+      128.531,
+      -129.3,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "return_bridge",
+      126.189,
+      -119.898,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_accel",
+      "east_main",
+      54.689,
+      109.946,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "west_accel",
+      49.381,
+      122.702,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "return_ramp",
+      57.793,
+      102.415,
+      8.0,
+      0.0
+    ],
+    [
+      "east_in",
+      "outer_bridge",
+      -30.61,
+      71.608,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "south_exit",
+      12.858,
+      91.848,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "flyover",
+      231.577,
+      178.309,
+      0.0,
+      7.812
+    ],
+    [
+      "west_in",
+      "flyover",
+      232.32,
+      187.834,
+      0.0,
+      8.0
+    ],
+    [
+      "west_accel",
+      "south_exit",
+      10.821,
+      106.559,
+      0.0,
+      8.0
+    ],
+    [
+      "west_out",
+      "outer_bridge",
+      -27.831,
+      87.289,
+      0.0,
+      8.0
+    ],
+    [
+      "south_exit",
+      "return_ramp",
+      13.476,
+      85.195,
+      8.0,
+      0.0
+    ],
+    [
+      "south_loop_bridge",
+      "return_loop",
+      104.001,
+      -137.785,
+      8.0,
+      0.005
+    ],
+    [
+      "sano_eb_bridge",
+      "sano_sb_under_main",
+      700.525,
+      153.439,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_eb_bridge",
+      "sano_nb_under_main",
+      720.009,
+      151.698,
+      8.0,
+      1.37
+    ],
+    [
+      "sano_service_bridge",
+      "sano_sb_under_main",
+      697.543,
+      128.127,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_nb_under_south",
+      716.496,
+      127.347,
+      16.0,
+      0.976
+    ],
+    [
+      "sano_service_bridge",
+      "sano_eb_to_south",
+      664.983,
+      129.469,
+      16.0,
+      1.256
+    ],
+    [
+      "sano_service_bridge",
+      "sano_se_loop",
+      724.948,
+      126.998,
+      16.0,
+      1.707
+    ],
+    [
+      "sano_service_bridge",
+      "sano_se_loop",
+      776.38,
+      124.846,
+      16.0,
+      8.0
+    ],
+    [
+      "sano_service_bridge",
+      "sano_nb_to_east",
+      823.677,
+      122.781,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_wb_bridge",
+      "sano_sb_under_main",
+      702.315,
+      163.31,
+      8.0,
+      0.0
+    ],
+    [
+      "sano_wb_bridge",
+      "sano_nb_under_main",
+      722.15,
+      161.577,
+      8.0,
+      1.922
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_sb_under_north",
+      711.928,
+      185.652,
+      16.0,
+      0.0
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nb_under_main",
+      728.021,
+      183.293,
+      16.0,
+      3.52
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nw_loop",
+      700.732,
+      187.293,
+      16.0,
+      1.535
+    ],
+    [
+      "sano_west_collector_bridge",
+      "sano_nw_loop",
+      644.91,
+      195.472,
+      16.0,
+      8.0
+    ],
+    [
+      "sano_west_collector_out",
+      "sano_to_west_main",
+      533.068,
+      211.816,
+      14.681,
+      2.31
+    ],
+    [
+      "sano_sb_cross_approach",
+      "sano_nb_to_west",
+      726.715,
+      227.043,
+      0.0,
+      5.0
+    ],
+    [
+      "sano_nb_under_main",
+      "sano_nw_loop",
+      723.448,
+      167.095,
+      2.299,
+      8.0
+    ]
+  ],
+  "affected_native_lane_crossings": [
+    {
+      "lanes": [
+        "sano_eb_bridge_0",
+        "sano_nb_under_main_0"
+      ],
+      "height_difference_m": 6.763
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_0",
+        "sano_nb_under_main_1"
+      ],
+      "height_difference_m": 6.78
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_0",
+        "sano_nb_under_main_2"
+      ],
+      "height_difference_m": 6.791
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_1",
+        "sano_nb_under_main_0"
+      ],
+      "height_difference_m": 6.609
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_1",
+        "sano_nb_under_main_1"
+      ],
+      "height_difference_m": 6.626
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_1",
+        "sano_nb_under_main_2"
+      ],
+      "height_difference_m": 6.644
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_2",
+        "sano_nb_under_main_0"
+      ],
+      "height_difference_m": 6.44
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_2",
+        "sano_nb_under_main_1"
+      ],
+      "height_difference_m": 6.462
+    },
+    {
+      "lanes": [
+        "sano_eb_bridge_2",
+        "sano_nb_under_main_2"
+      ],
+      "height_difference_m": 6.483
+    },
+    {
+      "lanes": [
+        "sano_nb_to_west_0",
+        "sano_sb_cross_approach_0"
+      ],
+      "height_difference_m": 5.0
+    },
+    {
+      "lanes": [
+        "sano_nb_to_west_0",
+        "sano_sb_cross_approach_1"
+      ],
+      "height_difference_m": 5.0
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_0",
+        "sano_wb_bridge_0"
+      ],
+      "height_difference_m": 5.931
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_0",
+        "sano_wb_bridge_1"
+      ],
+      "height_difference_m": 6.158
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_0",
+        "sano_west_collector_bridge_0"
+      ],
+      "height_difference_m": 12.307
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_0",
+        "sano_west_collector_bridge_1"
+      ],
+      "height_difference_m": 12.566
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_1",
+        "sano_nw_loop_0"
+      ],
+      "height_difference_m": 5.699
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_1",
+        "sano_wb_bridge_0"
+      ],
+      "height_difference_m": 5.964
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_1",
+        "sano_wb_bridge_1"
+      ],
+      "height_difference_m": 6.188
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_1",
+        "sano_west_collector_bridge_0"
+      ],
+      "height_difference_m": 12.351
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_1",
+        "sano_west_collector_bridge_1"
+      ],
+      "height_difference_m": 12.608
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_2",
+        "sano_nw_loop_0"
+      ],
+      "height_difference_m": 5.724
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_2",
+        "sano_wb_bridge_0"
+      ],
+      "height_difference_m": 5.996
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_2",
+        "sano_wb_bridge_1"
+      ],
+      "height_difference_m": 6.216
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_2",
+        "sano_west_collector_bridge_0"
+      ],
+      "height_difference_m": 12.395
+    },
+    {
+      "lanes": [
+        "sano_nb_under_main_2",
+        "sano_west_collector_bridge_1"
+      ],
+      "height_difference_m": 12.65
+    },
+    {
+      "lanes": [
+        "sano_nb_under_south_0",
+        "sano_service_bridge_0"
+      ],
+      "height_difference_m": 15.034
+    },
+    {
+      "lanes": [
+        "sano_nb_under_south_0",
+        "sano_service_bridge_1"
+      ],
+      "height_difference_m": 15.015
+    },
+    {
+      "lanes": [
+        "sano_nb_under_south_1",
+        "sano_service_bridge_0"
+      ],
+      "height_difference_m": 15.033
+    },
+    {
+      "lanes": [
+        "sano_nb_under_south_1",
+        "sano_service_bridge_1"
+      ],
+      "height_difference_m": 15.014
+    },
+    {
+      "lanes": [
+        "sano_sb_under_north_0",
+        "sano_west_collector_bridge_0"
+      ],
+      "height_difference_m": 16.0
+    },
+    {
+      "lanes": [
+        "sano_sb_under_north_0",
+        "sano_west_collector_bridge_1"
+      ],
+      "height_difference_m": 16.0
+    },
+    {
+      "lanes": [
+        "sano_sb_under_north_1",
+        "sano_wb_bridge_0"
+      ],
+      "height_difference_m": 8.0
+    },
+    {
+      "lanes": [
+        "sano_sb_under_north_1",
+        "sano_west_collector_bridge_0"
+      ],
+      "height_difference_m": 16.0
+    },
+    {
+      "lanes": [
+        "sano_sb_under_north_1",
+        "sano_west_collector_bridge_1"
+      ],
+      "height_difference_m": 16.0
+    },
+    {
+      "lanes": [
+        "sano_se_loop_0",
+        "sano_service_bridge_0"
+      ],
+      "height_difference_m": 8.0
+    },
+    {
+      "lanes": [
+        "sano_se_loop_0",
+        "sano_service_bridge_0"
+      ],
+      "height_difference_m": 14.169
+    },
+    {
+      "lanes": [
+        "sano_se_loop_0",
+        "sano_service_bridge_1"
+      ],
+      "height_difference_m": 8.0
+    },
+    {
+      "lanes": [
+        "sano_se_loop_0",
+        "sano_service_bridge_1"
+      ],
+      "height_difference_m": 14.417
+    },
+    {
+      "lanes": [
+        "sano_to_west_main_0",
+        "sano_west_collector_out_0"
+      ],
+      "height_difference_m": 12.519
+    },
+    {
+      "lanes": [
+        "sano_to_west_main_0",
+        "sano_west_collector_out_1"
+      ],
+      "height_difference_m": 12.226
+    }
+  ],
+  "runs": [
+    {
+      "case": "candidate",
+      "seed": 42,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 6.8,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.02,
+          "max": 0.6
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.01,
+          "max": 0.6
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.03,
+          "max": 2.2
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        }
+      },
+      "merge_stops": {},
+      "warnings": ""
+    },
+    {
+      "case": "candidate",
+      "seed": 7,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 7.4,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.02,
+          "max": 0.2
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.01,
+          "max": 0.4
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.04,
+          "max": 3.8
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        }
+      },
+      "merge_stops": {},
+      "warnings": ""
+    },
+    {
+      "case": "candidate",
+      "seed": 23,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 45.6,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.47,
+          "max": 13.0
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.34,
+          "max": 19.8
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.04,
+          "max": 3.2
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.01,
+          "max": 0.8
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.01,
+          "max": 1.2
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.02,
+          "max": 0.6
+        }
+      },
+      "merge_stops": {},
+      "warnings": ""
+    }
+  ],
+  "scope": "SUMO background traffic only; no learned AV evaluation or real-road survey."
+}

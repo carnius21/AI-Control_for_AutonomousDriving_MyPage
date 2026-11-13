@@ -1,0 +1,2683 @@
+{
+  "purpose": "SUMO default-driver network passage only; no HV traffic, no AV/RL evaluation",
+  "cases": [
+    {
+      "case": "short_north",
+      "route": [
+        "169929488#0",
+        "169728799",
+        "280963368",
+        "1414146971"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "pocket_right",
+      "route": [
+        "170059993#1",
+        "544293888#0",
+        "37375274",
+        "844484878#1",
+        "86198722",
+        "86198708",
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 30,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "pocket_left",
+      "route": [
+        "170059993#1",
+        "544293888#0",
+        "544293888#1",
+        "86198710",
+        "170059989",
+        "170059989#1",
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 43,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "pocket_entry_right",
+      "route": [
+        "170059993",
+        "170059993#1",
+        "544293888#0",
+        "37375274",
+        "844484878#1",
+        "86198722",
+        "86198708",
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 41,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "pocket_entry_left",
+      "route": [
+        "170059993",
+        "170059993#1",
+        "544293888#0",
+        "544293888#1",
+        "86198710",
+        "170059989",
+        "170059989#1",
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 54,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "loop_merge",
+      "route": [
+        "170059989",
+        "170059989#1",
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 29,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "mainline_0",
+      "route": [
+        "37927509",
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 25,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "mainline_1",
+      "route": [
+        "37927509",
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 24,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "mainline_2",
+      "route": [
+        "37927509",
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 24,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "mainline_3",
+      "route": [
+        "37927509",
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 24,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "south_ramp_0",
+      "route": [
+        "169929488#1",
+        "1414146968",
+        "372821396",
+        "544292617",
+        "544292616",
+        "844484877",
+        "844484877#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 70,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "south_ramp_1",
+      "route": [
+        "169929488#1",
+        "1414146968",
+        "372821396",
+        "544292617",
+        "544292616",
+        "844484877",
+        "844484877#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 71,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "middle_right",
+      "route": [
+        "781184662#3",
+        "169929484"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "middle_through_1",
+      "route": [
+        "781184662#3",
+        "169929497"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "middle_through_2",
+      "route": [
+        "781184662#3",
+        "169929497"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "middle_entering",
+      "route": [
+        "797789364",
+        "781184662#3",
+        "169929484"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "middle_mainline",
+      "route": [
+        "781184662#2",
+        "781184662#3",
+        "169929497"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 33,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "north_auxiliary_0",
+      "route": [
+        "844484878#1",
+        "86198722",
+        "86198708",
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "north_auxiliary_1",
+      "route": [
+        "844484878#1",
+        "86198722",
+        "86198708",
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "north_auxiliary_2",
+      "route": [
+        "844484878#1",
+        "86198722",
+        "86198708",
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "north_auxiliary_3",
+      "route": [
+        "844484878#1",
+        "86198722",
+        "86198708",
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "north_auxiliary_4",
+      "route": [
+        "844484878#1",
+        "86198722",
+        "86198708",
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 4,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "crest_entering_ramp",
+      "route": [
+        "169728849",
+        "169929488#0",
+        "169929488#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 45,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1063527748_0__169728835_0",
+      "route": [
+        "1063527748",
+        "169728835"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 20,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1063527748_1__169728835_1",
+      "route": [
+        "1063527748",
+        "169728835"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1063527748_2__797789364_0",
+      "route": [
+        "1063527748",
+        "797789364"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 7,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1413342573_0__544295537_0",
+      "route": [
+        "1413342573",
+        "544295537"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 22,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1413342573_1__544295537_1",
+      "route": [
+        "1413342573",
+        "544295537"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 22,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1413342573_2__544295537_2",
+      "route": [
+        "1413342573",
+        "544295537"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 22,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1414146968_0__372821396_0",
+      "route": [
+        "1414146968",
+        "372821396"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 24,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_1414146968_1__372821396_1",
+      "route": [
+        "1414146968",
+        "372821396"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 25,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169728799_0__280963368_0",
+      "route": [
+        "169728799",
+        "280963368"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169728835_0__169929478_0",
+      "route": [
+        "169728835",
+        "169929478"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169728835_1__169929478_1",
+      "route": [
+        "169728835",
+        "169929478"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169728849_0__169929488#0_0",
+      "route": [
+        "169728849",
+        "169929488#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929470#0_0__169929470#1_0",
+      "route": [
+        "169929470#0",
+        "169929470#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 8,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929470#0_0__597119333_1",
+      "route": [
+        "169929470#0",
+        "597119333"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 8,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929470#1_0__72387788#1_0",
+      "route": [
+        "169929470#1",
+        "72387788#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929474_0__169929493_0",
+      "route": [
+        "169929474",
+        "169929493"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929474_1__169929493_1",
+      "route": [
+        "169929474",
+        "169929493"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929474_2__169929493_2",
+      "route": [
+        "169929474",
+        "169929493"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929478_0__169929482_0",
+      "route": [
+        "169929478",
+        "169929482"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929478_1__169929482_1",
+      "route": [
+        "169929478",
+        "169929482"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929482_0__844484875_0",
+      "route": [
+        "169929482",
+        "844484875"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 27,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929482_1__844484875_1",
+      "route": [
+        "169929482",
+        "844484875"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 29,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929482_1__844484875_2",
+      "route": [
+        "169929482",
+        "844484875"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 29,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929484_0__72387791#1_0",
+      "route": [
+        "169929484",
+        "72387791#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929487_0__841607184#1_0",
+      "route": [
+        "169929487",
+        "841607184#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 13,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929488#0_0__169728799_0",
+      "route": [
+        "169929488#0",
+        "169728799"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929488#0_1__169929488#1_0",
+      "route": [
+        "169929488#0",
+        "169929488#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929488#0_2__169929488#1_1",
+      "route": [
+        "169929488#0",
+        "169929488#1"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929488#1_0__1414146968_0",
+      "route": [
+        "169929488#1",
+        "1414146968"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929488#1_1__1414146968_1",
+      "route": [
+        "169929488#1",
+        "1414146968"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929489_0__844484875_2",
+      "route": [
+        "169929489",
+        "844484875"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 27,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929489_1__844484875_3",
+      "route": [
+        "169929489",
+        "844484875"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 27,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929493_0__1413342573_0",
+      "route": [
+        "169929493",
+        "1413342573"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929493_1__1413342573_1",
+      "route": [
+        "169929493",
+        "1413342573"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929493_2__1413342573_2",
+      "route": [
+        "169929493",
+        "1413342573"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929495_0__72387791#0_0",
+      "route": [
+        "169929495",
+        "72387791#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929497_0__556956811_0",
+      "route": [
+        "169929497",
+        "556956811"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929497_1__556956811_1",
+      "route": [
+        "169929497",
+        "556956811"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929502_0__556956812#1_0",
+      "route": [
+        "169929502",
+        "556956812#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 17,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929503#0_0__169929503#1_0",
+      "route": [
+        "169929503#0",
+        "169929503#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929503#0_1__169929503#1_1",
+      "route": [
+        "169929503#0",
+        "169929503#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929503#1_0__169929503#2_0",
+      "route": [
+        "169929503#1",
+        "169929503#2"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 24,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_169929503#1_1__169929503#2_1",
+      "route": [
+        "169929503#1",
+        "169929503#2"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 23,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059988_0__170059996_0",
+      "route": [
+        "170059988",
+        "170059996"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059989_0__170059989#1_0",
+      "route": [
+        "170059989",
+        "170059989#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059989#1_0__206426298_0",
+      "route": [
+        "170059989#1",
+        "206426298"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059991_0__170059994_0",
+      "route": [
+        "170059991",
+        "170059994"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059991_1__170059994_1",
+      "route": [
+        "170059991",
+        "170059994"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059991_2__170059994_2",
+      "route": [
+        "170059991",
+        "170059994"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059992_0__169929503#1_0",
+      "route": [
+        "170059992",
+        "169929503#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059993_0__170059993#1_0",
+      "route": [
+        "170059993",
+        "170059993#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059993_0__170059993#1_1",
+      "route": [
+        "170059993",
+        "170059993#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059993#1_0__544293888#0_0",
+      "route": [
+        "170059993#1",
+        "544293888#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059993#1_1__544293888#0_1",
+      "route": [
+        "170059993#1",
+        "544293888#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059994_0__1063527748_0",
+      "route": [
+        "170059994",
+        "1063527748"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 17,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059994_1__1063527748_1",
+      "route": [
+        "170059994",
+        "1063527748"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 17,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059994_2__1063527748_2",
+      "route": [
+        "170059994",
+        "1063527748"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 17,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059994_3__844484876_0",
+      "route": [
+        "170059994",
+        "844484876"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 13,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059995_0__170059994_3",
+      "route": [
+        "170059995",
+        "170059994"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_170059996_0__170059995_0",
+      "route": [
+        "170059996",
+        "170059995"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298_1__206426298#1_0",
+      "route": [
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298_2__206426298#1_1",
+      "route": [
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298_3__206426298#1_2",
+      "route": [
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298_4__206426298#1_3",
+      "route": [
+        "206426298",
+        "206426298#1"
+      ],
+      "depart_lane": 4,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298#1_0__844484877_1",
+      "route": [
+        "206426298#1",
+        "844484877"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 17,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298#1_1__844484877_2",
+      "route": [
+        "206426298#1",
+        "844484877"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298#1_2__844484877_3",
+      "route": [
+        "206426298#1",
+        "844484877"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_206426298#1_3__844484877_4",
+      "route": [
+        "206426298#1",
+        "844484877"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_280963368_0__1414146971_0",
+      "route": [
+        "280963368",
+        "1414146971"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_372821396_0__544292617_0",
+      "route": [
+        "372821396",
+        "544292617"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_372821396_1__544292617_1",
+      "route": [
+        "372821396",
+        "544292617"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_372832348_0__169929474_0",
+      "route": [
+        "372832348",
+        "169929474"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_372832348_1__169929474_1",
+      "route": [
+        "372832348",
+        "169929474"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_372832348_2__169929474_2",
+      "route": [
+        "372832348",
+        "169929474"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_372832348_2__844484874_0",
+      "route": [
+        "372832348",
+        "844484874"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_372832348_3__844484874_1",
+      "route": [
+        "372832348",
+        "844484874"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37375274_0__844484878#1_0",
+      "route": [
+        "37375274",
+        "844484878#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927508_0__86198720_0",
+      "route": [
+        "37927508",
+        "86198720"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927509_0__206426298_1",
+      "route": [
+        "37927509",
+        "206426298"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927509_1__206426298_2",
+      "route": [
+        "37927509",
+        "206426298"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927509_2__206426298_3",
+      "route": [
+        "37927509",
+        "206426298"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927509_3__206426298_4",
+      "route": [
+        "37927509",
+        "206426298"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 17,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927512_0__170059991_0",
+      "route": [
+        "37927512",
+        "170059991"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927512_1__170059991_1",
+      "route": [
+        "37927512",
+        "170059991"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_37927512_2__170059991_2",
+      "route": [
+        "37927512",
+        "170059991"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 13,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_52873356_0__37927512_0",
+      "route": [
+        "52873356",
+        "37927512"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_52873356_0__37927512_1",
+      "route": [
+        "52873356",
+        "37927512"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_52873356_0__37927512_2",
+      "route": [
+        "52873356",
+        "37927512"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_52873356_0__844484878#0_0",
+      "route": [
+        "52873356",
+        "844484878#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 23,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_52873356_1__844484878#0_1",
+      "route": [
+        "52873356",
+        "844484878#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 24,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_52873356_2__844484878#0_2",
+      "route": [
+        "52873356",
+        "844484878#0"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 24,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_52873356_3__844484878#0_3",
+      "route": [
+        "52873356",
+        "844484878#0"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 23,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544292616_0__844484877_0",
+      "route": [
+        "544292616",
+        "844484877"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 20,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544292616_1__844484877_1",
+      "route": [
+        "544292616",
+        "844484877"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544292617_0__544292616_0",
+      "route": [
+        "544292617",
+        "544292616"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544292617_1__544292616_1",
+      "route": [
+        "544292617",
+        "544292616"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544293888#0_0__37375274_0",
+      "route": [
+        "544293888#0",
+        "37375274"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544293888#0_1__544293888#1_0",
+      "route": [
+        "544293888#0",
+        "544293888#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544293888#1_0__86198710_0",
+      "route": [
+        "544293888#1",
+        "86198710"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544295537_0__169929488#0_0",
+      "route": [
+        "544295537",
+        "169929488#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544295537_1__169929488#0_1",
+      "route": [
+        "544295537",
+        "169929488#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_544295537_2__169929488#0_2",
+      "route": [
+        "544295537",
+        "169929488#0"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956811_0__556956815_0",
+      "route": [
+        "556956811",
+        "556956815"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956811_0__597119332_0",
+      "route": [
+        "556956811",
+        "597119332"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956811_1__597119332_1",
+      "route": [
+        "556956811",
+        "597119332"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956812#0_0__556956812#1_0",
+      "route": [
+        "556956812#0",
+        "556956812#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956812#0_1__556956812#1_1",
+      "route": [
+        "556956812#0",
+        "556956812#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956812#1_0__169929503#0_0",
+      "route": [
+        "556956812#1",
+        "169929503#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956812#1_1__169929503#0_1",
+      "route": [
+        "556956812#1",
+        "169929503#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956813_0__556956812#0_0",
+      "route": [
+        "556956813",
+        "556956812#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 13,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956813_1__556956812#0_1",
+      "route": [
+        "556956813",
+        "556956812#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 13,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956815_0__169929487_0",
+      "route": [
+        "556956815",
+        "169929487"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_556956816_0__169929495_0",
+      "route": [
+        "556956816",
+        "169929495"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_596640907_0__72387788#0_0",
+      "route": [
+        "596640907",
+        "72387788#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_596640907_0__597119334_0",
+      "route": [
+        "596640907",
+        "597119334"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_596640907_1__597119334_1",
+      "route": [
+        "596640907",
+        "597119334"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_597119332_0__169929489_0",
+      "route": [
+        "597119332",
+        "169929489"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 20,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_597119332_1__169929489_1",
+      "route": [
+        "597119332",
+        "169929489"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 20,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_597119333_0__72387791#0_0",
+      "route": [
+        "597119333",
+        "72387791#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_597119333_1__72387791#0_1",
+      "route": [
+        "597119333",
+        "72387791#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_597119334_0__169929470#1_0",
+      "route": [
+        "597119334",
+        "169929470#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_597119334_0__597119333_0",
+      "route": [
+        "597119334",
+        "597119333"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_597119334_1__597119333_1",
+      "route": [
+        "597119334",
+        "597119333"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_72387788#0_0__72387788#1_0",
+      "route": [
+        "72387788#0",
+        "72387788#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 8,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_72387788#1_0__169728849_0",
+      "route": [
+        "72387788#1",
+        "169728849"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 27,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_72387788#1_0__169929502_0",
+      "route": [
+        "72387788#1",
+        "169929502"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 13,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_72387791#0_0__72387791#1_0",
+      "route": [
+        "72387791#0",
+        "72387791#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_72387791#0_1__72387791#1_1",
+      "route": [
+        "72387791#0",
+        "72387791#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_72387844_0__169929489_0",
+      "route": [
+        "72387844",
+        "169929489"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#1_0__170059993_0",
+      "route": [
+        "781184662#1",
+        "170059993"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 19,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#1_0__781184662#2_0",
+      "route": [
+        "781184662#1",
+        "781184662#2"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 22,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#1_1__781184662#2_1",
+      "route": [
+        "781184662#1",
+        "781184662#2"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 22,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#2_0__781184662#3_1",
+      "route": [
+        "781184662#2",
+        "781184662#3"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#2_1__781184662#3_2",
+      "route": [
+        "781184662#2",
+        "781184662#3"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#3_0__169929484_0",
+      "route": [
+        "781184662#3",
+        "169929484"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#3_1__169929497_0",
+      "route": [
+        "781184662#3",
+        "169929497"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_781184662#3_2__169929497_1",
+      "route": [
+        "781184662#3",
+        "169929497"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_797789364_0__781184662#3_0",
+      "route": [
+        "797789364",
+        "781184662#3"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 14,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607178#15_0__72387844_0",
+      "route": [
+        "841607178#15",
+        "72387844"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607178#15_0__841607184#0_0",
+      "route": [
+        "841607178#15",
+        "841607184#0"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607178#15_1__841607184#0_1",
+      "route": [
+        "841607178#15",
+        "841607184#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#0_0__841607184#1_0",
+      "route": [
+        "841607184#0",
+        "841607184#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#0_1__841607184#1_1",
+      "route": [
+        "841607184#0",
+        "841607184#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#1_0__841607184#2_0",
+      "route": [
+        "841607184#1",
+        "841607184#2"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 7,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#1_1__841607184#2_1",
+      "route": [
+        "841607184#1",
+        "841607184#2"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 7,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#2_0__841607184#3_0",
+      "route": [
+        "841607184#2",
+        "841607184#3"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#2_1__841607184#3_1",
+      "route": [
+        "841607184#2",
+        "841607184#3"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 18,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#2_1__169929470#0_0",
+      "route": [
+        "841607184#2",
+        "169929470#0"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 6,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_841607184#3_1__841607184#4_0",
+      "route": [
+        "841607184#3",
+        "841607184#4"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484874_0__556956816_0",
+      "route": [
+        "844484874",
+        "556956816"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484874_0__556956813_0",
+      "route": [
+        "844484874",
+        "556956813"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484874_1__556956813_1",
+      "route": [
+        "844484874",
+        "556956813"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484876_0__86198717_0",
+      "route": [
+        "844484876",
+        "86198717"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484877_1__844484877#1_0",
+      "route": [
+        "844484877",
+        "844484877#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 22,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484877_2__844484877#1_1",
+      "route": [
+        "844484877",
+        "844484877#1"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484877_3__844484877#1_2",
+      "route": [
+        "844484877",
+        "844484877#1"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484877_4__844484877#1_3",
+      "route": [
+        "844484877",
+        "844484877#1"
+      ],
+      "depart_lane": 4,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#0_0__844484878#1_1",
+      "route": [
+        "844484878#0",
+        "844484878#1"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#0_1__844484878#1_2",
+      "route": [
+        "844484878#0",
+        "844484878#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#0_2__844484878#1_3",
+      "route": [
+        "844484878#0",
+        "844484878#1"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#0_3__844484878#1_4",
+      "route": [
+        "844484878#0",
+        "844484878#1"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#1_0__86198722_0",
+      "route": [
+        "844484878#1",
+        "86198722"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#1_1__86198722_1",
+      "route": [
+        "844484878#1",
+        "86198722"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#1_2__86198722_2",
+      "route": [
+        "844484878#1",
+        "86198722"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#1_3__86198722_3",
+      "route": [
+        "844484878#1",
+        "86198722"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_844484878#1_4__86198722_4",
+      "route": [
+        "844484878#1",
+        "86198722"
+      ],
+      "depart_lane": 4,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708_1__86198708#1_0",
+      "route": [
+        "86198708",
+        "86198708#1"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708_2__86198708#1_1",
+      "route": [
+        "86198708",
+        "86198708#1"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708_3__86198708#1_2",
+      "route": [
+        "86198708",
+        "86198708#1"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708_4__86198708#1_3",
+      "route": [
+        "86198708",
+        "86198708#1"
+      ],
+      "depart_lane": 4,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708#1_0__1414146971_1",
+      "route": [
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 7,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708#1_1__1414146971_2",
+      "route": [
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 8,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708#1_2__1414146971_3",
+      "route": [
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 8,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198708#1_3__1414146971_4",
+      "route": [
+        "86198708#1",
+        "1414146971"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 8,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198709_0__37927509_0",
+      "route": [
+        "86198709",
+        "37927509"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198709_1__37927509_1",
+      "route": [
+        "86198709",
+        "37927509"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198709_2__37927509_2",
+      "route": [
+        "86198709",
+        "37927509"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198709_3__37927509_3",
+      "route": [
+        "86198709",
+        "37927509"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198710_0__170059989_0",
+      "route": [
+        "86198710",
+        "170059989"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 13,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198717_0__170059992_0",
+      "route": [
+        "86198717",
+        "170059992"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 22,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198720_0__170059988_0",
+      "route": [
+        "86198720",
+        "170059988"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 21,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198722_0__86198708_0",
+      "route": [
+        "86198722",
+        "86198708"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198722_1__86198708_1",
+      "route": [
+        "86198722",
+        "86198708"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198722_2__86198708_2",
+      "route": [
+        "86198722",
+        "86198708"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198722_3__86198708_3",
+      "route": [
+        "86198722",
+        "86198708"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 16,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198722_4__86198708_4",
+      "route": [
+        "86198722",
+        "86198708"
+      ],
+      "depart_lane": 4,
+      "arrived": true,
+      "seconds": 15,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198725_0__86198709_0",
+      "route": [
+        "86198725",
+        "86198709"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198725_1__86198709_1",
+      "route": [
+        "86198725",
+        "86198709"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198725_2__86198709_2",
+      "route": [
+        "86198725",
+        "86198709"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198725_3__86198709_3",
+      "route": [
+        "86198725",
+        "86198709"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 9,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198728_0__37927508_0",
+      "route": [
+        "86198728",
+        "37927508"
+      ],
+      "depart_lane": 0,
+      "arrived": true,
+      "seconds": 10,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198728_1__86198725_0",
+      "route": [
+        "86198728",
+        "86198725"
+      ],
+      "depart_lane": 1,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198728_2__86198725_1",
+      "route": [
+        "86198728",
+        "86198725"
+      ],
+      "depart_lane": 2,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198728_3__86198725_2",
+      "route": [
+        "86198728",
+        "86198725"
+      ],
+      "depart_lane": 3,
+      "arrived": true,
+      "seconds": 12,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "case": "link_86198728_4__86198725_3",
+      "route": [
+        "86198728",
+        "86198725"
+      ],
+      "depart_lane": 4,
+      "arrived": true,
+      "seconds": 11,
+      "collisions": 0,
+      "teleports": 0
+    }
+  ]
+}

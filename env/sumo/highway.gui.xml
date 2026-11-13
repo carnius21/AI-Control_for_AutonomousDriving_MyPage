@@ -1,5 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
 <viewsettings>
-    <scheme name="real world"/>
-    <viewport zoom="1200" x="540.0" y="9530.0" angle="0"/>
-    <delay value="100.0"/>
+  <scheme name="Toegyewon + Sano IC - clear contrast">
+    <opengl trueZ="true" dither="false" />
+    <background backgroundColor="128,143,130" showGrid="false" />
+    <edges laneEdgeMode="22" laneShowBorders="false" showLinkDecals="false" showLinkRules="false" widthExaggeration="1" showDirection="false">
+      <colorScheme name="by height at geometry-segment start" interpolated="true">
+        <entry color="37,44,54" threshold="0" />
+        <entry color="38,54,73" threshold="4" />
+        <entry color="38,64,91" threshold="8.0" />
+      </colorScheme>
+    </edges>
+    <vehicles vehicleMode="0" vehicleQuality="2" vehicle_exaggeration="1.5" vehicle_minSize="0" vehicle_constantSize="false" showBlinker="true" />
+    <junctions drawShape="false" junctionMode="0" />
+    <pois poiName_show="true" poiName_size="50" poiName_color="21,36,29" poi_exaggeration="0.2" />
+    <polys polyName_show="false" />
+  </scheme>
+  <delay value="300.0" />
+  <viewport x="550.0" y="-85.0" zoom="92.0" />
 </viewsettings>

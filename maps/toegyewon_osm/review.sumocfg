@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf8'?>
+<configuration>
+  <input>
+    <net-file value="network.net.xml" />
+  </input>
+  <gui_only>
+    <gui-settings-file value="view.xml" />
+  </gui_only>
+</configuration>

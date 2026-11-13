@@ -1,0 +1,170 @@
+{
+  "544295537": {
+    "num_lanes": 3,
+    "basis": "Satellite: 3 lanes continue through western curve to the fork via 169929488#0. Prior note incorrectly called node 1808903166 the split; actual fork is 1808903388.",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=17.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "169929482": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "visible",
+    "evidence": "docs/assets/osm-audit/sano-east-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "596640907": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "visible",
+    "evidence": "docs/assets/osm-audit/sano-north-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "597119334": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "visible",
+    "evidence": "docs/assets/osm-audit/sano-bridge-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "597119333": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "continuity_inference",
+    "evidence": "docs/assets/osm-audit/sano-bridge-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "841607184#0": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "continuity_inference",
+    "evidence": "docs/assets/osm-audit/sano-south-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "841607184#1": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "continuity_inference",
+    "evidence": "docs/assets/osm-audit/sano-bridge-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "841607184#2": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "visible",
+    "evidence": "docs/assets/osm-audit/sano-bridge-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "841607184#3": {
+    "num_lanes": 2,
+    "basis": "Two-lane approach visible in satellite imagery; for shadowed underpass segments, continuity of visible two-lane approaches is an inference requiring roadview confirmation.",
+    "confidence": "visible",
+    "evidence": "docs/assets/osm-audit/sano-north-satellite.png",
+    "source_url": "https://map.naver.com/p/search/사노IC?c=18.00,0,0,1,dh",
+    "source_osm_lanes": null
+  },
+  "169929488#0": {
+    "num_lanes": 3,
+    "confidence": "visible",
+    "basis": "User satellite reference 2026-11-07: westbound approach remains 3 lanes until fork; upper branch one lane, lower branch two lanes. For 372821396, two-lane continuation retained up to existing OSM boundary; downstream taper position needs precise survey.",
+    "evidence": "docs/assets/osm-audit/westbound-three-lane-split.png",
+    "source_osm_lanes": null
+  },
+  "169929488#1": {
+    "num_lanes": 2,
+    "confidence": "visible",
+    "basis": "User satellite reference 2026-11-07: westbound approach remains 3 lanes until fork; upper branch one lane, lower branch two lanes. For 372821396, two-lane continuation retained up to existing OSM boundary; downstream taper position needs precise survey.",
+    "evidence": "docs/assets/osm-audit/westbound-three-lane-split.png",
+    "source_osm_lanes": null
+  },
+  "1414146968": {
+    "num_lanes": 2,
+    "confidence": "visible",
+    "basis": "User satellite reference 2026-11-07: westbound approach remains 3 lanes until fork; upper branch one lane, lower branch two lanes. For 372821396, two-lane continuation retained up to existing OSM boundary; downstream taper position needs precise survey.",
+    "evidence": "docs/assets/osm-audit/westbound-three-lane-split.png",
+    "source_osm_lanes": null
+  },
+  "372821396": {
+    "num_lanes": 2,
+    "confidence": "visible",
+    "basis": "Naver satellite inspected continuously from the curve through the parallel approach to the mainline merge. Two ramp lanes; do not drop at OSM way boundaries. Downstream auxiliary-lane taper audited separately.",
+    "evidence": "docs/assets/osm-audit/south-ramp-two-lanes-gore.png",
+    "source_osm_lanes": null
+  },
+  "544292617": {
+    "num_lanes": 2,
+    "confidence": "visible",
+    "basis": "Naver satellite inspected continuously from the curve through the parallel approach to the mainline merge. Two ramp lanes; do not drop at OSM way boundaries. Downstream auxiliary-lane taper audited separately.",
+    "evidence": "docs/assets/osm-audit/south-ramp-two-lanes-gore.png",
+    "source_osm_lanes": null
+  },
+  "544292616": {
+    "num_lanes": 2,
+    "confidence": "visible",
+    "basis": "Naver satellite inspected continuously from the curve through the parallel approach to the mainline merge. Two ramp lanes; do not drop at OSM way boundaries. Downstream auxiliary-lane taper audited separately.",
+    "evidence": "docs/assets/osm-audit/south-ramp-two-lanes-gore.png",
+    "source_osm_lanes": null
+  },
+  "844484877": {
+    "num_lanes": 5,
+    "confidence": "satellite_approximate_taper",
+    "basis": "Five lanes including auxiliary lane after south merge, then four at the end of the auxiliary taper (near 37.6338 N). Split uses existing source vertex near that location; imagery is not a survey.",
+    "source_osm_lanes": "4",
+    "evidence": "docs/assets/osm-audit/south-auxiliary-lane-taper-overview.png"
+  },
+  "544293888#0": {
+    "num_lanes": 2,
+    "confidence": "visible",
+    "basis": "User satellite screenshot: two-lane pocket before fork. Right lane leads to 37375274, left lane to 544293888#1.",
+    "source_osm_lanes": null
+  },
+  "37927509": {
+    "num_lanes": 4,
+    "source_osm_lanes": "3",
+    "confidence": "user_satellite_correction",
+    "basis": "User satellite confirms four mainline lanes remain before the single-lane loop merge; OSM three-lane tag is overridden."
+  },
+  "206426298": {
+    "num_lanes": 5,
+    "source_osm_lanes": "4",
+    "confidence": "visible_count_approximate_taper",
+    "basis": "User satellite: four mainline lanes plus one loop ramp = five, then four downstream. Taper uses source vertex near end of auxiliary section; not surveyed."
+  },
+  "781184662#3": {
+    "num_lanes": 3,
+    "source_osm_lanes": "2",
+    "confidence": "user_satellite_correction",
+    "basis": "Keep 2 trunk lanes plus 1 entering lane between node 7461635551 and next fork 1810880223; user screenshot 2026-11-07."
+  },
+  "844484878#1": {
+    "num_lanes": 5,
+    "confidence": "user_correction_approximate_taper",
+    "basis": "User correction 2026-11-07: four mainline lanes, five immediately after lower ramp 37375274 joins, then four until the next northern merge. Taper placed at existing node 436249299; exact distance not surveyed."
+  },
+  "86198722": {
+    "num_lanes": 5,
+    "confidence": "user_correction_approximate_taper",
+    "basis": "User correction: retain auxiliary fifth lane until 30m before the next north ramp merge; drop outer lane only."
+  },
+  "86198708": {
+    "num_lanes": 5,
+    "confidence": "user_correction_approximate_taper",
+    "basis": "User correction: retain auxiliary fifth lane until 30m before the next north ramp merge; drop outer lane only."
+  },
+  "1414146971": {
+    "num_lanes": 5,
+    "confidence": "user_requested_boundary_layout",
+    "basis": "User correction: northern shortened boundary retains four mainline lanes plus one entering ramp lane through exit; do not force immediate merge into four lanes."
+  },
+  "86198725": {
+    "num_lanes": 4,
+    "basis": "User requested simple 5 -> 4 through + 1 ramp fork; no separate downstream lane drop",
+    "confidence": "user_requested"
+  }
+}

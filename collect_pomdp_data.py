@@ -160,7 +160,7 @@ def iter_transitions(jsonl_path: str):
             yield prev
 
 
-def collect(args, sumocfg, episodes, worker_id, jsonl_path, npz_path, tag=""):
+def collect(args, sumocfg, episodes, worker_id, jsonl_path, npz_path, tag="", env_factory=None):
     """SUMO 인스턴스 하나로 episodes(전역 에피소드 번호 목록)를 수집해 두 파일로 저장한다.
 
     --workers > 1이면 이 함수가 프로세스마다 하나씩 돌고, main()이 결과를 합친다.
@@ -176,7 +176,7 @@ def collect(args, sumocfg, episodes, worker_id, jsonl_path, npz_path, tag=""):
         except ImportError:
             pass
 
-    env = SumoHighwayEnv(
+    env = env_factory() if env_factory is not None else SumoHighwayEnv(
         cfg_path=sumocfg,
         road=ROAD, ego=EGO,
         mdp_sim=SIMULATION, mdp_obs=OBSERVATION,
@@ -245,6 +245,8 @@ def collect(args, sumocfg, episodes, worker_id, jsonl_path, npz_path, tag=""):
                             "lane_after": info["lane_after"],
                         },
                     }
+                    if "ic_event" in info:
+                        record["event"].update(info["ic_event"])
                     if done:
                         # 중간 스텝의 next_*는 다음 레코드의 observation/state와 같으므로
                         # 에피소드 마지막 스텝에만 기록한다 (iter_transitions가 복원).

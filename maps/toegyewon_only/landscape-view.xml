@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<viewsettings>
+  <scheme name="Toegyewon IC - landscaped">
+    <background backgroundColor="188,198,188" />
+    <edges laneShowBorders="false" showDirection="false" showLinkDecals="false" widthExaggeration="1" laneEdgeMode="22" showLinkRules="false">
+      <colorScheme name="by height at geometry-segment start" interpolated="true">
+        <entry color="107,132,151" threshold="0" />
+      <entry color="107,132,151" threshold="10" /></colorScheme>
+    </edges>
+    <vehicles vehicleQuality="2" vehicle_exaggeration="1" vehicle_minSize="0" showBlinker="true" />
+    <junctions drawShape="false" junctionMode="0" />
+  <opengl trueZ="true" /></scheme>
+  <delay value="100" />
+  <viewport x="1683.6499999999999" y="1274.0833333333333" zoom="150" />
+</viewsettings>

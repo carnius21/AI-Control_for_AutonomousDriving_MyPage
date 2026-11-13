@@ -1,0 +1,235 @@
+{
+  "scope": "Interface/negative-control/exposure checks; NOT trained-AV performance.",
+  "policy": "Constant-speed lane-keeping action [0,0] for 60 seconds in exposure checks.",
+  "near_definition": "Network leader/follower or adjacent neighbor within 0..40 m longitudinal gap.",
+  "rule_gate_enabled": false,
+  "negative_control": {
+    "passed": true,
+    "results": [
+      {
+        "rule_gate_enabled": true,
+        "before": {
+          "ego": {
+            "lane": "nb_in_0",
+            "pos": 2.138284611157142,
+            "speed": 10.691423055785709
+          },
+          "probe_hv": {
+            "lane": "nb_in_1",
+            "pos": 0.0,
+            "speed": 10.0
+          }
+        },
+        "events": [
+          {
+            "info": {
+              "collided": false,
+              "arrived": false,
+              "speed": 10.691423055785709,
+              "gap": null,
+              "accel_raw": 0.0,
+              "lane_change_raw": 1.0,
+              "lane_change": 1,
+              "lane_change_applied": false,
+              "lane_before": 0,
+              "lane_after": 0
+            },
+            "reward": 0.03848604411729917,
+            "terminated": false,
+            "truncated": false
+          },
+          {
+            "info": {
+              "collided": false,
+              "arrived": false,
+              "speed": 10.691423055785709,
+              "gap": null,
+              "accel_raw": 0.0,
+              "lane_change_raw": 0.0,
+              "lane_change": 0,
+              "lane_change_applied": true,
+              "lane_before": 0,
+              "lane_after": 0
+            },
+            "reward": 0.03848604411729917,
+            "terminated": false,
+            "truncated": false
+          },
+          {
+            "info": {
+              "collided": false,
+              "arrived": false,
+              "speed": 10.691423055785709,
+              "gap": null,
+              "accel_raw": 0.0,
+              "lane_change_raw": 0.0,
+              "lane_change": 0,
+              "lane_change_applied": true,
+              "lane_before": 0,
+              "lane_after": 0
+            },
+            "reward": 0.03848604411729917,
+            "terminated": false,
+            "truncated": false
+          },
+          {
+            "info": {
+              "collided": false,
+              "arrived": false,
+              "speed": 10.691423055785709,
+              "gap": null,
+              "accel_raw": 0.0,
+              "lane_change_raw": 0.0,
+              "lane_change": 0,
+              "lane_change_applied": true,
+              "lane_before": 0,
+              "lane_after": 0
+            },
+            "reward": 0.03848604411729917,
+            "terminated": false,
+            "truncated": false
+          }
+        ]
+      },
+      {
+        "rule_gate_enabled": false,
+        "before": {
+          "ego": {
+            "lane": "nb_in_0",
+            "pos": 2.138284611157142,
+            "speed": 10.691423055785709
+          },
+          "probe_hv": {
+            "lane": "nb_in_1",
+            "pos": 0.0,
+            "speed": 10.0
+          }
+        },
+        "events": [
+          {
+            "info": {
+              "collided": true,
+              "arrived": true,
+              "speed": null,
+              "gap": null,
+              "accel_raw": 0.0,
+              "lane_change_raw": 1.0,
+              "lane_change": 1,
+              "lane_change_applied": true,
+              "lane_before": 0,
+              "lane_after": null
+            },
+            "reward": -5.0,
+            "terminated": true,
+            "truncated": false
+          }
+        ]
+      }
+    ],
+    "note": "With collision.action=remove, SUMO may also emit arrived=True. The existing reward and evaluator prioritize collided, so this is a collision, not a completion."
+  },
+  "exposure": [
+    {
+      "seed": 42,
+      "initial_hv": 91,
+      "steps": 300,
+      "seconds": 60.0,
+      "unique_nearby_hv": 7,
+      "exposure_steps": {
+        "hv_within_40m_steps": 296,
+        "follower_within_40m_steps": 293,
+        "leader_within_40m_steps": 30
+      },
+      "visited_edges": {
+        "nb_in": 74,
+        ":nb_exit_0": 1,
+        "north_exit": 45,
+        "north_exit_widen": 85,
+        "north_approach": 81,
+        "weave": 14
+      },
+      "last_info": {
+        "collided": false,
+        "arrived": false,
+        "speed": 10.0,
+        "gap": 0.9144894759965396,
+        "accel_raw": 0.0,
+        "lane_change_raw": 0.0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "lane_before": 2,
+        "lane_after": 2
+      }
+    },
+    {
+      "seed": 7,
+      "initial_hv": 101,
+      "steps": 300,
+      "seconds": 60.0,
+      "unique_nearby_hv": 8,
+      "exposure_steps": {
+        "hv_within_40m_steps": 300,
+        "leader_within_40m_steps": 118,
+        "follower_within_40m_steps": 293
+      },
+      "visited_edges": {
+        "nb_in": 74,
+        ":nb_exit_0": 1,
+        "north_exit": 45,
+        "north_exit_widen": 85,
+        "north_approach": 81,
+        "weave": 14
+      },
+      "last_info": {
+        "collided": false,
+        "arrived": false,
+        "speed": 10.0,
+        "gap": null,
+        "accel_raw": 0.0,
+        "lane_change_raw": 0.0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "lane_before": 2,
+        "lane_after": 2
+      }
+    },
+    {
+      "seed": 23,
+      "initial_hv": 91,
+      "steps": 300,
+      "seconds": 60.0,
+      "unique_nearby_hv": 6,
+      "exposure_steps": {
+        "hv_within_40m_steps": 298,
+        "leader_within_40m_steps": 50,
+        "follower_within_40m_steps": 294
+      },
+      "visited_edges": {
+        "nb_in": 74,
+        ":nb_exit_0": 1,
+        "north_exit": 45,
+        "north_exit_widen": 85,
+        "north_approach": 81,
+        "weave": 14
+      },
+      "last_info": {
+        "collided": false,
+        "arrived": false,
+        "speed": 10.0,
+        "gap": null,
+        "accel_raw": 0.0,
+        "lane_change_raw": 0.0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "lane_before": 2,
+        "lane_after": 2
+      }
+    }
+  ],
+  "source_sha256": {
+    "env/road_config.py": "7c976acb7d6f87e93bfafb6257677b24d5142bf99723df3e6874edb4f2676958",
+    "env/mdp_config.py": "49b1b73862c15719e213e5e1ef127f9781c690bb38ce49e47338b65ebebf9e9c",
+    "env/sumo_env.py": "70e65349be3d20fbf20bae301e6a18f11d126730d7269ec6e5a2d2a4e47f1b9c",
+    "utils/check_av_control.py": "8cbfc384450afbd6023d2411bb37ef8d532fd95ecb41bd6407e37e5af6859c7e"
+  }
+}

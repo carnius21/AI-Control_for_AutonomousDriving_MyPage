@@ -1,0 +1,299 @@
+{
+  "reason": "Preserve physical 3 = upper 1 + lower 2 fork; no forced 3-to-1 collapse. SUMO index 0 is driving-right (north at the westbound fork).",
+  "connections": [
+    {
+      "from": "169929488#0",
+      "to": "169728799",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "169929488#0",
+      "to": "169929488#1",
+      "fromLane": 1,
+      "toLane": 0
+    },
+    {
+      "from": "169929488#0",
+      "to": "169929488#1",
+      "fromLane": 2,
+      "toLane": 1
+    },
+    {
+      "from": "544292616",
+      "to": "844484877",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "544292616",
+      "to": "844484877",
+      "fromLane": 1,
+      "toLane": 1
+    },
+    {
+      "from": "544293888#0",
+      "to": "37375274",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "544293888#0",
+      "to": "544293888#1",
+      "fromLane": 1,
+      "toLane": 0
+    },
+    {
+      "from": "280963368",
+      "to": "1414146971",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "37927509",
+      "to": "206426298",
+      "fromLane": 0,
+      "toLane": 1
+    },
+    {
+      "from": "37927509",
+      "to": "206426298",
+      "fromLane": 1,
+      "toLane": 2
+    },
+    {
+      "from": "37927509",
+      "to": "206426298",
+      "fromLane": 2,
+      "toLane": 3
+    },
+    {
+      "from": "37927509",
+      "to": "206426298",
+      "fromLane": 3,
+      "toLane": 4
+    },
+    {
+      "from": "170059989#1",
+      "to": "206426298",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "206426298",
+      "to": "844484877",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "206426298",
+      "to": "844484877",
+      "fromLane": 1,
+      "toLane": 1
+    },
+    {
+      "from": "206426298",
+      "to": "844484877",
+      "fromLane": 2,
+      "toLane": 2
+    },
+    {
+      "from": "206426298",
+      "to": "844484877",
+      "fromLane": 3,
+      "toLane": 3
+    },
+    {
+      "from": "206426298",
+      "to": "844484877",
+      "fromLane": 4,
+      "toLane": 4
+    },
+    {
+      "from": "797789364",
+      "to": "781184662#3",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "781184662#2",
+      "to": "781184662#3",
+      "fromLane": 0,
+      "toLane": 1
+    },
+    {
+      "from": "781184662#2",
+      "to": "781184662#3",
+      "fromLane": 1,
+      "toLane": 2
+    },
+    {
+      "from": "781184662#3",
+      "to": "169929484",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "from": "781184662#3",
+      "to": "169929497",
+      "fromLane": 1,
+      "toLane": 0
+    },
+    {
+      "from": "781184662#3",
+      "to": "169929497",
+      "fromLane": 2,
+      "toLane": 1
+    },
+    {
+      "from": "844484878#0",
+      "to": "844484878#1",
+      "fromLane": 0,
+      "toLane": 1
+    },
+    {
+      "from": "844484878#0",
+      "to": "844484878#1",
+      "fromLane": 1,
+      "toLane": 2
+    },
+    {
+      "from": "844484878#0",
+      "to": "844484878#1",
+      "fromLane": 2,
+      "toLane": 3
+    },
+    {
+      "from": "844484878#0",
+      "to": "844484878#1",
+      "fromLane": 3,
+      "toLane": 4
+    },
+    {
+      "from": "37375274",
+      "to": "844484878#1",
+      "fromLane": 0,
+      "toLane": 0
+    },
+    {
+      "fromLane": 0,
+      "toLane": 0,
+      "from": "844484878#1",
+      "to": "86198722"
+    },
+    {
+      "fromLane": 1,
+      "toLane": 1,
+      "from": "844484878#1",
+      "to": "86198722"
+    },
+    {
+      "fromLane": 2,
+      "toLane": 2,
+      "from": "844484878#1",
+      "to": "86198722"
+    },
+    {
+      "fromLane": 3,
+      "toLane": 3,
+      "from": "844484878#1",
+      "to": "86198722"
+    },
+    {
+      "fromLane": 4,
+      "toLane": 4,
+      "from": "844484878#1",
+      "to": "86198722"
+    },
+    {
+      "fromLane": 0,
+      "toLane": 0,
+      "from": "86198722",
+      "to": "86198708"
+    },
+    {
+      "fromLane": 1,
+      "toLane": 1,
+      "from": "86198722",
+      "to": "86198708"
+    },
+    {
+      "fromLane": 2,
+      "toLane": 2,
+      "from": "86198722",
+      "to": "86198708"
+    },
+    {
+      "fromLane": 3,
+      "toLane": 3,
+      "from": "86198722",
+      "to": "86198708"
+    },
+    {
+      "fromLane": 4,
+      "toLane": 4,
+      "from": "86198722",
+      "to": "86198708"
+    },
+    {
+      "fromLane": 0,
+      "toLane": 0,
+      "from": "86198708",
+      "to": "1414146971"
+    },
+    {
+      "fromLane": 1,
+      "toLane": 1,
+      "from": "86198708",
+      "to": "1414146971"
+    },
+    {
+      "fromLane": 2,
+      "toLane": 2,
+      "from": "86198708",
+      "to": "1414146971"
+    },
+    {
+      "fromLane": 3,
+      "toLane": 3,
+      "from": "86198708",
+      "to": "1414146971"
+    },
+    {
+      "fromLane": 4,
+      "toLane": 4,
+      "from": "86198708",
+      "to": "1414146971"
+    },
+    {
+      "from": "86198728",
+      "to": "86198725",
+      "fromLane": 1,
+      "toLane": 0
+    },
+    {
+      "from": "86198728",
+      "to": "86198725",
+      "fromLane": 2,
+      "toLane": 1
+    },
+    {
+      "from": "86198728",
+      "to": "86198725",
+      "fromLane": 3,
+      "toLane": 2
+    },
+    {
+      "from": "86198728",
+      "to": "86198725",
+      "fromLane": 4,
+      "toLane": 3
+    },
+    {
+      "from": "86198728",
+      "to": "37927508",
+      "fromLane": 0,
+      "toLane": 0
+    }
+  ]
+}

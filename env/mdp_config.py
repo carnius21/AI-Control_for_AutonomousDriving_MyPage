@@ -200,3 +200,17 @@ REWARD = {
 #   그래서 속도 보상을 1/10로 줄여 리턴을 ~10 규모로 낮췄다.
 #   → 보상의 절대값이 아니라 "항 사이의 상대 비율"이 정책을 결정한다는
 #     점을 확인해보는 실험을 해보길 권장.
+
+
+# 퇴계원 IC 화면/시간 설정. 기존 SIMULATION 객체 및 관측·행동·보상은 유지.
+SIMULATION.update(
+    step_length=.2, max_steps=4500, warmup_steps=100,
+    gui_delay=300., gui_zoom=750., gui_track_ego=True,
+    gui_overview_zoom=92., gui_center_x=550., gui_center_y=-85.,
+    gui_vehicle_scale=1.5,
+)
+
+# IC 학습/평가: 정책이 낸 위험한 차선 변경을 별도 규칙으로 대신 막지 않습니다.
+# 유효 차로 범위 검사와 충돌 검출/페널티는 유지됩니다. HV의 정상 차량추종과
+# SUMO 차선변경 모델은 별개입니다. 이 설정 변경 후 기존 정책 성능은 재평가해야 합니다.
+ACTION["lane_change_safety"]["enabled"] = False

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "team_base_commit": "be62cc79fcc248de1f307bf5e59a97aff5bb3df0",
+  "modified_python_files": [
+    "env/mdp_config.py",
+    "env/road_builder.py",
+    "env/road_config.py",
+    "view_road.py"
+  ],
+  "unchanged_team_python_files": [
+    "algorithms/__init__.py",
+    "algorithms/bc.py",
+    "algorithms/ppo.py",
+    "collect_pomdp_data.py",
+    "env/__init__.py",
+    "env/sumo_env.py",
+    "test.py",
+    "train.py",
+    "train_bc.py",
+    "utils/__init__.py",
+    "utils/buffer.py",
+    "utils/evaluator.py",
+    "utils/logger.py",
+    "utils/networks.py"
+  ],
+  "identical_to_validated_road_sources": true,
+  "headless_1200_exit_code": 0,
+  "headless_inserted": 1759,
+  "full_policy_training": false,
+  "gym_smoke_test": {
+    "status": "PASS",
+    "steps": 25,
+    "observation_shape": [
+      31
+    ],
+    "action_shape": [
+      2
+    ],
+    "reward_source": "unchanged team train.REWARD",
+    "ego_road": "nb_in"
+  },
+  "road_source_hashes": {
+    "env/road_config.py": "cc153986346d75fee26c196731f88b77504a1a8d04ff1dd6493826e8a5585f7d",
+    "env/road_builder.py": "59220661d80ceb86db934cf364501be171f773d2ee005a77d6e8dfa919dc6129",
+    "env/mdp_config.py": "93570735f9d43e5f7dfde50e55a3da28b354048d2dfd4f8c366344a82bb62c1d",
+    "view_road.py": "1db55efe4faf49ad2805d433fa7fa151a7f8e89b38574a2a7e484766e0cbc9c1"
+  }
+}

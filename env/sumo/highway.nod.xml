@@ -1,7 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
 <nodes>
-    <node id="center" x="300" y="0"/>
-    <node id="n0" x="0" y="0"/>
-    <node id="n1" x="12000" y="0"/>
-    <node id="s0" x="300" y="-300"/>
-    <node id="s1" x="300" y="300"/>
+  <node id="sb_start" x="-47.575" y="272.805" z="8.0" type="priority" />
+  <node id="sb_exit" x="-9.193" y="198.106" z="8.0" type="priority" />
+  <node id="sb_bridge_end" x="45.715" y="81.642" z="8.0" type="priority" />
+  <node id="sb_merge" x="113.934" y="-154.512" z="0" type="priority" />
+  <node id="sb_south" x="162.725" y="-498.825" z="0" type="priority" />
+  <node id="sb_end" x="171.029" y="-564.815" z="0" type="priority" />
+  <node id="nb_start" x="192.15" y="-542.696" z="0" type="priority" />
+  <node id="nb_exit" x="174.211" y="-396.032" z="0" type="priority" />
+  <node id="nb_merge" x="73.984" y="59.801" z="8.0" type="priority" />
+  <node id="nb_bridge_start" x="42.885" y="138.348" z="8.0" type="priority" />
+  <node id="nb_end" x="-26.665" y="283.009" z="8.0" type="priority" />
+  <node id="east_start" x="-207.791" y="51.633" z="0.0" type="priority" />
+  <node id="east_diverge" x="-25.32" y="73.456" z="0.0" type="priority" />
+  <node id="east_merge" x="427.961" y="178.969" z="0" type="priority" />
+  <node id="east_accel_end" x="526.089" y="171.032" z="4.0" type="priority" />
+  <node id="east_end" x="684.875" y="156.594" z="8.0" type="priority" />
+  <node id="west_start" x="686.558" y="164.687" z="8.0" type="priority" />
+  <node id="west_merge" x="123.419" y="151.807" z="0" type="priority" />
+  <node id="west_accel_end" x="-88.846010093357" y="68.40488616102559" z="0.0" type="priority" />
+  <node id="west_end" x="-209.983" y="66.569" z="0" type="priority" />
+  <node id="south_curve_start" x="13.478" y="66.67" z="8.0" type="priority" />
+  <node id="south_bridge_start" x="95.423" y="-139.54" z="8.0" type="priority" />
+  <node id="south_bridge_end" x="142.636" y="-121.639" z="8.0" type="priority" />
+  <node id="weave_start" x="223.082" y="13.971" z="0" type="priority" />
+  <node id="north_collector" x="177.261" y="-137.703" z="0" type="priority" />
+  <node id="weave_end" x="225.947" y="47.099" z="0.0" type="priority" />
+  <node id="east_ramp_split" x="344.454" y="172.629" z="0.0" type="priority" />
+  <node id="service_end" x="630.53" y="130.901" z="16.0" type="priority" />
+  <node id="bridge_north" x="233.651" y="204.873" z="8.0" type="priority" />
+  <node id="return_start" x="211.508" y="80.618" z="0" type="priority" />
+  <node id="return_fork" x="206.994" y="25.247" z="0.0" type="priority" />
+  <node id="return_bridge_start" x="140.485" y="-112.233" z="8.0" type="priority" />
+  <node id="return_bridge_end" x="93.501" y="-130.901" z="8.0" type="priority" />
+  <node id="outer_bridge_start" x="-24.241" y="103.973" z="8.0" type="priority" />
+  <node id="outer_bridge_end" x="-32.616" y="58.488" z="8.0" type="priority" />
+  <node id="outer_mid" x="138.352" y="-393.761" z="0.0" type="priority" />
+  <node id="north_ramp_widen" x="181.106" y="-304.79" z="0" type="priority" />
+  <node id="outer_end" x="95.0" y="-565.0" z="0.0" type="priority" />
+  <node id="sano_wb_aux_end" x="407.951" y="189.511" z="0.0" type="priority" />
+  <node id="sano_eb_loop_split" x="723.9719726583734" y="151.34396945848187" z="8.0" type="priority" />
+  <node id="sano_eb_join" x="900.561" y="137.703" z="0.0" type="priority" />
+  <node id="sano_eb_aux_end" x="1020.7474564762301" y="112.65457875296512" z="0.0" type="priority" />
+  <node id="sano_east_end" x="1316.3321829777344" y="-47.92832125204094" z="0.0" type="priority" />
+  <node id="sano_service_east_end" x="851.523" y="121.094" z="16.0" type="priority" />
+  <node id="sano_east_start" x="1272.0170000118778" y="-2.8500000064691924" z="0.0" type="priority" />
+  <node id="sano_wb_collector_split" x="1010.2459858136499" y="131.23500539565364" z="0.0" type="priority" />
+  <node id="sano_wb_aux_start" x="871.489" y="149.948" z="4.0" type="priority" />
+  <node id="sano_wb_loop_split" x="726.1835783912031" y="162.98081765712672" z="8.0" type="priority" />
+  <node id="sano_wb_join" x="519.496" y="180.227" z="4.0" type="priority" />
+  <node id="sano_north_start" x="788.7285446726888" y="392.89486360260366" z="0.0" type="priority" />
+  <node id="sano_sb_split" x="745.6060545420092" y="276.10399543824684" z="0.0" type="priority" />
+  <node id="sano_sb_loop_join" x="704.347" y="164.798" z="0.0" type="priority" />
+  <node id="sano_sb_exit_join" x="699.3287082987225" y="75.1746945846374" z="0.0" type="priority" />
+  <node id="sano_south_end" x="657.1290916055366" y="-161.09976602767432" z="0.0" type="priority" />
+  <node id="sano_south_start" x="672.6143629223861" y="-189.49603550109208" z="0.0" type="priority" />
+  <node id="sano_nb_split" x="720.1085" y="39.203" z="0.0" type="priority" />
+  <node id="sano_nb_loop_join" x="716.243" y="136.295" z="1.0" type="priority" />
+  <node id="sano_north_end" x="804.882" y="388.974" z="0.0" type="priority" />
+  <node id="sano_local_merge" x="620.0" y="245.0" z="0.0" type="zipper" />
+  <node id="sano_west_ramp_split_node" x="550.0" y="245.0" z="0.0" type="priority" />
+  <node id="sano_service_boundary" x="1315.0" y="-175.0" z="0.0" type="priority" />
+  <node id="sano_eb_out_start" x="1141.669" y="52.409" z="0.0" type="priority" />
+  <node id="sano_sb_underpass" x="724.392" y="221.749" z="0.0" type="priority" />
+  <node id="sano_nb_flyover_split" x="739.193" y="214.92" z="5.0" type="priority" />
+  <node id="west_local_end" x="-205.0" y="165.0" z="0.0" type="priority" />
 </nodes>

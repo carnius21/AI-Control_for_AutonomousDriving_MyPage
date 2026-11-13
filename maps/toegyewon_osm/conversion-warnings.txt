@@ -1,0 +1,61 @@
+Success.
+
+Warning: Value of key 'maxspeed:type' is not numeric ('urban') in edge '1210570063'.
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.primary' (first occurrence for edge '72387791').
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.secondary_link' (first occurrence for edge '392824618').
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.secondary' (first occurrence for edge '543621230').
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.tertiary' (first occurrence for edge '596640892').
+Warning: Ambiguity in turnarounds computation at junction '5540242267'.
+Warning: Found sharp turn with radius 6.17 at the start of edge '-566341856#0'.
+Warning: Found sharp turn with radius 7.58 at the start of edge '-575413930#0'.
+Warning: Found sharp turn with radius 6.17 at the end of edge '566341856#0'.
+Warning: Found sharp turn with radius 7.58 at the end of edge '575413930#0'.
+Warning: Shape for junction '1000493465' has distance 42.33 to its given position.
+Warning: Shape for junction '11215816978' has distance 20.68 to its given position.
+Warning: Shape for junction '12994833390' has distance 34.65 to its given position.
+Warning: Shape for junction '1808903178' has distance 31.78 to its given position.
+Warning: Shape for junction '1810880013' has distance 82.59 to its given position.
+Warning: The traffic light '11121839718' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '11121839718'
+Warning: The traffic light '11121859651' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '11121859651'
+Warning: The traffic light '11121859657' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '11121859657'
+Warning: The traffic light '1808903590' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '1808903590'
+Warning: Minor green from edge '-926772187#3' to edge '251458275#0' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '596640895#7' to edge '1188356805' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '844532294#1' to edge '533857800#0' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '1188356806' to edge '-844532294#1' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: Minor green from edge '1188356806' to edge '1188356805' exceeds 19.44m/s. Maybe a left-turn lane is missing.
+Warning: The traffic light '4636467639' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '4636467639'
+Warning: Speed of straight connection '1435082825_0->-596640895#6_0' reduced by 12.53 due to turning radius of 17.07 (length=7.77, angle=42.35).
+Warning: Speed of straight connection '1435082831#0_0->578103082#2_0' reduced by 12.03 due to turning radius of 18.87 (length=7.92, angle=40.12).
+Warning: Speed of straight connection '1435082832#0_0->-1210581299#2_0' reduced by 11.34 due to turning radius of 21.53 (length=8.77, angle=39.24).
+Warning: Speed of straight connection '1481462656#0_0->1481462656#1_0' reduced by 12.26 due to turning radius of 18.05 (length=7.61, angle=40.29).
+Warning: Speed of straight connection '1481462659_0->1481462657#0_1' reduced by 5.92 due to turning radius of 33.24 (length=7.94, angle=29.02).
+Warning: 13 total messages of type: Could not build program '%' for traffic light '%'
+Warning: 24 total messages of type: Minor green from edge '%' to edge '%' exceeds %m/s. Maybe a left-turn lane is missing.
+Warning: 9 total messages of type: Shape for junction '%' has distance % to its given position.
+Warning: 23 total messages of type: Speed of % connection '%' reduced by % due to turning radius of % (length=%, angle=%).
+Warning: 13 total messages of type: The traffic light '%' does not control any links; it will not be build.
+
+Scope crop:
+Success.
+
+Warning: Target edge '1414146971' is not connected with '280963368'; the connection cannot be reset.
+Warning: Shape for junction '1000493465' has distance 42.28 to its given position.
+Warning: Shape for junction '1808903178' has distance 22.52 to its given position.
+Warning: Shape for junction '436249330' has distance 34.00 to its given position.
+Warning: Shape for junction '7461635551' has distance 33.29 to its given position.
+Warning: Speed of straight connection '169929470#1_0->72387788#1_0' reduced by 6.67 due to turning radius of 43.98 (length=9.02, angle=26.97).
+
+Auxiliary taper:
+Success.
+
+Warning: Shape for junction '1000493465' has distance 42.28 to its given position.
+Warning: Shape for junction '1808903178' has distance 22.52 to its given position.
+Warning: Shape for junction '436249330' has distance 34.00 to its given position.
+Warning: Shape for junction '7461635551' has distance 33.29 to its given position.
+Warning: Speed of straight connection '169929470#1_0->72387788#1_0' reduced by 6.67 due to turning radius of 43.98 (length=9.02, angle=26.97).

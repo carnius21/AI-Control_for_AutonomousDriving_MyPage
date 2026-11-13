@@ -1,0 +1,927 @@
+{
+  "status": "PASS",
+  "date": "2026-11-02",
+  "change": "Two independent arrival lanes at sano_local_merge; cross-lane movements occur on the downstream shared edge.",
+  "connections_before": 138,
+  "connections_after": 136,
+  "external_road_geometry_unchanged": true,
+  "signal_plan_unchanged": true,
+  "routes_and_traffic_demand_unchanged": true,
+  "generated_network_matches_tested_candidate": true,
+  "merge_conflicts_after": 0,
+  "fcd_stop_threshold_m_per_s": 0.1,
+  "fcd_sample_seconds": 0.2,
+  "monitored_edges": [
+    "sano_nb_to_west",
+    "sano_sb_to_west",
+    "sano_west_ramp_split",
+    "sano_to_west_main",
+    "sano_to_collector"
+  ],
+  "simulated_seconds_per_run": 1200,
+  "runs": [
+    {
+      "case": "before",
+      "seed": 42,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 759.8,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 5.31,
+          "max": 24.6
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.02,
+          "max": 3.4
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.14,
+          "max": 3.0
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.03,
+          "max": 3.4
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 13.72,
+          "max": 56.2
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.02,
+          "max": 0.6
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.1,
+          "max": 4.8
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.01,
+          "max": 0.4
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.22,
+          "max": 6.4
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        }
+      },
+      "merge_stops": {
+        "sano_nb_to_west_0": {
+          "stopped_vehicles": 2,
+          "max_vehicle_stopped_seconds": 30.6,
+          "total_stopped_seconds": 56.8,
+          "max_simultaneous_stopped": 2
+        }
+      },
+      "warnings": ""
+    },
+    {
+      "case": "before",
+      "seed": 7,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 742.0,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 5.41,
+          "max": 24.6
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.02,
+          "max": 0.6
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 13.84,
+          "max": 37.0
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.02,
+          "max": 0.4
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.02,
+          "max": 0.2
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.07,
+          "max": 3.2
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.06,
+          "max": 3.8
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.03,
+          "max": 2.4
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.4
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        }
+      },
+      "merge_stops": {
+        "sano_nb_to_west_0": {
+          "stopped_vehicles": 2,
+          "max_vehicle_stopped_seconds": 28.6,
+          "total_stopped_seconds": 30.8,
+          "max_simultaneous_stopped": 1
+        }
+      },
+      "warnings": ""
+    },
+    {
+      "case": "before",
+      "seed": 23,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 704.4,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 5.18,
+          "max": 24.2
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 12.69,
+          "max": 40.4
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.02,
+          "max": 0.8
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.13,
+          "max": 3.4
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.01,
+          "max": 0.4
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.08,
+          "max": 3.4
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        }
+      },
+      "merge_stops": {
+        "sano_nb_to_west_0": {
+          "stopped_vehicles": 4,
+          "max_vehicle_stopped_seconds": 6.6,
+          "total_stopped_seconds": 14.8,
+          "max_simultaneous_stopped": 2
+        }
+      },
+      "warnings": ""
+    },
+    {
+      "case": "candidate",
+      "seed": 42,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 666.8,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 5.31,
+          "max": 24.6
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.03,
+          "max": 0.6
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.04,
+          "max": 3.2
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 11.44,
+          "max": 35.8
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.04,
+          "max": 2.2
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        }
+      },
+      "merge_stops": {},
+      "warnings": ""
+    },
+    {
+      "case": "candidate",
+      "seed": 7,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 709.0,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 5.41,
+          "max": 24.8
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.04,
+          "max": 1.2
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 12.62,
+          "max": 37.0
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.04,
+          "max": 0.8
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.02,
+          "max": 0.2
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.05,
+          "max": 3.2
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.01,
+          "max": 0.4
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.06,
+          "max": 4.0
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.2
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        }
+      },
+      "merge_stops": {},
+      "warnings": ""
+    },
+    {
+      "case": "candidate",
+      "seed": 23,
+      "trips": 2015,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "total_wait": 677.6,
+      "waiting": {
+        "flow_north_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_south_through": {
+          "n": 223,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_through": {
+          "n": 70,
+          "mean": 5.18,
+          "max": 24.2
+        },
+        "flow_sano_north_through": {
+          "n": 70,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_outer_to_south": {
+          "n": 56,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_collector": {
+          "n": 23,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_east_to_north": {
+          "n": 84,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_south_to_east": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_north_to_west": {
+          "n": 34,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_collector": {
+          "n": 49,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_south": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_east_through": {
+          "n": 292,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_west_through": {
+          "n": 264,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_east_to_south": {
+          "n": 35,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "flow_sano_west_to_north": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_sano_south_to_west": {
+          "n": 25,
+          "mean": 12.06,
+          "max": 34.4
+        },
+        "flow_east_to_south": {
+          "n": 84,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_north_to_east": {
+          "n": 70,
+          "mean": 0.03,
+          "max": 1.6
+        },
+        "flow_north_to_west": {
+          "n": 98,
+          "mean": 0.09,
+          "max": 3.4
+        },
+        "flow_north_to_local": {
+          "n": 28,
+          "mean": 0.01,
+          "max": 0.2
+        },
+        "flow_south_to_west": {
+          "n": 70,
+          "mean": 0.01,
+          "max": 0.6
+        },
+        "flow_south_to_east": {
+          "n": 98,
+          "mean": 0.0,
+          "max": 0.2
+        },
+        "flow_south_to_local": {
+          "n": 28,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "ego_demo": {
+          "n": 1,
+          "mean": 0.0,
+          "max": 0.0
+        }
+      },
+      "merge_stops": {},
+      "warnings": ""
+    }
+  ]
+}

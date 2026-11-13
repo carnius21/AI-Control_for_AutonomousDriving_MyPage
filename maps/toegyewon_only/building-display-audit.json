@@ -1,0 +1,83 @@
+{
+  "osm_building_ids": [
+    "629011133",
+    "629011134",
+    "629011136",
+    "629011137",
+    "629011138",
+    "629011139",
+    "629011140",
+    "629011141",
+    "629011142",
+    "1493412887",
+    "1493412888"
+  ],
+  "approximate_eastern_buildings": [
+    {
+      "x": 1995,
+      "y": 1440,
+      "width": 22,
+      "length": 35,
+      "basis": "user satellite screenshot; approximate, not surveyed"
+    },
+    {
+      "x": 2040,
+      "y": 1400,
+      "width": 18,
+      "length": 31,
+      "basis": "user satellite screenshot; approximate, not surveyed"
+    },
+    {
+      "x": 2015,
+      "y": 1280,
+      "width": 20,
+      "length": 47,
+      "basis": "user satellite screenshot; approximate, not surveyed"
+    },
+    {
+      "x": 1985,
+      "y": 1170,
+      "width": 16,
+      "length": 32,
+      "basis": "user satellite screenshot; approximate, not surveyed"
+    },
+    {
+      "x": 2070,
+      "y": 1110,
+      "width": 25,
+      "length": 46,
+      "basis": "user satellite screenshot; approximate, not surveyed"
+    },
+    {
+      "x": 2020,
+      "y": 1020,
+      "width": 30,
+      "length": 19,
+      "basis": "user satellite screenshot; approximate, not surveyed"
+    },
+    {
+      "x": 2080,
+      "y": 960,
+      "width": 22,
+      "length": 30,
+      "basis": "user satellite screenshot; approximate, not surveyed"
+    }
+  ],
+  "bridge_edges": [
+    "1414146968",
+    "170059996",
+    "280963368",
+    "37927508",
+    "86198708",
+    "86198708#1",
+    "86198709",
+    "86198710",
+    "86198717",
+    "86198720",
+    "86198722",
+    "86198725",
+    "86198728"
+  ],
+  "building_height": "Not inferred; footprint visualization only",
+  "bridge_details": "Illustrative deck rim and shadow; not surveyed supports"
+}

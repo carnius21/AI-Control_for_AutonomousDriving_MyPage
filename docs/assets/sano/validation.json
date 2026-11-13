@@ -1,0 +1,394 @@
+{
+  "status": "PASS",
+  "date": "2026-10-30",
+  "roads": 74,
+  "routes": 23,
+  "lane_connections": 140,
+  "flow_vehs_per_hour": 14420,
+  "runs": [
+    {
+      "seed": 42,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 2554.0,
+      "warning_log": ""
+    },
+    {
+      "seed": 7,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 1379.6000000000001,
+      "warning_log": ""
+    },
+    {
+      "seed": 23,
+      "vehicles": {
+        "loaded": "2015",
+        "inserted": "2015",
+        "running": "0",
+        "waiting": "0"
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "trips": 2015,
+      "all_flows_arrived": true,
+      "waiting_seconds": 2864.8,
+      "warning_log": ""
+    }
+  ],
+  "gym": {
+    "status": "PASS",
+    "steps": 25,
+    "observation_shape": [
+      31
+    ],
+    "action_shape": [
+      2
+    ],
+    "reward_source": "unchanged team train.REWARD",
+    "ego_road": "nb_in",
+    "unchanged_python_files": [
+      "algorithms/__init__.py",
+      "algorithms/bc.py",
+      "algorithms/ppo.py",
+      "collect_pomdp_data.py",
+      "env/__init__.py",
+      "env/sumo_env.py",
+      "test.py",
+      "train.py",
+      "train_bc.py",
+      "utils/__init__.py",
+      "utils/buffer.py",
+      "utils/evaluator.py",
+      "utils/logger.py",
+      "utils/networks.py",
+      "view_road.py"
+    ],
+    "existing_top_level_function_signatures_preserved": true
+  },
+  "preservation": {
+    "base_commit": "662fd15d5cc789bcae25ae3563b125a0f5ab6374",
+    "unchanged_original_edges": 35,
+    "original_edges_modified_for_eastern_connection": [
+      "east_accel",
+      "east_out",
+      "west_in",
+      "east_service_out"
+    ],
+    "ego_route_unchanged": true,
+    "backup_branch": "backup/toegyewon-ic-2026-10-30"
+  },
+  "grade_separated_crossings": [
+    {
+      "edges": [
+        "sb_bridge",
+        "east_main"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sb_bridge",
+        "west_accel"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sb_bridge",
+        "return_ramp"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sb_main",
+        "south_loop_bridge"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sb_main",
+        "return_bridge"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "nb_main",
+        "south_loop_bridge"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "nb_main",
+        "return_bridge"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "nb_accel",
+        "east_main"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "nb_accel",
+        "west_accel"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "nb_accel",
+        "return_ramp"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "east_in",
+        "outer_bridge"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "east_main",
+        "south_exit"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "east_main",
+        "flyover"
+      ],
+      "height_gap_m": 7.812
+    },
+    {
+      "edges": [
+        "west_in",
+        "flyover"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "west_accel",
+        "south_exit"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "west_out",
+        "outer_bridge"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "south_exit",
+        "return_ramp"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "south_loop_bridge",
+        "return_loop"
+      ],
+      "height_gap_m": 7.995
+    },
+    {
+      "edges": [
+        "sano_eb_bridge",
+        "sano_sb_under_main"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sano_eb_bridge",
+        "sano_nb_under_main"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sano_service_bridge",
+        "sano_sb_under_main"
+      ],
+      "height_gap_m": 16.0
+    },
+    {
+      "edges": [
+        "sano_service_bridge",
+        "sano_nb_under_south"
+      ],
+      "height_gap_m": 16.0
+    },
+    {
+      "edges": [
+        "sano_service_bridge",
+        "sano_eb_to_south"
+      ],
+      "height_gap_m": 14.744
+    },
+    {
+      "edges": [
+        "sano_service_bridge",
+        "sano_se_loop"
+      ],
+      "height_gap_m": 15.333
+    },
+    {
+      "edges": [
+        "sano_service_bridge",
+        "sano_se_loop"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sano_service_bridge",
+        "sano_nb_to_east"
+      ],
+      "height_gap_m": 16.0
+    },
+    {
+      "edges": [
+        "sano_wb_bridge",
+        "sano_sb_under_main"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sano_wb_bridge",
+        "sano_nb_under_main"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sano_west_collector_bridge",
+        "sano_sb_under_north"
+      ],
+      "height_gap_m": 16.0
+    },
+    {
+      "edges": [
+        "sano_west_collector_bridge",
+        "sano_nb_under_main"
+      ],
+      "height_gap_m": 16.0
+    },
+    {
+      "edges": [
+        "sano_west_collector_bridge",
+        "sano_nw_loop"
+      ],
+      "height_gap_m": 14.465
+    },
+    {
+      "edges": [
+        "sano_west_collector_bridge",
+        "sano_nw_loop"
+      ],
+      "height_gap_m": 8.0
+    },
+    {
+      "edges": [
+        "sano_west_collector_bridge",
+        "sano_to_west_main"
+      ],
+      "height_gap_m": 12.709
+    },
+    {
+      "edges": [
+        "sano_nb_under_main",
+        "sano_nw_loop"
+      ],
+      "height_gap_m": 8.0
+    }
+  ],
+  "cmd_smoke_test": "python view_road.py --nogui --seconds 10: PASS",
+  "physical_xml_semantic_sha256": {
+    "highway.nod.xml": "06e308870f4fcbbee86111fedef3e8e72aa4150bb4cdc6d82f2d5aeaaf011ddd",
+    "highway.edg.xml": "8d2d23d858b4a2d82235dc1beb9d4f0010a30117c9e4e417cdd20044f6db9aca",
+    "highway.con.xml": "819fc1f70815cea80d2e022c450bd3fcf323f3d89156170b9977f64415affe0f",
+    "highway.net.xml": "455ecc131bdb607163d1d5502df5a9e4149fb032220bae67c6d7e7324b7a3fd4",
+    "highway.rou.xml": "3370edee297b4a8cd273f99ded6d22c3b6678baf02d63a333cb3d45035af514f",
+    "highway.sumocfg": "b2335a1cb7415bd2c18246c37233599146ec8a4608157f96581e89afe6cfae59"
+  },
+  "source_sha256": {
+    "env/road_config.py": "28f4075a4896acbe250501451cb80bb1aace658fcbf45b364144630e96970879",
+    "env/road_builder.py": "4b6cd52b084d08cfa3b23efd86024c11652f6c57ed778adf1988f1b6d6e5e019",
+    "env/mdp_config.py": "6eaaddebdb30596d2b91a82691ba91d038147b4652527cd38f5344729338bbc2",
+    "view_road.py": "1db55efe4faf49ad2805d433fa7fa151a7f8e89b38574a2a7e484766e0cbc9c1"
+  },
+  "display_refinement_keeps_tested_physics": true,
+  "visual_review": {
+    "status": "PASS",
+    "images": [
+      "overview.png",
+      "detail.png",
+      "east_merge.png"
+    ],
+    "notes": [
+      "Native SUMO screenshots at t=301 seconds",
+      "Bridge decks follow geometric crossings",
+      "Intersection display follows internal drivable lanes",
+      "Lane-drop shoulders use non-drivable hatched tapers"
+    ]
+  }
+}

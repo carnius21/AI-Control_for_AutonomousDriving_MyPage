@@ -1,0 +1,366 @@
+{
+  "status": "PASS",
+  "model": "Clean western arterial departure below bridges",
+  "date": "2026-10-29",
+  "edge_count": 39,
+  "connection_count": 72,
+  "route_count": 13,
+  "pavement_clearance_m": {
+    "north_exit / nb_main": -0.0,
+    "north_exit_widen / nb_main": 8.228,
+    "outer_join / sb_accel": 5.549,
+    "outer_entry / south_exit": 0.0,
+    "outer_entry / sb_bridge": 3.5,
+    "east_ramp / east_main": 3.883,
+    "east_join / east_main": 0.0,
+    "east_service_out / east_join": -0.0,
+    "east_service_out / east_accel": 4.409,
+    "return_ramp / east_main": -0.0
+  },
+  "outer_exit_has_no_outgoing_connections": true,
+  "modified_python_files": [
+    "view_road.py",
+    "env\\mdp_config.py",
+    "env\\road_builder.py",
+    "env\\road_config.py"
+  ],
+  "unchanged_python_files": [
+    "collect_pomdp_data.py",
+    "test.py",
+    "train.py",
+    "train_bc.py",
+    "algorithms\\bc.py",
+    "algorithms\\ppo.py",
+    "algorithms\\__init__.py",
+    "env\\sumo_env.py",
+    "env\\__init__.py",
+    "results\\run_20260907_202220\\mdp_config.py",
+    "results\\run_20260907_202220\\road_config.py",
+    "results\\run_20260907_202220\\train.py",
+    "utils\\buffer.py",
+    "utils\\evaluator.py",
+    "utils\\logger.py",
+    "utils\\networks.py",
+    "utils\\__init__.py"
+  ],
+  "all_original_function_signatures_preserved": true,
+  "traffic_runs": [
+    {
+      "seed": 42,
+      "arrived": 1759,
+      "route_arrivals": {
+        "south_through": 223,
+        "north_through": 223,
+        "east_through": 348,
+        "west_through": 348,
+        "south_to_east": 98,
+        "south_to_west": 70,
+        "south_to_local": 28,
+        "north_to_east": 70,
+        "north_to_west": 98,
+        "north_to_local": 28,
+        "east_to_north": 84,
+        "east_to_south": 84,
+        "outer_to_south": 56
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "max_halting": 2,
+      "mean_time_loss": 8.31,
+      "last_arrival": 655.6
+    },
+    {
+      "seed": 7,
+      "arrived": 1759,
+      "route_arrivals": {
+        "south_through": 223,
+        "north_through": 223,
+        "east_through": 348,
+        "west_through": 348,
+        "south_to_east": 98,
+        "south_to_west": 70,
+        "south_to_local": 28,
+        "north_to_east": 70,
+        "north_to_west": 98,
+        "north_to_local": 28,
+        "east_to_north": 84,
+        "east_to_south": 84,
+        "outer_to_south": 56
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "max_halting": 2,
+      "mean_time_loss": 8.27,
+      "last_arrival": 645.4
+    },
+    {
+      "seed": 23,
+      "arrived": 1759,
+      "route_arrivals": {
+        "south_through": 223,
+        "north_through": 223,
+        "east_through": 348,
+        "west_through": 348,
+        "south_to_east": 98,
+        "south_to_west": 70,
+        "south_to_local": 28,
+        "north_to_east": 70,
+        "north_to_west": 98,
+        "north_to_local": 28,
+        "east_to_north": 84,
+        "east_to_south": 84,
+        "outer_to_south": 56
+      },
+      "safety": {
+        "collisions": "0",
+        "emergencyStops": "0",
+        "emergencyBraking": "0"
+      },
+      "teleports": {
+        "total": "0",
+        "jam": "0",
+        "yield": "0",
+        "wrongLane": "0"
+      },
+      "max_halting": 2,
+      "mean_time_loss": 8.37,
+      "last_arrival": 656.8
+    }
+  ],
+  "gym_smoke_test": {
+    "status": "NOT_REPEATED",
+    "previous_geometry_report": "photo_v1_validation_report.json"
+  },
+  "scope": "Road geometry, route/safety checks, original interfaces; no policy training.",
+  "upper_highway_exits": {
+    "approach": "sb_in",
+    "through_lanes": 4,
+    "exit_lanes": 2,
+    "outer_exit_connection": [
+      "sb_in",
+      "outer_entry",
+      0,
+      0
+    ],
+    "inner_exit_connection": [
+      "sb_in",
+      "south_exit",
+      1,
+      0
+    ],
+    "both_routes_start_at_sb_in": true,
+    "independent_upper_source_removed": true,
+    "physical_lane_count_is_simplified": true
+  },
+  "purple_source": {
+    "edge": "sb_in",
+    "position": [
+      -47.575,
+      272.805,
+      8.0
+    ],
+    "flow_rate_per_hour": 400,
+    "color_fixed": "0.7,0.45,0.9",
+    "end_edge": "outer_join"
+  },
+  "route_colors": {
+    "south_through": "0.65,0.68,0.74",
+    "north_through": "0.65,0.68,0.74",
+    "east_through": "0.9,0.65,0.16",
+    "west_through": "0.9,0.65,0.16",
+    "south_to_east": "0.1,0.6,1",
+    "south_to_west": "0.1,0.6,1",
+    "south_to_local": "0.1,0.6,1",
+    "north_to_east": "0.1,0.85,0.5",
+    "north_to_west": "0.1,0.85,0.5",
+    "north_to_local": "0.1,0.85,0.5",
+    "east_to_north": "0.9,0.65,0.16",
+    "east_to_south": "0.9,0.65,0.16",
+    "outer_to_south": "0.7,0.45,0.9"
+  },
+  "local_geometry_change": {
+    "edges": [
+      "east_in",
+      "return_ramp"
+    ],
+    "nodes": [
+      "east_start",
+      "east_diverge"
+    ],
+    "approach_lanes": 3,
+    "through_lanes": 2,
+    "exit_lanes": 1,
+    "routes_unchanged": true,
+    "other_edges_unchanged": true,
+    "connection_changes": "east_in lanes 1,2 continue to east_main lanes 0,1; east_in lane 0 goes to return_ramp lane 0",
+    "description": "Added a dedicated exit lane on the western arterial approach and aligned the departure ramp to avoid overlapping lane markings and a lateral kink."
+  },
+  "grade_separated_crossings": [
+    [
+      "sb_bridge",
+      "east_main",
+      37.63,
+      102.56,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "west_accel",
+      32.46,
+      115.62,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_bridge",
+      "return_ramp",
+      40.34,
+      95.48,
+      8.0,
+      0.0
+    ],
+    [
+      "sb_main",
+      "south_loop_bridge",
+      111.05,
+      -136.24,
+      0.0,
+      8.0
+    ],
+    [
+      "sb_main",
+      "return_bridge",
+      108.56,
+      -127.38,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "south_loop_bridge",
+      128.53,
+      -129.3,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_main",
+      "return_bridge",
+      126.19,
+      -119.9,
+      0.0,
+      8.0
+    ],
+    [
+      "nb_accel",
+      "east_main",
+      54.69,
+      109.95,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "west_accel",
+      49.38,
+      122.7,
+      8.0,
+      0.0
+    ],
+    [
+      "nb_accel",
+      "return_ramp",
+      57.79,
+      102.42,
+      8.0,
+      0.0
+    ],
+    [
+      "east_in",
+      "outer_bridge",
+      -30.61,
+      71.61,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "south_exit",
+      12.86,
+      91.85,
+      0.0,
+      8.0
+    ],
+    [
+      "east_main",
+      "flyover",
+      231.58,
+      178.31,
+      0.0,
+      7.81
+    ],
+    [
+      "west_in",
+      "flyover",
+      232.32,
+      187.83,
+      0.0,
+      8.0
+    ],
+    [
+      "west_accel",
+      "south_exit",
+      10.82,
+      106.56,
+      0.0,
+      8.0
+    ],
+    [
+      "west_out",
+      "outer_bridge",
+      -27.83,
+      87.29,
+      0.0,
+      8.0
+    ],
+    [
+      "south_exit",
+      "return_ramp",
+      13.48,
+      85.2,
+      8.0,
+      0.0
+    ],
+    [
+      "south_loop_bridge",
+      "return_loop",
+      104.0,
+      -137.78,
+      8.0,
+      0.0
+    ]
+  ],
+  "netconvert_warnings": [],
+  "gui_capture_checked": true,
+  "cmd_headless_1200_exit_code": 0,
+  "upstream_patch_check": "PASS"
+}

@@ -1,0 +1,266 @@
+{
+  "source_sha256": "817ba0a41f72db131fac2326a03ddf17212d1b50219ca94321539bcd63c2a3dd",
+  "network_sha256": "5f25a69951fa7c79d3050558238dffff7d250e7529f063d4ceed2f7c7e771925",
+  "extensions": {
+    "86198728": 300,
+    "169728849": 100,
+    "52873356": 100,
+    "544295537": 100,
+    "781184662#1": 250
+  },
+  "before": [
+    {
+      "entry": "86198728",
+      "label": "북쪽 남행 · 13–16번",
+      "has_fork": true,
+      "distance": 183.44,
+      "path": [
+        "86198728"
+      ],
+      "fork_edge": "86198728",
+      "entry_lanes": 5
+    },
+    {
+      "entry": "169728849",
+      "label": "동쪽 진입로 · 01–02번",
+      "has_fork": true,
+      "distance": 326.22,
+      "path": [
+        "169728849",
+        "169929488#0"
+      ],
+      "fork_edge": "169929488#0",
+      "entry_lanes": 1
+    },
+    {
+      "entry": "52873356",
+      "label": "남쪽 북행 · 03–06번",
+      "has_fork": true,
+      "distance": 345.59,
+      "path": [
+        "52873356"
+      ],
+      "fork_edge": "52873356",
+      "entry_lanes": 4
+    },
+    {
+      "entry": "544295537",
+      "label": "동쪽 본선 · 07–08번",
+      "has_fork": true,
+      "distance": 327.67,
+      "path": [
+        "544295537",
+        "169929488#0"
+      ],
+      "fork_edge": "169929488#0",
+      "entry_lanes": 3
+    },
+    {
+      "entry": "781184662#1",
+      "label": "서쪽 진입 · 10–12번",
+      "has_fork": true,
+      "distance": 199.02,
+      "path": [
+        "781184662#1"
+      ],
+      "fork_edge": "781184662#1",
+      "entry_lanes": 2
+    },
+    {
+      "entry": "556956812#1",
+      "label": "동쪽 직진 · 09번",
+      "has_fork": false,
+      "distance": 751.22,
+      "path": [
+        "556956812#1",
+        "169929503#0",
+        "169929503#1",
+        "169929503#2"
+      ],
+      "fork_edge": "169929503#2",
+      "entry_lanes": 2
+    }
+  ],
+  "after": [
+    {
+      "entry": "86198728",
+      "label": "북쪽 남행 · 13–16번",
+      "has_fork": true,
+      "distance": 483.44,
+      "path": [
+        "86198728"
+      ],
+      "fork_edge": "86198728",
+      "entry_lanes": 5
+    },
+    {
+      "entry": "169728849",
+      "label": "동쪽 진입로 · 01–02번",
+      "has_fork": true,
+      "distance": 426.22,
+      "path": [
+        "169728849",
+        "169929488#0"
+      ],
+      "fork_edge": "169929488#0",
+      "entry_lanes": 1
+    },
+    {
+      "entry": "52873356",
+      "label": "남쪽 북행 · 03–06번",
+      "has_fork": true,
+      "distance": 445.59,
+      "path": [
+        "52873356"
+      ],
+      "fork_edge": "52873356",
+      "entry_lanes": 4
+    },
+    {
+      "entry": "544295537",
+      "label": "동쪽 본선 · 07–08번",
+      "has_fork": true,
+      "distance": 427.67,
+      "path": [
+        "544295537",
+        "169929488#0"
+      ],
+      "fork_edge": "169929488#0",
+      "entry_lanes": 3
+    },
+    {
+      "entry": "781184662#1",
+      "label": "서쪽 진입 · 10–12번",
+      "has_fork": true,
+      "distance": 449.02,
+      "path": [
+        "781184662#1"
+      ],
+      "fork_edge": "781184662#1",
+      "entry_lanes": 2
+    },
+    {
+      "entry": "556956812#1",
+      "label": "동쪽 직진 · 09번",
+      "has_fork": false,
+      "distance": 751.22,
+      "path": [
+        "556956812#1",
+        "169929503#0",
+        "169929503#1",
+        "169929503#2"
+      ],
+      "fork_edge": "169929503#2",
+      "entry_lanes": 2
+    }
+  ],
+  "changes": [
+    {
+      "edge": "86198728",
+      "entry_node": "436256826",
+      "extension_m": 300,
+      "lanes": 5,
+      "old_lengths": {
+        "86198728_0": 183.44,
+        "86198728_1": 183.44,
+        "86198728_2": 183.44,
+        "86198728_3": 183.44,
+        "86198728_4": 183.44
+      },
+      "new_lengths": {
+        "86198728_0": 483.44,
+        "86198728_1": 483.44,
+        "86198728_2": 483.44,
+        "86198728_3": 483.44,
+        "86198728_4": 483.44
+      },
+      "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_only\\landscaped.net.xml",
+      "source_sha256": "817ba0a41f72db131fac2326a03ddf17212d1b50219ca94321539bcd63c2a3dd",
+      "output_sha256": "45208910c506cfb15d59b6d45265fa06721d503f57eab263f4d5c9acba88f00a",
+      "other_geometry_connections_permissions_unchanged": true,
+      "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+    },
+    {
+      "edge": "169728849",
+      "entry_node": "cut_169728849_from",
+      "extension_m": 100,
+      "lanes": 1,
+      "old_lengths": {
+        "169728849_0": 250.79
+      },
+      "new_lengths": {
+        "169728849_0": 350.79
+      },
+      "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_entryprep\\landscaped.net.xml",
+      "source_sha256": "837688bad276dfb6f28ff6c34a80f9fc8ed7352a892ac1767290c42566e6895e",
+      "output_sha256": "837688bad276dfb6f28ff6c34a80f9fc8ed7352a892ac1767290c42566e6895e",
+      "other_geometry_connections_permissions_unchanged": true,
+      "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+    },
+    {
+      "edge": "52873356",
+      "entry_node": "cut_52873356_from",
+      "extension_m": 100,
+      "lanes": 4,
+      "old_lengths": {
+        "52873356_0": 346.69,
+        "52873356_1": 346.32,
+        "52873356_2": 345.95,
+        "52873356_3": 345.59
+      },
+      "new_lengths": {
+        "52873356_0": 446.69,
+        "52873356_1": 446.32,
+        "52873356_2": 445.95,
+        "52873356_3": 445.59
+      },
+      "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_entryprep\\landscaped.net.xml",
+      "source_sha256": "53afb29356e0d8c51bfc7d982aa325899f01e88f5c077753aaa878e35375f5f0",
+      "output_sha256": "53afb29356e0d8c51bfc7d982aa325899f01e88f5c077753aaa878e35375f5f0",
+      "other_geometry_connections_permissions_unchanged": true,
+      "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+    },
+    {
+      "edge": "544295537",
+      "entry_node": "cut_544295537_from",
+      "extension_m": 100,
+      "lanes": 3,
+      "old_lengths": {
+        "544295537_0": 253.43,
+        "544295537_1": 252.85,
+        "544295537_2": 252.28
+      },
+      "new_lengths": {
+        "544295537_0": 353.43,
+        "544295537_1": 352.85,
+        "544295537_2": 352.28
+      },
+      "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_entryprep\\landscaped.net.xml",
+      "source_sha256": "ca3767991175bf4710362235c6d7a9efbca4b9cc581a9f6b8e5667ef849fe4b6",
+      "output_sha256": "ca3767991175bf4710362235c6d7a9efbca4b9cc581a9f6b8e5667ef849fe4b6",
+      "other_geometry_connections_permissions_unchanged": true,
+      "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+    },
+    {
+      "edge": "781184662#1",
+      "entry_node": "1810880152",
+      "extension_m": 250,
+      "lanes": 2,
+      "old_lengths": {
+        "781184662#1_0": 199.02,
+        "781184662#1_1": 199.02
+      },
+      "new_lengths": {
+        "781184662#1_0": 449.02,
+        "781184662#1_1": 449.02
+      },
+      "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_entryprep\\landscaped.net.xml",
+      "source_sha256": "5f25a69951fa7c79d3050558238dffff7d250e7529f063d4ceed2f7c7e771925",
+      "output_sha256": "5f25a69951fa7c79d3050558238dffff7d250e7529f063d4ceed2f7c7e771925",
+      "other_geometry_connections_permissions_unchanged": true,
+      "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+    }
+  ],
+  "metric": "Conservative shortest lane length + minimum internal connector length to first outgoing-edge fork. Not all of this is usable lane-change space.",
+  "single_lane_caveat": "01/02 approach has one lane; merge-to-fork edge169929488#0 remains67.40m."
+}

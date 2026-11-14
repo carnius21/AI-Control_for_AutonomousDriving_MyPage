@@ -1,0 +1,52 @@
+[
+  {
+    "edge": "86198728",
+    "entry_node": "436256826",
+    "extension_m": 400,
+    "lanes": 5,
+    "old_lengths": {
+      "86198728_0": 183.44,
+      "86198728_1": 183.44,
+      "86198728_2": 183.44,
+      "86198728_3": 183.44,
+      "86198728_4": 183.44
+    },
+    "new_lengths": {
+      "86198728_0": 583.44,
+      "86198728_1": 583.44,
+      "86198728_2": 583.44,
+      "86198728_3": 583.44,
+      "86198728_4": 583.44
+    },
+    "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_only\\network.net.xml",
+    "source_sha256": "8486b8dc41b9dbc34badfb66570f7458e775040d42c189287a9a659d73fcb3a7",
+    "output_sha256": "4d929af6ef4a2042dedc8a6d0502754f8c8fc751625fd45c216a087fbc030b60",
+    "other_geometry_connections_permissions_unchanged": true,
+    "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+  },
+  {
+    "edge": "86198728",
+    "entry_node": "436256826",
+    "extension_m": 400,
+    "lanes": 5,
+    "old_lengths": {
+      "86198728_0": 183.44,
+      "86198728_1": 183.44,
+      "86198728_2": 183.44,
+      "86198728_3": 183.44,
+      "86198728_4": 183.44
+    },
+    "new_lengths": {
+      "86198728_0": 583.44,
+      "86198728_1": 583.44,
+      "86198728_2": 583.44,
+      "86198728_3": 583.44,
+      "86198728_4": 583.44
+    },
+    "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_only\\landscaped.net.xml",
+    "source_sha256": "817ba0a41f72db131fac2326a03ddf17212d1b50219ca94321539bcd63c2a3dd",
+    "output_sha256": "5ee301e5fb31decda362a5ff9e644210696baa86d4e1006b95c82fa87f5427c4",
+    "other_geometry_connections_permissions_unchanged": true,
+    "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+  }
+]

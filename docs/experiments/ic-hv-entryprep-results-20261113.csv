@@ -1,0 +1,7 @@
+experiment,seed,planned,arrived,collisions,teleports,pending,leftovers,ended,mean_depart_delay,passed,run
+hv_high15000_entryprep_hour,7201,15000,15000,0,0,[],[],3697.2,0.2149500000000001,True,results\hv_high15000_entryprep_hour\runs\mainline_high-7201
+hv_high15000_entryprep_hour,7202,15000,15000,0,0,[],[],3702.6,0.24065666666666663,True,results\hv_high15000_entryprep_hour\runs\mainline_high-7202
+hv_high15000_entryprep_hour,7203,15000,15000,0,0,[],[],3694.4,0.1896433333333334,True,results\hv_high15000_entryprep_hour\runs\mainline_high-7203
+hv_high15000_entryprep_long,7301,30000,30000,0,0,[],[],7296.0,0.20748999999999918,True,results\hv_high15000_entryprep_long\runs\mainline_high-7301
+hv_high15000_entryprep_long,7302,30000,30000,0,0,[],[],7295.0,0.22792333333333242,True,results\hv_high15000_entryprep_long\runs\mainline_high-7302
+hv_high15000_entryprep_long,7303,30000,30000,0,0,[],[],7297.2,0.20149666666666588,True,results\hv_high15000_entryprep_long\runs\mainline_high-7303

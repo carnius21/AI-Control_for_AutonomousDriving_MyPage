@@ -1,0 +1,17 @@
+{
+  "mode": "drivers",
+  "duration": 3600,
+  "source_network": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\maps\\toegyewon_only\\network.net.xml",
+  "source_routes": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\scenarios\\hv_stable\\source.rou.xml",
+  "total_vph": 10200.0,
+  "commit": "eb5663769411c296191a05a050e76203a19f069d",
+  "code_hashes": {
+    "hv_flow_repair.py": "df4c1eb222c609b4c86dbc8f5d2a7c2d502b269ed616a4d630ffa34d843d8ce1",
+    "hv_flow_audit.py": "04fa98e7d13e6b3824baf744a0874b913b9a782221e5f5b46df3316448b36112"
+  },
+  "files": {
+    "network.net.xml": "bb4c0f609e2c960b57ab53cdf7ade77acb2456701666cba2798abc8e3c60e48d",
+    "highway.rou.xml": "7f55b3929e4aac24747ca7f6f57062bf728eb5d64660ca5a9f43cbf7da56f504",
+    "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+  }
+}

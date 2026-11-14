@@ -1,0 +1,16 @@
+{
+  "all_lane_geometry_and_permissions_unchanged": true,
+  "connections_unchanged": true,
+  "junction_shapes_unchanged": true,
+  "speed_changed_lanes": [
+    "170059991_0",
+    "170059991_1",
+    "170059991_2",
+    "170059994_0",
+    "170059994_1",
+    "170059994_2",
+    "170059994_3",
+    "170059995_0"
+  ],
+  "weave_length": "51.07"
+}

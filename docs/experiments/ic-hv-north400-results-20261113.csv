@@ -1,0 +1,7 @@
+﻿experiment,seed,planned,arrived,collisions,teleports,pending,active,ended,peak_pending,mean_depart_delay,mean_wait,passed,run
+hv_high15000_north400_hour,7201,15000,15000,0,0,0,0,3694.2,5,0.22074999999999995,0.006573333333333334,True,results\hv_high15000_north400_hour\runs\mainline_high-7201
+hv_high15000_north400_hour,7202,15000,15000,0,0,0,0,3702.0,4,0.25256333333333336,0.00634666666666667,True,results\hv_high15000_north400_hour\runs\mainline_high-7202
+hv_high15000_north400_hour,7203,15000,15000,0,0,0,0,3693.6,3,0.19716333333333344,0.009733333333333335,True,results\hv_high15000_north400_hour\runs\mainline_high-7203
+hv_high15000_north400_long,7301,30000,30000,0,0,0,0,7295.0,6,0.20525666666666584,0.0068800000000000085,True,results\hv_high15000_north400_long\runs\mainline_high-7301
+hv_high15000_north400_long,7302,30000,30000,0,0,0,0,7289.0,6,0.2229699999999991,0.008820000000000005,True,results\hv_high15000_north400_long\runs\mainline_high-7302
+hv_high15000_north400_long,7303,30000,30000,0,0,0,0,7296.6,4,0.20263666666666585,0.0066333333333333366,True,results\hv_high15000_north400_long\runs\mainline_high-7303

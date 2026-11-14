@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf8'?>
+<viewsettings>
+  <scheme name="OSM source geometry - review">
+    <background backgroundColor="235,239,233" />
+    <edges laneShowBorders="true" showDirection="false" showLinkDecals="true" widthExaggeration="1" />
+  </scheme>
+  <delay value="100" />
+  <viewport x="1640" y="1335" zoom="115" />
+</viewsettings>

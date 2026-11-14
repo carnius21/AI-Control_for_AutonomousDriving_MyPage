@@ -1,0 +1,34 @@
+{
+  "source_profile": "hv_high15000",
+  "total_vph": 15000,
+  "geometry_extension": {
+    "edge": "86198728",
+    "entry_node": "436256826",
+    "extension_m": 400,
+    "lanes": 5,
+    "old_lengths": {
+      "86198728_0": 183.44,
+      "86198728_1": 183.44,
+      "86198728_2": 183.44,
+      "86198728_3": 183.44,
+      "86198728_4": 183.44
+    },
+    "new_lengths": {
+      "86198728_0": 583.44,
+      "86198728_1": 583.44,
+      "86198728_2": 583.44,
+      "86198728_3": 583.44,
+      "86198728_4": 583.44
+    },
+    "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\scenarios\\hv_high15000\\network.net.xml",
+    "source_sha256": "bb4c0f609e2c960b57ab53cdf7ade77acb2456701666cba2798abc8e3c60e48d",
+    "output_sha256": "c84d998e2221715bf314c5373751229902c083506ebb61c8ea466ba2331343d3",
+    "other_geometry_connections_permissions_unchanged": true,
+    "height": "New segment retains original entry z; experimental extension, not surveyed elevation."
+  },
+  "files": {
+    "network.net.xml": "c84d998e2221715bf314c5373751229902c083506ebb61c8ea466ba2331343d3",
+    "highway.rou.xml": "bd0657f700f9c899a7c15aa481d83f61e40ff7f561fb77090fe9ab53379237f5",
+    "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+  }
+}

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf8'?>
+<routes>
+  <vType id="car_krauss" vClass="passenger" length="4.8" carFollowModel="Krauss" accel="2.0" decel="4.5" emergencyDecel="9" tau="1.0" minGap="2.5" maxSpeed="33.33" speedFactor="1" speedDev="0.15" sigma="0.3" />
+  <vType id="car_idm" vClass="passenger" length="4.8" carFollowModel="IDM" accel="1.8" decel="3.5" emergencyDecel="9" tau="1.2" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" />
+  <vType id="car_eidm" vClass="passenger" length="4.8" carFollowModel="EIDM" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.1" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" />
+  <vType id="car_acc" vClass="passenger" length="4.8" carFollowModel="ACC" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.5" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.05" />
+  <vType id="car_krauss_violator" vClass="custom1" length="4.8" carFollowModel="Krauss" accel="2.0" decel="4.5" emergencyDecel="9" tau="1.0" minGap="2.5" maxSpeed="33.33" speedFactor="1" speedDev="0.15" sigma="0.3" guiShape="passenger/sedan" lcCooperative="0" lcCooperativeSpeed="0" />
+  <vType id="car_idm_violator" vClass="custom1" length="4.8" carFollowModel="IDM" accel="1.8" decel="3.5" emergencyDecel="9" tau="1.2" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" guiShape="passenger/sedan" lcCooperative="0" lcCooperativeSpeed="0" />
+  <vType id="car_eidm_violator" vClass="custom1" length="4.8" carFollowModel="EIDM" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.1" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.1" guiShape="passenger/sedan" lcCooperative="0" lcCooperativeSpeed="0" />
+  <vType id="car_acc_violator" vClass="custom1" length="4.8" carFollowModel="ACC" accel="2.0" decel="4.0" emergencyDecel="9" tau="1.5" minGap="2.0" maxSpeed="33.33" speedFactor="1" speedDev="0.05" guiShape="passenger/sedan" lcCooperative="0" lcCooperativeSpeed="0" />
+  <vType id="bus_idm" vClass="bus" guiShape="bus" length="12" width="2.5" carFollowModel="IDM" accel="1.2" decel="3.5" emergencyDecel="7" tau="1.5" minGap="3" maxSpeed="25" />
+  <vTypeDistribution id="carDist" vTypes="car_krauss car_idm car_eidm car_acc car_krauss_violator car_idm_violator car_eidm_violator car_acc_violator bus_idm" probabilities="0.32585000000000003 0.27930000000000005 0.18620000000000003 0.13965000000000002 0.0066500000000000005 0.005700000000000001 0.003800000000000001 0.0028500000000000005 0.05" />
+  <vType id="ego_type" accel="5.4" decel="5.4" maxSpeed="27.78" color="1,.25,.28" vClass="passenger" length="4.8" minGap="2.5" guiShape="passenger/sedan" />
+  <route id="route_01" edges="169728849 169929488#0 169728799 280963368 1414146971" />
+  <route id="route_02" edges="169728849 169929488#0 169929488#1 1414146968 372821396 544292617 544292616 844484877 844484877#1" />
+  <route id="route_03" edges="52873356 37927512 170059991 170059994 1063527748 169728835" />
+  <route id="route_04" edges="52873356 37927512 170059991 170059994 1063527748 797789364 781184662#3" />
+  <route id="route_05" edges="52873356 37927512 170059991 170059994 844484876 86198717 170059992 169929503#1 169929503#2" />
+  <route id="route_06" edges="52873356 844484878#0 844484878#1 86198722 86198708 86198708#1 1414146971" />
+  <route id="route_07" edges="544295537 169929488#0 169728799 280963368 1414146971" />
+  <route id="route_08" edges="544295537 169929488#0 169929488#1 1414146968 372821396 544292617 544292616 844484877 844484877#1" />
+  <route id="route_09" edges="556956812#1 169929503#0 169929503#1 169929503#2" />
+  <route id="route_10" edges="781184662#1 170059993 170059993#1 544293888#0 37375274 844484878#1 86198722 86198708 86198708#1 1414146971" />
+  <route id="route_11" edges="781184662#1 170059993 170059993#1 544293888#0 544293888#1 86198710 170059989 170059989#1 206426298 206426298#1 844484877 844484877#1" />
+  <route id="route_12" edges="781184662#1 781184662#2 781184662#3" />
+  <route id="route_13" edges="86198728 37927508 86198720 170059988 170059996 170059995 170059994 1063527748 169728835" />
+  <route id="route_14" edges="86198728 37927508 86198720 170059988 170059996 170059995 170059994 1063527748 797789364 781184662#3" />
+  <route id="route_15" edges="86198728 37927508 86198720 170059988 170059996 170059995 170059994 844484876 86198717 170059992 169929503#1 169929503#2" />
+  <route id="route_16" edges="86198728 86198725 86198709 37927509 206426298 206426298#1 844484877 844484877#1" />
+  <route id="r0" edges="169728849 169929488#0 169728799 280963368 1414146971" />
+  <flow id="flow_route_01" type="carDist" route="route_01" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="300" />
+  <flow id="flow_route_02" type="carDist" route="route_02" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="300" />
+  <flow id="flow_route_03" type="carDist" route="route_03" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="450" />
+  <flow id="flow_route_04" type="carDist" route="route_04" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="450" />
+  <flow id="flow_route_05" type="carDist" route="route_05" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="450" />
+  <flow id="flow_route_06" type="carDist" route="route_06" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="4650" />
+  <flow id="flow_route_07" type="carDist" route="route_07" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="900" />
+  <flow id="flow_route_08" type="carDist" route="route_08" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="900" />
+  <flow id="flow_route_09" type="carDist" route="route_09" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="1200" />
+  <flow id="flow_route_10" type="carDist" route="route_10" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="400" />
+  <flow id="flow_route_11" type="carDist" route="route_11" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="400" />
+  <flow id="flow_route_12" type="carDist" route="route_12" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="400" />
+  <flow id="flow_route_13" type="carDist" route="route_13" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="200" />
+  <flow id="flow_route_14" type="carDist" route="route_14" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="200" />
+  <flow id="flow_route_15" type="carDist" route="route_15" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="200" />
+  <flow id="flow_route_16" type="carDist" route="route_16" begin="0" end="3600" departLane="best" departSpeed="max" color="0.5,0.5,0.5" number="3600" />
+</routes>

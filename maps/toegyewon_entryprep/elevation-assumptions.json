@@ -1,0 +1,67 @@
+[
+  {
+    "edge": "1414146968",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "170059996",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "280963368",
+    "height": 16.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "37927508",
+    "height": 16.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198708",
+    "height": 16.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198708#1",
+    "height": 16.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198709",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198710",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198717",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198720",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198722",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198725",
+    "height": 16.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  },
+  {
+    "edge": "86198728",
+    "height": 8.0,
+    "source": "OSM bridge/layer; assumed 8m per layer"
+  }
+]

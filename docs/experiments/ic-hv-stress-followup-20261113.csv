@@ -1,0 +1,7 @@
+mode,seed,arrived,collisions,teleports,pending,leftovers,ended,mean_depart_delay,passed,run
+free_departure,8101,15000,0,0,0,0,3696.0,0.05022999999999994,True,results\hv_entryprep_followup_20261113\runs\free_departure-8101
+free_departure,8102,15000,0,0,0,0,4057.4,66.76838999999997,True,results\hv_entryprep_followup_20261113\runs\free_departure-8102
+free_departure,8103,15000,0,0,0,0,3692.8,0.05038999999999995,True,results\hv_entryprep_followup_20261113\runs\free_departure-8103
+south_drain,8101,15000,0,0,0,0,7331.6,388.7439966666663,True,results\hv_entryprep_followup_20261113\runs\south_drain-8101
+south_drain,8102,15000,0,0,0,0,7398.4,387.2914766666665,True,results\hv_entryprep_followup_20261113\runs\south_drain-8102
+south_drain,8103,15000,0,0,0,0,7392.2,388.2794766666668,True,results\hv_entryprep_followup_20261113\runs\south_drain-8103

@@ -1,0 +1,35 @@
+{
+  "mode": "mainline_high",
+  "total_vph": 15000,
+  "duration": 3600,
+  "planned": 15000,
+  "rates": {
+    "route_01": 300,
+    "route_02": 300,
+    "route_03": 450,
+    "route_04": 450,
+    "route_05": 450,
+    "route_06": 4650,
+    "route_07": 900,
+    "route_08": 900,
+    "route_09": 1200,
+    "route_10": 400,
+    "route_11": 400,
+    "route_12": 400,
+    "route_13": 200,
+    "route_14": 200,
+    "route_15": 200,
+    "route_16": 3600
+  },
+  "changes": "stable10200 + route06 3600 + route16 1200; local and ramp demand unchanged",
+  "commit": "3dd5653418b4fa4b810a9b62ed067c7d74968147",
+  "files": {
+    "network.net.xml": "bb4c0f609e2c960b57ab53cdf7ade77acb2456701666cba2798abc8e3c60e48d",
+    "highway.rou.xml": "bd0657f700f9c899a7c15aa481d83f61e40ff7f561fb77090fe9ab53379237f5",
+    "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+  },
+  "code_hashes": {
+    "hv_high_traffic.py": "3f208f7619d9397e88b21969dc6c7adab430ece466511d905c606cfa96ece6c1",
+    "hv_flow_audit.py": "15ba7f3f9d95ed63335254a5ac6c54d7a21a0ea59a9014757d3e52231cbda6bc"
+  }
+}

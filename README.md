@@ -128,6 +128,7 @@ results, 생성 데이터, 가상환경, 캐시 및 비밀 설정 파일은 .git
 
 ## 기록 및 데이터 보관
 
+- [LJJ 학습 실험 기록](docs/experiments/ljj-learning-log.md) — 실험 목적·조건, 기준 대비 완주율·충돌률, main 반영 의견
 - [과거 설계·실패 실험 기록](docs/archive/README.md)
 - [데이터는 로컬, 요약은 GitHub](data/README.md)
 

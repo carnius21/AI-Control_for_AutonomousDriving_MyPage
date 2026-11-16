@@ -1,0 +1,32 @@
+﻿구분,항목명,형태,의미,포함 여부 (o / x)
+필수 포함 항목,episode,Integer,Episode 번호,o
+필수 포함 항목,t,Integer,Episode 내부 timestep,o
+필수 포함 항목,observation,Vector (19-dim → 47-dim),시점 t에서 AV Policy가 실제로 입력받는 부분 관측 o_t,o
+필수 포함 항목,action_raw,Vector (2-dim),"Policy가 출력한 원본 Action [가감속, 차선변경]",o
+필수 포함 항목,action.accel_raw,Float,환경에 적용된 가감속 Action 값,o
+필수 포함 항목,action.lane_change_raw,Float,환경에 적용된 차선변경 raw 값,o
+필수 포함 항목,action.lane_change,Integer,"실제 명령으로 변환된 차선변경 값 {-1, 0, +1}",o
+필수 포함 항목,action.lane_change_applied,Boolean,차선변경 명령이 실제 적용되었는지 여부,o
+필수 포함 항목,reward,Float,시점 t에서 받은 Reward r_t,o
+필수 포함 항목,terminated,Boolean,충돌 / 도착 등 환경 자체의 종료 여부,o
+필수 포함 항목,truncated,Boolean,최대 Episode Step 등 시간 제한에 의한 종료 여부,o
+필수 포함 항목,state,Dictionary,SUMO 내부의 privileged simulator state s_t,o
+필수 포함 항목,detected_vehicles,List,Observation 시점에 감지된 주변 차량 정보,o
+필수 포함 항목,event.collided,Boolean,해당 step에서 충돌 발생 여부,o
+필수 포함 항목,event.arrived,Boolean,목적지 도착 여부,o
+필수 포함 항목,event.lane_before,Integer / String,Action 적용 전 AV 차선,o
+필수 포함 항목,event.lane_after,Integer / String,Action 적용 후 AV 차선,o
+필수 포함 항목,next_observation,Vector (19-dim → 47-dim),다음 시점의 부분 관측 o_{t+1} (JSONL 종료시 기록·로더 복원),o
+필수 포함 항목,next_state,Dictionary,다음 시점의 privileged simulator state s_{t+1},o
+팀별 추가 항목,observation (확장 47-dim),Vector (47-dim),5차로 정보 + IC 경로·사전준비 거리·2번째 제약지점 예보,o
+팀별 추가 항목,event.route,String,현재 에피소드 지정 경로 ID (route_01 ~ route_16),o
+팀별 추가 항목,event.sumo_seed,Integer,해당 에피소드의 SUMO 교통류 시드 번호,o
+팀별 추가 항목,event.prep100,Boolean,분기점 전 100m 사전 차로 준비 구간 진입 여부,o
+팀별 추가 항목,event.route_lane_ready,Boolean,현재 차로가 목적지 경로의 다음 도로와 연결되는지 여부,o
+팀별 추가 항목,event.exit_lane_change_distance_m,Float / Null,출구/분기점 기준 차선 변경 완료 잔여 거리(m),o
+팀별 추가 항목,event.zipper_count,Integer,에피소드 내 지퍼 합류 통과 횟수,o
+팀별 추가 항목,event.zipper_compliant,Boolean / Null,지퍼 합류 규칙(교대 합류) 준수 여부,o
+팀별 추가 항목,event.ramp,Boolean,현재 위치가 램프(_link) 구간인지 여부,o
+팀별 추가 항목,event.ramp_excess_mps,Float,램프 제한속도 초과 속도(m/s),o
+팀별 추가 항목,event.wrong_exit,Boolean,충돌 없이 잘못된 출구/경로로 빠져 종료되었는지 여부,o
+팀별 추가 항목,event.reward_components,Dictionary,"스텝 보상 항목별 분해 (base, early_prep, zipper 등)",o

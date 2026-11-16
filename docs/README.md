@@ -5,6 +5,7 @@
 | 문서 | 용도 |
 |---|---|
 | [실측 교통량 재조사·HV 시험](experiments/ic-observed-bounds-20261113.md) | 본선 관측값, 미확인 램프·일반도로 분배 가정, 고정 수요 시험 |
+| [LJJ-001 관측 비교 결과](experiments/ljj-001-observation-results.md) | 완주 +8.33%p·충돌 −8.33%p, 일부 경로 악화로 기본값 채택 보류 |
 | [LJJ 학습 실험 기록](experiments/ljj-learning-log.md) | ljj_aftermid 실험의 목적·조건·성능 변화·main 반영 의견 |
 | [후속 자동 실험](ic-next-stages-plan.md) | HV → 기존 AV 트래픽 → 공유 정책 → 트래픽 학습, 통과 기준 적용 |
 | [14번 완료 결과](ic-navigation-route14-results.md) | N0/N1/N2 모두 60/60 완주 |

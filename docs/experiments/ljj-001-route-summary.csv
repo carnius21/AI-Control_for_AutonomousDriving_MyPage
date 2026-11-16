@@ -1,0 +1,17 @@
+route,baseline_arrival,baseline_collision,baseline_timeout,observation_arrival,observation_collision,observation_timeout,arrival_delta
+route_01,0,1,2,3,0,0,3
+route_02,0,1,2,0,0,3,0
+route_03,3,0,0,0,3,0,-3
+route_04,2,1,0,0,0,3,-2
+route_05,2,0,1,0,0,3,-2
+route_06,0,2,1,0,2,1,0
+route_07,3,0,0,3,0,0,0
+route_08,0,0,3,0,0,3,0
+route_09,2,1,0,2,1,0,0
+route_10,0,0,3,0,0,3,0
+route_11,0,0,3,0,0,3,0
+route_12,0,3,0,3,0,0,3
+route_13,0,0,3,1,0,2,1
+route_14,0,0,3,0,0,3,0
+route_15,0,0,3,3,0,0,3
+route_16,0,1,2,1,0,2,1

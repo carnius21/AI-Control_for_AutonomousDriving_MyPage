@@ -58,14 +58,14 @@ REWARD = {**REWARD_DEFAULTS, **REWARD_OVERRIDES}
 
 HPARAMS = dict(
     # ---- 최적화 ----
-    lr=3e-4,                 # 4차 과제 모델 B: 모델 A(lr=1e-4)와 학습률 비교
+    lr=5e-5,                 # 학습률. 보상이 요동치면 낮출 것 (3e-4 → 1e-4 → 5e-5)
     n_steps=2048,            # rollout 길이. 크면 advantage 추정이 안정적
     n_epochs=10,             # 모은 데이터 재사용 횟수
     minibatch_size=64,
 
     # ---- 할인 / advantage ----
     gamma=0.99,              # 할인율 γ. 0.99 ≈ 100스텝(50초) 앞을 내다봄
-    gae_lambda=0.95,         # GAE λ. 1에 가까울수록 분산↑편향↓
+    gae_lambda=0.97,         # GAE λ. 1에 가까울수록 분산↑편향↓ 0.95->0.97
 
     # ---- PPO 고유 ----
     clip_eps=0.2,            # 클리핑 범위 ε

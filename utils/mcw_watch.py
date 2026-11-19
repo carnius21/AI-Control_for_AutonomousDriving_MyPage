@@ -13,8 +13,10 @@ def main():
     p = argparse.ArgumentParser(description="Replay an episode in SUMO-GUI tracking ego")
     p.add_argument("--route", type=str, default="route_01", help="route_01 .. route_16")
     p.add_argument("--seed", type=int, default=40201)
-    p.add_argument("--stage", choices=["none", "low", "high", "real_ratio"], default="high")
-    p.add_argument("--resume", type=str, default="results/mcw_runs/stage3_high_v5_b/best_model.pt")
+    p.add_argument("--stage", choices=["none", "low", "high", "real_ratio", "high_real_ratio"], default="high_real_ratio")
+    p.add_argument("--resume", type=str, default="results/mcw_runs/mcw2_nosafety_final/best_model.pt")
+    p.add_argument("--safety", dest="safety", action="store_true", default=False)
+    p.add_argument("--no-safety", dest="safety", action="store_false")
     p.add_argument("--delay", type=float, default=120.0, help="SUMO-GUI delay in ms per step")
     p.add_argument("--zoom", type=float, default=1200.0, help="SUMO-GUI camera zoom")
     p.add_argument("--min-front-gap", type=float, default=3.5)
@@ -24,7 +26,6 @@ def main():
     args = p.parse_args()
 
     # Fill defaults expected by build_configs
-    args.safety = True
     args.collision_penalty = 15.0
     args.arrival_bonus = 5.0
     args.lc_penalty = 0.01

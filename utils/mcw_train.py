@@ -164,15 +164,26 @@ class McwEnv(ClarityEnv):
         ":1000493465_2_0": (":1000493465_0_1", "844484877_1"),
     }
 
-    def __init__(self, *args, route_conn: bool = True, ttc_reward: bool = True,
+    def __init__(self, *args, route_conn: bool = True, agenda2: bool = False,
+                 ttc_reward: bool = True,
                  prep_reward: bool = True, prep_horizon: float = 400.0,
-                 timeout_penalty: float = 15.0, stall_penalty: float = 0.08, **kwargs):
+                 timeout_penalty: float = 15.0, stall_penalty: float = 0.08,
+                 obs_noise: bool = False, noise_gap_base: float = 0.2,
+                 noise_gap_slope: float = 3.6, noise_vel_base: float = 0.15,
+                 noise_vel_slope: float = 1.35, **kwargs):
         self.use_route_conn = route_conn
+        self.agenda2 = bool(agenda2)
         self.use_ttc_reward = ttc_reward
         self.use_prep_reward = prep_reward
         self.prep_horizon = float(prep_horizon)
         self.timeout_penalty = float(timeout_penalty)
         self.stall_penalty = float(stall_penalty)
+        self.obs_noise = bool(obs_noise)
+        self.noise_gap_base = float(noise_gap_base)
+        self.noise_gap_slope = float(noise_gap_slope)
+        self.noise_vel_base = float(noise_vel_base)
+        self.noise_vel_slope = float(noise_vel_slope)
+        self._noise_rng = np.random.default_rng(11)
         self.stall_steps = 0
         self.eval_mode = False
         self.credits = ProgressReward()
@@ -181,7 +192,38 @@ class McwEnv(ClarityEnv):
     def reset(self, *args, **kwargs):
         self.credits = ProgressReward()
         self.stall_steps = 0
+        seed = kwargs.get("seed") if kwargs else None
+        if seed is None and len(args) >= 1:
+            seed = args[0]
+        if seed is not None:
+            self._noise_rng = np.random.default_rng(int(seed) + 777)
         return super().reset(*args, **kwargs)
+
+    def _get_obs(self):
+        obs = super()._get_obs()
+        out = obs.copy()
+        if self.obs_noise and self.ego_id in traci.vehicle.getIDList():
+            for k in range(len(self.obs_offsets)):
+                lg_idx, lv_idx = 1 + 4 * k, 2 + 4 * k
+                if not (out[lg_idx] >= 1.0 - 1e-6 and out[lv_idx] >= 1.0 - 1e-6):
+                    frac = float(np.clip(out[lg_idx], 0.0, 1.0))
+                    sg = self.noise_gap_base + self.noise_gap_slope * frac
+                    sv = self.noise_vel_base + self.noise_vel_slope * frac
+                    out[lg_idx] = float(np.clip(out[lg_idx] + self._noise_rng.normal(0.0, sg) / self.visibility, 0.0, 1.0))
+                    out[lv_idx] = float(np.clip(out[lv_idx] + self._noise_rng.normal(0.0, sv) / self.vmax, -1.0, 1.0))
+
+                fg_idx, fv_idx = 3 + 4 * k, 4 + 4 * k
+                if not (out[fg_idx] <= -1.0 + 1e-6 and out[fv_idx] <= -1.0 + 1e-6):
+                    frac = float(np.clip(-out[fg_idx], 0.0, 1.0))
+                    sg = self.noise_gap_base + self.noise_gap_slope * frac
+                    sv = self.noise_vel_base + self.noise_vel_slope * frac
+                    out[fg_idx] = float(np.clip(out[fg_idx] + self._noise_rng.normal(0.0, sg) / self.visibility, -1.0, 0.0))
+                    out[fv_idx] = float(np.clip(out[fv_idx] + self._noise_rng.normal(0.0, sv) / self.vmax, -1.0, 1.0))
+        if self.agenda2:
+            # Agenda 2: remove target-lane offset hints, 400m prepare guidance, validity flags, and 2nd constraint mask
+            out[31:34] = 0.0
+            out[37:47] = 0.0
+        return out
 
     def _scan_lane_neighbors(self, direction: int):
         """Scan target lane AND across junction boundary (via + outgoing lanes) to prevent edge-end blind spots."""
@@ -321,9 +363,29 @@ class McwEnv(ClarityEnv):
             if remaining > self.visibility:
                 return 1.0
 
-            # Check whether this lane actually connects to the next edge on ego's route
+            # Check whether this lane connects along ego's route (multi-hop within visibility for agenda2)
             path = self.routes.get(getattr(self, "episode_route", ""), [])
             idx = traci.vehicle.getRouteIndex(self.ego_id)
+            if self.agenda2 and 0 <= idx < len(path):
+                queue = [(idx, lane_id, float(remaining))]
+                seen = set()
+                max_reach = float(remaining)
+                while queue:
+                    r_i, cur_lane, acc_dist = queue.pop(0)
+                    if (r_i, cur_lane) in seen:
+                        continue
+                    seen.add((r_i, cur_lane))
+                    if acc_dist >= self.visibility or r_i + 1 >= len(path):
+                        return 1.0
+                    max_reach = max(max_reach, acc_dist)
+                    nxt_edge = path[r_i + 1]
+                    for lk in traci.lane.getLinks(cur_lane):
+                        nxt_lane = lk[0] if len(lk) > 0 else ""
+                        if nxt_lane.startswith(nxt_edge + "_"):
+                            via_len = float(lk[7]) if len(lk) > 7 else 0.0
+                            nxt_len = float(traci.lane.getLength(nxt_lane))
+                            queue.append((r_i + 1, nxt_lane, acc_dist + via_len + nxt_len))
+                return float(np.clip(max_reach / self.visibility, 0.0, 1.0))
             if 0 <= idx and idx + 1 < len(path):
                 next_edge = path[idx + 1]
                 links = traci.lane.getLinks(lane_id)
@@ -478,13 +540,20 @@ def build_configs(args):
 
 
 def make_env(cfg_path, road, nav, args, action_cfg, reward_cfg, sim_cfg, ego_cfg, traffic_cfg):
+    obs_cfg = dict(OBSERVATION, visibility=float(getattr(args, "visibility", 120.0)))
     return McwEnv(
-        str(cfg_path), road, ego_cfg, sim_cfg, OBSERVATION, action_cfg, reward_cfg,
+        str(cfg_path), road, ego_cfg, sim_cfg, obs_cfg, action_cfg, reward_cfg,
         traffic_cfg, (), args.seed,
         navigation=nav, clarity="lookahead",
-        route_conn=args.route_conn, ttc_reward=args.ttc_reward,
+        route_conn=args.route_conn, agenda2=bool(getattr(args, "agenda2", False)),
+        ttc_reward=args.ttc_reward,
         prep_reward=args.prep_reward, prep_horizon=args.nav_horizon,
         timeout_penalty=args.timeout_penalty, stall_penalty=args.stall_penalty,
+        obs_noise=bool(getattr(args, "obs_noise", False)),
+        noise_gap_base=float(getattr(args, "noise_gap_base", 0.2)),
+        noise_gap_slope=float(getattr(args, "noise_gap_slope", 3.6)),
+        noise_vel_base=float(getattr(args, "noise_vel_base", 0.15)),
+        noise_vel_slope=float(getattr(args, "noise_vel_slope", 1.35)),
     )
 
 
@@ -541,7 +610,7 @@ def evaluate_16_routes(agent, env, episodes_per_route: int = 1, base_seed: int =
     return summary
 
 
-def distill_safe_policy(agent, env, hparams, run_dir: Path, passes: int = 4, lr: float = 3e-4, eval_episodes: int = 1):
+def distill_safe_policy(agent, env, hparams, run_dir: Path, passes: int = 4, lr: float = 3e-4, eval_episodes: int = 1, epochs: int = 12):
     """On-policy DAgger distillation: internalize safe gap timing into the 47-dim neural policy for gate-free execution."""
     mentor = PPO(obs_dim=47, act_dim=2, buffer=RolloutBuffer(), **hparams)
     mentor.policy.load_state_dict(agent.policy.state_dict())
@@ -553,6 +622,8 @@ def distill_safe_policy(agent, env, hparams, run_dir: Path, passes: int = 4, lr:
     obs_buf, acc_buf, lane_buf, w_buf = [], [], [], []
     best_key = (-1.0, -1.0)
     hard_routes = ["route_03", "route_05", "route_07", "route_10", "route_13", "route_14", "route_15"]
+    if getattr(env, "agenda2", False):
+        hard_routes = ["route_02"] + hard_routes
 
     def _can_change(direction: int) -> bool:
         if direction == 0 or env.ego_id not in traci.vehicle.getIDList():
@@ -655,7 +726,7 @@ def distill_safe_policy(agent, env, hparams, run_dir: Path, passes: int = 4, lr:
         w_t = torch.as_tensor(np.asarray(w_buf, dtype=np.float32), device=agent.device)
         n_samples = len(obs_buf)
         batch_sz = 256
-        for _ in range(12):
+        for _ in range(int(epochs)):
             perm = rng.permutation(n_samples)
             for start_i in range(0, n_samples, batch_sz):
                 ix = perm[start_i:start_i + batch_sz]
@@ -700,6 +771,13 @@ def main():
     p.add_argument("--arrival-bonus", type=float, default=5.0)
     p.add_argument("--lc-penalty", type=float, default=0.02)
     p.add_argument("--nav-horizon", type=float, default=400.0)
+    p.add_argument("--visibility", type=float, default=120.0)
+    p.add_argument("--obs-noise", dest="obs_noise", action="store_true", default=True)
+    p.add_argument("--no-obs-noise", dest="obs_noise", action="store_false")
+    p.add_argument("--noise-gap-base", type=float, default=0.2)
+    p.add_argument("--noise-gap-slope", type=float, default=3.6)
+    p.add_argument("--noise-vel-base", type=float, default=0.15)
+    p.add_argument("--noise-vel-slope", type=float, default=1.35)
     p.add_argument("--safety", dest="safety", action="store_true", default=False)
     p.add_argument("--no-safety", dest="safety", action="store_false")
     p.add_argument("--min-front-gap", type=float, default=5.0)
@@ -708,6 +786,8 @@ def main():
     p.add_argument("--approach-horizon", type=float, default=1.2)
     p.add_argument("--route-conn", dest="route_conn", action="store_true", default=True)
     p.add_argument("--no-route-conn", dest="route_conn", action="store_false")
+    p.add_argument("--agenda2", dest="agenda2", action="store_true", default=False)
+    p.add_argument("--no-agenda2", dest="agenda2", action="store_false")
     p.add_argument("--ttc-reward", dest="ttc_reward", action="store_true", default=True)
     p.add_argument("--no-ttc-reward", dest="ttc_reward", action="store_false")
     p.add_argument("--prep-reward", dest="prep_reward", action="store_true", default=True)
@@ -717,6 +797,8 @@ def main():
     p.add_argument("--eval-episodes", type=int, default=1, help="Episodes per route (16 routes total)")
     p.add_argument("--eval-interval", type=int, default=25, help="Updates between 16-route evaluations (0=off)")
     p.add_argument("--distill-passes", type=int, default=0, help="DAgger passes to internalize safe gap timing before/instead of PPO")
+    p.add_argument("--distill-lr", type=float, default=None, help="Optional learning rate override for DAgger passes")
+    p.add_argument("--distill-epochs", type=int, default=12, help="Epochs per DAgger pass")
     p.add_argument("--name", type=str, default=None)
     p.add_argument("--smoke", action="store_true")
     args = p.parse_args()
@@ -761,6 +843,15 @@ def main():
     manifest = {
         "args": vars(args),
         "hparams": hparams,
+        "observation": {
+            **OBSERVATION,
+            "visibility": float(args.visibility),
+            "obs_noise": bool(args.obs_noise),
+            "noise_gap_base": float(args.noise_gap_base),
+            "noise_gap_slope": float(args.noise_gap_slope),
+            "noise_vel_base": float(args.noise_vel_base),
+            "noise_vel_slope": float(args.noise_vel_slope),
+        },
         "action": action_cfg,
         "reward": reward_cfg,
         "device": str(agent.device),
@@ -780,9 +871,11 @@ def main():
             return
 
         if args.distill_passes > 0:
+            distill_lr = float(args.distill_lr) if args.distill_lr is not None else max(args.lr, 3e-4)
             distill_safe_policy(
                 agent, env, hparams, run_dir,
-                passes=args.distill_passes, lr=max(args.lr, 3e-4), eval_episodes=args.eval_episodes,
+                passes=args.distill_passes, lr=distill_lr, eval_episodes=args.eval_episodes,
+                epochs=args.distill_epochs,
             )
             if args.steps <= 0:
                 if (run_dir / "best_model.pt").exists():
@@ -795,6 +888,7 @@ def main():
             obs, _ = env.reset()
             ep_stats = [0.0, 0]
             best_sr = -1.0
+            best_key = (-1.0, -1.0)
             n_updates = 0
             while agent.num_timesteps < args.steps:
                 obs, last_val, _ = agent.collect_rollout(env, obs, logger=logger, ep_stats=ep_stats)
@@ -824,7 +918,10 @@ def main():
                         f"({summary['collision_rate']:.1%}), timeout={summary['timeouts']}",
                         flush=True,
                     )
-                    if summary["success_rate"] >= best_sr:
+                    agent.save(str(run_dir / f"model_{agent.num_timesteps}.pt"))
+                    key = (summary["success_rate"], -summary["collision_rate"])
+                    if key >= best_key:
+                        best_key = key
                         best_sr = summary["success_rate"]
                         agent.save(str(run_dir / "best_model.pt"))
                     obs, _ = env.reset()

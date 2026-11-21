@@ -1,0 +1,259 @@
+{
+  "all": {
+    "counts": {
+      "arrival": 24,
+      "timeout": 21,
+      "collision": 3
+    },
+    "paired_changes": {
+      "arrival->timeout": 19,
+      "arrival->collision": 3,
+      "collision->timeout": 1
+    },
+    "arrivals_by_route": {
+      "route_01": 1,
+      "route_02": 2,
+      "route_06": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 3,
+      "route_12": 3,
+      "route_16": 3
+    }
+  },
+  "all_lane0": {
+    "counts": {
+      "arrival": 21,
+      "timeout": 21,
+      "collision": 6
+    },
+    "paired_changes": {
+      "arrival->timeout": 17,
+      "collision->arrival": 6,
+      "arrival->collision": 4,
+      "collision->timeout": 4
+    },
+    "arrivals_by_route": {
+      "route_01": 1,
+      "route_02": 2,
+      "route_06": 3,
+      "route_08": 1,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 3,
+      "route_12": 3,
+      "route_16": 2
+    }
+  },
+  "baseline": {
+    "counts": {
+      "arrival": 46,
+      "timeout": 1,
+      "collision": 1
+    },
+    "paired_changes": {},
+    "arrivals_by_route": {
+      "route_01": 3,
+      "route_02": 3,
+      "route_03": 3,
+      "route_04": 3,
+      "route_05": 1,
+      "route_06": 3,
+      "route_07": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 3,
+      "route_12": 3,
+      "route_13": 3,
+      "route_14": 3,
+      "route_15": 3,
+      "route_16": 3
+    }
+  },
+  "gate": {
+    "counts": {
+      "arrival": 39,
+      "collision": 9
+    },
+    "paired_changes": {
+      "arrival->collision": 8,
+      "timeout->arrival": 1
+    },
+    "arrivals_by_route": {
+      "route_01": 3,
+      "route_02": 2,
+      "route_03": 2,
+      "route_04": 3,
+      "route_05": 1,
+      "route_06": 2,
+      "route_07": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 2,
+      "route_12": 3,
+      "route_13": 3,
+      "route_14": 2,
+      "route_15": 1,
+      "route_16": 3
+    }
+  },
+  "next_lane": {
+    "counts": {
+      "arrival": 37,
+      "timeout": 11
+    },
+    "paired_changes": {
+      "arrival->timeout": 9,
+      "collision->timeout": 1
+    },
+    "arrivals_by_route": {
+      "route_01": 2,
+      "route_02": 3,
+      "route_03": 3,
+      "route_04": 2,
+      "route_06": 3,
+      "route_07": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 3,
+      "route_12": 3,
+      "route_13": 1,
+      "route_14": 1,
+      "route_15": 1,
+      "route_16": 3
+    }
+  },
+  "prep_direction": {
+    "counts": {
+      "arrival": 31,
+      "timeout": 17
+    },
+    "paired_changes": {
+      "arrival->timeout": 15,
+      "collision->timeout": 1
+    },
+    "arrivals_by_route": {
+      "route_01": 1,
+      "route_02": 3,
+      "route_03": 3,
+      "route_04": 2,
+      "route_06": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 3,
+      "route_12": 3,
+      "route_15": 1,
+      "route_16": 3
+    }
+  },
+  "prep_distance": {
+    "counts": {
+      "arrival": 45,
+      "timeout": 3
+    },
+    "paired_changes": {
+      "collision->arrival": 1,
+      "arrival->timeout": 2
+    },
+    "arrivals_by_route": {
+      "route_01": 3,
+      "route_02": 3,
+      "route_03": 3,
+      "route_04": 3,
+      "route_05": 2,
+      "route_06": 3,
+      "route_07": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 3,
+      "route_12": 3,
+      "route_13": 3,
+      "route_14": 1,
+      "route_15": 3,
+      "route_16": 3
+    }
+  },
+  "route_conn": {
+    "counts": {
+      "arrival": 27,
+      "timeout": 20,
+      "collision": 1
+    },
+    "paired_changes": {
+      "arrival->timeout": 18,
+      "collision->timeout": 1,
+      "arrival->collision": 1
+    },
+    "arrivals_by_route": {
+      "route_01": 1,
+      "route_02": 3,
+      "route_03": 2,
+      "route_04": 1,
+      "route_06": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 2,
+      "route_11": 3,
+      "route_12": 3,
+      "route_16": 3
+    }
+  },
+  "second_split": {
+    "counts": {
+      "arrival": 46,
+      "timeout": 2
+    },
+    "paired_changes": {
+      "collision->arrival": 1,
+      "arrival->timeout": 1
+    },
+    "arrivals_by_route": {
+      "route_01": 3,
+      "route_02": 3,
+      "route_03": 3,
+      "route_04": 3,
+      "route_05": 2,
+      "route_06": 3,
+      "route_07": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 3,
+      "route_12": 3,
+      "route_13": 3,
+      "route_14": 2,
+      "route_15": 3,
+      "route_16": 3
+    }
+  },
+  "validity": {
+    "counts": {
+      "collision": 1,
+      "timeout": 23,
+      "arrival": 24
+    },
+    "paired_changes": {
+      "arrival->collision": 1,
+      "arrival->timeout": 21,
+      "collision->timeout": 1
+    },
+    "arrivals_by_route": {
+      "route_02": 3,
+      "route_03": 1,
+      "route_04": 1,
+      "route_06": 3,
+      "route_08": 3,
+      "route_09": 3,
+      "route_10": 3,
+      "route_11": 1,
+      "route_12": 3,
+      "route_16": 3
+    }
+  }
+}

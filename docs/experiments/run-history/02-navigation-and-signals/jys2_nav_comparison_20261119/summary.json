@@ -1,0 +1,114 @@
+{
+  "route_04": {
+    "samples": 272,
+    "route_disagreements": 0,
+    "comparable": 249,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_14": {
+    "samples": 349,
+    "route_disagreements": 0,
+    "comparable": 148,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_01": {
+    "samples": 173,
+    "route_disagreements": 0,
+    "comparable": 92,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_02": {
+    "samples": 359,
+    "route_disagreements": 0,
+    "comparable": 93,
+    "different_direction": 15,
+    "arrived": true
+  },
+  "route_03": {
+    "samples": 270,
+    "route_disagreements": 0,
+    "comparable": 248,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_05": {
+    "samples": 354,
+    "route_disagreements": 0,
+    "comparable": 99,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_06": {
+    "samples": 215,
+    "route_disagreements": 0,
+    "comparable": 65,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_07": {
+    "samples": 176,
+    "route_disagreements": 0,
+    "comparable": 94,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_08": {
+    "samples": 360,
+    "route_disagreements": 0,
+    "comparable": 170,
+    "different_direction": 93,
+    "arrived": true
+  },
+  "route_09": {
+    "samples": 100,
+    "route_disagreements": 0,
+    "comparable": 0,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_10": {
+    "samples": 271,
+    "route_disagreements": 0,
+    "comparable": 201,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_11": {
+    "samples": 392,
+    "route_disagreements": 0,
+    "comparable": 250,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_12": {
+    "samples": 166,
+    "route_disagreements": 0,
+    "comparable": 0,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_13": {
+    "samples": 347,
+    "route_disagreements": 0,
+    "comparable": 147,
+    "different_direction": 24,
+    "arrived": true
+  },
+  "route_15": {
+    "samples": 431,
+    "route_disagreements": 0,
+    "comparable": 205,
+    "different_direction": 0,
+    "arrived": true
+  },
+  "route_16": {
+    "samples": 261,
+    "route_disagreements": 0,
+    "comparable": 199,
+    "different_direction": 0,
+    "arrived": true
+  }
+}

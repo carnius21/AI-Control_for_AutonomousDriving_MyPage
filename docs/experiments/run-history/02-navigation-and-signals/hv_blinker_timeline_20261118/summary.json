@@ -1,0 +1,89 @@
+{
+  "runs": [
+    {
+      "seed": 59101,
+      "version": [
+        22,
+        "SUMO 1.27.1"
+      ],
+      "counts": {
+        "av_present_steps": 0,
+        "changes": 4582,
+        "prior_signal": 1198
+      }
+    },
+    {
+      "seed": 59102,
+      "version": [
+        22,
+        "SUMO 1.27.1"
+      ],
+      "counts": {
+        "av_present_steps": 0,
+        "changes": 4498,
+        "prior_signal": 1188
+      }
+    },
+    {
+      "seed": 59103,
+      "version": [
+        22,
+        "SUMO 1.27.1"
+      ],
+      "counts": {
+        "av_present_steps": 0,
+        "changes": 4457,
+        "prior_signal": 1202
+      }
+    }
+  ],
+  "outcomes": {
+    "matching_change": 3174,
+    "signal_off": 6013,
+    "edge_changed": 3813,
+    "other_change": 93,
+    "end_of_run": 24
+  },
+  "all_onsets": {
+    "n": 13117,
+    "blocked_at_onset": 11204,
+    "blocked_one_step_before": 13117,
+    "blocked_after_onset": 11204,
+    "new_neighbor_at_onset": 402,
+    "previously_empty_at_onset": 142,
+    "previously_empty_then_change_one_step": 1,
+    "new_neighbor_recent": 9119,
+    "no_neighbor_at_onset": 797,
+    "unknown_at_onset": 0
+  },
+  "followed_by_change": {
+    "n": 3174,
+    "blocked_at_onset": 3153,
+    "blocked_one_step_before": 3174,
+    "blocked_after_onset": 3153,
+    "new_neighbor_at_onset": 118,
+    "previously_empty_at_onset": 55,
+    "previously_empty_then_change_one_step": 1,
+    "new_neighbor_recent": 2415,
+    "no_neighbor_at_onset": 320,
+    "unknown_at_onset": 0
+  },
+  "without_change": {
+    "n": 9943,
+    "blocked_at_onset": 8051,
+    "blocked_one_step_before": 9943,
+    "blocked_after_onset": 8051,
+    "new_neighbor_at_onset": 284,
+    "previously_empty_at_onset": 87,
+    "previously_empty_then_change_one_step": 0,
+    "new_neighbor_recent": 6704,
+    "no_neighbor_at_onset": 477,
+    "unknown_at_onset": 0
+  },
+  "matching_onset_seconds": {
+    "median": 1.6,
+    "mean": 2.7271581600504096,
+    "max": 20.0,
+    "after_one_step": 338
+  }
+}

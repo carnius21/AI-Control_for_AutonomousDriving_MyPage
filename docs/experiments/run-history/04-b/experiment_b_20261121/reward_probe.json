@@ -1,0 +1,96 @@
+{
+  "B0": [
+    {
+      "edge": "86198728",
+      "distance": 70.0,
+      "command": -1,
+      "lane": 1,
+      "post_edge": "86198728",
+      "post_lane": 0,
+      "pay": 0.0
+    },
+    {
+      "edge": "86198728",
+      "distance": 64.44400000000002,
+      "command": 1,
+      "lane": 0,
+      "post_edge": "86198728",
+      "post_lane": 1,
+      "pay": 0.0
+    },
+    {
+      "edge": "86198728",
+      "distance": 58.888000000000034,
+      "command": -1,
+      "lane": 1,
+      "post_edge": "86198728",
+      "post_lane": 0,
+      "pay": 0.0
+    },
+    {
+      "edge": "86198728",
+      "distance": 3.328000000000202,
+      "command": 0,
+      "lane": 0,
+      "post_edge": ":498837378_0",
+      "post_lane": 0,
+      "pay": 0.0
+    },
+    {
+      "edge": ":498837378_0",
+      "distance": 0.9420000000002187,
+      "command": 0,
+      "lane": 0,
+      "post_edge": "37927508",
+      "post_lane": 0,
+      "pay": 0.044443333333333376
+    }
+  ],
+  "B1": [
+    {
+      "edge": "86198728",
+      "distance": 70.0,
+      "command": -1,
+      "lane": 1,
+      "post_edge": "86198728",
+      "post_lane": 0,
+      "pay": 0.3
+    },
+    {
+      "edge": "86198728",
+      "distance": 64.44400000000002,
+      "command": 1,
+      "lane": 0,
+      "post_edge": "86198728",
+      "post_lane": 1,
+      "pay": 0.0
+    },
+    {
+      "edge": "86198728",
+      "distance": 58.888000000000034,
+      "command": -1,
+      "lane": 1,
+      "post_edge": "86198728",
+      "post_lane": 0,
+      "pay": 0.0
+    },
+    {
+      "edge": "86198728",
+      "distance": 3.328000000000202,
+      "command": 0,
+      "lane": 0,
+      "post_edge": ":498837378_0",
+      "post_lane": 0,
+      "pay": 0.0
+    },
+    {
+      "edge": ":498837378_0",
+      "distance": 0.9420000000002187,
+      "command": 0,
+      "lane": 0,
+      "post_edge": "37927508",
+      "post_lane": 0,
+      "pay": 0.0
+    }
+  ]
+}

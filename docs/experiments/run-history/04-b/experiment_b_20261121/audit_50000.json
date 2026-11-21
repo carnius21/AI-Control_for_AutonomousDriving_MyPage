@@ -1,0 +1,23 @@
+{
+  "11": {
+    "verified_common_episodes": 401,
+    "checkpoint_hashes": {
+      "B0": "8e443eb58fba3b210880e50711b00ce53d189b23b08dcd23c685bffd847b308c",
+      "B1": "8991cff545afb43a213d82a23afb1d21691482d1a12ecb551d74098e2039a182"
+    }
+  },
+  "22": {
+    "verified_common_episodes": 363,
+    "checkpoint_hashes": {
+      "B0": "415558621ed49645155ca6d688ccfa83a0c355cea98f506fa5a94dfa9cf418ea",
+      "B1": "7da3f650eee20a9d68e3aef52b5c358022e126931e7875c1c5348824a2e2f26f"
+    }
+  },
+  "33": {
+    "verified_common_episodes": 379,
+    "checkpoint_hashes": {
+      "B0": "39817ecdd5266990a84e16d35a9770464bd5596552e773abd66ca827ede71b69",
+      "B1": "30958d0293cf50a97cc47911e6b6c74870ba281bfbffc7849fbc763011a3d6c0"
+    }
+  }
+}

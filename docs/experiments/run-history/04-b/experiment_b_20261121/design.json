@@ -1,0 +1,223 @@
+{
+  "stages": {
+    "none": {
+      "config": "D:\\\uc790\uc728\uc8fc\ud589\uc778\uacf5\uc9c0\ub2a5\ubc0f\uc81c\uc5b4 \ud300\ud504\ub85c\uc81d\ud2b8\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\experiment_b_20261121\\configs\\none\\run.sumocfg",
+      "demand": 0,
+      "warmup": 5,
+      "hashes": {
+        "highway.rou.xml": "18faced3246861722c7e9d925fc0f07a12ef41ebe1f8b9c2e4b0e8b5026822ae",
+        "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+        "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+      }
+    },
+    "low": {
+      "config": "D:\\\uc790\uc728\uc8fc\ud589\uc778\uacf5\uc9c0\ub2a5\ubc0f\uc81c\uc5b4 \ud300\ud504\ub85c\uc81d\ud2b8\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\experiment_b_20261121\\configs\\low\\run.sumocfg",
+      "demand": 3000.0,
+      "warmup": 300,
+      "hashes": {
+        "highway.rou.xml": "78834cf9267a14f9ebdc8ba939b71c81ca6a9d8cb727ec19f79644bc50e83505",
+        "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+        "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+      }
+    },
+    "high_real_ratio": {
+      "config": "D:\\\uc790\uc728\uc8fc\ud589\uc778\uacf5\uc9c0\ub2a5\ubc0f\uc81c\uc5b4 \ud300\ud504\ub85c\uc81d\ud2b8\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\experiment_b_20261121\\configs\\high_real_ratio\\run.sumocfg",
+      "demand": 15000.0,
+      "warmup": 300,
+      "hashes": {
+        "highway.rou.xml": "6100e441572fe39b8aa2ade48eb0fbf99851c7947a262ff28e9acd754c7079ed",
+        "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+        "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+      }
+    }
+  },
+  "pairs": [
+    {
+      "exit": "route_03",
+      "main": "route_06",
+      "edge": "52873356",
+      "exit_next": "37927512",
+      "main_next": "844484878#0",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exit": "route_04",
+      "main": "route_06",
+      "edge": "52873356",
+      "exit_next": "37927512",
+      "main_next": "844484878#0",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exit": "route_05",
+      "main": "route_06",
+      "edge": "52873356",
+      "exit_next": "37927512",
+      "main_next": "844484878#0",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exit": "route_10",
+      "main": "route_12",
+      "edge": "781184662#1",
+      "exit_next": "170059993",
+      "main_next": "781184662#2",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        0,
+        1
+      ]
+    },
+    {
+      "exit": "route_11",
+      "main": "route_12",
+      "edge": "781184662#1",
+      "exit_next": "170059993",
+      "main_next": "781184662#2",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        0,
+        1
+      ]
+    },
+    {
+      "exit": "route_13",
+      "main": "route_16",
+      "edge": "86198728",
+      "exit_next": "37927508",
+      "main_next": "86198725",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "exit": "route_14",
+      "main": "route_16",
+      "edge": "86198728",
+      "exit_next": "37927508",
+      "main_next": "86198725",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "exit": "route_15",
+      "main": "route_16",
+      "edge": "86198728",
+      "exit_next": "37927508",
+      "main_next": "86198725",
+      "exit_lanes": [
+        0
+      ],
+      "main_lanes": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "ppo": {
+    "lr": 0.0001,
+    "n_steps": 2048,
+    "n_epochs": 10,
+    "minibatch_size": 64,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_eps": 0.2,
+    "value_coef": 0.5,
+    "entropy_coef": 0.0,
+    "lane_entropy_coef": 0.002,
+    "max_grad_norm": 0.5,
+    "normalize_advantage": true,
+    "policy_type": "hybrid",
+    "lane_keep_bias": 1.0,
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "activation": "tanh",
+    "init_log_std": -0.5,
+    "device": "cpu"
+  },
+  "start": "position 0, max speed, lane 0/1 where available",
+  "selection": "high paired fraction, arrivals, fewer collisions, earliest checkpoint; per arm and seed",
+  "seeds": {
+    "selection": [
+      810000,
+      810001
+    ],
+    "held_out": [
+      910000,
+      910001,
+      910100,
+      910101
+    ]
+  },
+  "reward": {
+    "speed_weight": 0.1,
+    "close_gap_threshold": 6.0,
+    "close_gap_penalty": 0.1,
+    "collision_penalty": 15,
+    "arrival_bonus": 5,
+    "blocked_penalty": 0.05,
+    "blocked_gap": 20.0,
+    "blocked_speed_frac": 0.7,
+    "lane_change_penalty": 0.0,
+    "invalid_action_penalty": 0.0,
+    "ramp_speed_compliance": false,
+    "early_lane_guidance": false
+  },
+  "training_seeds": [
+    11,
+    22,
+    33
+  ],
+  "jys2": "e5391a9b1894edc6b8934f338811a8b5f8150ece",
+  "mcw2": "d81e0b03165572038eac7bc6433b0ec755565b4f",
+  "sources_at_launch": {
+    "utils\\experiment_a.py": "5bcda67f2a4c9eb97fe6f903e059e72d835ccb45d48239c6d891d147cba461c9",
+    "utils\\mcw_train.py": "9c430c78e9539d3ce27410ddc061d6af4aad4857cf176343d20cb3864c3bf2f9",
+    "utils\\experiment_b.py": "307c74dfd2c347f6b7940f1d4e968163c57c17fecd0e27a69768202249c6f7b4"
+  }
+}

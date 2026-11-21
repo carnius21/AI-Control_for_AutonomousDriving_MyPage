@@ -1,0 +1,2588 @@
+{
+  "route": "route_02",
+  "seed": 79102,
+  "outcome": "collision",
+  "seconds": 53.2,
+  "checkpoint_sha": "99c2129590e0934924b8cef947c39933a3a88562b60ff42cb1a3c73ff0c288cc",
+  "exact_outcome_reproduced": true,
+  "route_overrides": 0,
+  "collisions": [
+    {
+      "collider": "flow_route_02.73",
+      "victim": "ego",
+      "colliderSpeed": 17.89787802269163,
+      "victimSpeed": 27.78,
+      "type": "side",
+      "lane": "844484877_1",
+      "pos": 29.888887145503606
+    }
+  ],
+  "tail": [
+    {
+      "t": 43.2,
+      "edge": "372821396",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8812611699104309,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": null,
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 43.400000000000006,
+      "edge": "372821396",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8812611699104309,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": null,
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 43.6,
+      "edge": "372821396",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8812611699104309,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": null,
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 43.800000000000004,
+      "edge": "372821396",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8812611699104309,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": null,
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 44.0,
+      "edge": "372821396",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8854734897613525,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            49.23189833018597,
+            14.308221124913482
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 44.2,
+      "edge": "372821396",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8902021646499634,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            46.50959759665029,
+            14.168496332321515
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 44.400000000000006,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8950381875038147,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            43.74648832549051,
+            13.964453644201015
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 44.6,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9027378559112549,
+        0.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            40.94688792795801,
+            13.781998012337496
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": 0,
+        "lane_change_applied": true,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 44.800000000000004,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9062119722366333,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            38.11131777877407,
+            13.60214925408033
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 45.0,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9087072014808655,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            35.24051020129413,
+            13.425962112600315
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 45.2,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9114553332328796,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            32.33754268503296,
+            13.26516241869412
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 45.400000000000006,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9144370555877686,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            29.40417261961129,
+            13.113149672891653
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 45.6,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.917694091796875,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            26.446389727709757,
+            12.991085540492357
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 45.800000000000004,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9208498001098633,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            23.470060260218247,
+            12.898352662542408
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 46.0,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.925861120223999,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            20.480485063999808,
+            12.832124018907793
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 46.2,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9254626035690308,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            17.475394707297454,
+            12.754548216488232
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 46.400000000000006,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9235893487930298,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            14.456990031303988,
+            12.687976620032655
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 46.6,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9207248091697693,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            11.422055097936934,
+            12.605325333164707
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 46.800000000000004,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9178407192230225,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            8.38296850309105,
+            12.584567025770578
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 47.0,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9142502546310425,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            5.340870057494499,
+            12.569507772017229
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 47.2,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9120139479637146,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            2.2994058452767945,
+            12.572678938911478
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 47.400000000000006,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9110493063926697,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            12.565047935393535
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 47.6,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9113532304763794,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            12.677416931875591
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 47.800000000000004,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9119787812232971,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            12.909785928357646
+          ],
+          "False": null
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 48.0,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9782368540763855,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            10.486246681880417,
+            12.635333778978834
+          ],
+          "False": [
+            0.0,
+            12.864934207455535
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 48.2,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9780743718147278,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            7.464298129991008,
+            12.670257240552976
+          ],
+          "False": [
+            0.0,
+            12.836120106776162
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 48.400000000000006,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9772297739982605,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            4.489750489566092,
+            12.907261797875401
+          ],
+          "False": [
+            1.6030265452126002,
+            12.814532937694555
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 48.6,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9758670926094055,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            1.5342787383089984,
+            13.002641243714496
+          ],
+          "False": [
+            4.595183072977562,
+            12.819217361175145
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 48.800000000000004,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9742762446403503,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            13.071583351206476
+          ],
+          "False": [
+            7.5821597676654875,
+            12.845116526560327
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 49.0,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9727071523666382,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            13.193370051853819
+          ],
+          "False": [
+            10.55700671125652,
+            12.905765282044847
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 49.2,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.971080482006073,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            13.324419980888534
+          ],
+          "False": [
+            13.527345037905974,
+            12.928308366752749
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 49.400000000000006,
+      "edge": "544292617",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.925324559211731,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            10.52312595861485,
+            13.730179938706454
+          ],
+          "False": [
+            0.0,
+            13.518653284507105
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 49.6,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9176474213600159,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            7.748679014848628,
+            13.907765281168952
+          ],
+          "False": [
+            0.0,
+            13.546419829168126
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 49.800000000000004,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9065914154052734,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            5.011750414155172,
+            14.095356996532724
+          ],
+          "False": [
+            1.186952695490926,
+            13.419396333376522
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 50.0,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8902416825294495,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            2.291204719396779,
+            14.177271526208035
+          ],
+          "False": [
+            4.075774586261692,
+            13.335890546146237
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 50.2,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.873005747795105,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            14.402017981615069
+          ],
+          "False": [
+            6.972147664307247,
+            13.298134609772234
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 50.400000000000006,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8621782064437866,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            14.492287703271039
+          ],
+          "False": [
+            9.910645325789542,
+            13.08751169258853
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 50.6,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.8526051640510559,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            14.750801119177153
+          ],
+          "False": [
+            12.892728325398448,
+            12.869585001955476
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 50.800000000000004,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9316436648368835,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            13.209820964046461,
+            15.472484887577071
+          ],
+          "False": [
+            0.0,
+            14.884289097506649
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 51.0,
+      "edge": "544292616",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        0.9263923168182373,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            10.789065589829004,
+            15.676223128912715
+          ],
+          "False": [
+            0.0,
+            15.133640589689284
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.04000000000000001,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 51.2,
+      "edge": ":1000493465_0",
+      "lane": 0,
+      "speed": 27.78,
+      "action": [
+        -0.7540678977966309,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            8.408532111344023,
+            15.877332607575077
+          ],
+          "False": [
+            0.0,
+            15.346832763704333
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.03882736741595341,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 51.400000000000006,
+      "edge": ":1000493465_0",
+      "lane": 0,
+      "speed": 26.96560667037964,
+      "action": [
+        -0.7400498986244202,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            6.230540000788565,
+            16.075646117602354
+          ],
+          "False": [
+            0.9442527580306406,
+            15.458450028278975
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.037676533880295564,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 51.6,
+      "edge": ":1000493465_0",
+      "lane": 0,
+      "speed": 26.166352779865264,
+      "action": [
+        -0.7264814972877502,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            4.251469730723915,
+            16.271001429542018
+          ],
+          "False": [
+            3.0533478789919863,
+            15.620877175058554
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.036546800234405326,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 51.800000000000004,
+      "edge": ":1000493465_0",
+      "lane": 0,
+      "speed": 25.381752762794495,
+      "action": [
+        -0.7101432681083679,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            2.472667829883769,
+            16.48774325859376
+          ],
+          "False": [
+            4.95753814776004,
+            15.860801418954225
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.03544247376996034,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 52.0,
+      "edge": "844484877",
+      "lane": 0,
+      "speed": 24.614798033237456,
+      "action": [
+        0.5640547871589661,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.8898722038939608,
+            16.70081990328842
+          ],
+          "False": [
+            6.67450137735085,
+            16.029981885283416
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.03631962160312331,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 52.2,
+      "edge": "844484877",
+      "lane": 0,
+      "speed": 25.223977203369138,
+      "action": [
+        0.5196347236633301,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            16.91012350252614
+          ],
+          "False": [
+            8.480530489914363,
+            16.19383164055157
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.037127692879662395,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 52.400000000000006,
+      "edge": "844484877",
+      "lane": 0,
+      "speed": 25.785182704925536,
+      "action": [
+        0.487976998090744,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            17.11557342682749
+          ],
+          "False": [
+            10.345328909628197,
+            16.461190606356368
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.03788653399980352,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 52.6,
+      "edge": "844484877",
+      "lane": 0,
+      "speed": 26.31219786286354,
+      "action": [
+        0.45684969425201416,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            17.317062643940687
+          ],
+          "False": [
+            12.275336249394751,
+            16.66216116403075
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.038596969809439476,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 52.800000000000004,
+      "edge": "844484877",
+      "lane": 0,
+      "speed": 26.805595532655715,
+      "action": [
+        0.4272063076496124,
+        -1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            0.0,
+            17.51460061291841
+          ],
+          "False": [
+            14.27082138712024,
+            16.828169844028263
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": 0,
+        "lane_change": -1,
+        "lane_change_applied": false,
+        "collided": false
+      },
+      "reward": 0.03926130791204795,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": -0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    },
+    {
+      "t": 53.0,
+      "edge": "844484877",
+      "lane": 0,
+      "speed": 27.266978344917298,
+      "action": [
+        0.6866463422775269,
+        1.0
+      ],
+      "risk": {
+        "gap": 0.0,
+        "lane": 1.0,
+        "ttc": null
+      },
+      "neighbors": {
+        "-1": {
+          "True": null,
+          "False": null
+        },
+        "0": {
+          "True": null,
+          "False": null
+        },
+        "1": {
+          "True": [
+            27.632620656107513,
+            19.56941445764446
+          ],
+          "False": [
+            0.0,
+            17.708199528959966
+          ]
+        }
+      },
+      "info": {
+        "lane_before": 0,
+        "lane_after": null,
+        "lane_change": 1,
+        "lane_change_applied": true,
+        "collided": true
+      },
+      "reward": -5.0,
+      "parts": {
+        "selection": 0.0,
+        "maintenance": 0.0,
+        "departure": 0.0,
+        "dwell": 0.0,
+        "gap": 0.0,
+        "lane": 0.0,
+        "opportunity": 0.0,
+        "unsafe_route_withheld": -0.0
+      }
+    }
+  ]
+}

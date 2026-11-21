@@ -1,0 +1,18 @@
+{
+  "stage": "complete",
+  "results": [
+    [
+      1001,
+      false
+    ],
+    [
+      1002,
+      false
+    ],
+    [
+      1003,
+      false
+    ]
+  ],
+  "does_not_replace_original_gate": true
+}

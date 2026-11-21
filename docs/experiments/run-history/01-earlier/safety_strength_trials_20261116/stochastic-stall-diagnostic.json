@@ -1,0 +1,29 @@
+{
+  "checkpoint_sha": "2012e8ce991bc8a82d8257501dc649d2eecfcf831c5dd1939aed245317a3ce49",
+  "route": "route_05",
+  "traffic": "none",
+  "simulation_seed": 79101,
+  "policy": "stochastic",
+  "diagnostic_limit_seconds": 900,
+  "results": [
+    {
+      "sampling_seed": 1101,
+      "outcome": "arrival",
+      "seconds": 76.80000000000001,
+      "route_overrides": 0
+    },
+    {
+      "sampling_seed": 1102,
+      "outcome": "arrival",
+      "seconds": 71.0,
+      "route_overrides": 0
+    },
+    {
+      "sampling_seed": 1103,
+      "outcome": "arrival",
+      "seconds": 78.4,
+      "route_overrides": 0
+    }
+  ],
+  "interpretation": "Diagnostic only; not comparable to deterministic 48-case benchmark or proof of safety."
+}

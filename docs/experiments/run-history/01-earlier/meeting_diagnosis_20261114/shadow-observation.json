@@ -1,0 +1,104 @@
+{
+  "note": "Offline single-state inference only, no rollout or retraining. Clamp negative gap to zero and restore relative speed.",
+  "rows": [
+    {
+      "case": "low-route_13",
+      "original_action": [
+        0.8796068429946899,
+        1.0
+      ],
+      "clamped_gap_action": [
+        0.8653043508529663,
+        1.0
+      ],
+      "changed_vehicle_ids": [
+        "flow_route_16.90"
+      ]
+    },
+    {
+      "case": "low-route_14",
+      "original_action": [
+        0.8796068429946899,
+        1.0
+      ],
+      "clamped_gap_action": [
+        0.8653043508529663,
+        1.0
+      ],
+      "changed_vehicle_ids": [
+        "flow_route_16.90"
+      ]
+    },
+    {
+      "case": "reference-route_02",
+      "original_action": [
+        0.9796846508979797,
+        1.0
+      ],
+      "clamped_gap_action": [
+        0.9810401201248169,
+        1.0
+      ],
+      "changed_vehicle_ids": [
+        "flow_route_08.224"
+      ]
+    },
+    {
+      "case": "reference-route_03",
+      "original_action": [
+        0.6900189518928528,
+        1.0
+      ],
+      "clamped_gap_action": [
+        0.6678826808929443,
+        1.0
+      ],
+      "changed_vehicle_ids": [
+        "flow_route_06.1163"
+      ]
+    },
+    {
+      "case": "reference-route_07",
+      "original_action": [
+        0.9050061702728271,
+        -1.0
+      ],
+      "clamped_gap_action": [
+        0.9126273989677429,
+        -1.0
+      ],
+      "changed_vehicle_ids": [
+        "flow_route_07.225",
+        "flow_route_08.225"
+      ]
+    },
+    {
+      "case": "reference-route_13",
+      "original_action": [
+        0.6071946620941162,
+        1.0
+      ],
+      "clamped_gap_action": [
+        0.5745119452476501,
+        1.0
+      ],
+      "changed_vehicle_ids": [
+        "flow_route_16.900"
+      ]
+    },
+    {
+      "case": "reference-route_14",
+      "original_action": [
+        0.6071946620941162,
+        1.0
+      ],
+      "clamped_gap_action": [
+        0.5745119452476501,
+        1.0
+      ],
+      "changed_vehicle_ids": [
+        "flow_route_16.900"
+      ]
+    }
+  ]
+}

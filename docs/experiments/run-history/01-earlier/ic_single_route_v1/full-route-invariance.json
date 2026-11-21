@@ -1,0 +1,25 @@
+{
+  "case": {
+    "id": "best-max",
+    "lane": "best",
+    "speed": "max"
+  },
+  "steps": 624,
+  "changed_observation_steps": 459,
+  "identical_rewards_states_terminations": true,
+  "only_two_observation_coordinates_changed": true,
+  "examples": {
+    "sb_in": {
+      "old_distance": -1.0,
+      "new_distance": 0.4198499917984009,
+      "old_direction": 0.0,
+      "new_direction": 0.0
+    },
+    "weave": {
+      "old_distance": -1.0,
+      "new_distance": 0.1559443324804306,
+      "old_direction": 0.0,
+      "new_direction": -0.3333333432674408
+    }
+  }
+}

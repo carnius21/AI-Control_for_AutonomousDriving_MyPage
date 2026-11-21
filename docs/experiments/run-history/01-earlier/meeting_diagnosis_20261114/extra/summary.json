@@ -1,0 +1,1500 @@
+[
+  {
+    "mode": "startup1",
+    "route": "route_03",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "collision",
+    "seconds": 16.6,
+    "teleports": 0,
+    "collision_ids": [
+      "flow_route_03.112",
+      "ego"
+    ],
+    "last": {
+      "t": 16.400000000000002,
+      "lane": ":1000493460_0_0",
+      "speed": 27.78,
+      "position": 7.808178304104121,
+      "leader": [
+        "flow_route_03.112",
+        0.1622349821594291
+      ],
+      "leader_speed": 22.22,
+      "action": [
+        0.5558444261550903,
+        1.0
+      ],
+      "nav": {
+        "current_targets": [],
+        "prepare_targets": [],
+        "distance": null,
+        "decision_edge": null,
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 16.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 27.557156796633453,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "52873356",
+          "lane": "52873356_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 446.69,
+          "speed": 23.99166554276886,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 49.66762734597382,
+          "leader_speed": 17.053455528326012
+        },
+        {
+          "seconds": 1.0,
+          "edge": "52873356",
+          "lane": "52873356_0",
+          "lane_index": 0,
+          "position": 26.686178304104466,
+          "remaining": 420.0038216958955,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 39.88869750349601,
+          "leader_speed": 16.574505497257242
+        },
+        {
+          "seconds": 2.0,
+          "edge": "52873356",
+          "lane": "52873356_1",
+          "lane_index": 1,
+          "position": 54.46617830410446,
+          "remaining": 391.85382169589553,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 19.888329418452585,
+          "leader_speed": 22.572739137821667
+        },
+        {
+          "seconds": 3.0,
+          "edge": "52873356",
+          "lane": "52873356_2",
+          "lane_index": 2,
+          "position": 82.24617830410445,
+          "remaining": 363.70382169589556,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 34.81502130678702,
+          "leader_speed": 22.2691792730105
+        },
+        {
+          "seconds": 4.0,
+          "edge": "52873356",
+          "lane": "52873356_1",
+          "lane_index": 1,
+          "position": 110.02617830410443,
+          "remaining": 336.29382169589553,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 8.970798668914568,
+          "leader_speed": 22.32792567343994
+        },
+        {
+          "seconds": 5.0,
+          "edge": "52873356",
+          "lane": "52873356_2",
+          "lane_index": 2,
+          "position": 137.80617830410444,
+          "remaining": 308.14382169589555,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 24.208941335050298,
+          "leader_speed": 22.72860633840734
+        },
+        {
+          "seconds": 6.0,
+          "edge": "52873356",
+          "lane": "52873356_3",
+          "lane_index": 3,
+          "position": 165.5861783041045,
+          "remaining": 280.00382169589545,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 73.00356986072507,
+          "leader_speed": 25.39327032958287
+        },
+        {
+          "seconds": 7.0,
+          "edge": "52873356",
+          "lane": "52873356_3",
+          "lane_index": 3,
+          "position": 193.36617830410455,
+          "remaining": 252.22382169589542,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 70.42482925058329,
+          "leader_speed": 25.12879928272263
+        },
+        {
+          "seconds": 8.0,
+          "edge": "52873356",
+          "lane": "52873356_2",
+          "lane_index": 2,
+          "position": 221.1461783041046,
+          "remaining": 224.80382169589538,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 10.553739589278592,
+          "leader_speed": 23.63407798495719
+        },
+        {
+          "seconds": 9.0,
+          "edge": "52873356",
+          "lane": "52873356_2",
+          "lane_index": 2,
+          "position": 248.92617830410467,
+          "remaining": 197.02382169589532,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 61.99281256716637,
+          "leader_speed": 22.105995524156164
+        },
+        {
+          "seconds": 10.0,
+          "edge": "52873356",
+          "lane": "52873356_2",
+          "lane_index": 2,
+          "position": 276.70617830410464,
+          "remaining": 169.24382169589535,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 56.297648206583006,
+          "leader_speed": 22.087848006846833
+        },
+        {
+          "seconds": 11.0,
+          "edge": "52873356",
+          "lane": "52873356_2",
+          "lane_index": 2,
+          "position": 304.48617830410456,
+          "remaining": 141.46382169589543,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 50.90194582746352,
+          "leader_speed": 22.843426575140203
+        },
+        {
+          "seconds": 12.0,
+          "edge": "52873356",
+          "lane": "52873356_2",
+          "lane_index": 2,
+          "position": 332.26617830410447,
+          "remaining": 113.68382169589552,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 46.14750830715769,
+          "leader_speed": 23.198053664584553
+        },
+        {
+          "seconds": 13.0,
+          "edge": "52873356",
+          "lane": "52873356_0",
+          "lane_index": 0,
+          "position": 360.0461783041044,
+          "remaining": 86.64382169589561,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 19.217861342129083,
+          "leader_speed": 21.9981213474368
+        },
+        {
+          "seconds": 14.0,
+          "edge": "52873356",
+          "lane": "52873356_0",
+          "lane_index": 0,
+          "position": 387.8261783041043,
+          "remaining": 58.863821695895695,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 13.506234982159128,
+          "leader_speed": 22.2027604973023
+        },
+        {
+          "seconds": 15.0,
+          "edge": "52873356",
+          "lane": "52873356_0",
+          "lane_index": 0,
+          "position": 415.6061783041042,
+          "remaining": 31.08382169589578,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 7.946234982159297,
+          "leader_speed": 22.22
+        },
+        {
+          "seconds": 16.0,
+          "edge": "52873356",
+          "lane": "52873356_0",
+          "lane_index": 0,
+          "position": 443.38617830410413,
+          "remaining": 3.303821695895863,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 2.386234982159415,
+          "leader_speed": 22.22
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "startup1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  },
+  {
+    "mode": "startup1",
+    "route": "route_07",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "arrival",
+    "seconds": 26.8,
+    "teleports": 0,
+    "collision_ids": [],
+    "last": {
+      "t": 26.6,
+      "lane": "1414146971_3",
+      "speed": 27.78,
+      "position": 21.90088832503433,
+      "leader": null,
+      "leader_speed": null,
+      "action": [
+        0.7962979078292847,
+        -1.0
+      ],
+      "nav": {
+        "current_targets": [],
+        "prepare_targets": [],
+        "distance": null,
+        "decision_edge": null,
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 26.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 27.663859333333317,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "544295537",
+          "lane": "544295537_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 353.43,
+          "speed": 24.644202,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 73.18159640949685,
+          "leader_speed": 18.843801433046806
+        },
+        {
+          "seconds": 1.0,
+          "edge": "544295537",
+          "lane": "544295537_0",
+          "lane_index": 0,
+          "position": 27.152888325034336,
+          "remaining": 326.2771116749657,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 64.89772642149305,
+          "leader_speed": 18.89162004190453
+        },
+        {
+          "seconds": 2.0,
+          "edge": "544295537",
+          "lane": "544295537_1",
+          "lane_index": 1,
+          "position": 54.93288832503433,
+          "remaining": 297.91711167496567,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 3.0,
+          "edge": "544295537",
+          "lane": "544295537_0",
+          "lane_index": 0,
+          "position": 82.71288832503431,
+          "remaining": 270.7171116749657,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 47.105395516001366,
+          "leader_speed": 18.881938531963407
+        },
+        {
+          "seconds": 4.0,
+          "edge": "544295537",
+          "lane": "544295537_1",
+          "lane_index": 1,
+          "position": 110.4928883250343,
+          "remaining": 242.35711167496572,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 5.0,
+          "edge": "544295537",
+          "lane": "544295537_2",
+          "lane_index": 2,
+          "position": 138.2728883250343,
+          "remaining": 214.00711167496567,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 47.4682956749655,
+          "leader_speed": 20.904576
+        },
+        {
+          "seconds": 6.0,
+          "edge": "544295537",
+          "lane": "544295537_1",
+          "lane_index": 1,
+          "position": 166.05288832503436,
+          "remaining": 186.79711167496566,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 40.59287167496538,
+          "leader_speed": 20.904576
+        },
+        {
+          "seconds": 7.0,
+          "edge": "544295537",
+          "lane": "544295537_2",
+          "lane_index": 2,
+          "position": 193.83288832503442,
+          "remaining": 158.44711167496556,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 129.18982798208864,
+          "leader_speed": 21.50391581068349
+        },
+        {
+          "seconds": 8.0,
+          "edge": "544295537",
+          "lane": "544295537_1",
+          "lane_index": 1,
+          "position": 221.61288832503448,
+          "remaining": 131.23711167496555,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 26.842023674965134,
+          "leader_speed": 20.904576
+        },
+        {
+          "seconds": 9.0,
+          "edge": "544295537",
+          "lane": "544295537_2",
+          "lane_index": 2,
+          "position": 249.39288832503453,
+          "remaining": 102.88711167496544,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 10.0,
+          "edge": "544295537",
+          "lane": "544295537_1",
+          "lane_index": 1,
+          "position": 277.1728883250345,
+          "remaining": 75.67711167496554,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 13.091175674965257,
+          "leader_speed": 20.904576
+        },
+        {
+          "seconds": 11.0,
+          "edge": "544295537",
+          "lane": "544295537_0",
+          "lane_index": 0,
+          "position": 304.9528883250344,
+          "remaining": 48.47711167496561,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 118.19124202796911,
+          "leader_speed": 20.052052611563816
+        },
+        {
+          "seconds": 12.0,
+          "edge": "544295537",
+          "lane": "544295537_0",
+          "lane_index": 0,
+          "position": 332.7328883250343,
+          "remaining": 20.697111674965697,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 13.0,
+          "edge": ":1808903166_1",
+          "lane": ":1808903166_1_0",
+          "lane_index": 0,
+          "position": 7.0828883250342365,
+          "remaining": 0.9071116749657637,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [],
+          "leader_gap": 103.33265867608117,
+          "leader_speed": 20.577288782638888
+        },
+        {
+          "seconds": 14.0,
+          "edge": "169929488#0",
+          "lane": "169929488#0_0",
+          "lane_index": 0,
+          "position": 26.872888325034243,
+          "remaining": 40.52711167496577,
+          "speed": 27.78,
+          "next_edge": "169728799",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 96.20057622875115,
+          "leader_speed": 20.696894159462385
+        },
+        {
+          "seconds": 15.0,
+          "edge": "169929488#0",
+          "lane": "169929488#0_0",
+          "lane_index": 0,
+          "position": 54.65288832503424,
+          "remaining": 12.747111674965765,
+          "speed": 27.78,
+          "next_edge": "169728799",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 89.13548639168275,
+          "leader_speed": 20.738075479309767
+        },
+        {
+          "seconds": 16.0,
+          "edge": "169728799",
+          "lane": "169728799_0",
+          "lane_index": 0,
+          "position": 11.99288832503423,
+          "remaining": 73.06711167496577,
+          "speed": 27.78,
+          "next_edge": "280963368",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 82.06476875396683,
+          "leader_speed": 20.723639368848747
+        },
+        {
+          "seconds": 17.0,
+          "edge": "169728799",
+          "lane": "169728799_0",
+          "lane_index": 0,
+          "position": 39.77288832503423,
+          "remaining": 45.28711167496577,
+          "speed": 27.78,
+          "next_edge": "280963368",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 74.97537530812214,
+          "leader_speed": 20.64969461728567
+        },
+        {
+          "seconds": 18.0,
+          "edge": "169728799",
+          "lane": "169728799_0",
+          "lane_index": 0,
+          "position": 67.55288832503422,
+          "remaining": 17.507111674965785,
+          "speed": 27.78,
+          "next_edge": "280963368",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 67.8324288603451,
+          "leader_speed": 20.600936109749533
+        },
+        {
+          "seconds": 19.0,
+          "edge": "280963368",
+          "lane": "280963368_0",
+          "lane_index": 0,
+          "position": 9.972888325034205,
+          "remaining": 186.22711167496578,
+          "speed": 27.78,
+          "next_edge": "1414146971",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 60.6372607390598,
+          "leader_speed": 20.597918328363903
+        },
+        {
+          "seconds": 20.0,
+          "edge": "280963368",
+          "lane": "280963368_0",
+          "lane_index": 0,
+          "position": 37.752888325034206,
+          "remaining": 158.44711167496578,
+          "speed": 27.78,
+          "next_edge": "1414146971",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 53.39297042800946,
+          "leader_speed": 20.485846521261937
+        },
+        {
+          "seconds": 21.0,
+          "edge": "280963368",
+          "lane": "280963368_0",
+          "lane_index": 0,
+          "position": 65.5328883250342,
+          "remaining": 130.66711167496578,
+          "speed": 27.78,
+          "next_edge": "1414146971",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 46.155585280047006,
+          "leader_speed": 20.524312025279677
+        },
+        {
+          "seconds": 22.0,
+          "edge": "280963368",
+          "lane": "280963368_0",
+          "lane_index": 0,
+          "position": 93.31288832503418,
+          "remaining": 102.88711167496581,
+          "speed": 27.78,
+          "next_edge": "1414146971",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 38.83385184829771,
+          "leader_speed": 20.466098640732152
+        },
+        {
+          "seconds": 23.0,
+          "edge": "280963368",
+          "lane": "280963368_0",
+          "lane_index": 0,
+          "position": 121.09288832503417,
+          "remaining": 75.10711167496582,
+          "speed": 27.78,
+          "next_edge": "1414146971",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 31.656484193376016,
+          "leader_speed": 20.700172122213015
+        },
+        {
+          "seconds": 24.0,
+          "edge": "280963368",
+          "lane": "280963368_0",
+          "lane_index": 0,
+          "position": 148.8728883250342,
+          "remaining": 47.32711167496578,
+          "speed": 27.78,
+          "next_edge": "1414146971",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 25.08387903702061,
+          "leader_speed": 21.592001049412964
+        },
+        {
+          "seconds": 25.0,
+          "edge": "280963368",
+          "lane": "280963368_0",
+          "lane_index": 0,
+          "position": 176.65288832503427,
+          "remaining": 19.54711167496572,
+          "speed": 27.78,
+          "next_edge": "1414146971",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 19.688682692644456,
+          "leader_speed": 23.051058789569336
+        },
+        {
+          "seconds": 26.0,
+          "edge": "1414146971",
+          "lane": "1414146971_0",
+          "lane_index": 0,
+          "position": 5.232888325034327,
+          "remaining": 17.267111674965673,
+          "speed": 27.78,
+          "next_edge": null,
+          "allowed_lanes": [],
+          "leader_gap": null,
+          "leader_speed": null
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "startup1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  },
+  {
+    "mode": "startup1",
+    "route": "route_13",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "collision",
+    "seconds": 1.6,
+    "teleports": 0,
+    "collision_ids": [
+      "flow_route_16.900",
+      "ego"
+    ],
+    "last": {
+      "t": 1.4000000000000001,
+      "lane": "86198728_2",
+      "speed": 27.78,
+      "position": 38.89200000000001,
+      "leader": [
+        "flow_route_16.897",
+        67.59533380665964
+      ],
+      "leader_speed": 25.083065884473235,
+      "action": [
+        0.6189663410186768,
+        1.0
+      ],
+      "nav": {
+        "current_targets": [
+          0
+        ],
+        "prepare_targets": [],
+        "distance": null,
+        "decision_edge": null,
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 1.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 27.78,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "86198728",
+          "lane": "86198728_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 483.44,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 139.00643509836883,
+          "leader_speed": 18.27809767167614
+        },
+        {
+          "seconds": 1.0,
+          "edge": "86198728",
+          "lane": "86198728_0",
+          "lane_index": 0,
+          "position": 27.780000000000005,
+          "remaining": 455.65999999999997,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 129.96542775231958,
+          "leader_speed": 19.0516644092004
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "startup1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  },
+  {
+    "mode": "startup1",
+    "route": "route_14",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "collision",
+    "seconds": 1.6,
+    "teleports": 0,
+    "collision_ids": [
+      "flow_route_16.900",
+      "ego"
+    ],
+    "last": {
+      "t": 1.4000000000000001,
+      "lane": "86198728_2",
+      "speed": 27.78,
+      "position": 38.89200000000001,
+      "leader": [
+        "flow_route_16.897",
+        67.59533380665964
+      ],
+      "leader_speed": 25.083065884473235,
+      "action": [
+        0.6189663410186768,
+        1.0
+      ],
+      "nav": {
+        "current_targets": [
+          0
+        ],
+        "prepare_targets": [],
+        "distance": null,
+        "decision_edge": null,
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 1.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 27.78,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "86198728",
+          "lane": "86198728_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 483.44,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 139.00643509836883,
+          "leader_speed": 18.27809767167614
+        },
+        {
+          "seconds": 1.0,
+          "edge": "86198728",
+          "lane": "86198728_0",
+          "lane_index": 0,
+          "position": 27.780000000000005,
+          "remaining": 455.65999999999997,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 129.96542775231958,
+          "leader_speed": 19.0516644092004
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "startup1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  },
+  {
+    "mode": "interval1",
+    "route": "route_03",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "collision",
+    "seconds": 1.2000000000000002,
+    "teleports": 0,
+    "collision_ids": [
+      "ego",
+      "flow_route_06.1163"
+    ],
+    "last": {
+      "t": 1.0,
+      "lane": "52873356_1",
+      "speed": 27.78,
+      "position": 26.42878309062912,
+      "leader": [
+        "flow_route_06.1161",
+        25.019918186261467
+      ],
+      "leader_speed": 23.491545955892107,
+      "action": [
+        0.7078378796577454,
+        1.0
+      ],
+      "nav": {
+        "current_targets": [
+          0
+        ],
+        "prepare_targets": [],
+        "distance": null,
+        "decision_edge": null,
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 1.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 25.88583277138443,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "52873356",
+          "lane": "52873356_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 446.69,
+          "speed": 23.99166554276886,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 49.66762734597382,
+          "leader_speed": 17.053455528326012
+        },
+        {
+          "seconds": 1.0,
+          "edge": "52873356",
+          "lane": "52873356_1",
+          "lane_index": 1,
+          "position": 26.42878309062912,
+          "remaining": 419.8912169093709,
+          "speed": 27.78,
+          "next_edge": "37927512",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 25.019918186261467,
+          "leader_speed": 23.491545955892107
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "interval1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  },
+  {
+    "mode": "interval1",
+    "route": "route_07",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "collision",
+    "seconds": 1.2000000000000002,
+    "teleports": 0,
+    "collision_ids": [
+      "ego",
+      "flow_route_07.225"
+    ],
+    "last": {
+      "t": 1.0,
+      "lane": "544295537_1",
+      "speed": 27.78,
+      "position": 27.118111137686924,
+      "leader": [
+        "flow_route_08.221",
+        304.4914650001842
+      ],
+      "leader_speed": 19.633701966183196,
+      "action": [
+        0.8994317054748535,
+        -1.0
+      ],
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [],
+        "distance": null,
+        "decision_edge": null,
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 1.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 26.212101,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "544295537",
+          "lane": "544295537_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 353.43,
+          "speed": 24.644202,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 73.18159640949685,
+          "leader_speed": 18.843801433046806
+        },
+        {
+          "seconds": 1.0,
+          "edge": "544295537",
+          "lane": "544295537_1",
+          "lane_index": 1,
+          "position": 27.118111137686924,
+          "remaining": 325.7318888623131,
+          "speed": 27.78,
+          "next_edge": "169929488#0",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "leader_gap": 304.4914650001842,
+          "leader_speed": 19.633701966183196
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "interval1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  },
+  {
+    "mode": "interval1",
+    "route": "route_13",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "collision",
+    "seconds": 7.2,
+    "teleports": 0,
+    "collision_ids": [
+      "flow_route_16.899",
+      "ego"
+    ],
+    "last": {
+      "t": 7.0,
+      "lane": "86198728_3",
+      "speed": 27.78,
+      "position": 194.4600000000001,
+      "leader": [
+        "flow_route_16.893",
+        177.25378777263728
+      ],
+      "leader_speed": 26.036816758353925,
+      "action": [
+        0.9999681115150452,
+        1.0
+      ],
+      "nav": {
+        "current_targets": [
+          0
+        ],
+        "prepare_targets": [
+          0
+        ],
+        "distance": 288.9799999999999,
+        "decision_edge": "86198728",
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 7.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 27.78,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "86198728",
+          "lane": "86198728_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 483.44,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 139.00643509836883,
+          "leader_speed": 18.27809767167614
+        },
+        {
+          "seconds": 1.0,
+          "edge": "86198728",
+          "lane": "86198728_1",
+          "lane_index": 1,
+          "position": 27.780000000000005,
+          "remaining": 455.65999999999997,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 46.120792581626276,
+          "leader_speed": 25.1108229920142
+        },
+        {
+          "seconds": 2.0,
+          "edge": "86198728",
+          "lane": "86198728_2",
+          "lane_index": 2,
+          "position": 55.56,
+          "remaining": 427.88,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 66.01690147515522,
+          "leader_speed": 25.121670939751404
+        },
+        {
+          "seconds": 3.0,
+          "edge": "86198728",
+          "lane": "86198728_1",
+          "lane_index": 1,
+          "position": 83.33999999999999,
+          "remaining": 400.1,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 40.803831137035075,
+          "leader_speed": 25.086228030423136
+        },
+        {
+          "seconds": 4.0,
+          "edge": "86198728",
+          "lane": "86198728_2",
+          "lane_index": 2,
+          "position": 111.11999999999998,
+          "remaining": 372.32000000000005,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 60.707685362874,
+          "leader_speed": 25.12110979801646
+        },
+        {
+          "seconds": 5.0,
+          "edge": "86198728",
+          "lane": "86198728_3",
+          "lane_index": 3,
+          "position": 138.89999999999998,
+          "remaining": 344.54,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 224.5054366519176,
+          "leader_speed": 27.015621042602433
+        },
+        {
+          "seconds": 6.0,
+          "edge": "86198728",
+          "lane": "86198728_2",
+          "lane_index": 2,
+          "position": 166.68000000000004,
+          "remaining": 316.76,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 55.36052768519454,
+          "leader_speed": 25.104378433773725
+        },
+        {
+          "seconds": 7.0,
+          "edge": "86198728",
+          "lane": "86198728_3",
+          "lane_index": 3,
+          "position": 194.4600000000001,
+          "remaining": 288.9799999999999,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 177.25378777263728,
+          "leader_speed": 26.036816758353925
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "interval1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  },
+  {
+    "mode": "interval1",
+    "route": "route_14",
+    "simulation_seed": 9101,
+    "training_seed": 22,
+    "model": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\navigation_clarity_v1\\runs\\baseline-22\\policy-600064.pt",
+    "model_sha": "1123c3ed82f1289a68bdb4ce3931bcda3326b9089faefb4684013345427c0e56",
+    "map_sha": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "forced_correction": true,
+    "actual_depart_time": 900.2,
+    "insertion_delay": 0,
+    "outcome": "collision",
+    "seconds": 7.2,
+    "teleports": 0,
+    "collision_ids": [
+      "flow_route_16.899",
+      "ego"
+    ],
+    "last": {
+      "t": 7.0,
+      "lane": "86198728_3",
+      "speed": 27.78,
+      "position": 194.4600000000001,
+      "leader": [
+        "flow_route_16.893",
+        177.25378777263728
+      ],
+      "leader_speed": 26.036816758353925,
+      "action": [
+        0.9999681115150452,
+        1.0
+      ],
+      "nav": {
+        "current_targets": [
+          0
+        ],
+        "prepare_targets": [
+          0
+        ],
+        "distance": 288.9799999999999,
+        "decision_edge": "86198728",
+        "ambiguous": false
+      }
+    },
+    "diagnostic": {
+      "category": "moving_at_timeout",
+      "window_seconds": 7.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 1.0,
+      "mean_speed": 27.78,
+      "samples": [
+        {
+          "seconds": 0.0,
+          "edge": "86198728",
+          "lane": "86198728_0",
+          "lane_index": 0,
+          "position": 0.0,
+          "remaining": 483.44,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 139.00643509836883,
+          "leader_speed": 18.27809767167614
+        },
+        {
+          "seconds": 1.0,
+          "edge": "86198728",
+          "lane": "86198728_1",
+          "lane_index": 1,
+          "position": 27.780000000000005,
+          "remaining": 455.65999999999997,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 46.120792581626276,
+          "leader_speed": 25.1108229920142
+        },
+        {
+          "seconds": 2.0,
+          "edge": "86198728",
+          "lane": "86198728_2",
+          "lane_index": 2,
+          "position": 55.56,
+          "remaining": 427.88,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 66.01690147515522,
+          "leader_speed": 25.121670939751404
+        },
+        {
+          "seconds": 3.0,
+          "edge": "86198728",
+          "lane": "86198728_1",
+          "lane_index": 1,
+          "position": 83.33999999999999,
+          "remaining": 400.1,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 40.803831137035075,
+          "leader_speed": 25.086228030423136
+        },
+        {
+          "seconds": 4.0,
+          "edge": "86198728",
+          "lane": "86198728_2",
+          "lane_index": 2,
+          "position": 111.11999999999998,
+          "remaining": 372.32000000000005,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 60.707685362874,
+          "leader_speed": 25.12110979801646
+        },
+        {
+          "seconds": 5.0,
+          "edge": "86198728",
+          "lane": "86198728_3",
+          "lane_index": 3,
+          "position": 138.89999999999998,
+          "remaining": 344.54,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 224.5054366519176,
+          "leader_speed": 27.015621042602433
+        },
+        {
+          "seconds": 6.0,
+          "edge": "86198728",
+          "lane": "86198728_2",
+          "lane_index": 2,
+          "position": 166.68000000000004,
+          "remaining": 316.76,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 55.36052768519454,
+          "leader_speed": 25.104378433773725
+        },
+        {
+          "seconds": 7.0,
+          "edge": "86198728",
+          "lane": "86198728_3",
+          "lane_index": 3,
+          "position": 194.4600000000001,
+          "remaining": 288.9799999999999,
+          "speed": 27.78,
+          "next_edge": "37927508",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": 177.25378777263728,
+          "leader_speed": 26.036816758353925
+        }
+      ]
+    },
+    "route_overrides": 0,
+    "diagnostic_action_intervention": "interval1",
+    "not_policy_performance": true,
+    "window_limit_seconds": 60
+  }
+]

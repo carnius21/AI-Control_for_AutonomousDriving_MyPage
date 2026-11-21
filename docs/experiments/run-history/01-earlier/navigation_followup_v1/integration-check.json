@@ -1,0 +1,928 @@
+[
+  {
+    "route": "route_14",
+    "seed": 40001,
+    "training_seed": 11,
+    "load": "low",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "teleports": 0,
+    "insertion_failure": false,
+    "failure": "mixed_or_unexplained",
+    "diagnostic": {
+      "category": "mixed_or_unexplained",
+      "window_seconds": 59.0,
+      "route_stop_fraction": 0.0,
+      "queue_fraction": 0.0,
+      "moving_fraction": 0.0,
+      "mean_speed": 0.0,
+      "samples": [
+        {
+          "seconds": 840.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 841.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 842.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 843.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 844.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 845.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 846.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 847.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 848.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 849.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 850.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 851.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 852.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 853.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 854.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 855.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 856.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 857.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 858.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 859.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 860.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 861.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 862.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 863.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 864.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 865.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 866.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 867.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 868.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 869.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 870.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 871.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 872.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 873.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 874.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 875.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 876.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 877.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 878.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 879.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 880.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 881.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 882.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 883.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 884.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 885.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 886.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 887.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 888.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 889.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 890.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 891.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 892.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 893.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 894.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 895.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 896.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 897.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 898.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        },
+        {
+          "seconds": 899.0,
+          "edge": "170059995",
+          "lane": "170059995_0",
+          "lane_index": 0,
+          "position": 23.475123481663392,
+          "remaining": 102.05487651833661,
+          "speed": 0.0,
+          "next_edge": "170059994",
+          "allowed_lanes": [
+            0
+          ],
+          "leader_gap": null,
+          "leader_speed": null
+        }
+      ]
+    },
+    "requests": 0,
+    "rejected": 0,
+    "route_overrides": 0,
+    "seconds": 900.0
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "route": "route_03",
+    "intervention": "baseline",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 0,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_03",
+    "intervention": "speed_only",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 218,
+    "first": {
+      "t": 84.80000000000001,
+      "lane": 2,
+      "speed": 8.988779132366197,
+      "remaining": 49.47346875238229,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 49.47346875238229,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_03",
+    "intervention": "correct_at_entry",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 1,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_03",
+    "intervention": "correct_after_stop",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 1,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "1063527748",
+      "lane": 2,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_03",
+    "intervention": "correct_segment",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 9,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "1063527748",
+      "lane": 2,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_04",
+    "intervention": "baseline",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 0,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_04",
+    "intervention": "speed_only",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 222,
+    "first": {
+      "t": 85.80000000000001,
+      "lane": 2,
+      "speed": 8.624569802284261,
+      "remaining": 50.59044640111726,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 50.59044640111726,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_04",
+    "intervention": "correct_at_entry",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 1,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_04",
+    "intervention": "correct_after_stop",
+    "arrival": true,
+    "collision": false,
+    "timeout": false,
+    "seconds": 44.2,
+    "modified_steps": 1,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 44.0,
+      "edge": "781184662#3",
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 5.571415866851652,
+      "policy": [
+        0.7551640272140503,
+        0.0
+      ],
+      "action": [
+        0.7551640272140503,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_04",
+    "intervention": "correct_segment",
+    "arrival": true,
+    "collision": false,
+    "timeout": false,
+    "seconds": 41.2,
+    "modified_steps": 9,
+    "first": {
+      "t": 26.6,
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 48.652000000000015,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 48.652000000000015,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 41.0,
+      "edge": "781184662#3",
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 2.289999999999921,
+      "policy": [
+        0.7716922163963318,
+        0.0
+      ],
+      "action": [
+        0.7716922163963318,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_13",
+    "intervention": "baseline",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 0,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_13",
+    "intervention": "speed_only",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 246,
+    "first": {
+      "t": 93.80000000000001,
+      "lane": 3,
+      "speed": 7.579776113033329,
+      "remaining": 50.1569271774269,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 50.1569271774269,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_13",
+    "intervention": "correct_at_entry",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 1,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_13",
+    "intervention": "correct_after_stop",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 1,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "1063527748",
+      "lane": 2,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_13",
+    "intervention": "correct_segment",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 9,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "1063527748",
+      "lane": 2,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_14",
+    "intervention": "baseline",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 0,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_14",
+    "intervention": "speed_only",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 246,
+    "first": {
+      "t": 93.80000000000001,
+      "lane": 3,
+      "speed": 7.579776113033329,
+      "remaining": 50.1569271774269,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 50.1569271774269,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_14",
+    "intervention": "correct_at_entry",
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "seconds": 900.0,
+    "modified_steps": 1,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 899.8000000000001,
+      "edge": "170059994",
+      "lane": 3,
+      "speed": 0.0,
+      "remaining": 0.0,
+      "policy": [
+        0.9985114932060242,
+        0.0
+      ],
+      "action": [
+        0.9985114932060242,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_14",
+    "intervention": "correct_after_stop",
+    "arrival": true,
+    "collision": false,
+    "timeout": false,
+    "seconds": 46.800000000000004,
+    "modified_steps": 1,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 46.6,
+      "edge": "781184662#3",
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 5.571415866851652,
+      "policy": [
+        0.7551640272140503,
+        0.0
+      ],
+      "action": [
+        0.7551640272140503,
+        0.0
+      ]
+    }
+  },
+  {
+    "route": "route_14",
+    "intervention": "correct_segment",
+    "arrival": true,
+    "collision": false,
+    "timeout": false,
+    "seconds": 43.800000000000004,
+    "modified_steps": 9,
+    "first": {
+      "t": 29.200000000000003,
+      "lane": 3,
+      "speed": 27.78,
+      "remaining": 47.893999999999906,
+      "nav": {
+        "current_targets": [
+          0,
+          1,
+          2
+        ],
+        "prepare_targets": [
+          0,
+          1,
+          2
+        ],
+        "distance": 47.893999999999906,
+        "decision_edge": "170059994",
+        "ambiguous": false
+      }
+    },
+    "final": {
+      "t": 43.6,
+      "edge": "781184662#3",
+      "lane": 2,
+      "speed": 27.78,
+      "remaining": 1.5319999999997975,
+      "policy": [
+        0.775081992149353,
+        0.0
+      ],
+      "action": [
+        0.775081992149353,
+        0.0
+      ]
+    }
+  }
+]

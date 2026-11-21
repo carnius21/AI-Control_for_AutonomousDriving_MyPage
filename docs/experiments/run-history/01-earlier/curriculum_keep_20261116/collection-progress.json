@@ -1,0 +1,19 @@
+{
+  "completed": 32,
+  "target": 32,
+  "last": {
+    "route": "route_16",
+    "seed": 910032,
+    "warmup_steps": 4500,
+    "outcome": "arrival",
+    "steps": 299,
+    "keep": {
+      "cruise": 19,
+      "preparation": 22
+    },
+    "safe": 7,
+    "merge_risk_steps": 0,
+    "front_risk_steps": 0,
+    "lane_decision_steps": 197
+  }
+}

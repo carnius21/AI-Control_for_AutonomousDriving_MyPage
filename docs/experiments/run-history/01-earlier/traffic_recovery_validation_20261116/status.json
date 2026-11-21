@@ -1,0 +1,11 @@
+{
+  "stage": "complete",
+  "pid": 31792,
+  "completed": 320,
+  "target": 320,
+  "outcomes": {
+    "collision": 29,
+    "arrival": 287,
+    "timeout": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "paired_comparison_complete",
+  "seed": 11,
+  "steps_per_condition": 200000,
+  "evaluation_cases_per_condition": 20,
+  "empirical_navigation_target_pass": true,
+  "final_policy_selected": false,
+  "next": "Replication and driving-quality checks; no old campaign restart"
+}

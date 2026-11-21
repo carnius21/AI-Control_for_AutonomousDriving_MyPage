@@ -1,0 +1,40 @@
+{
+  "route": "route_05",
+  "seed": 79101,
+  "traffic": "none",
+  "edge": "170059994",
+  "lane": 2,
+  "needed_lane": 3,
+  "trace_sha": "90113358a87201c54dbb7e4494f3b12adac58d955d6852ecee014bad6b906b89",
+  "models": {
+    "source": {
+      "checkpoint_sha": "061ff1a1d64bbcea5d352295fe1c6c7396e9e00da034c276bcd6297bde153528",
+      "mean_accel": 0.9863570332527161,
+      "std": 0.28762635588645935,
+      "lane_probability_left_keep_right": [
+        0.40768006443977356,
+        0.5922324061393738,
+        8.7444503151346e-05
+      ],
+      "deterministic_action": [
+        0.9863570332527161,
+        0.0
+      ]
+    },
+    "collision20_100352": {
+      "checkpoint_sha": "2012e8ce991bc8a82d8257501dc649d2eecfcf831c5dd1939aed245317a3ce49",
+      "mean_accel": -0.44640225172042847,
+      "std": 0.3200538754463196,
+      "lane_probability_left_keep_right": [
+        0.24970395863056183,
+        0.7495022416114807,
+        0.0007938555208966136
+      ],
+      "deterministic_action": [
+        -0.44640225172042847,
+        0.0
+      ]
+    }
+  },
+  "interpretation": "Both policies queried at the learned policy stalled state, not a source trajectory or stochastic completion test."
+}

@@ -1,0 +1,4 @@
+﻿file,seed,route,seconds,outcome,overrides
+69101-route_01.json,69101,route_01,13.4,collision,0
+69103-route_01.json,69103,route_01,13.4,collision,0
+69103-route_13.json,69103,route_13,59.6,collision,0

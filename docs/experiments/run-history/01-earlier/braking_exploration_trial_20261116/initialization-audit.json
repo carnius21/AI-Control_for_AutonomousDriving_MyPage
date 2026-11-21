@@ -1,0 +1,10 @@
+{
+  "changed_initial_parameters": [
+    "log_std"
+  ],
+  "baseline_std": 0.28762635588645935,
+  "new_std": 0.6065306663513184,
+  "saved_model_load_preserves_std": true,
+  "other_hyperparameters_equal": true,
+  "inputs_equal": true
+}

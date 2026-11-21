@@ -1,0 +1,17 @@
+{
+  "av_cases": 24,
+  "hv_cases": 4,
+  "reference_outcomes_match_previous_8": true,
+  "all_teleports_zero": true,
+  "all_route_overrides_zero": true,
+  "source_hashes": {
+    "utils/diagnose_meeting_av.py": "47a19c297d7dc29aa015f5d94475a18dd9f4d52d799f3632b6a0db5e12d23946",
+    "utils/diagnose_meeting_zipper.py": "e4fd03341a665d74a7be7580e51c2591b573cb7e6baa0619cf02a2ec1cae26e6",
+    "utils/diagnose_meeting_geometry.py": "3229b94d4f995b8fa7f6fa6e56a553b05c6d4e307ad18fc034f6daeb4116e2f2",
+    "utils/summarize_meeting_diagnosis.py": "c35cfd62823361be4a7171d85c102304178757838bd92d485a3608c6116f84b9",
+    "env/sumo_env.py": "882ee158eb47c00a1489b7c1604fd3d4a8808b8274bea9ea3e7a331d5afc22fc",
+    "env/ic_experiment.py": "7b770927539af391d526f10f21592da6b7a102c2a9427a9ac594bc4b6a60772c",
+    "env/navigation_observation.py": "801209f04b93ffabd47f1eb474f4e16cf8719d89444b21bca4fbb51affbefb50",
+    "env/navigation_clarity.py": "15237459296d7b61ee6c96b4e09a40fdea60bf303c990656e092e637bf20334e"
+  }
+}

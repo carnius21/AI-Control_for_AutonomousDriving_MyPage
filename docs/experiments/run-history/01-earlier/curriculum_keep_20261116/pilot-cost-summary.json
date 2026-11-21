@@ -1,0 +1,38 @@
+{
+  "A-seed11": {
+    "environment_steps": 50000,
+    "optimizer_steps": 7820,
+    "keep_batches": 7820,
+    "safe_batches": 0,
+    "critic_warmup_steps": 0,
+    "training_wall_seconds": 1793.328429698944
+  },
+  "B-seed11": {
+    "environment_steps": 50000,
+    "optimizer_steps": 7820,
+    "keep_batches": 7820,
+    "safe_batches": 7820,
+    "critic_warmup_steps": 0,
+    "training_wall_seconds": 1717.5592868328094
+  },
+  "C-seed11": {
+    "environment_steps": 50000,
+    "optimizer_steps": 7820,
+    "keep_batches": 7820,
+    "safe_batches": 7820,
+    "critic_warmup_steps": 0,
+    "training_wall_seconds": 1567.1616225242615
+  },
+  "baseline_collection": {
+    "episodes": 32,
+    "steps": 14284
+  },
+  "observation_replay": {
+    "episodes": 29,
+    "steps": 9629
+  },
+  "teacher_probe": {
+    "episodes": 24,
+    "steps": 4941
+  }
+}

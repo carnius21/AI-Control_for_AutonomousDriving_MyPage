@@ -1,0 +1,27 @@
+{
+  "changed_edges": [
+    "flyover",
+    "north_loop"
+  ],
+  "connections_unchanged": true,
+  "cases": [
+    {
+      "depart_speed": "0",
+      "arrived": true,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "depart_speed": "10",
+      "arrived": true,
+      "collisions": 0,
+      "teleports": 0
+    },
+    {
+      "depart_speed": "max",
+      "arrived": true,
+      "collisions": 0,
+      "teleports": 0
+    }
+  ]
+}

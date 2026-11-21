@@ -1,0 +1,6 @@
+{
+  "stage": "train_complete",
+  "git": "4b9fab9e241e24c19fa90e2741ae514687b62dc5",
+  "network_sha256": "be949a4a3aae9fb516c3c2832243fef264312975dee6f56df12442659dfea7d9",
+  "simulation_seed_policy": "training: seeded per-episode generator; evaluation: explicit 20001..20020"
+}

@@ -1,0 +1,35 @@
+{
+  "time": 1794804639.5426843,
+  "runs": {
+    "results\\junction_conflict_trials_20261116\\runs\\combined\\progress.json": {
+      "steps": 184044,
+      "wall_seconds": 5730.8868544101715,
+      "pid": 10640
+    },
+    "results\\lane_followup_20261116\\runs\\future\\progress.json": {
+      "steps": 169759,
+      "wall_seconds": 5427.819633960724,
+      "pid": 31868
+    },
+    "results\\lane_followup_20261116\\runs\\lateral\\progress.json": {
+      "steps": 169816,
+      "wall_seconds": 5426.985820055008,
+      "pid": 20268
+    },
+    "results\\preserved_input_trial_20261116\\runs\\future\\progress.json": {
+      "steps": 82815,
+      "wall_seconds": 2577.7863717079163,
+      "pid": 2176
+    },
+    "results\\safe_route_reward_trials_20261116\\runs\\lateral_zero\\progress.json": {
+      "steps": 13421,
+      "wall_seconds": 453.26233649253845,
+      "pid": 28032
+    },
+    "results\\safe_route_reward_trials_20261116\\runs\\safe_reward\\progress.json": {
+      "steps": 28495,
+      "wall_seconds": 944.0153951644897,
+      "pid": 34288
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "exact_resume": true,
+  "steps": 512,
+  "verified_fields": [
+    "policy",
+    "optimizer",
+    "steps",
+    "updates",
+    "environment",
+    "ep_stats",
+    "torch_rng",
+    "numpy_rng",
+    "python_rng",
+    "aux_rng"
+  ],
+  "note": "Uninterrupted 512 vs 256 + fresh-process resume to 512; complete environment/RNG/policy/optimizer equality"
+}

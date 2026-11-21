@@ -1,0 +1,13 @@
+{
+  "none": {
+    "arrival": 8
+  },
+  "low": {
+    "arrival": 4,
+    "collision": 4
+  },
+  "reference": {
+    "arrival": 1,
+    "collision": 7
+  }
+}

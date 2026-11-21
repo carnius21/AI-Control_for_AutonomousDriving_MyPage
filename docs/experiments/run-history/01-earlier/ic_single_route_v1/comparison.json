@@ -1,0 +1,17 @@
+{
+  "stage": "complete",
+  "seed": 11,
+  "budget": 200000,
+  "original": {
+    "arrival": 1.0,
+    "collision": 0.0,
+    "timeout": 0.0
+  },
+  "corrected": {
+    "arrival": 1.0,
+    "collision": 0.0,
+    "timeout": 0.0
+  },
+  "scope": "single-route no-traffic 20 fixed starts, not statistical guarantee",
+  "final_policy_selected": false
+}

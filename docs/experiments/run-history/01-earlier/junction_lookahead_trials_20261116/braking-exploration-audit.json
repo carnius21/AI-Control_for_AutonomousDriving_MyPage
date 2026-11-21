@@ -1,0 +1,139 @@
+{
+  "source": {
+    "checkpoint": "results\\traffic_recovery_auto_20261116\\round-02\\runs\\route\\policy-200000.pt",
+    "checkpoint_sha": "061ff1a1d64bbcea5d352295fe1c6c7396e9e00da034c276bcd6297bde153528",
+    "source_trace_sha": "8f3eaa18dbf9eed7f4940d86b621bc573533ab32ddcf52e13181eb95a50f295a",
+    "std": 0.28762635588645935,
+    "states": [
+      {
+        "t": 9.8,
+        "mu": 0.7803525328636169,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.00333307786748634,
+        "risk": 0.3179046250235612
+      },
+      {
+        "t": 10.0,
+        "mu": 0.7770485281944275,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.0034504385454256653,
+        "risk": 0.35067922276235197
+      },
+      {
+        "t": 10.200000000000001,
+        "mu": 0.7736966013908386,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.0035732819948913106,
+        "risk": 0.3834148995560145
+      },
+      {
+        "t": 10.4,
+        "mu": 0.7703604102134705,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.0036994329154736096,
+        "risk": 0.41617934527121475
+      },
+      {
+        "t": 10.600000000000001,
+        "mu": 0.7672567367553711,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.0038203634687759627,
+        "risk": 0.44880574889613606
+      },
+      {
+        "t": 10.8,
+        "mu": 0.7644871473312378,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.003931255956552372,
+        "risk": 0.4816691967174314
+      },
+      {
+        "t": 11.0,
+        "mu": 0.7617406249046326,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.004044063594441894,
+        "risk": 0.5143365301290833
+      },
+      {
+        "t": 11.200000000000001,
+        "mu": 0.7589995265007019,
+        "std": 0.28762635588645935,
+        "brake_sample_probability": 0.004159529014486177,
+        "risk": 0.5470914158347692
+      }
+    ],
+    "interpretation": "Conditional training sampling probabilities at recorded deterministic states; not an episode collision estimate."
+  },
+  "ahead150_51200": {
+    "checkpoint": "results\\junction_lookahead_trials_20261116\\runs\\ahead150\\policy-51200.pt",
+    "checkpoint_sha": "847e0c30673fa3fa5e0e0b50ef0ab0457876a6d3d72e909149dc6a71f562701b",
+    "source_trace_sha": "0398861ba4938a471876ae18bd82f75bcd390de42d29880e3e6c6496b3f24a19",
+    "std": 0.28516653180122375,
+    "states": [
+      {
+        "t": 9.600000000000001,
+        "mu": 0.9565156102180481,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.0003979234669309355,
+        "risk": 0.29402798369869926
+      },
+      {
+        "t": 9.8,
+        "mu": 0.9540188908576965,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.0004107016115205239,
+        "risk": 0.32734942592051497
+      },
+      {
+        "t": 10.0,
+        "mu": 0.9512414932250977,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.00042536297009149876,
+        "risk": 0.36064849792915654
+      },
+      {
+        "t": 10.200000000000001,
+        "mu": 0.9482884407043457,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.0004414829546295373,
+        "risk": 0.39390812309180223
+      },
+      {
+        "t": 10.4,
+        "mu": 0.9451279044151306,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.00045936169394164783,
+        "risk": 0.4271968128322023
+      },
+      {
+        "t": 10.600000000000001,
+        "mu": 0.9418082237243652,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.0004788614129099988,
+        "risk": 0.46034609803794824
+      },
+      {
+        "t": 10.8,
+        "mu": 0.938311755657196,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.000500226523521026,
+        "risk": 0.49373468219263034
+      },
+      {
+        "t": 11.0,
+        "mu": 0.9346102476119995,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.0005238036689121839,
+        "risk": 0.5269253652232806
+      },
+      {
+        "t": 11.200000000000001,
+        "mu": 0.9313154816627502,
+        "std": 0.28516653180122375,
+        "brake_sample_probability": 0.0005456507297393713,
+        "risk": 0.5602043578122354
+      }
+    ],
+    "interpretation": "Conditional training sampling probabilities at recorded deterministic states; not an episode collision estimate."
+  }
+}

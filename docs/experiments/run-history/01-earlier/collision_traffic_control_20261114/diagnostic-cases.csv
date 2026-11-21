@@ -1,0 +1,5 @@
+﻿file,seed,condition,route,eval_seed,outcome,seconds,policy_sha,source_commit,route_overrides,visibility,vmax,max_decel,first_risk
+11-baseline-route_01.json,11,baseline,route_01,29101,arrival,34.0,13d5f3c54e6f17ef29af26e9d0016897b96b11aded1fc625a58c31b526d0e722,517d4204c53075dd571e87a13f855aab6192e3d2,0,50.0,27.78,5.4,
+11-baseline-route_04.json,11,baseline,route_04,29101,arrival,96.2,13d5f3c54e6f17ef29af26e9d0016897b96b11aded1fc625a58c31b526d0e722,517d4204c53075dd571e87a13f855aab6192e3d2,0,50.0,27.78,5.4,
+11-baseline-route_13.json,11,baseline,route_13,29101,timeout,10800.0,13d5f3c54e6f17ef29af26e9d0016897b96b11aded1fc625a58c31b526d0e722,517d4204c53075dd571e87a13f855aab6192e3d2,0,50.0,27.78,5.4,
+11-baseline-route_14.json,11,baseline,route_14,29101,timeout,10800.0,13d5f3c54e6f17ef29af26e9d0016897b96b11aded1fc625a58c31b526d0e722,517d4204c53075dd571e87a13f855aab6192e3d2,0,50.0,27.78,5.4,

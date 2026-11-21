@@ -1,0 +1,9 @@
+{
+  "stage": "running",
+  "pending_conditions": [],
+  "active_conditions": [
+    "safe_reward",
+    "lateral_zero",
+    "combined"
+  ]
+}

@@ -1,0 +1,4146 @@
+{
+  "model_sha": "6e938d2425c0cb40bd5b6dfb0fde6128b43c673520dadfd81d05f77511b3c8ab",
+  "map_sha": "8486b8dc41b9dbc34badfb66570f7458e775040d42c189287a9a659d73fcb3a7",
+  "rows": [
+    {
+      "route": "route_01",
+      "simulation_seed": 40001,
+      "arrival": false,
+      "collision": true,
+      "seconds": 7.2,
+      "initial": {
+        "step": 0,
+        "speed": 22.477752,
+        "lane": "169728849_0",
+        "position": 0.0,
+        "action": [
+          -0.18147218227386475,
+          -1.0
+        ],
+        "leader": "flow_route_02.2",
+        "gap": 157.14663235059,
+        "leader_speed": 4.091207700594223,
+        "reward": 0.032083170688472606,
+        "lane_applied": false,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 16,
+          "speed": 26.796904480959892,
+          "lane": "169728849_0",
+          "position": 74.03393081110612,
+          "action": [
+            0.5660799741744995,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 93.49631603244258,
+          "leader_speed": 2.700743175799418,
+          "reward": 0.03946475284819057,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 17,
+          "speed": 27.408270853068352,
+          "lane": "169728849_0",
+          "position": 79.51558498171978,
+          "action": [
+            0.5690990090370178,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 88.56266439963848,
+          "leader_speed": 2.740012689047761,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 18,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 85.07158498171978,
+          "action": [
+            0.5714346766471863,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 83.54873329762106,
+          "leader_speed": 2.7103444899128344,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 19,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 90.62758498171978,
+          "action": [
+            0.577197253704071,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 78.51311965860258,
+          "leader_speed": 2.601931804907658,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 20,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 96.18358498171978,
+          "action": [
+            0.5817124843597412,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 73.46812210227984,
+          "leader_speed": 2.5550122183863047,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 21,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 101.73958498171977,
+          "action": [
+            0.5802911520004272,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 68.42364689446732,
+          "leader_speed": 2.557623960937471,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 22,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 107.29558498171977,
+          "action": [
+            0.5793628096580505,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 63.36396136773277,
+          "leader_speed": 2.4815723663272453,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 23,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 112.85158498171977,
+          "action": [
+            0.5789996385574341,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 58.30210023550033,
+          "leader_speed": 2.470694338837761,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 24,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 118.40758498171976,
+          "action": [
+            0.5782315135002136,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 53.22560937476777,
+          "leader_speed": 2.3975456963372412,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 25,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 123.96358498171976,
+          "action": [
+            -0.5290602445602417,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 48.141097753163464,
+          "leader_speed": 2.357441891978436,
+          "reward": 0.03917727132595384,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 26,
+          "speed": 27.20861493587494,
+          "lane": "169728849_0",
+          "position": 129.40530796889476,
+          "action": [
+            -0.5259175896644592,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 43.175246388732006,
+          "leader_speed": 2.3793581137177604,
+          "reward": 0.038359429717836326,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 27,
+          "speed": 26.640623939037326,
+          "lane": "169728849_0",
+          "position": 134.73343275670223,
+          "action": [
+            -0.5517650842666626,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 38.32313870868768,
+          "leader_speed": 2.3800855388156683,
+          "reward": 0.037501393301698105,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 28,
+          "speed": 26.04471764802933,
+          "lane": "169728849_0",
+          "position": 139.9423762863081,
+          "action": [
+            -0.5497738718986511,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 33.569650059729156,
+          "leader_speed": 2.277274403236803,
+          "reward": 0.03664645337131575,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 29,
+          "speed": 25.450961866378787,
+          "lane": "169728849_0",
+          "position": 145.03256865958386,
+          "action": [
+            -0.5809393525123596,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 28.93533733526118,
+          "leader_speed": 2.279398244038846,
+          "reward": 0.035743048762657215,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 30,
+          "speed": 24.823547365665437,
+          "lane": "169728849_0",
+          "position": 149.99727813271696,
+          "action": [
+            -0.5777863264083862,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 24.432664111137257,
+          "leader_speed": 2.3101812450458774,
+          "reward": 0.03484454734794007,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 31,
+          "speed": 24.19953813314438,
+          "lane": "169728849_0",
+          "position": 154.83718575934583,
+          "action": [
+            -0.5758914947509766,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 20.04372973640716,
+          "leader_speed": 2.254866259493925,
+          "reward": 0.033948992539688014,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 32,
+          "speed": 23.577575318813324,
+          "lane": "169728849_0",
+          "position": 159.5527008231085,
+          "action": [
+            -0.5739899277687073,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 15.768380482421207,
+          "leader_speed": 2.2008290488835183,
+          "reward": 0.03305639481184035,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 33,
+          "speed": 22.95766619682312,
+          "lane": "169728849_0",
+          "position": 164.14423406247312,
+          "action": [
+            -0.5708491206169128,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 11.62804248491301,
+          "leader_speed": 2.2559762092821303,
+          "reward": 0.03216868127653975,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 34,
+          "speed": 22.34114914655685,
+          "lane": "169728849_0",
+          "position": 168.6124638917845,
+          "action": [
+            -0.5725749731063843,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 7.589924954109193,
+          "leader_speed": 2.1505614925378325,
+          "reward": -0.008721716089846,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 35,
+          "speed": 21.722768175601956,
+          "lane": "169728849_0",
+          "position": 172.9570175269049,
+          "action": [
+            -0.5721323490142822,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 3.6713976902616707,
+          "leader_speed": 2.130131856364385,
+          "reward": -5.0,
+          "lane_applied": false,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_01",
+      "simulation_seed": 40002,
+      "arrival": false,
+      "collision": true,
+      "seconds": 8.6,
+      "initial": {
+        "step": 0,
+        "speed": 20.504616,
+        "lane": "169728849_0",
+        "position": 0.0,
+        "action": [
+          -0.22391843795776367,
+          -1.0
+        ],
+        "leader": "flow_route_02.2",
+        "gap": 175.2888756743419,
+        "leader_speed": 11.15708296750573,
+        "reward": 0.029176074999288138,
+        "lane_applied": false,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 23,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 105.18839036024953,
+          "action": [
+            0.5797016024589539,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 99.37573044317573,
+          "leader_speed": 2.588705028451902,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 24,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 110.74439036024953,
+          "action": [
+            0.5789528489112854,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 94.28073393809737,
+          "leader_speed": 2.3050174746082455,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 25,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 116.30039036024952,
+          "action": [
+            0.5781299471855164,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 89.11771580273698,
+          "leader_speed": 1.964909323198074,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 26,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 121.85639036024952,
+          "action": [
+            0.578601598739624,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 83.92048329002486,
+          "leader_speed": 1.7938374364393883,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 27,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 127.41239036024952,
+          "action": [
+            0.5773548483848572,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 78.67728310791996,
+          "leader_speed": 1.563999089475512,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 28,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 132.96839036024951,
+          "action": [
+            0.5749536156654358,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 73.37603561758576,
+          "leader_speed": 1.2737625483289754,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 29,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 138.52439036024953,
+          "action": [
+            0.5724686980247498,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 68.04044127253368,
+          "leader_speed": 1.1020282747397614,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 30,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 144.08039036024954,
+          "action": [
+            0.5690996646881104,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 62.680778593881456,
+          "leader_speed": 0.9816866067388573,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 31,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 149.63639036024955,
+          "action": [
+            0.5633752346038818,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 57.290939371559375,
+          "leader_speed": 0.830803888389724,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 32,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 155.19239036024956,
+          "action": [
+            0.5564482808113098,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 51.87205548974654,
+          "leader_speed": 0.6855805909359329,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 33,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 160.74839036024957,
+          "action": [
+            -0.49901264905929565,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 46.43044610720861,
+          "leader_speed": 0.5719530873104353,
+          "reward": 0.03922399760837432,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 34,
+          "speed": 27.241066339015962,
+          "lane": "169728849_0",
+          "position": 166.19660362805277,
+          "action": [
+            -0.5176374912261963,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 41.07244520055761,
+          "leader_speed": 0.4510618057609346,
+          "reward": 0.03841903217925366,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 35,
+          "speed": 26.682017848491668,
+          "lane": "169728849_0",
+          "position": 171.5330071977511,
+          "action": [
+            -0.5167354345321655,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 35.812796125690056,
+          "leader_speed": 0.3837724741538675,
+          "reward": 0.03761546951648226,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 36,
+          "speed": 26.12394357919693,
+          "lane": "169728849_0",
+          "position": 176.75779591359048,
+          "action": [
+            -0.5444537401199341,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 30.647795107912714,
+          "leader_speed": 0.2989384903102575,
+          "reward": 0.036768802793185604,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 37,
+          "speed": 25.5359335398674,
+          "lane": "169728849_0",
+          "position": 181.86498262156397,
+          "action": [
+            -0.5764093399047852,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 25.592286436709912,
+          "leader_speed": 0.2583901838534198,
+          "reward": 0.035872442696573414,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 38,
+          "speed": 24.913411452770234,
+          "lane": "169728849_0",
+          "position": 186.847664912118,
+          "action": [
+            -0.6256349086761475,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 20.651078708152653,
+          "leader_speed": 0.2073728099838703,
+          "reward": 0.034899533119366444,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 39,
+          "speed": 24.237725751399996,
+          "lane": "169728849_0",
+          "position": 191.69521006239802,
+          "action": [
+            -0.6254448294639587,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 15.837050467456294,
+          "leader_speed": 0.16758454791823846,
+          "reward": 0.03392691912970327,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 40,
+          "speed": 23.562245335578922,
+          "lane": "169728849_0",
+          "position": 196.4076591295138,
+          "action": [
+            -0.6803361177444458,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 11.151957413429528,
+          "leader_speed": 0.1367800654450683,
+          "reward": 0.0328689450373145,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 41,
+          "speed": 22.82748232841492,
+          "lane": "169728849_0",
+          "position": 200.9731555951968,
+          "action": [
+            -0.6769800186157227,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 6.60848046511606,
+          "leader_speed": 0.11009758684760906,
+          "reward": -0.00818381006722831,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 42,
+          "speed": 22.09634390830994,
+          "lane": "169728849_0",
+          "position": 205.3924243768588,
+          "action": [
+            -0.6727764010429382,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 2.206223103606618,
+          "leader_speed": 0.08505710076284077,
+          "reward": -5.0,
+          "lane_applied": false,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_01",
+      "simulation_seed": 40003,
+      "arrival": false,
+      "collision": true,
+      "seconds": 8.4,
+      "initial": {
+        "step": 0,
+        "speed": 22.246664,
+        "lane": "169728849_0",
+        "position": 0.0,
+        "action": [
+          -0.18624940514564514,
+          -1.0
+        ],
+        "leader": "flow_route_02.2",
+        "gap": 120.99354726281219,
+        "leader_speed": 17.71219108913645,
+        "reward": 0.03174300164498589,
+        "lane_applied": false,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 22,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 106.4656728072906,
+          "action": [
+            0.5794962644577026,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 78.51751643626422,
+          "leader_speed": 9.655266216317973,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 23,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 112.0216728072906,
+          "action": [
+            0.5789811611175537,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 74.78504323052539,
+          "leader_speed": 9.11763397130586,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 24,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 117.5776728072906,
+          "action": [
+            0.5781313180923462,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 70.94779643655532,
+          "leader_speed": 8.5937660301496,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 25,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 123.1336728072906,
+          "action": [
+            0.5786768198013306,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 67.00996319786213,
+          "leader_speed": 8.090833806534114,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 26,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 128.6896728072906,
+          "action": [
+            0.5770975351333618,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 62.97540058259332,
+          "leader_speed": 7.607186923655984,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 27,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 134.24567280729062,
+          "action": [
+            0.5744024515151978,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 58.847503547555334,
+          "leader_speed": 7.140514824810085,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 28,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 139.80167280729063,
+          "action": [
+            0.571695864200592,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 54.633819101737345,
+          "leader_speed": 6.711577770910131,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 29,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 145.35767280729064,
+          "action": [
+            0.5682386755943298,
+            1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 50.34025319704793,
+          "leader_speed": 6.312170476552937,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 30,
+          "speed": 27.78,
+          "lane": "169728849_0",
+          "position": 150.91367280729065,
+          "action": [
+            -0.42510369420051575,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 45.97314325690064,
+          "leader_speed": 5.944450299263582,
+          "reward": 0.03933893162024975,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 31,
+          "speed": 27.320888010263445,
+          "lane": "169728849_0",
+          "position": 156.37785040934335,
+          "action": [
+            -0.4505375623703003,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 41.627850645655286,
+          "leader_speed": 5.594424954036748,
+          "reward": 0.038638311652848846,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 32,
+          "speed": 26.834307442903523,
+          "lane": "169728849_0",
+          "position": 161.74471189792405,
+          "action": [
+            -0.4518525302410126,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 37.318787456596965,
+          "leader_speed": 5.288991497611829,
+          "reward": 0.03793564681100538,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 33,
+          "speed": 26.34630671024323,
+          "lane": "169728849_0",
+          "position": 167.0139732399727,
+          "action": [
+            -0.4541143774986267,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 33.05423795740671,
+          "leader_speed": 5.023559214292007,
+          "reward": 0.03722946462569433,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 34,
+          "speed": 25.855863182544713,
+          "lane": "169728849_0",
+          "position": 172.18514587648164,
+          "action": [
+            -0.48617786169052124,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 28.841166773497662,
+          "leader_speed": 4.790507262999489,
+          "reward": 0.0364734212986594,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 35,
+          "speed": 25.33079109191895,
+          "lane": "169728849_0",
+          "position": 177.25130409486542,
+          "action": [
+            -0.4876697361469269,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 24.695571157257262,
+          "leader_speed": 4.602813010716851,
+          "reward": 0.035715057994068065,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 36,
+          "speed": 24.80410777688027,
+          "lane": "169728849_0",
+          "position": 182.21212565024146,
+          "action": [
+            -0.48693612217903137,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 20.62352207932932,
+          "leader_speed": 4.443862387240567,
+          "reward": 0.03495783551465358,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 37,
+          "speed": 24.278216764926913,
+          "lane": "169728849_0",
+          "position": 187.06776900322686,
+          "action": [
+            -0.5265910625457764,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 16.63135926287447,
+          "leader_speed": 4.3174026826527,
+          "reward": 0.034138946605295144,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 38,
+          "speed": 23.709498417377475,
+          "lane": "169728849_0",
+          "position": 191.80966868670237,
+          "action": [
+            -0.5281429290771484,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 12.730323290434768,
+          "leader_speed": 4.204318555179098,
+          "reward": 0.03331764442616869,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 39,
+          "speed": 23.139104053974155,
+          "lane": "169728849_0",
+          "position": 196.4374894974972,
+          "action": [
+            -0.5274670124053955,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 8.92662122806695,
+          "leader_speed": 4.120593742135074,
+          "reward": -0.007502606651437977,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 40,
+          "speed": 22.569439680576327,
+          "lane": "169728849_0",
+          "position": 200.95137743361246,
+          "action": [
+            -0.582301914691925,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 5.222936331477598,
+          "leader_speed": 4.051015197629501,
+          "reward": -0.008408130147287191,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 41,
+          "speed": 21.94055361270905,
+          "lane": "169728849_0",
+          "position": 205.33948815615426,
+          "action": [
+            -0.5790361166000366,
+            -1.0
+          ],
+          "leader": "flow_route_02.2",
+          "gap": 1.632832718915381,
+          "leader_speed": 3.9900355498978746,
+          "reward": -5.0,
+          "lane_applied": false,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_04",
+      "simulation_seed": 40001,
+      "arrival": false,
+      "collision": true,
+      "seconds": 19.200000000000003,
+      "initial": {
+        "step": 0,
+        "speed": 27.78,
+        "lane": "52873356_0",
+        "position": 0.0,
+        "action": [
+          -0.7219491600990295,
+          -1.0
+        ],
+        "leader": "flow_route_05.4",
+        "gap": 83.77740275410692,
+        "leader_speed": 17.02033394707403,
+        "reward": 0.03887731448105551,
+        "lane_applied": false,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 76,
+          "speed": 21.539764605760574,
+          "lane": ":1000493460_0_2",
+          "position": 51.80348520937584,
+          "action": [
+            -0.2805470824241638,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.702907404730787,
+          "leader_speed": 20.40820717689469,
+          "reward": 0.03057850792907484,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 77,
+          "speed": 21.236773756742476,
+          "lane": ":1000493460_0_2",
+          "position": 56.05083996072434,
+          "action": [
+            -0.2759580612182617,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.537960924017291,
+          "leader_speed": 20.412041353174985,
+          "reward": 0.030149372283119875,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 78,
+          "speed": 20.938739050626754,
+          "lane": ":1000493460_0_2",
+          "position": 60.23858777084969,
+          "action": [
+            -0.2911829650402069,
+            -1.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.437760951439628,
+          "leader_speed": 20.43773918773842,
+          "reward": 0.029696560760811133,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 79,
+          "speed": 20.62426144838333,
+          "lane": ":1000493460_0_2",
+          "position": 64.36344006052636,
+          "action": [
+            -0.2886213958263397,
+            -1.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.3811565639217775,
+          "leader_speed": 20.34123951079406,
+          "reward": 0.02924773267226909,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 80,
+          "speed": 20.312550340890883,
+          "lane": ":1000493460_0_2",
+          "position": 68.42595012870453,
+          "action": [
+            -0.284157395362854,
+            -1.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.384061325668782,
+          "leader_speed": 20.327074149625908,
+          "reward": 0.028805846441899208,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 81,
+          "speed": 20.005660353899,
+          "lane": ":1000493460_0_2",
+          "position": 72.42708219948433,
+          "action": [
+            -0.2793714106082916,
+            -1.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.449201284734144,
+          "leader_speed": 20.331360149225823,
+          "reward": 0.028371402779614183,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 82,
+          "speed": 19.703939230442046,
+          "lane": ":1000493460_0_2",
+          "position": 76.36787004557274,
+          "action": [
+            -0.27408066391944885,
+            -1.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.578649888511297,
+          "leader_speed": 20.35118224932783,
+          "reward": 0.007945186628378748,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 83,
+          "speed": 19.407932113409043,
+          "lane": ":1000493460_0_2",
+          "position": 80.24945646825455,
+          "action": [
+            -0.2697460949420929,
+            -1.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.759742131415397,
+          "leader_speed": 20.313393327929543,
+          "reward": 0.007525711059570311,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 84,
+          "speed": 19.116606330871583,
+          "lane": ":1000493460_0_2",
+          "position": 84.07277773442887,
+          "action": [
+            -0.2650013864040375,
+            -1.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.994906095863023,
+          "leader_speed": 20.292426153109712,
+          "reward": 0.0071136138712098234,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 85,
+          "speed": 18.830404833555225,
+          "lane": "37927512_2",
+          "position": 2.978858701139913,
+          "action": [
+            0.8843618035316467,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 7.303833717223238,
+          "leader_speed": 20.375042940356288,
+          "reward": 0.02848886332810569,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 86,
+          "speed": 19.785515581369403,
+          "lane": "37927512_2",
+          "position": 6.935961817413794,
+          "action": [
+            0.8786944150924683,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 7.420923514223844,
+          "leader_speed": 20.370964566372425,
+          "reward": 0.029855299567558342,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 87,
+          "speed": 20.73450554966927,
+          "lane": "37927512_2",
+          "position": 11.082862927347648,
+          "action": [
+            0.8706369996070862,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 7.33105385034888,
+          "leader_speed": 20.28515723029445,
+          "reward": 0.03120920591683934,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 88,
+          "speed": 21.67479350924492,
+          "lane": "37927512_2",
+          "position": 15.417821629196633,
+          "action": [
+            0.8620297908782959,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 7.0542251042455835,
+          "leader_speed": 20.290649778728447,
+          "reward": 0.032549727405894145,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 89,
+          "speed": 22.60578568339348,
+          "lane": "37927512_2",
+          "position": 19.93897876587533,
+          "action": [
+            0.8527316451072693,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 6.597836519347958,
+          "leader_speed": 20.323842758905354,
+          "reward": -0.006124210424608595,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 90,
+          "speed": 23.526735860109333,
+          "lane": "37927512_2",
+          "position": 24.644325937897197,
+          "action": [
+            0.841073751449585,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 5.9416505479515145,
+          "leader_speed": 20.245806003127115,
+          "reward": -0.004816277161015287,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 91,
+          "speed": 24.435095511674884,
+          "lane": "37927512_2",
+          "position": 29.531345040232175,
+          "action": [
+            0.8302006721496582,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 5.117475870288253,
+          "leader_speed": 20.31422212335859,
+          "reward": -0.003525252357672404,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 92,
+          "speed": 25.331712237596516,
+          "lane": "37927512_2",
+          "position": 34.59768748775148,
+          "action": [
+            0.8182173371315002,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 4.107942517215072,
+          "leader_speed": 20.28404547223062,
+          "reward": -0.002252862546150414,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 93,
+          "speed": 26.215386961698538,
+          "lane": "37927512_2",
+          "position": 39.840764880091186,
+          "action": [
+            0.8053855895996094,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 2.914115142887553,
+          "leader_speed": 20.24625009006093,
+          "reward": -0.001000427072043031,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 94,
+          "speed": 27.085203398466117,
+          "lane": "37927512_2",
+          "position": 45.25780555978441,
+          "action": [
+            0.7920858860015869,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 1.5521011013726138,
+          "leader_speed": 20.275133190891427,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 95,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 50.81380555978441,
+          "action": [
+            0.7796193361282349,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 0.04945342788669649,
+          "leader_speed": 20.266761632570432,
+          "reward": -5.0,
+          "lane_applied": true,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_04",
+      "simulation_seed": 40002,
+      "arrival": false,
+      "collision": true,
+      "seconds": 36.4,
+      "initial": {
+        "step": 0,
+        "speed": 25.635384,
+        "lane": "52873356_0",
+        "position": 0.0,
+        "action": [
+          -0.7349199056625366,
+          -1.0
+        ],
+        "leader": "flow_route_05.4",
+        "gap": 252.92577710731723,
+        "leader_speed": 22.238325474584038,
+        "reward": 0.035769143991194324,
+        "lane_applied": false,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 162,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 72.40841442789717,
+          "action": [
+            0.7533317804336548,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 27.03088038983107,
+          "leader_speed": 20.639060785430274,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 163,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 77.96441442789717,
+          "action": [
+            0.7663062810897827,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 25.63064606302879,
+          "leader_speed": 20.778828365988605,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 164,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 83.52041442789717,
+          "action": [
+            0.7779688239097595,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 24.240287706082583,
+          "leader_speed": 20.828208215268923,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 165,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 89.07641442789716,
+          "action": [
+            0.788861870765686,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 22.83220307174588,
+          "leader_speed": 20.739576828316448,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 166,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 94.63241442789716,
+          "action": [
+            0.799953281879425,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 21.430507340656362,
+          "leader_speed": 20.77152134455241,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 167,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 100.18841442789716,
+          "action": [
+            0.8106404542922974,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 20.03229877894435,
+          "leader_speed": 20.78895719143994,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 168,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 105.74441442789715,
+          "action": [
+            0.8200608491897583,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 18.63314041961135,
+          "leader_speed": 20.784208203334956,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 169,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 111.30041442789715,
+          "action": [
+            0.8282134532928467,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 17.224388604602353,
+          "leader_speed": 20.73624092495501,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 170,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 116.85641442789715,
+          "action": [
+            0.8362982869148254,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 15.823298230597274,
+          "leader_speed": 20.77454812997453,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 171,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 122.41241442789715,
+          "action": [
+            0.8418856263160706,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 14.431359038727749,
+          "leader_speed": 20.820304040652363,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 172,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 127.96841442789714,
+          "action": [
+            0.8258336186408997,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 13.028631695243845,
+          "leader_speed": 20.766363282580524,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 173,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 133.52441442789714,
+          "action": [
+            0.8306182622909546,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 11.639795251062395,
+          "leader_speed": 20.835817779092714,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 174,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 139.08041442789715,
+          "action": [
+            0.8347086310386658,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 10.248162894225857,
+          "leader_speed": 20.821838215817362,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 175,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 144.63641442789717,
+          "action": [
+            0.8378409743309021,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 8.837353001123404,
+          "leader_speed": 20.725950534487737,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 176,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 150.19241442789718,
+          "action": [
+            0.8426388502120972,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 7.430596520879334,
+          "leader_speed": 20.746217598779722,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 177,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 155.7484144278972,
+          "action": [
+            0.8480861783027649,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 6.0378055173400185,
+          "leader_speed": 20.81604498230353,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 178,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 161.3044144278972,
+          "action": [
+            0.8745869994163513,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 4.631513036149414,
+          "leader_speed": 20.74853759404704,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 179,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 166.8604144278972,
+          "action": [
+            0.8554172515869141,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 3.2337898691145313,
+          "leader_speed": 20.791384164825676,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 180,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 172.41641442789722,
+          "action": [
+            0.8801301121711731,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 1.8456307768660452,
+          "leader_speed": 20.839204538757578,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 181,
+          "speed": 27.78,
+          "lane": "1063527748_2",
+          "position": 177.97241442789723,
+          "action": [
+            0.882383406162262,
+            0.0
+          ],
+          "leader": "flow_route_04.4",
+          "gap": 0.4524659613162214,
+          "leader_speed": 20.81417592225097,
+          "reward": -5.0,
+          "lane_applied": true,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_04",
+      "simulation_seed": 40003,
+      "arrival": false,
+      "collision": true,
+      "seconds": 25.200000000000003,
+      "initial": {
+        "step": 0,
+        "speed": 27.200709838702004,
+        "lane": "52873356_0",
+        "position": 0.0,
+        "action": [
+          -0.6218766570091248,
+          -1.0
+        ],
+        "leader": "flow_route_05.4",
+        "gap": 70.80673329003963,
+        "leader_speed": 16.028044907918712,
+        "reward": 0.038198823684855505,
+        "lane_applied": false,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 106,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 101.44917178256836,
+          "action": [
+            0.3694169819355011,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 25.330497057806923,
+          "leader_speed": 22.652081397120178,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 107,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 107.00517178256835,
+          "action": [
+            0.38617509603500366,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 24.3014682329558,
+          "leader_speed": 22.634855875744304,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 108,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 112.56117178256835,
+          "action": [
+            0.4027368426322937,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 23.259611420188918,
+          "leader_speed": 22.570715936165588,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 109,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 118.11717178256835,
+          "action": [
+            0.4198511838912964,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 22.201244274889135,
+          "leader_speed": 22.488164273501035,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 110,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 123.67317178256835,
+          "action": [
+            0.4365291893482208,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 21.121360696519787,
+          "leader_speed": 22.380582108153263,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 111,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 129.22917178256836,
+          "action": [
+            0.4532991945743561,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 20.01331915454631,
+          "leader_speed": 22.2397922901326,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 112,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 134.78517178256837,
+          "action": [
+            0.4696718752384186,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 18.87556081126985,
+          "leader_speed": 22.091208283617775,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 113,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 140.34117178256838,
+          "action": [
+            0.48593947291374207,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 17.704037073584715,
+          "leader_speed": 21.922381311574323,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 114,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 145.8971717825684,
+          "action": [
+            0.49989262223243713,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 16.501177722855576,
+          "leader_speed": 21.765703246354306,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 115,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 151.4531717825684,
+          "action": [
+            0.5118950009346008,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 15.267094719713036,
+          "leader_speed": 21.609584984287366,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 116,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 157.00917178256842,
+          "action": [
+            0.5232453942298889,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 13.997408043756774,
+          "leader_speed": 21.431566620218742,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 117,
+          "speed": 27.78,
+          "lane": "37927512_2",
+          "position": 162.56517178256843,
+          "action": [
+            0.47854188084602356,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 12.692482594848553,
+          "leader_speed": 21.255372755458957,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 118,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 5.2311717825684445,
+          "action": [
+            0.5040083527565002,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 11.346326678734378,
+          "leader_speed": 21.04922041942919,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 119,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 10.787171782568446,
+          "action": [
+            0.5308437347412109,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 9.956601672437326,
+          "leader_speed": 20.831374968514737,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 120,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 16.343171782568447,
+          "action": [
+            0.5556530952453613,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 8.522854001890575,
+          "leader_speed": 20.611261647266264,
+          "reward": 0.04000000000000001,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 121,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 21.899171782568448,
+          "action": [
+            0.5783658027648926,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 7.043991466561671,
+          "leader_speed": 20.385687323355498,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 122,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 27.45517178256845,
+          "action": [
+            0.6003662943840027,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 5.516275371912464,
+          "leader_speed": 20.141419526753936,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 123,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 33.011171782568454,
+          "action": [
+            0.6206165552139282,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 3.9399263024265636,
+          "leader_speed": 19.898254652570518,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 124,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 38.56717178256845,
+          "action": [
+            0.6364724040031433,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 2.315886475327538,
+          "leader_speed": 19.659800864504852,
+          "reward": 5.551115123125783e-18,
+          "lane_applied": true,
+          "collided": false
+        },
+        {
+          "step": 125,
+          "speed": 27.78,
+          "lane": "170059991_2",
+          "position": 44.12317178256845,
+          "action": [
+            0.6511878371238708,
+            0.0
+          ],
+          "leader": "flow_route_05.4",
+          "gap": 0.6381008379849504,
+          "leader_speed": 19.391071813287034,
+          "reward": -5.0,
+          "lane_applied": true,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_13",
+      "simulation_seed": 40001,
+      "arrival": false,
+      "collision": true,
+      "seconds": 40.400000000000006,
+      "initial": {
+        "step": 0,
+        "speed": 0.5527842884428976,
+        "lane": "86198728_0",
+        "position": 0.0,
+        "action": [
+          0.705072820186615,
+          1.0
+        ],
+        "leader": "flow_route_15.6",
+        "gap": 0.2502334171253775,
+        "leader_speed": 2.3788771782938003,
+        "reward": 0.00189238723433325,
+        "lane_applied": true,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 182,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 17.35777841583657,
+          "action": [
+            0.581825315952301,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 77.62602382674572,
+          "leader_speed": 8.95238005142972,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 183,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 22.91377841583657,
+          "action": [
+            0.5800864100456238,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 73.78284164620659,
+          "leader_speed": 8.564089097304368,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 184,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 28.469778415836572,
+          "action": [
+            0.5791933536529541,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 69.86529143317156,
+          "leader_speed": 8.192248934824862,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 185,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 34.02577841583657,
+          "action": [
+            0.5789427757263184,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 65.87695283298447,
+          "leader_speed": 7.83830699906453,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 186,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 39.58177841583657,
+          "action": [
+            0.5783588886260986,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 61.82173628374596,
+          "leader_speed": 7.503917253807459,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 187,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 45.137778415836564,
+          "action": [
+            0.5783063173294067,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 57.70360003812313,
+          "leader_speed": 7.18931877188579,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 188,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 50.69377841583656,
+          "action": [
+            0.576100766658783,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 53.527083180260064,
+          "leader_speed": 6.897415710684658,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 189,
+          "speed": 27.78,
+          "lane": "170059995_0",
+          "position": 5.329778415836559,
+          "action": [
+            -0.42172762751579285,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 49.296723419676326,
+          "leader_speed": 6.628201197081263,
+          "reward": 0.03934418165915471,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 190,
+          "speed": 27.324534162282944,
+          "lane": "170059995_0",
+          "position": 10.794685248293149,
+          "action": [
+            -0.42423737049102783,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 45.107825776150094,
+          "leader_speed": 6.380045944651799,
+          "reward": 0.03868446047826154,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 191,
+          "speed": 26.866357802152635,
+          "lane": "170059995_0",
+          "position": 16.167956808723677,
+          "action": [
+            -0.4259316027164459,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 40.96494217102048,
+          "leader_speed": 6.151939776504566,
+          "reward": 0.038022104638184125,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 192,
+          "speed": 26.40635167121887,
+          "lane": "170059995_0",
+          "position": 21.44922714296745,
+          "action": [
+            -0.42585673928260803,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 36.8723574841194,
+          "leader_speed": 5.943428236713497,
+          "reward": 0.03735986521640555,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 193,
+          "speed": 25.946426392793654,
+          "lane": "170059995_0",
+          "position": 26.638512421526183,
+          "action": [
+            -0.45208224654197693,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 32.83386347183523,
+          "leader_speed": 5.753956331372808,
+          "reward": 0.03665684314834892,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 194,
+          "speed": 25.45817756652832,
+          "lane": "170059995_0",
+          "position": 31.730147934831848,
+          "action": [
+            -0.4525209665298462,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 28.85857837731453,
+          "leader_speed": 5.581752093924776,
+          "reward": 0.03595313883754656,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 195,
+          "speed": 24.969454922676086,
+          "lane": "170059995_0",
+          "position": 36.72403891936707,
+          "action": [
+            -0.45306524634361267,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 24.949899274861444,
+          "leader_speed": 5.426059410410651,
+          "reward": 0.03524858813048954,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 196,
+          "speed": 24.480144456624984,
+          "lane": "170059995_0",
+          "position": 41.62006781069206,
+          "action": [
+            -0.4534086585044861,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 21.11108451421279,
+          "leader_speed": 5.2860706533817465,
+          "reward": 0.03454350339156247,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 197,
+          "speed": 23.99046310544014,
+          "lane": "170059995_0",
+          "position": 46.418160431780095,
+          "action": [
+            -0.48695144057273865,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 17.344872413201344,
+          "leader_speed": 5.1594026003828874,
+          "reward": 0.033786257090887804,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 198,
+          "speed": 23.46455554962158,
+          "lane": "170059995_0",
+          "position": 51.11107154170441,
+          "action": [
+            -0.4825102388858795,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 13.661060612524118,
+          "leader_speed": 5.045496546235422,
+          "reward": 0.033035917194564196,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 199,
+          "speed": 22.94344449162483,
+          "lane": "170059995_0",
+          "position": 55.69976044002938,
+          "action": [
+            -0.47557103633880615,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 10.061058017993759,
+          "leader_speed": 4.943431518973014,
+          "reward": 0.03229636828276303,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 200,
+          "speed": 22.42982777237892,
+          "lane": "170059995_0",
+          "position": 60.18572599450516,
+          "action": [
+            -0.5349767804145813,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 6.54547379575358,
+          "leader_speed": 4.851906661177987,
+          "reward": -0.00853556105179097,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 201,
+          "speed": 21.852052849531173,
+          "lane": "170059995_0",
+          "position": 64.5561365644114,
+          "action": [
+            -0.5304577350616455,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 3.1290554788736813,
+          "leader_speed": 4.769961265131744,
+          "reward": -5.0,
+          "lane_applied": false,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_13",
+      "simulation_seed": 40002,
+      "arrival": false,
+      "collision": false,
+      "seconds": 900.0,
+      "initial": {
+        "step": 0,
+        "speed": 2.413549319366818,
+        "lane": "86198728_0",
+        "position": 0.0,
+        "action": [
+          0.5986433625221252,
+          1.0
+        ],
+        "leader": "flow_route_15.6",
+        "gap": 0.5934368444550406,
+        "leader_speed": 5.373165253323131,
+        "reward": 0.004406168683787925,
+        "lane_applied": true,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 4480,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4481,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4482,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4483,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4484,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4485,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4486,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4487,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4488,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4489,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4490,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4491,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4492,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4493,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4494,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4495,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4496,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4497,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4498,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4499,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        }
+      ]
+    },
+    {
+      "route": "route_13",
+      "simulation_seed": 40003,
+      "arrival": false,
+      "collision": true,
+      "seconds": 40.0,
+      "initial": {
+        "step": 0,
+        "speed": 0.8207131249287619,
+        "lane": "86198728_0",
+        "position": 0.0,
+        "action": [
+          0.6965333223342896,
+          1.0
+        ],
+        "leader": "flow_route_15.6",
+        "gap": 0.47701277528923747,
+        "leader_speed": 2.481750874098811,
+        "reward": 0.0022648943312452052,
+        "lane_applied": true,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 180,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 10.955105261504555,
+          "action": [
+            0.577411413192749,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 90.42130840861758,
+          "leader_speed": 4.733307894311965,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 181,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 16.511105261504554,
+          "action": [
+            0.5818220376968384,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 85.76700138753002,
+          "leader_speed": 4.508464894562182,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 182,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 22.067105261504555,
+          "action": [
+            0.5802491903305054,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 81.07110654128486,
+          "leader_speed": 4.300525768774204,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 183,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 27.623105261504556,
+          "action": [
+            0.5793294906616211,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 76.34031725380268,
+          "leader_speed": 4.126053562589102,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 184,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 33.17910526150456,
+          "action": [
+            0.5790042877197266,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 71.56802434897133,
+          "leader_speed": 3.9185354758432647,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 185,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 38.73510526150456,
+          "action": [
+            0.5782566070556641,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 66.7554114655889,
+          "leader_speed": 3.716935583087873,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 186,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 44.291105261504555,
+          "action": [
+            0.5786423087120056,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 61.91013108259814,
+          "leader_speed": 3.5535980850461706,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 187,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 49.84710526150455,
+          "action": [
+            0.5765455961227417,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 57.02796724227074,
+          "leader_speed": 3.369180798362974,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 188,
+          "speed": 27.78,
+          "lane": "170059995_0",
+          "position": 4.48310526150455,
+          "action": [
+            0.5739543437957764,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 52.113139273543005,
+          "leader_speed": 3.2058601563612976,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 189,
+          "speed": 27.78,
+          "lane": "170059995_0",
+          "position": 10.03910526150455,
+          "action": [
+            -0.4850926399230957,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 47.16661973159791,
+          "leader_speed": 3.047402290274587,
+          "reward": 0.03924564427484962,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 190,
+          "speed": 27.256099948883058,
+          "lane": "170059995_0",
+          "position": 15.490325251281163,
+          "action": [
+            -0.5118800401687622,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 42.300589953441516,
+          "leader_speed": 2.9259510581010475,
+          "reward": 0.03844963211735176,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 191,
+          "speed": 26.703269505500796,
+          "lane": "170059995_0",
+          "position": 20.830979152381325,
+          "action": [
+            -0.5083756446838379,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 37.52288706622854,
+          "leader_speed": 2.814755069435967,
+          "reward": 0.03765906955974407,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 192,
+          "speed": 26.15422380924225,
+          "lane": "170059995_0",
+          "position": 26.061823914229777,
+          "action": [
+            -0.5072136521339417,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 32.8346520626649,
+          "leader_speed": 2.71304879142403,
+          "reward": 0.036870313988391065,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 193,
+          "speed": 25.606433064937594,
+          "lane": "170059995_0",
+          "position": 31.183110527217295,
+          "action": [
+            -0.539736270904541,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 28.236294654918026,
+          "leader_speed": 2.61464602620324,
+          "reward": 0.03603098328633649,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 194,
+          "speed": 25.02351789236069,
+          "lane": "170059995_0",
+          "position": 36.187814105689434,
+          "action": [
+            -0.5385821461677551,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 23.736051587346417,
+          "leader_speed": 2.52230255450263,
+          "reward": 0.03519344733549246,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 195,
+          "speed": 24.441849174499513,
+          "lane": "170059995_0",
+          "position": 41.07618394058934,
+          "action": [
+            -0.5755590200424194,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 19.33473587650132,
+          "leader_speed": 2.435270620274039,
+          "reward": 0.034298409550545285,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 196,
+          "speed": 23.8202454328537,
+          "lane": "170059995_0",
+          "position": 45.84023302716008,
+          "action": [
+            -0.579883873462677,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 15.0421305574027,
+          "leader_speed": 2.357218837360593,
+          "reward": 0.033396646291596846,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 197,
+          "speed": 23.19397084951401,
+          "lane": "170059995_0",
+          "position": 50.479027197062884,
+          "action": [
+            -0.6387876868247986,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 10.860913671398158,
+          "leader_speed": 2.2878864194912745,
+          "reward": 0.03240328315009824,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 198,
+          "speed": 22.504080147743228,
+          "lane": "170059995_0",
+          "position": 54.97984322661153,
+          "action": [
+            -0.6362091302871704,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 6.804962081508599,
+          "leader_speed": 2.224322198295397,
+          "reward": -0.008586070141061075,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 199,
+          "speed": 21.816974287033084,
+          "lane": "170059995_0",
+          "position": 59.34323808401815,
+          "action": [
+            -0.6889693140983582,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 2.874667957851038,
+          "leader_speed": 2.1655036687453086,
+          "reward": -5.0,
+          "lane_applied": false,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_14",
+      "simulation_seed": 40001,
+      "arrival": false,
+      "collision": true,
+      "seconds": 40.400000000000006,
+      "initial": {
+        "step": 0,
+        "speed": 0.5527842884428976,
+        "lane": "86198728_0",
+        "position": 0.0,
+        "action": [
+          0.705072820186615,
+          1.0
+        ],
+        "leader": "flow_route_15.6",
+        "gap": 0.2502334171253775,
+        "leader_speed": 2.3788771782938003,
+        "reward": 0.00189238723433325,
+        "lane_applied": true,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 182,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 17.35777841583657,
+          "action": [
+            0.581825315952301,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 77.62602382674572,
+          "leader_speed": 8.95238005142972,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 183,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 22.91377841583657,
+          "action": [
+            0.5800864100456238,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 73.78284164620659,
+          "leader_speed": 8.564089097304368,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 184,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 28.469778415836572,
+          "action": [
+            0.5791933536529541,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 69.86529143317156,
+          "leader_speed": 8.192248934824862,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 185,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 34.02577841583657,
+          "action": [
+            0.5789427757263184,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 65.87695283298447,
+          "leader_speed": 7.83830699906453,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 186,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 39.58177841583657,
+          "action": [
+            0.5783588886260986,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 61.82173628374596,
+          "leader_speed": 7.503917253807459,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 187,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 45.137778415836564,
+          "action": [
+            0.5783063173294067,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 57.70360003812313,
+          "leader_speed": 7.18931877188579,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 188,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 50.69377841583656,
+          "action": [
+            0.576100766658783,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 53.527083180260064,
+          "leader_speed": 6.897415710684658,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 189,
+          "speed": 27.78,
+          "lane": "170059995_0",
+          "position": 5.329778415836559,
+          "action": [
+            -0.42172762751579285,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 49.296723419676326,
+          "leader_speed": 6.628201197081263,
+          "reward": 0.03934418165915471,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 190,
+          "speed": 27.324534162282944,
+          "lane": "170059995_0",
+          "position": 10.794685248293149,
+          "action": [
+            -0.42423737049102783,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 45.107825776150094,
+          "leader_speed": 6.380045944651799,
+          "reward": 0.03868446047826154,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 191,
+          "speed": 26.866357802152635,
+          "lane": "170059995_0",
+          "position": 16.167956808723677,
+          "action": [
+            -0.4259316027164459,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 40.96494217102048,
+          "leader_speed": 6.151939776504566,
+          "reward": 0.038022104638184125,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 192,
+          "speed": 26.40635167121887,
+          "lane": "170059995_0",
+          "position": 21.44922714296745,
+          "action": [
+            -0.42585673928260803,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 36.8723574841194,
+          "leader_speed": 5.943428236713497,
+          "reward": 0.03735986521640555,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 193,
+          "speed": 25.946426392793654,
+          "lane": "170059995_0",
+          "position": 26.638512421526183,
+          "action": [
+            -0.45208224654197693,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 32.83386347183523,
+          "leader_speed": 5.753956331372808,
+          "reward": 0.03665684314834892,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 194,
+          "speed": 25.45817756652832,
+          "lane": "170059995_0",
+          "position": 31.730147934831848,
+          "action": [
+            -0.4525209665298462,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 28.85857837731453,
+          "leader_speed": 5.581752093924776,
+          "reward": 0.03595313883754656,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 195,
+          "speed": 24.969454922676086,
+          "lane": "170059995_0",
+          "position": 36.72403891936707,
+          "action": [
+            -0.45306524634361267,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 24.949899274861444,
+          "leader_speed": 5.426059410410651,
+          "reward": 0.03524858813048954,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 196,
+          "speed": 24.480144456624984,
+          "lane": "170059995_0",
+          "position": 41.62006781069206,
+          "action": [
+            -0.4534086585044861,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 21.11108451421279,
+          "leader_speed": 5.2860706533817465,
+          "reward": 0.03454350339156247,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 197,
+          "speed": 23.99046310544014,
+          "lane": "170059995_0",
+          "position": 46.418160431780095,
+          "action": [
+            -0.48695144057273865,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 17.344872413201344,
+          "leader_speed": 5.1594026003828874,
+          "reward": 0.033786257090887804,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 198,
+          "speed": 23.46455554962158,
+          "lane": "170059995_0",
+          "position": 51.11107154170441,
+          "action": [
+            -0.4825102388858795,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 13.661060612524118,
+          "leader_speed": 5.045496546235422,
+          "reward": 0.033035917194564196,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 199,
+          "speed": 22.94344449162483,
+          "lane": "170059995_0",
+          "position": 55.69976044002938,
+          "action": [
+            -0.47557103633880615,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 10.061058017993759,
+          "leader_speed": 4.943431518973014,
+          "reward": 0.03229636828276303,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 200,
+          "speed": 22.42982777237892,
+          "lane": "170059995_0",
+          "position": 60.18572599450516,
+          "action": [
+            -0.5349767804145813,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 6.54547379575358,
+          "leader_speed": 4.851906661177987,
+          "reward": -0.00853556105179097,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 201,
+          "speed": 21.852052849531173,
+          "lane": "170059995_0",
+          "position": 64.5561365644114,
+          "action": [
+            -0.5304577350616455,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 3.1290554788736813,
+          "leader_speed": 4.769961265131744,
+          "reward": -5.0,
+          "lane_applied": false,
+          "collided": true
+        }
+      ]
+    },
+    {
+      "route": "route_14",
+      "simulation_seed": 40002,
+      "arrival": false,
+      "collision": false,
+      "seconds": 900.0,
+      "initial": {
+        "step": 0,
+        "speed": 2.413549319366818,
+        "lane": "86198728_0",
+        "position": 0.0,
+        "action": [
+          0.5986433625221252,
+          1.0
+        ],
+        "leader": "flow_route_15.6",
+        "gap": 0.5934368444550406,
+        "leader_speed": 5.373165253323131,
+        "reward": 0.004406168683787925,
+        "lane_applied": true,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 4480,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4481,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4482,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4483,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4484,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4485,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4486,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4487,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4488,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4489,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4490,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4491,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4492,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4493,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4494,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4495,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4496,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4497,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4498,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 4499,
+          "speed": 0.0,
+          "lane": "86198728_4",
+          "position": 183.44,
+          "action": [
+            0.7358913421630859,
+            1.0
+          ],
+          "leader": null,
+          "gap": null,
+          "leader_speed": null,
+          "reward": 0.0,
+          "lane_applied": false,
+          "collided": false
+        }
+      ]
+    },
+    {
+      "route": "route_14",
+      "simulation_seed": 40003,
+      "arrival": false,
+      "collision": true,
+      "seconds": 40.0,
+      "initial": {
+        "step": 0,
+        "speed": 0.8207131249287619,
+        "lane": "86198728_0",
+        "position": 0.0,
+        "action": [
+          0.6965333223342896,
+          1.0
+        ],
+        "leader": "flow_route_15.6",
+        "gap": 0.47701277528923747,
+        "leader_speed": 2.481750874098811,
+        "reward": 0.0022648943312452052,
+        "lane_applied": true,
+        "collided": false
+      },
+      "last": [
+        {
+          "step": 180,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 10.955105261504555,
+          "action": [
+            0.577411413192749,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 90.42130840861758,
+          "leader_speed": 4.733307894311965,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 181,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 16.511105261504554,
+          "action": [
+            0.5818220376968384,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 85.76700138753002,
+          "leader_speed": 4.508464894562182,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 182,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 22.067105261504555,
+          "action": [
+            0.5802491903305054,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 81.07110654128486,
+          "leader_speed": 4.300525768774204,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 183,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 27.623105261504556,
+          "action": [
+            0.5793294906616211,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 76.34031725380268,
+          "leader_speed": 4.126053562589102,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 184,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 33.17910526150456,
+          "action": [
+            0.5790042877197266,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 71.56802434897133,
+          "leader_speed": 3.9185354758432647,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 185,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 38.73510526150456,
+          "action": [
+            0.5782566070556641,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 66.7554114655889,
+          "leader_speed": 3.716935583087873,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 186,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 44.291105261504555,
+          "action": [
+            0.5786423087120056,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 61.91013108259814,
+          "leader_speed": 3.5535980850461706,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 187,
+          "speed": 27.78,
+          "lane": "170059996_0",
+          "position": 49.84710526150455,
+          "action": [
+            0.5765455961227417,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 57.02796724227074,
+          "leader_speed": 3.369180798362974,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 188,
+          "speed": 27.78,
+          "lane": "170059995_0",
+          "position": 4.48310526150455,
+          "action": [
+            0.5739543437957764,
+            1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 52.113139273543005,
+          "leader_speed": 3.2058601563612976,
+          "reward": 0.04000000000000001,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 189,
+          "speed": 27.78,
+          "lane": "170059995_0",
+          "position": 10.03910526150455,
+          "action": [
+            -0.4850926399230957,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 47.16661973159791,
+          "leader_speed": 3.047402290274587,
+          "reward": 0.03924564427484962,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 190,
+          "speed": 27.256099948883058,
+          "lane": "170059995_0",
+          "position": 15.490325251281163,
+          "action": [
+            -0.5118800401687622,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 42.300589953441516,
+          "leader_speed": 2.9259510581010475,
+          "reward": 0.03844963211735176,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 191,
+          "speed": 26.703269505500796,
+          "lane": "170059995_0",
+          "position": 20.830979152381325,
+          "action": [
+            -0.5083756446838379,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 37.52288706622854,
+          "leader_speed": 2.814755069435967,
+          "reward": 0.03765906955974407,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 192,
+          "speed": 26.15422380924225,
+          "lane": "170059995_0",
+          "position": 26.061823914229777,
+          "action": [
+            -0.5072136521339417,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 32.8346520626649,
+          "leader_speed": 2.71304879142403,
+          "reward": 0.036870313988391065,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 193,
+          "speed": 25.606433064937594,
+          "lane": "170059995_0",
+          "position": 31.183110527217295,
+          "action": [
+            -0.539736270904541,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 28.236294654918026,
+          "leader_speed": 2.61464602620324,
+          "reward": 0.03603098328633649,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 194,
+          "speed": 25.02351789236069,
+          "lane": "170059995_0",
+          "position": 36.187814105689434,
+          "action": [
+            -0.5385821461677551,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 23.736051587346417,
+          "leader_speed": 2.52230255450263,
+          "reward": 0.03519344733549246,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 195,
+          "speed": 24.441849174499513,
+          "lane": "170059995_0",
+          "position": 41.07618394058934,
+          "action": [
+            -0.5755590200424194,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 19.33473587650132,
+          "leader_speed": 2.435270620274039,
+          "reward": 0.034298409550545285,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 196,
+          "speed": 23.8202454328537,
+          "lane": "170059995_0",
+          "position": 45.84023302716008,
+          "action": [
+            -0.579883873462677,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 15.0421305574027,
+          "leader_speed": 2.357218837360593,
+          "reward": 0.033396646291596846,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 197,
+          "speed": 23.19397084951401,
+          "lane": "170059995_0",
+          "position": 50.479027197062884,
+          "action": [
+            -0.6387876868247986,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 10.860913671398158,
+          "leader_speed": 2.2878864194912745,
+          "reward": 0.03240328315009824,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 198,
+          "speed": 22.504080147743228,
+          "lane": "170059995_0",
+          "position": 54.97984322661153,
+          "action": [
+            -0.6362091302871704,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 6.804962081508599,
+          "leader_speed": 2.224322198295397,
+          "reward": -0.008586070141061075,
+          "lane_applied": false,
+          "collided": false
+        },
+        {
+          "step": 199,
+          "speed": 21.816974287033084,
+          "lane": "170059995_0",
+          "position": 59.34323808401815,
+          "action": [
+            -0.6889693140983582,
+            -1.0
+          ],
+          "leader": "flow_route_14.6",
+          "gap": 2.874667957851038,
+          "leader_speed": 2.1655036687453086,
+          "reward": -5.0,
+          "lane_applied": false,
+          "collided": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "future": {
+    "source": "results\\lane_followup_20261116\\early-evaluation\\51200\\future\\policy-51200-evaluation.json",
+    "sampled_states": 239,
+    "active_states": 239,
+    "mean_absolute_action_change": [
+      0.09166821092367172,
+      0.12552301585674286
+    ],
+    "lane_action_changes": 30,
+    "added_column_weight_norm": 1.9875335693359375,
+    "zero_column_max_action_difference": 0.0,
+    "limitation": "Paired inputs on saved states, not independent samples or a causal rollout outcome comparison."
+  },
+  "junction": {
+    "source": "results\\junction_conflict_trials_20261116\\early-evaluation\\51200\\combined\\policy-51200-evaluation.json",
+    "sampled_states": 289,
+    "active_states": 31,
+    "mean_absolute_action_change": [
+      0.009655364789068699,
+      0.0
+    ],
+    "lane_action_changes": 0,
+    "added_column_weight_norm": 1.9994990825653076,
+    "zero_column_max_action_difference": 0.0,
+    "limitation": "Paired inputs on saved states, not independent samples or a causal rollout outcome comparison."
+  },
+  "lateral": {
+    "source": "results\\lane_followup_20261116\\early-evaluation\\51200\\lateral\\policy-51200-evaluation.json",
+    "sampled_states": 314,
+    "active_states": 153,
+    "mean_absolute_action_change": [
+      0.02968491055071354,
+      0.06535948067903519
+    ],
+    "lane_action_changes": 8,
+    "added_column_weight_norm": 1.964294672012329,
+    "zero_column_max_action_difference": 0.0,
+    "limitation": "Paired inputs on saved states, not independent samples or a causal rollout outcome comparison."
+  }
+}

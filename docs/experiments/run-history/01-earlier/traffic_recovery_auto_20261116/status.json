@@ -1,0 +1,12 @@
+{
+  "stage": "development_goal_pending_fresh_seed_validation",
+  "round": 2,
+  "best": {
+    "condition": "route",
+    "model": "results\\traffic_recovery_auto_20261116\\round-02\\runs\\route\\policy-200000.pt",
+    "arrival": 47,
+    "collision": 1,
+    "other": 0,
+    "n": 48
+  }
+}

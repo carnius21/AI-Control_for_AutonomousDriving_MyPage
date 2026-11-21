@@ -1,0 +1,16 @@
+{
+  "exact_replayed_episodes": 29,
+  "exact_replayed_states": 9629,
+  "keep": {
+    "samples": 1434,
+    "merge150_positive": 1,
+    "new_earlier_merge_signal": 0,
+    "new_earlier_merge_braking_labels": 0
+  },
+  "safe": {
+    "samples": 326,
+    "merge150_positive": 107,
+    "new_earlier_merge_signal": 0,
+    "new_earlier_merge_braking_labels": 0
+  }
+}

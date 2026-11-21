@@ -1,0 +1,6 @@
+{
+  "stage": "training",
+  "pid": 8096,
+  "condition": "anticipatory",
+  "lr": 3e-05
+}

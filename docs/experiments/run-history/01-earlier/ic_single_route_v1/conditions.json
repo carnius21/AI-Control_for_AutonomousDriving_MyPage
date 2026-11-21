@@ -1,0 +1,182 @@
+{
+  "evaluation": [
+    {
+      "id": "l0-v5",
+      "lane": "0",
+      "speed": "5"
+    },
+    {
+      "id": "l0-v15",
+      "lane": "0",
+      "speed": "15"
+    },
+    {
+      "id": "l0-v25",
+      "lane": "0",
+      "speed": "25"
+    },
+    {
+      "id": "l1-v5",
+      "lane": "1",
+      "speed": "5"
+    },
+    {
+      "id": "l1-v15",
+      "lane": "1",
+      "speed": "15"
+    },
+    {
+      "id": "l1-v25",
+      "lane": "1",
+      "speed": "25"
+    },
+    {
+      "id": "l2-v5",
+      "lane": "2",
+      "speed": "5"
+    },
+    {
+      "id": "l2-v15",
+      "lane": "2",
+      "speed": "15"
+    },
+    {
+      "id": "l2-v25",
+      "lane": "2",
+      "speed": "25"
+    },
+    {
+      "id": "l3-v0",
+      "lane": "3",
+      "speed": "0"
+    },
+    {
+      "id": "l3-v5",
+      "lane": "3",
+      "speed": "5"
+    },
+    {
+      "id": "l3-v15",
+      "lane": "3",
+      "speed": "15"
+    },
+    {
+      "id": "l4-v0",
+      "lane": "4",
+      "speed": "0"
+    },
+    {
+      "id": "l4-v5",
+      "lane": "4",
+      "speed": "5"
+    },
+    {
+      "id": "l4-v15",
+      "lane": "4",
+      "speed": "15"
+    },
+    {
+      "id": "l5-v0",
+      "lane": "5",
+      "speed": "0"
+    },
+    {
+      "id": "l5-v5",
+      "lane": "5",
+      "speed": "5"
+    },
+    {
+      "id": "l5-v15",
+      "lane": "5",
+      "speed": "15"
+    },
+    {
+      "id": "best-stop",
+      "lane": "best",
+      "speed": "0"
+    },
+    {
+      "id": "best-max",
+      "lane": "best",
+      "speed": "max"
+    }
+  ],
+  "training": [
+    {
+      "lane": "0",
+      "speed": "7"
+    },
+    {
+      "lane": "0",
+      "speed": "17"
+    },
+    {
+      "lane": "0",
+      "speed": "23"
+    },
+    {
+      "lane": "1",
+      "speed": "7"
+    },
+    {
+      "lane": "1",
+      "speed": "17"
+    },
+    {
+      "lane": "1",
+      "speed": "23"
+    },
+    {
+      "lane": "2",
+      "speed": "7"
+    },
+    {
+      "lane": "2",
+      "speed": "17"
+    },
+    {
+      "lane": "2",
+      "speed": "23"
+    },
+    {
+      "lane": "3",
+      "speed": "3"
+    },
+    {
+      "lane": "3",
+      "speed": "7"
+    },
+    {
+      "lane": "3",
+      "speed": "13"
+    },
+    {
+      "lane": "4",
+      "speed": "3"
+    },
+    {
+      "lane": "4",
+      "speed": "7"
+    },
+    {
+      "lane": "4",
+      "speed": "13"
+    },
+    {
+      "lane": "5",
+      "speed": "3"
+    },
+    {
+      "lane": "5",
+      "speed": "7"
+    },
+    {
+      "lane": "5",
+      "speed": "13"
+    }
+  ],
+  "position": 0,
+  "route": "south_to_east",
+  "budget": 200000,
+  "seed": 11
+}

@@ -1,0 +1,43 @@
+{
+  "commit": "517d4204c53075dd571e87a13f855aab6192e3d2",
+  "source_hashes": {
+    "env/sumo_env.py": "c1e5e640ffdf8387bd286053f3cf162c96160f966a59a31413ff1afa15523afc",
+    "env/ic_experiment.py": "7b770927539af391d526f10f21592da6b7a102c2a9427a9ac594bc4b6a60772c",
+    "env/navigation_observation.py": "801209f04b93ffabd47f1eb474f4e16cf8719d89444b21bca4fbb51affbefb50",
+    "env/navigation_clarity.py": "15237459296d7b61ee6c96b4e09a40fdea60bf303c990656e092e637bf20334e",
+    "env/observation_reward_trials.py": "5e42228012effcc5cbc258bc5c98a09b9c3e635fba2b2af291bc76024c267eba",
+    "env/mdp_config.py": "49b1b73862c15719e213e5e1ef127f9781c690bb38ce49e47338b65ebebf9e9c",
+    "env/road_config.py": "1d8e92f5280bbc3cb3d3e82051c0f665b8047f4f66bffff69e7b8db2c457c3e7",
+    "train.py": "69ad74c9c739a71e6e0e326154c7cb38372a07295f22024ad9a71822827b0657",
+    "algorithms/ppo.py": "d5b257796b147f32f87c7725fd0fdcb39af98aa8e6f49561a5b945366fcb08c3",
+    "utils/buffer.py": "a692359f5898a075c751b25dbb141a571173da292a40bfb9d2a3bec57c75c211",
+    "utils/networks.py": "c8abb8344409e926dcd67c686497bbf1778335a8259416167e76536e4ad95d69",
+    "utils/run_observation_reward_trials.py": "193d239f3531942ea6620728c4ee084d1ae610fb5ee82a9094e7cbaf61dad5b6",
+    "env/route_following_trials.py": "e13667a241085221e5a9b55d29ec423604e8f0634ad8258e30176618fde4f3ce",
+    "utils/run_route_following_trials.py": "0e470029a04229d08d654c04cf807e75b7a33ae4b6c9d706fbbc2b76a2b9f8eb"
+  },
+  "inputs": {
+    "none": {
+      "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+      "highway.rou.xml": "159b0667a4753b3fbaaa2bb4db78686bfcdaefec229a9171c10dcf535bfc7b48",
+      "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+    },
+    "reference": {
+      "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+      "highway.rou.xml": "bd0657f700f9c899a7c15aa481d83f61e40ff7f561fb77090fe9ab53379237f5",
+      "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+    }
+  },
+  "seed": 11,
+  "eval_seeds": [
+    19101,
+    19102,
+    19103
+  ],
+  "conditions": [
+    "baseline",
+    "guidance",
+    "route_reward"
+  ],
+  "workers": 6
+}

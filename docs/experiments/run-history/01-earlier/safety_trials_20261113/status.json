@@ -1,0 +1,12 @@
+{
+  "stage": "planned_trials_complete",
+  "runs": [
+    "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\safety_trials_20261113\\runs\\GAP15-22",
+    "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\safety_trials_20261113\\runs\\COLLISION20-11",
+    "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\safety_trials_20261113\\runs\\GAP15-11",
+    "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\safety_trials_20261113\\runs\\GAP15-33",
+    "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\safety_trials_20261113\\runs\\COLLISION20-22",
+    "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\safety_trials_20261113\\runs\\COLLISION20-33"
+  ],
+  "not_equivalent_to_target_achieved": true
+}

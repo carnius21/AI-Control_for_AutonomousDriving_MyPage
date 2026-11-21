@@ -1,0 +1,40 @@
+[
+  {
+    "case": "overlap",
+    "raw_gap": -3.0,
+    "returned": null
+  },
+  {
+    "case": "near",
+    "raw_gap": 1.0,
+    "returned": [
+      1.0,
+      10.0
+    ]
+  },
+  {
+    "case": "approaching",
+    "raw_gap": 20.0,
+    "returned": [
+      20.0,
+      10.0
+    ]
+  },
+  {
+    "case": "receding",
+    "raw_gap": 20.0,
+    "returned": [
+      20.0,
+      35.0
+    ]
+  },
+  {
+    "case": "beyond_visibility",
+    "raw_gap": 51.0,
+    "returned": null
+  },
+  {
+    "case": "absent",
+    "returned": null
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "stage": "C1_audit_complete",
+  "A0_cases": 9,
+  "B0_cases": 3,
+  "C1_audited_cases": 9,
+  "next": "Freeze varied initial conditions and validate reachability before single-route training; keep old campaigns stopped"
+}

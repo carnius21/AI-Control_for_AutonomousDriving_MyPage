@@ -1,0 +1,24 @@
+{
+  "version": "baseline-63-preserved",
+  "shape": [
+    63
+  ],
+  "normalization": "fixed constants, no learned statistics",
+  "indices": {
+    "0": "ego speed/vmax",
+    "1:21": "5 lanes front/rear normalized gap and relative speed",
+    "21:26": "lane connectivity",
+    "26:31": "lane density",
+    "31": "next road target lane offset/3",
+    "32": "preparation distance/300 or -1",
+    "33": "preparation target lane offset/3",
+    "34": "lane speed limit/vmax",
+    "35": "ramp flag",
+    "36": "zipper context",
+    "37:63": "baseline reserved zeros"
+  },
+  "action": "raw acceleration Normal sample stored before environment clip [-1,1]; lane categorical index maps +1,0,-1",
+  "dt": 0.2,
+  "vehicle_visibility_m": 50,
+  "navigation_horizon_m": 300
+}

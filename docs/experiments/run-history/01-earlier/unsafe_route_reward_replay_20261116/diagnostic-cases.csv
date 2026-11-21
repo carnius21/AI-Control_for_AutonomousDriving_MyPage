@@ -1,0 +1,3 @@
+﻿file,route,seed,checkpoint_sha,outcome,seconds,route_overrides
+route_11-79103.json,route_11,79103,4098566ba0a464c6f66cc33962fca22f91869b761fe0f4e2efb38e530f664b6e,collision,63.2,0
+route_13-79102.json,route_13,79102,4098566ba0a464c6f66cc33962fca22f91869b761fe0f4e2efb38e530f664b6e,collision,63.2,0

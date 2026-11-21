@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 19101,
+    "mode": "loop",
+    "seconds": 8.702875100017991,
+    "state_hash": "cb28e324c7648f897f7d69e124208bfc34af8526942f10a94732a61ad764a6c8"
+  },
+  {
+    "seed": 19101,
+    "mode": "batch",
+    "seconds": 8.682836099993438,
+    "state_hash": "cb28e324c7648f897f7d69e124208bfc34af8526942f10a94732a61ad764a6c8"
+  },
+  {
+    "seed": 19102,
+    "mode": "loop",
+    "seconds": 8.690606400021352,
+    "state_hash": "f8be871416b7da039771b05591a2325268c2a9e98832e93fa725792f01644c25"
+  },
+  {
+    "seed": 19102,
+    "mode": "batch",
+    "seconds": 8.563836999994237,
+    "state_hash": "f8be871416b7da039771b05591a2325268c2a9e98832e93fa725792f01644c25"
+  }
+]

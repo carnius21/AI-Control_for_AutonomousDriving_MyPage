@@ -1,0 +1,4316 @@
+[
+  {
+    "route": "south_through",
+    "seed": 1001,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_4",
+        "pos": 0.0,
+        "speed": 27.04,
+        "remaining": 83.97,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.7",
+          134.7061042775633
+        ],
+        "action": [
+          -0.7365066409111023,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_3",
+        "pos": 5.25,
+        "speed": 26.24,
+        "remaining": 78.72,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.8",
+          52.90783148789457
+        ],
+        "action": [
+          -0.42910292744636536,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_2",
+        "pos": 10.4,
+        "speed": 25.78,
+        "remaining": 73.57,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.23754064738750458,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sb_in_1",
+        "pos": 15.61,
+        "speed": 26.04,
+        "remaining": 68.36,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_to_local.1",
+          17.24466263844209
+        ],
+        "action": [
+          -0.9733334183692932,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sb_in_0",
+        "pos": 20.61,
+        "speed": 24.98,
+        "remaining": 63.36,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          43.063625915651016
+        ],
+        "action": [
+          -0.9152368903160095,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9857450127601624,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_through",
+    "seed": 1002,
+    "original": 0.4,
+    "seconds": 0.4,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_3",
+        "pos": 0.0,
+        "speed": 20.15,
+        "remaining": 83.97,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.7",
+          104.21852879999996
+        ],
+        "action": [
+          -0.1563958078622818,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_2",
+        "pos": 4.0,
+        "speed": 19.98,
+        "remaining": 79.97,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          -0.09954598546028137,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_through",
+    "seed": 1003,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_4",
+        "pos": 0.0,
+        "speed": 26.45,
+        "remaining": 83.97,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.7",
+          98.60641319999999
+        ],
+        "action": [
+          -0.6645678281784058,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_3",
+        "pos": 5.15,
+        "speed": 25.73,
+        "remaining": 78.82,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.8",
+          39.006896458341444
+        ],
+        "action": [
+          -0.9453963041305542,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_2",
+        "pos": 10.09,
+        "speed": 24.71,
+        "remaining": 73.88,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          -0.05274921655654907,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sb_in_1",
+        "pos": 15.02,
+        "speed": 24.65,
+        "remaining": 68.95,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_to_local.1",
+          21.191687581795787
+        ],
+        "action": [
+          -0.9703453779220581,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sb_in_0",
+        "pos": 19.74,
+        "speed": 23.6,
+        "remaining": 64.23,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          35.599613183772625
+        ],
+        "action": [
+          -0.9367508292198181,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9078460335731506,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_through",
+    "seed": 1004,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_4",
+        "pos": 0.0,
+        "speed": 27.78,
+        "remaining": 83.97,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.7",
+          107.68322202975504
+        ],
+        "action": [
+          -0.7556418776512146,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_3",
+        "pos": 5.39,
+        "speed": 26.96,
+        "remaining": 78.58,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.8",
+          57.55813560578585
+        ],
+        "action": [
+          -0.45238858461380005,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_2",
+        "pos": 10.69,
+        "speed": 26.48,
+        "remaining": 73.28,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.15046632289886475,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sb_in_1",
+        "pos": 16.02,
+        "speed": 26.64,
+        "remaining": 67.95,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_to_local.1",
+          20.42062362373668
+        ],
+        "action": [
+          -0.9752748608589172,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sb_in_0",
+        "pos": 21.13,
+        "speed": 25.58,
+        "remaining": 62.84,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          35.45922035520947
+        ],
+        "action": [
+          -0.9529962539672852,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9105379581451416,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sb_in_1",
+        "pos": 83.97,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          0.9132909178733826,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_through",
+    "seed": 1005,
+    "original": 0.6000000000000001,
+    "seconds": 0.6,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_4",
+        "pos": 0.0,
+        "speed": 27.78,
+        "remaining": 83.97,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.7",
+          123.9835238897459
+        ],
+        "action": [
+          -0.7016658782958984,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_3",
+        "pos": 5.4,
+        "speed": 27.02,
+        "remaining": 78.57,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": [
+          "flow_south_through.8",
+          49.54143845346202
+        ],
+        "action": [
+          -0.8997943997383118,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_2",
+        "pos": 10.61,
+        "speed": 26.05,
+        "remaining": 73.36,
+        "next": "sb_bridge",
+        "allowed": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "leader": null,
+        "action": [
+          -0.12252560257911682,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "north_through",
+    "seed": 1002,
+    "original": 0.2,
+    "seconds": 0.2,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "nb_in_1",
+        "pos": 0.0,
+        "speed": 20.15,
+        "remaining": 147.57,
+        "next": "nb_main",
+        "allowed": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "leader": null,
+        "action": [
+          0.23782126605510712,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "north_through",
+    "seed": 1003,
+    "original": 0.4,
+    "seconds": 0.4,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "nb_in_2",
+        "pos": 0.0,
+        "speed": 26.45,
+        "remaining": 147.57,
+        "next": "nb_main",
+        "allowed": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "leader": null,
+        "action": [
+          -0.5741040706634521,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "nb_in_1",
+        "pos": 5.17,
+        "speed": 25.83,
+        "remaining": 142.4,
+        "next": "nb_main",
+        "allowed": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "leader": [
+          "flow_north_through.7",
+          110.44274066466089
+        ],
+        "action": [
+          -0.15411831438541412,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "east_through",
+    "seed": 1004,
+    "original": 0.2,
+    "seconds": 0.2,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 15.15,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          19.295538839905607
+        ],
+        "action": [
+          -0.9891069531440735,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_to_east",
+    "seed": 1001,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_1",
+        "pos": 0.0,
+        "speed": 16.47,
+        "remaining": 83.97,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_south_to_local.1",
+          25.001001873755456
+        ],
+        "action": [
+          -0.8833848834037781,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_0",
+        "pos": 3.1,
+        "speed": 15.51,
+        "remaining": 80.87,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          49.05098993709563
+        ],
+        "action": [
+          -0.36112180352211,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_0",
+        "pos": 6.13,
+        "speed": 15.12,
+        "remaining": 77.84,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          50.025537739307595
+        ],
+        "action": [
+          0.3039510250091553,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sb_in_0",
+        "pos": 9.22,
+        "speed": 15.45,
+        "remaining": 74.75,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          50.77443212011758
+        ],
+        "action": [
+          0.2842506170272827,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sb_in_0",
+        "pos": 12.37,
+        "speed": 15.76,
+        "remaining": 71.6,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          51.30192836764967
+        ],
+        "action": [
+          0.26507115364074707,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9884635210037231,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9885352253913879,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9885352253913879,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9885352253913879,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9885352253913879,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_to_east",
+    "seed": 1005,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_1",
+        "pos": 0.0,
+        "speed": 0.6,
+        "remaining": 83.97,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_south_to_local.1",
+          0.07028109407753824
+        ],
+        "action": [
+          -0.7712835073471069,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_0",
+        "pos": 0.0,
+        "speed": 0.0,
+        "remaining": 83.97,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          71.05166246497237
+        ],
+        "action": [
+          0.6743113398551941,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_0",
+        "pos": 0.15,
+        "speed": 0.73,
+        "remaining": 83.82,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          73.38409257427055
+        ],
+        "action": [
+          0.6602372527122498,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sb_in_0",
+        "pos": 0.43,
+        "speed": 1.44,
+        "remaining": 83.54,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          75.56858990219598
+        ],
+        "action": [
+          0.6450212001800537,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sb_in_0",
+        "pos": 0.86,
+        "speed": 2.14,
+        "remaining": 83.11,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          77.60895673579682
+        ],
+        "action": [
+          0.6293498873710632,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9819666147232056,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9454193115234375,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9454193115234375,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9454193115234375,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9454193115234375,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_to_local",
+    "seed": 1001,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_1",
+        "pos": 0.0,
+        "speed": 16.47,
+        "remaining": 83.97,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_south_to_local.1",
+          25.001001873755456
+        ],
+        "action": [
+          -0.8833848834037781,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_0",
+        "pos": 3.1,
+        "speed": 15.51,
+        "remaining": 80.87,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          49.05098993709563
+        ],
+        "action": [
+          -0.36112180352211,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_0",
+        "pos": 6.13,
+        "speed": 15.12,
+        "remaining": 77.84,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          50.025537739307595
+        ],
+        "action": [
+          0.3039510250091553,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sb_in_0",
+        "pos": 9.22,
+        "speed": 15.45,
+        "remaining": 74.75,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          50.77443212011758
+        ],
+        "action": [
+          0.2842506170272827,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sb_in_0",
+        "pos": 12.37,
+        "speed": 15.76,
+        "remaining": 71.6,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          51.30192836764967
+        ],
+        "action": [
+          0.26507115364074707,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9821376800537109,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9823373556137085,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9823373556137085,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9823373556137085,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9823373556137085,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "south_to_local",
+    "seed": 1005,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sb_in_1",
+        "pos": 0.0,
+        "speed": 0.6,
+        "remaining": 83.97,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_south_to_local.1",
+          0.07028109407753824
+        ],
+        "action": [
+          -0.7712835073471069,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sb_in_0",
+        "pos": 0.0,
+        "speed": 0.0,
+        "remaining": 83.97,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          71.05166246497237
+        ],
+        "action": [
+          0.6743113398551941,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sb_in_0",
+        "pos": 0.15,
+        "speed": 0.73,
+        "remaining": 83.82,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          73.38409257427055
+        ],
+        "action": [
+          0.6602372527122498,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sb_in_0",
+        "pos": 0.43,
+        "speed": 1.44,
+        "remaining": 83.54,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          75.56858990219598
+        ],
+        "action": [
+          0.6450212001800537,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sb_in_0",
+        "pos": 0.86,
+        "speed": 2.14,
+        "remaining": 83.11,
+        "next": "south_exit",
+        "allowed": [
+          1
+        ],
+        "leader": [
+          "flow_outer_to_south.2",
+          77.60895673579682
+        ],
+        "action": [
+          0.6293498873710632,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9740344285964966,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9224013090133667,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9224013090133667,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9224013090133667,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "weave_3",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_ramp",
+        "allowed": [
+          0,
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9224013090133667,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "north_to_west",
+    "seed": 1001,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "nb_in_0",
+        "pos": 0.0,
+        "speed": 23.42,
+        "remaining": 147.57,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          38.724846140003855
+        ],
+        "action": [
+          -0.6515166759490967,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "nb_in_0",
+        "pos": 4.54,
+        "speed": 22.72,
+        "remaining": 143.03,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          38.02804320980166
+        ],
+        "action": [
+          -0.6291030049324036,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "nb_in_0",
+        "pos": 8.95,
+        "speed": 22.04,
+        "remaining": 138.62,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          37.41664190774527
+        ],
+        "action": [
+          -0.6062972545623779,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "nb_in_0",
+        "pos": 13.23,
+        "speed": 21.39,
+        "remaining": 134.34,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          36.883375710361854
+        ],
+        "action": [
+          -0.25907376408576965,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "nb_in_0",
+        "pos": 17.45,
+        "speed": 21.11,
+        "remaining": 130.12,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          36.35080318734375
+        ],
+        "action": [
+          -0.2543896436691284,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.9250773191452026,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.767845094203949,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.767845094203949,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.767845094203949,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.767845094203949,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "north_to_west",
+    "seed": 1004,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "nb_in_0",
+        "pos": 0.0,
+        "speed": 21.83,
+        "remaining": 147.57,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          35.877851908509655
+        ],
+        "action": [
+          -0.6916165351867676,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "nb_in_0",
+        "pos": 4.22,
+        "speed": 21.08,
+        "remaining": 143.35,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          35.14855237448884
+        ],
+        "action": [
+          -0.6746671199798584,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "nb_in_0",
+        "pos": 8.29,
+        "speed": 20.35,
+        "remaining": 139.28,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          34.470691876149836
+        ],
+        "action": [
+          -0.6578028202056885,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "nb_in_0",
+        "pos": 12.21,
+        "speed": 19.64,
+        "remaining": 135.36,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          33.85586243216953
+        ],
+        "action": [
+          -0.4840918481349945,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "nb_in_0",
+        "pos": 16.04,
+        "speed": 19.12,
+        "remaining": 131.53,
+        "next": "north_exit",
+        "allowed": [
+          0
+        ],
+        "leader": [
+          "flow_north_to_local.1",
+          33.2792832972988
+        ],
+        "action": [
+          -0.46546289324760437,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.7877994179725647,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.7747622132301331,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.7747622132301331,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.7747622132301331,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "weave_2",
+        "pos": 32.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "flyover",
+        "allowed": [
+          3
+        ],
+        "leader": null,
+        "action": [
+          0.7747622132301331,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_south",
+    "seed": 1001,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 14.74,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          17.891852001295675
+        ],
+        "action": [
+          -0.9881506562232971,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "east_in_0",
+        "pos": 2.74,
+        "speed": 13.68,
+        "remaining": 182.49,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          18.950251085802986
+        ],
+        "action": [
+          -0.8785241842269897,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "east_in_0",
+        "pos": 5.28,
+        "speed": 12.73,
+        "remaining": 179.95,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          19.229626524220166
+        ],
+        "action": [
+          -0.8494550585746765,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "east_in_0",
+        "pos": 7.64,
+        "speed": 11.81,
+        "remaining": 177.59,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          19.71953750837719
+        ],
+        "action": [
+          -0.523830771446228,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "east_in_0",
+        "pos": 9.89,
+        "speed": 11.25,
+        "remaining": 175.34,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          20.34927441610889
+        ],
+        "action": [
+          -0.47392943501472473,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.6847750544548035,
+          -1.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_south",
+    "seed": 1002,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 1.17,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          0.6061746817471514
+        ],
+        "action": [
+          -0.969256579875946,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.13,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          23.370321727533593
+        ],
+        "action": [
+          -0.4757525622844696,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.0,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          25.992536360986765
+        ],
+        "action": [
+          -0.38035547733306885,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.0,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          28.650358865865183
+        ],
+        "action": [
+          -0.35472553968429565,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.0,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          31.34218341362267
+        ],
+        "action": [
+          -0.3129759132862091,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.11324916779994965,
+          -1.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_south",
+    "seed": 1003,
+    "original": 0.2,
+    "seconds": 0.2,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 3.56,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          2.3836640623736587
+        ],
+        "action": [
+          -0.9880548119544983,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_south",
+    "seed": 1004,
+    "original": 0.2,
+    "seconds": 0.2,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 15.15,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          19.295538839905607
+        ],
+        "action": [
+          -0.990722119808197,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_south",
+    "seed": 1005,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 12.71,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          13.738849307199
+        ],
+        "action": [
+          -0.9864619970321655,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "east_in_0",
+        "pos": 2.33,
+        "speed": 11.64,
+        "remaining": 182.9,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          9.256659735823087
+        ],
+        "action": [
+          -0.9255115389823914,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "east_in_0",
+        "pos": 4.46,
+        "speed": 10.65,
+        "remaining": 180.77,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          8.638911392872584
+        ],
+        "action": [
+          -0.9102725386619568,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "east_in_0",
+        "pos": 6.39,
+        "speed": 9.66,
+        "remaining": 178.84,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          8.250762257955351
+        ],
+        "action": [
+          -0.893038809299469,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "east_in_0",
+        "pos": 8.13,
+        "speed": 8.7,
+        "remaining": 177.1,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          8.087939803664604
+        ],
+        "action": [
+          -0.8345754146575928,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7781224846839905,
+          -1.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_north",
+    "seed": 1001,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 14.74,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          17.891852001295675
+        ],
+        "action": [
+          -0.9881506562232971,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "east_in_0",
+        "pos": 2.74,
+        "speed": 13.68,
+        "remaining": 182.49,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          18.950251085802986
+        ],
+        "action": [
+          -0.8785241842269897,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "east_in_0",
+        "pos": 5.28,
+        "speed": 12.73,
+        "remaining": 179.95,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          19.229626524220166
+        ],
+        "action": [
+          -0.8494550585746765,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "east_in_0",
+        "pos": 7.64,
+        "speed": 11.81,
+        "remaining": 177.59,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          19.71953750837719
+        ],
+        "action": [
+          -0.523830771446228,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "east_in_0",
+        "pos": 9.89,
+        "speed": 11.25,
+        "remaining": 175.34,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          20.34927441610889
+        ],
+        "action": [
+          -0.47392943501472473,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.6847750544548035,
+          -1.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_north",
+    "seed": 1002,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 1.17,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          0.6061746817471514
+        ],
+        "action": [
+          -0.969256579875946,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.13,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          23.370321727533593
+        ],
+        "action": [
+          -0.4757525622844696,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.0,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          25.992536360986765
+        ],
+        "action": [
+          -0.38035547733306885,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.0,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          28.650358865865183
+        ],
+        "action": [
+          -0.35472553968429565,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "east_in_0",
+        "pos": 0.03,
+        "speed": 0.0,
+        "remaining": 185.2,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_south.3",
+          31.34218341362267
+        ],
+        "action": [
+          -0.3129759132862091,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.11324916779994965,
+          -1.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_north",
+    "seed": 1003,
+    "original": 0.2,
+    "seconds": 0.2,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 3.56,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          2.3836640623736587
+        ],
+        "action": [
+          -0.9880548119544983,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_north",
+    "seed": 1004,
+    "original": 0.2,
+    "seconds": 0.2,
+    "timeout": false,
+    "arrived": false,
+    "collided": true,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 15.15,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          19.295538839905607
+        ],
+        "action": [
+          -0.990722119808197,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "sano_west_to_north",
+    "seed": 1005,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "east_in_1",
+        "pos": 0.0,
+        "speed": 12.71,
+        "remaining": 185.23,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_sano_west_to_north.1",
+          13.738849307199
+        ],
+        "action": [
+          -0.9864619970321655,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "east_in_0",
+        "pos": 2.33,
+        "speed": 11.64,
+        "remaining": 182.9,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          9.256659735823087
+        ],
+        "action": [
+          -0.9255115389823914,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "east_in_0",
+        "pos": 4.46,
+        "speed": 10.65,
+        "remaining": 180.77,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          8.638911392872584
+        ],
+        "action": [
+          -0.9102725386619568,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "east_in_0",
+        "pos": 6.39,
+        "speed": 9.66,
+        "remaining": 178.84,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          8.250762257955351
+        ],
+        "action": [
+          -0.893038809299469,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "east_in_0",
+        "pos": 8.13,
+        "speed": 8.7,
+        "remaining": 177.1,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": [
+          "flow_east_to_north.3",
+          8.087939803664604
+        ],
+        "action": [
+          -0.8345754146575928,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7781224846839905,
+          -1.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "east_in_0",
+        "pos": 185.23,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "east_main",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.7221155762672424,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "west_to_local",
+    "seed": 1001,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sano_wb_in_0",
+        "pos": 0.0,
+        "speed": 18.92,
+        "remaining": 294.44,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          49.126796684822885
+        ],
+        "action": [
+          -0.9096612930297852,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sano_wb_in_0",
+        "pos": 3.59,
+        "speed": 17.94,
+        "remaining": 290.85,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          49.12030117931168
+        ],
+        "action": [
+          -0.8967137932777405,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sano_wb_in_0",
+        "pos": 6.98,
+        "speed": 16.97,
+        "remaining": 287.46,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          49.28541875452683
+        ],
+        "action": [
+          -0.8814210891723633,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sano_wb_in_0",
+        "pos": 10.19,
+        "speed": 16.02,
+        "remaining": 284.25,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          49.618231510720214
+        ],
+        "action": [
+          -0.8631571531295776,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sano_wb_in_0",
+        "pos": 13.2,
+        "speed": 15.09,
+        "remaining": 281.24,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          50.11541493660357
+        ],
+        "action": [
+          -0.41836491227149963,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9139929413795471,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.831835925579071,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.831835925579071,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.831835925579071,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.831835925579071,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "west_to_local",
+    "seed": 1002,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sano_wb_in_0",
+        "pos": 0.0,
+        "speed": 14.1,
+        "remaining": 294.44,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.10",
+          12.665477997565805
+        ],
+        "action": [
+          -0.8876385688781738,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sano_wb_in_0",
+        "pos": 2.63,
+        "speed": 13.14,
+        "remaining": 291.81,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.10",
+          13.766143350561986
+        ],
+        "action": [
+          -0.7858278155326843,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sano_wb_in_0",
+        "pos": 5.09,
+        "speed": 12.29,
+        "remaining": 289.35,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.10",
+          15.019716326803426
+        ],
+        "action": [
+          -0.7546259760856628,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sano_wb_in_0",
+        "pos": 7.38,
+        "speed": 11.48,
+        "remaining": 287.06,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.10",
+          16.41951312354601
+        ],
+        "action": [
+          -0.7189616560935974,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sano_wb_in_0",
+        "pos": 9.52,
+        "speed": 10.7,
+        "remaining": 284.92,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.10",
+          17.957856574646325
+        ],
+        "action": [
+          -0.67855304479599,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.9102976322174072,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8897601962089539,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8884052634239197,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8884052634239197,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8884052634239197,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "west_to_local",
+    "seed": 1003,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sano_wb_in_0",
+        "pos": 0.0,
+        "speed": 18.51,
+        "remaining": 294.44,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          48.84151962340215
+        ],
+        "action": [
+          -0.9015183448791504,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sano_wb_in_0",
+        "pos": 3.51,
+        "speed": 17.53,
+        "remaining": 290.93,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          49.010597206226706
+        ],
+        "action": [
+          -0.8857623338699341,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sano_wb_in_0",
+        "pos": 6.82,
+        "speed": 16.58,
+        "remaining": 287.62,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          49.37665314744965
+        ],
+        "action": [
+          -0.8670060634613037,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sano_wb_in_0",
+        "pos": 9.95,
+        "speed": 15.64,
+        "remaining": 284.49,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          49.93627602702365
+        ],
+        "action": [
+          -0.8437002897262573,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sano_wb_in_0",
+        "pos": 12.9,
+        "speed": 14.73,
+        "remaining": 281.54,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          50.68532513139167
+        ],
+        "action": [
+          -0.3759903907775879,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8576289415359497,
+          -1.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8269320130348206,
+          -1.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8269320130348206,
+          -1.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8269320130348206,
+          -1.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8269320130348206,
+          -1.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "west_to_local",
+    "seed": 1004,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sano_wb_in_0",
+        "pos": 0.0,
+        "speed": 20.03,
+        "remaining": 294.44,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          52.18855234582614
+        ],
+        "action": [
+          -0.6492854356765747,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sano_wb_in_0",
+        "pos": 3.87,
+        "speed": 19.33,
+        "remaining": 290.57,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          52.08405474229321
+        ],
+        "action": [
+          -0.6292622089385986,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sano_wb_in_0",
+        "pos": 7.6,
+        "speed": 18.65,
+        "remaining": 286.84,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          52.09598756704236
+        ],
+        "action": [
+          -0.6107316613197327,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sano_wb_in_0",
+        "pos": 11.19,
+        "speed": 17.99,
+        "remaining": 283.25,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          52.21841556378725
+        ],
+        "action": [
+          -0.5921372771263123,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sano_wb_in_0",
+        "pos": 14.66,
+        "speed": 17.35,
+        "remaining": 279.78,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          52.44614521067942
+        ],
+        "action": [
+          -0.4038357436656952,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8322439789772034,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.908855140209198,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8316482305526733,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8316482305526733,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8316482305526733,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "route": "west_to_local",
+    "seed": 1005,
+    "original": 900.0,
+    "seconds": 1800.0,
+    "timeout": true,
+    "arrived": false,
+    "collided": false,
+    "samples": [
+      {
+        "t": 0.0,
+        "lane": "sano_wb_in_0",
+        "pos": 0.0,
+        "speed": 13.37,
+        "remaining": 294.44,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          21.21031282627105
+        ],
+        "action": [
+          -0.9574511647224426,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.2,
+        "lane": "sano_wb_in_0",
+        "pos": 2.47,
+        "speed": 12.34,
+        "remaining": 291.97,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          20.67985327281865
+        ],
+        "action": [
+          -0.9504110217094421,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.4,
+        "lane": "sano_wb_in_0",
+        "pos": 4.73,
+        "speed": 11.31,
+        "remaining": 289.71,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          20.394892179752226
+        ],
+        "action": [
+          -0.9415490031242371,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.6,
+        "lane": "sano_wb_in_0",
+        "pos": 6.79,
+        "speed": 10.29,
+        "remaining": 287.65,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          20.3538002380284
+        ],
+        "action": [
+          -0.9305305480957031,
+          -1.0
+        ]
+      },
+      {
+        "t": 0.8,
+        "lane": "sano_wb_in_0",
+        "pos": 8.64,
+        "speed": 9.29,
+        "remaining": 285.8,
+        "next": "sano_wb_main",
+        "allowed": [
+          0,
+          1
+        ],
+        "leader": [
+          "flow_west_through.9",
+          20.554358907416884
+        ],
+        "action": [
+          -0.9164758324623108,
+          -1.0
+        ]
+      },
+      {
+        "t": 300.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8148927688598633,
+          0.0
+        ]
+      },
+      {
+        "t": 600.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8865129351615906,
+          0.0
+        ]
+      },
+      {
+        "t": 899.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8865129351615906,
+          0.0
+        ]
+      },
+      {
+        "t": 1200.0,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8865129351615906,
+          0.0
+        ]
+      },
+      {
+        "t": 1799.8,
+        "lane": "sano_wb_exit_lane_0",
+        "pos": 145.81,
+        "speed": 0.0,
+        "remaining": 0.0,
+        "next": "sano_wb_bridge",
+        "allowed": [
+          1,
+          2
+        ],
+        "leader": null,
+        "action": [
+          0.8865129351615906,
+          0.0
+        ]
+      }
+    ]
+  }
+]

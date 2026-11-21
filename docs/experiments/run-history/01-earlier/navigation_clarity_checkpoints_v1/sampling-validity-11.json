@@ -1,0 +1,139 @@
+{
+  "run": "validity-11",
+  "case": {
+    "route": "route_04",
+    "lane": "best",
+    "speed": "max",
+    "simulation_seed": 50001
+  },
+  "greedy": {
+    "route": "route_04",
+    "lane": "best",
+    "speed": "max",
+    "simulation_seed": 50001,
+    "arrival": false,
+    "collision": false,
+    "timeout": true,
+    "insertion_failure": false,
+    "teleports": 0,
+    "seconds": 900.0,
+    "final": {
+      "edge": "52873356",
+      "lane": 1,
+      "speed": 0.0,
+      "nav": {
+        "current_targets": [
+          0
+        ],
+        "prepare_targets": [
+          0
+        ],
+        "distance": 0.0,
+        "decision_edge": "52873356",
+        "ambiguous": false
+      }
+    },
+    "final_action": [
+      0.9739009141921997,
+      0.0
+    ],
+    "route_overrides": 0
+  },
+  "final_lane_probabilities": {
+    "1.0": 0.0008243442862294614,
+    "0.0": 0.8064292669296265,
+    "-1.0": 0.19274640083312988
+  },
+  "lane_sampled": [
+    {
+      "route": "route_04",
+      "lane": "best",
+      "speed": "max",
+      "simulation_seed": 50001,
+      "arrival": true,
+      "collision": false,
+      "timeout": false,
+      "insertion_failure": false,
+      "teleports": 0,
+      "seconds": 41.2,
+      "final": {
+        "edge": "781184662#3",
+        "lane": 1,
+        "speed": 27.78,
+        "nav": {
+          "current_targets": [],
+          "prepare_targets": [],
+          "distance": null,
+          "decision_edge": null,
+          "ambiguous": false
+        }
+      },
+      "final_action": [
+        0.9893878698348999,
+        1.0
+      ],
+      "route_overrides": 0,
+      "sampling_seed": 701
+    },
+    {
+      "route": "route_04",
+      "lane": "best",
+      "speed": "max",
+      "simulation_seed": 50001,
+      "arrival": true,
+      "collision": false,
+      "timeout": false,
+      "insertion_failure": false,
+      "teleports": 0,
+      "seconds": 41.2,
+      "final": {
+        "edge": "781184662#3",
+        "lane": 2,
+        "speed": 27.78,
+        "nav": {
+          "current_targets": [],
+          "prepare_targets": [],
+          "distance": null,
+          "decision_edge": null,
+          "ambiguous": false
+        }
+      },
+      "final_action": [
+        0.9993409514427185,
+        1.0
+      ],
+      "route_overrides": 0,
+      "sampling_seed": 702
+    },
+    {
+      "route": "route_04",
+      "lane": "best",
+      "speed": "max",
+      "simulation_seed": 50001,
+      "arrival": true,
+      "collision": false,
+      "timeout": false,
+      "insertion_failure": false,
+      "teleports": 0,
+      "seconds": 41.2,
+      "final": {
+        "edge": "781184662#3",
+        "lane": 2,
+        "speed": 27.78,
+        "nav": {
+          "current_targets": [],
+          "prepare_targets": [],
+          "distance": null,
+          "decision_edge": null,
+          "ambiguous": false
+        }
+      },
+      "final_action": [
+        0.999340832233429,
+        1.0
+      ],
+      "route_overrides": 0,
+      "sampling_seed": 703
+    }
+  ]
+}

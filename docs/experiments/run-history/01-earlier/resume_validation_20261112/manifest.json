@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "env/navigation_clarity.py": "15237459296d7b61ee6c96b4e09a40fdea60bf303c990656e092e637bf20334e",
+    "env/navigation_observation.py": "801209f04b93ffabd47f1eb474f4e16cf8719d89444b21bca4fbb51affbefb50",
+    "env/ic_experiment.py": "7b770927539af391d526f10f21592da6b7a102c2a9427a9ac594bc4b6a60772c",
+    "env/sumo_env.py": "882ee158eb47c00a1489b7c1604fd3d4a8808b8274bea9ea3e7a331d5afc22fc",
+    "env/mdp_config.py": "49b1b73862c15719e213e5e1ef127f9781c690bb38ce49e47338b65ebebf9e9c",
+    "env/road_config.py": "1d8e92f5280bbc3cb3d3e82051c0f665b8047f4f66bffff69e7b8db2c457c3e7",
+    "algorithms/ppo.py": "d5b257796b147f32f87c7725fd0fdcb39af98aa8e6f49561a5b945366fcb08c3",
+    "utils/networks.py": "c8abb8344409e926dcd67c686497bbf1778335a8259416167e76536e4ad95d69",
+    "utils/train_navigation_clarity.py": "b8ec35a58edcd90a6965597dae80fd25b64403fdb2cc4fff783799b49404edb1",
+    "utils/navigation_followup.py": "0cafb3b5cea5e07ad5b2bb96abdec48d12c25563b302dec3c42a8e89f8f90aaf",
+    "utils/train_navigation_route04.py": "10fc7d51a9c047d3590aa785f41bbf4ab91e9014054aed80801b998f4c41e75f",
+    "utils/check_toegyewon_only.py": "6df32c12e5ecc7a926c54493403da2380f58d7f7e503087553312982fe47d73a",
+    "train.py": "69ad74c9c739a71e6e0e326154c7cb38372a07295f22024ad9a71822827b0657",
+    "maps/toegyewon_only/network.net.xml": "8486b8dc41b9dbc34badfb66570f7458e775040d42c189287a9a659d73fcb3a7"
+  },
+  "commit": "b8d9af8f2f3894ac03ae8cf04886d51d7da9cea9",
+  "workers": 6,
+  "torch_threads": 1,
+  "forced_correction": false
+}

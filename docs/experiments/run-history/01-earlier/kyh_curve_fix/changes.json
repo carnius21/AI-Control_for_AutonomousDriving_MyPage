@@ -1,0 +1,32 @@
+[
+  {
+    "edge": "nb_main",
+    "old_points": 195,
+    "new_points": 254
+  },
+  {
+    "edge": "nb_accel",
+    "old_points": 30,
+    "new_points": 45
+  },
+  {
+    "edge": "nb_out",
+    "old_points": 56,
+    "new_points": 89
+  },
+  {
+    "edge": "east_main",
+    "old_points": 166,
+    "new_points": 241
+  },
+  {
+    "edge": "west_in",
+    "old_points": 102,
+    "new_points": 151
+  },
+  {
+    "edge": "return_north",
+    "old_points": 105,
+    "new_points": 122
+  }
+]

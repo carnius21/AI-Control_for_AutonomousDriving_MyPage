@@ -1,0 +1,7 @@
+{
+  "stage": "complete",
+  "cases": 128,
+  "git": "1d63098c2475be1267799bf6ba349b0ce5a26e2e",
+  "network_sha256": "be949a4a3aae9fb516c3c2832243fef264312975dee6f56df12442659dfea7d9",
+  "simulation_seed": 1001
+}

@@ -1,0 +1,6 @@
+# osm-map-review
+
+기존 폴더에 독립된 수치 요약이 없어 보관 자료의 종류를 기록한다.
+
+- `import.log`
+- `import.net.xml`

@@ -1,0 +1,100 @@
+{
+  "route_count": 16,
+  "route_transition_count": 109,
+  "navigation_constraint_count": 33,
+  "split_count": 27,
+  "merge_count": 28,
+  "route100_count": 25,
+  "legacy_prep_count": 11,
+  "wrong_branch_count": 27,
+  "edge_alternative_count": 0,
+  "lane_alternative_count": 0,
+  "connection_attributes_unchanged": true,
+  "length_changes": [
+    {
+      "edge": "169728849",
+      "before_m": 250.79,
+      "after_m": 350.79
+    },
+    {
+      "edge": "52873356",
+      "before_m": 346.69,
+      "after_m": 446.69
+    },
+    {
+      "edge": "544295537",
+      "before_m": 253.43,
+      "after_m": 353.43
+    },
+    {
+      "edge": "781184662#1",
+      "before_m": 199.02,
+      "after_m": 449.02
+    },
+    {
+      "edge": "86198728",
+      "before_m": 183.44,
+      "after_m": 483.44
+    }
+  ],
+  "lane_change_restricted_edges": {
+    "86198722": [
+      {
+        "id": "86198722_0",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeLeft": "custom1"
+      },
+      {
+        "id": "86198722_1",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeLeft": "custom1",
+        "changeRight": "custom1"
+      },
+      {
+        "id": "86198722_2",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeLeft": "custom1",
+        "changeRight": "custom1"
+      },
+      {
+        "id": "86198722_3",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeLeft": "custom1",
+        "changeRight": "custom1"
+      },
+      {
+        "id": "86198722_4",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeRight": "custom1"
+      }
+    ],
+    "86198725": [
+      {
+        "id": "86198725_0",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeLeft": "custom1"
+      },
+      {
+        "id": "86198725_1",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeLeft": "custom1",
+        "changeRight": "custom1"
+      },
+      {
+        "id": "86198725_2",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeLeft": "custom1",
+        "changeRight": "custom1"
+      },
+      {
+        "id": "86198725_3",
+        "allow": "private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2",
+        "changeRight": "custom1"
+      }
+    ]
+  },
+  "hashes": {
+    "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+    "highway.rou.xml": "bd0657f700f9c899a7c15aa481d83f61e40ff7f561fb77090fe9ab53379237f5"
+  }
+}

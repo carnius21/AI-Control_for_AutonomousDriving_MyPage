@@ -1,0 +1,56 @@
+[
+  {
+    "run": "baseline-11",
+    "episodes": 3589,
+    "maximum_steps": 1804.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "baseline-22",
+    "episodes": 3612,
+    "maximum_steps": 860.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "baseline-33",
+    "episodes": 3581,
+    "maximum_steps": 1247.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "lookahead-11",
+    "episodes": 3594,
+    "maximum_steps": 1001.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "lookahead-22",
+    "episodes": 3599,
+    "maximum_steps": 887.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "lookahead-33",
+    "episodes": 3594,
+    "maximum_steps": 1456.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "validity-11",
+    "episodes": 3613,
+    "maximum_steps": 993.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "validity-22",
+    "episodes": 3609,
+    "maximum_steps": 895.0,
+    "at_timeout_limit": 0
+  },
+  {
+    "run": "validity-33",
+    "episodes": 3542,
+    "maximum_steps": 2282.0,
+    "at_timeout_limit": 0
+  }
+]

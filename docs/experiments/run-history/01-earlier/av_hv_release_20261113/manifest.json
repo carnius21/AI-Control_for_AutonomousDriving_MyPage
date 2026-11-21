@@ -1,0 +1,20 @@
+{
+  "commit": "dbe06752c91c7b4ac6d373758b9613b1293092f1",
+  "warmup_seconds": 900,
+  "drive_limit_seconds": 10800,
+  "insert_limit_seconds": 10800,
+  "sources": {
+    "reference": {
+      "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+      "highway.rou.xml": "bd0657f700f9c899a7c15aa481d83f61e40ff7f561fb77090fe9ab53379237f5",
+      "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+    },
+    "high_exit40": {
+      "network.net.xml": "e90f631b91cc3d2490676ed6031c34afff6411719d19b1a3108ae3a0e8e566f5",
+      "highway.rou.xml": "daecd9f4b9bbcf04a0d5665f224ed1227f90a5fdd391c53b14395b629d67f876",
+      "run.sumocfg": "f9ceb1ecd0fc1d06f726257988dbca298e1a74ed69e1e5802facfddd7ac0d8d3"
+    }
+  },
+  "policy": "navigation-only baseline-22 policy-600064.pt",
+  "no_training": true
+}

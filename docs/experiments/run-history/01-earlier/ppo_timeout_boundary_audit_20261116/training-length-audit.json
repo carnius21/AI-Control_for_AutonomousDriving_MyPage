@@ -1,0 +1,121 @@
+[
+  {
+    "family": "junction_conflict_trials",
+    "condition": "combined",
+    "episodes": 701,
+    "at_cap": 0,
+    "max_length": 658.0
+  },
+  {
+    "family": "junction_conflict_trials",
+    "condition": "control",
+    "episodes": 691,
+    "at_cap": 0,
+    "max_length": 1087.0
+  },
+  {
+    "family": "junction_conflict_trials",
+    "condition": "observation",
+    "episodes": 686,
+    "at_cap": 0,
+    "max_length": 661.0
+  },
+  {
+    "family": "junction_conflict_trials",
+    "condition": "reward",
+    "episodes": 711,
+    "at_cap": 0,
+    "max_length": 661.0
+  },
+  {
+    "family": "lane_followup",
+    "condition": "future",
+    "episodes": 715,
+    "at_cap": 0,
+    "max_length": 661.0
+  },
+  {
+    "family": "lane_followup",
+    "condition": "lateral",
+    "episodes": 701,
+    "at_cap": 0,
+    "max_length": 662.0
+  },
+  {
+    "family": "preserved_input_trial",
+    "condition": "future",
+    "episodes": 697,
+    "at_cap": 0,
+    "max_length": 689.0
+  },
+  {
+    "family": "safe_route_reward_trials",
+    "condition": "combined",
+    "episodes": 726,
+    "at_cap": 0,
+    "max_length": 667.0
+  },
+  {
+    "family": "safe_route_reward_trials",
+    "condition": "lateral_zero",
+    "episodes": 703,
+    "at_cap": 0,
+    "max_length": 661.0
+  },
+  {
+    "family": "safe_route_reward_trials",
+    "condition": "safe_reward",
+    "episodes": 698,
+    "at_cap": 0,
+    "max_length": 801.0
+  },
+  {
+    "family": "junction_lookahead_trials",
+    "condition": "ahead150",
+    "episodes": 535,
+    "at_cap": 0,
+    "max_length": 653.0
+  },
+  {
+    "family": "junction_lookahead_trials",
+    "condition": "near50",
+    "episodes": 494,
+    "at_cap": 0,
+    "max_length": 668.0
+  },
+  {
+    "family": "safety_strength_trials",
+    "condition": "anticipatory",
+    "episodes": 375,
+    "at_cap": 0,
+    "max_length": 1072.0
+  },
+  {
+    "family": "safety_strength_trials",
+    "condition": "collision20",
+    "episodes": 388,
+    "at_cap": 0,
+    "max_length": 662.0
+  },
+  {
+    "family": "safety_strength_trials",
+    "condition": "lane4",
+    "episodes": 317,
+    "at_cap": 0,
+    "max_length": 661.0
+  },
+  {
+    "family": "conservative_update_trial",
+    "condition": "anticipatory",
+    "episodes": 146,
+    "at_cap": 0,
+    "max_length": 666.0
+  },
+  {
+    "family": "braking_exploration_trial",
+    "condition": "anticipatory",
+    "episodes": 80,
+    "at_cap": 0,
+    "max_length": 661.0
+  }
+]

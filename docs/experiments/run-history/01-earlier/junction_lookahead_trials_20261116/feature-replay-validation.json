@@ -1,0 +1,20 @@
+{
+  "checks": 67,
+  "first_earlier_risk": {
+    "t": 7.800000000000001,
+    "ahead": [
+      0.01395327291116888,
+      0.9832295630644783,
+      0.9160359881997528
+    ],
+    "near": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "seconds": 13.4,
+  "collided": true,
+  "route_overrides": 0,
+  "physical_visibility": 50.0
+}

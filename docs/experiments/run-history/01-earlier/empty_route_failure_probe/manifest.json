@@ -1,0 +1,8 @@
+{
+  "git": "cd6bc2a430b3e4304faaf7705f8fe2b6668a3b32",
+  "network_sha256": "be949a4a3aae9fb516c3c2832243fef264312975dee6f56df12442659dfea7d9",
+  "simulation_seed_policy": "training: seeded per-episode generator; HV:1001..1003; evaluation:40001..40020",
+  "simulation_seed": 40001,
+  "source_model_sha": "9dd315b5bde8c203fba5dd154afde4d95d620150b851736ca55231a5043731df",
+  "note": "Deliberate diagnostic action interventions; NOT learned-policy success rates. No production settings modified."
+}

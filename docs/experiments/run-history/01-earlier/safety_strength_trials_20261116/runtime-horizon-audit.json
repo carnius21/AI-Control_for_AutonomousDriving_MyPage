@@ -1,0 +1,34 @@
+{
+  "evaluation=False,none=False": {
+    "step_length": 0.2,
+    "max_steps": 4500,
+    "episode_seconds": 900.0,
+    "insert_wait_steps": 54000,
+    "collision_penalty": 5.0,
+    "visibility": 50.0
+  },
+  "evaluation=False,none=True": {
+    "step_length": 0.2,
+    "max_steps": 4500,
+    "episode_seconds": 900.0,
+    "insert_wait_steps": 54000,
+    "collision_penalty": 5.0,
+    "visibility": 50.0
+  },
+  "evaluation=True,none=False": {
+    "step_length": 0.2,
+    "max_steps": 54000,
+    "episode_seconds": 10800.0,
+    "insert_wait_steps": 54000,
+    "collision_penalty": 5.0,
+    "visibility": 50.0
+  },
+  "evaluation=True,none=True": {
+    "step_length": 0.2,
+    "max_steps": 54000,
+    "episode_seconds": 10800.0,
+    "insert_wait_steps": 54000,
+    "collision_penalty": 5.0,
+    "visibility": 50.0
+  }
+}

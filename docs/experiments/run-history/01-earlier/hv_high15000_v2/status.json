@@ -1,0 +1,4 @@
+{
+  "stage": "error",
+  "error": "PermissionError(13, '액세스가 거부되었습니다')"
+}

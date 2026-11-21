@@ -1,0 +1,9 @@
+{
+  "cases": 211,
+  "workers": 6,
+  "training": false,
+  "action_override": false,
+  "cap_seconds": 900,
+  "match_seconds": 10,
+  "note": "Original 10800s timeout remains authoritative; replay ends at matching stop, not a new performance outcome."
+}

@@ -1,0 +1,14 @@
+{
+  "git": "c0ddc28681941c91a79aef3cc5a7f1cacdfd6b05",
+  "network_sha256": "be949a4a3aae9fb516c3c2832243fef264312975dee6f56df12442659dfea7d9",
+  "simulation_seed_policy": "training: seeded per-episode generator; HV:1001..1003; evaluation:40001..40020",
+  "script_sha": "29f53809f13eb909cdd027576b1c397cdb712af0553f2c34809a1df6a93503ee",
+  "source_models": {
+    "11": "9dd315b5bde8c203fba5dd154afde4d95d620150b851736ca55231a5043731df",
+    "22": "283709a212fa55bdf0071ebf5fa33266d1c6ff76fe2fc4ba17f18a9b977d1212",
+    "33": "7292a836ce6ee21dfabb17e32f332a87514c107e33cde467522cdc5719fb0dec"
+  },
+  "simulation_seed": 40001,
+  "interval": 0.2,
+  "action_overrides": false
+}

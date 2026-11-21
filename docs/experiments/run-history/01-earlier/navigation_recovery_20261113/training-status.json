@@ -1,0 +1,10 @@
+{
+  "stage": "paused_by_user",
+  "previous": {
+    "stage": "running",
+    "pid": 61180,
+    "jobs": 6
+  },
+  "at": "2026-11-13T08:18:59.593187+00:00",
+  "reason": "HV-only validation first; no automatic AV resume"
+}

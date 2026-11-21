@@ -1,0 +1,4 @@
+{
+  "stage": "blocked_av_low",
+  "reason": "Per-route AV gate failed; completed comparisons retained"
+}

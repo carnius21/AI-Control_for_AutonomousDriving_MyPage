@@ -1,0 +1,22 @@
+[
+  {
+    "lane": 0,
+    "arrived": true,
+    "collisions": 0
+  },
+  {
+    "lane": 1,
+    "arrived": true,
+    "collisions": 0
+  },
+  {
+    "lane": 2,
+    "arrived": true,
+    "collisions": 0
+  },
+  {
+    "lane": 3,
+    "arrived": true,
+    "collisions": 0
+  }
+]

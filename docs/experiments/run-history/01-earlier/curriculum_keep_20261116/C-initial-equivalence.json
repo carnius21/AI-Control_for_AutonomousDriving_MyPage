@@ -1,0 +1,6 @@
+{
+  "cases": 64,
+  "outcomes_equal": true,
+  "termination_times_equal": true,
+  "metrics_definition_note": "C uses150m road search; baseline legacy50m, so risk timing comparisons use C initial"
+}

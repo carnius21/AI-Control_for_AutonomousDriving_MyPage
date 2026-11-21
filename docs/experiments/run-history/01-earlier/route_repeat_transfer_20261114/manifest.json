@@ -1,0 +1,42 @@
+{
+  "commit": "1933a529262675488c39b164833dd75448f5b25f",
+  "source_hashes": {
+    "env/sumo_env.py": "c1e5e640ffdf8387bd286053f3cf162c96160f966a59a31413ff1afa15523afc",
+    "env/ic_experiment.py": "7b770927539af391d526f10f21592da6b7a102c2a9427a9ac594bc4b6a60772c",
+    "env/navigation_observation.py": "801209f04b93ffabd47f1eb474f4e16cf8719d89444b21bca4fbb51affbefb50",
+    "env/navigation_clarity.py": "15237459296d7b61ee6c96b4e09a40fdea60bf303c990656e092e637bf20334e",
+    "env/observation_reward_trials.py": "5e42228012effcc5cbc258bc5c98a09b9c3e635fba2b2af291bc76024c267eba",
+    "env/mdp_config.py": "49b1b73862c15719e213e5e1ef127f9781c690bb38ce49e47338b65ebebf9e9c",
+    "env/road_config.py": "1d8e92f5280bbc3cb3d3e82051c0f665b8047f4f66bffff69e7b8db2c457c3e7",
+    "train.py": "69ad74c9c739a71e6e0e326154c7cb38372a07295f22024ad9a71822827b0657",
+    "algorithms/ppo.py": "d5b257796b147f32f87c7725fd0fdcb39af98aa8e6f49561a5b945366fcb08c3",
+    "utils/buffer.py": "a692359f5898a075c751b25dbb141a571173da292a40bfb9d2a3bec57c75c211",
+    "utils/networks.py": "c8abb8344409e926dcd67c686497bbf1778335a8259416167e76536e4ad95d69",
+    "utils/run_observation_reward_trials.py": "193d239f3531942ea6620728c4ee084d1ae610fb5ee82a9094e7cbaf61dad5b6",
+    "env/route_following_trials.py": "e13667a241085221e5a9b55d29ec423604e8f0634ad8258e30176618fde4f3ce",
+    "utils/run_route_following_trials.py": "0e470029a04229d08d654c04cf807e75b7a33ae4b6c9d706fbbc2b76a2b9f8eb",
+    "env/route_learning_trials.py": "90675f195e1caf804db0edbb9f1eb17aa31bbfd55750a39c10280b3185d8212f",
+    "utils/run_route_learning_trials.py": "9c63ea8883734943f8879dec2ea3bc3a75d9b19a547f865daf14486ee34b6b97",
+    "utils/run_route_repeat_transfer.py": "0011b3a23b54ce95f6b942eb1bda0c92f32fecb40096f682446472bb68b45a90"
+  },
+  "conditions": [
+    "baseline",
+    "guidance",
+    "dwell"
+  ],
+  "train_seeds": [
+    22,
+    33
+  ],
+  "eval_seeds": [
+    29101,
+    29102,
+    29103
+  ],
+  "workers": 3,
+  "training_traffic": "none",
+  "evaluation_traffic": [
+    "none",
+    "reference"
+  ]
+}

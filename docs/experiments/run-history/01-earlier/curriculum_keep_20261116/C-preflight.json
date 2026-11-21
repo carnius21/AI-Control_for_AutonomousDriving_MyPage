@@ -1,0 +1,16 @@
+{
+  "exact_resume": true,
+  "steps": 512,
+  "fields": [
+    "policy",
+    "optimizer",
+    "steps",
+    "updates",
+    "environment",
+    "ep_stats",
+    "torch_rng",
+    "numpy_rng",
+    "python_rng",
+    "aux_rng"
+  ]
+}

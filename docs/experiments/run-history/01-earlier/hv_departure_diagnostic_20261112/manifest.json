@@ -1,0 +1,6 @@
+{
+  "change": "departSpeed max -> 5 m/s only",
+  "source": "D:\\자율주행인공지능및제어 팀프로젝트\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\resume_validation_20261112\\traffic_v2\\base-hv",
+  "map_sha": "8486b8dc41b9dbc34badfb66570f7458e775040d42c189287a9a659d73fcb3a7",
+  "commit": "bc4a9c24a69a0b3765abfba8508f6d93c28898f8"
+}

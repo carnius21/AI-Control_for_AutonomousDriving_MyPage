@@ -1,0 +1,14 @@
+{
+  "av_cases": 24,
+  "hv_cases": 4,
+  "controlled_action_cases": 8,
+  "synthetic_inputs": 96,
+  "all_assertions_passed": true,
+  "diagnostic_scripts": {
+    "utils\\diagnose_meeting_av.py": "47a19c297d7dc29aa015f5d94475a18dd9f4d52d799f3632b6a0db5e12d23946",
+    "utils\\diagnose_meeting_extra.py": "b46a6f5abf369128ed84813a081c3cc918c533eccb1a60474012eee2f91b18a1",
+    "utils\\diagnose_meeting_geometry.py": "3229b94d4f995b8fa7f6fa6e56a553b05c6d4e307ad18fc034f6daeb4116e2f2",
+    "utils\\diagnose_meeting_zipper.py": "e4fd03341a665d74a7be7580e51c2591b573cb7e6baa0619cf02a2ec1cae26e6",
+    "utils\\summarize_meeting_diagnosis.py": "c35cfd62823361be4a7171d85c102304178757838bd92d485a3608c6116f84b9"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "stopped_by_user",
+  "condition": "H-LR",
+  "seed": 33,
+  "steps": 200000,
+  "reason": "1차 실험 목표 미달. 사용자 요청으로 무교통 사전 검증으로 전환. 미완료 H-LR seed33 및 미실행 감마는 실패 성능으로 간주하지 않음."
+}

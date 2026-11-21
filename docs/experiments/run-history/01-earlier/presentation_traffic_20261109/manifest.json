@@ -1,0 +1,24 @@
+{
+  "purpose": "Presentation HV visualization only; no AV policy evaluation",
+  "vph": 5100.0,
+  "rates": {
+    "route_01": 150.0,
+    "route_02": 150.0,
+    "route_03": 300.0,
+    "route_04": 300.0,
+    "route_05": 300.0,
+    "route_06": 300.0,
+    "route_07": 450.0,
+    "route_08": 450.0,
+    "route_09": 600.0,
+    "route_10": 200.0,
+    "route_11": 200.0,
+    "route_12": 200.0,
+    "route_13": 375.0,
+    "route_14": 375.0,
+    "route_15": 375.0,
+    "route_16": 375.0
+  },
+  "seed": 1001,
+  "network_sha": "8486b8dc41b9dbc34badfb66570f7458e775040d42c189287a9a659d73fcb3a7"
+}

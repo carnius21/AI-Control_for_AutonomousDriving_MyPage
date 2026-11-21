@@ -1,0 +1,74 @@
+[
+  {
+    "pid": 35404,
+    "family": "junction_lookahead_trials",
+    "condition": "ahead150",
+    "steps": 178176,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\junction_lookahead_trials\\ahead150\\recovery.pt",
+    "sha256": "3580118c0278c00ba092b09542ec9a6c9f2a8bf081dd057d6d9674eb27f3faa3",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  },
+  {
+    "pid": 30940,
+    "family": "junction_lookahead_trials",
+    "condition": "near50",
+    "steps": 157696,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\junction_lookahead_trials\\near50\\recovery.pt",
+    "sha256": "ecb6e3831c245a8628a861d7ea0f8b36b32cfaf138f2ced1d933bbe76fdbf911",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  },
+  {
+    "pid": 37276,
+    "family": "safety_strength_trials",
+    "condition": "collision20",
+    "steps": 139264,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\safety_strength_trials\\collision20\\recovery.pt",
+    "sha256": "1957e82ca3713a0eedf55a6433863be04f767a6c8ad52d7d1daa0fe171011c86",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  },
+  {
+    "pid": 35356,
+    "family": "safety_strength_trials",
+    "condition": "anticipatory",
+    "steps": 137216,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\safety_strength_trials\\anticipatory\\recovery.pt",
+    "sha256": "844d3354b68dbcf76de7bd6044eb31c7e437bb18ca438ec2cfa58444132e7298",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  },
+  {
+    "pid": 3056,
+    "family": "safety_strength_trials",
+    "condition": "lane4",
+    "steps": 116736,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\safety_strength_trials\\lane4\\recovery.pt",
+    "sha256": "3dd76cf71328361a06c780e51d49032dac453126d194618e1e71be7651a30a37",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  },
+  {
+    "pid": 8096,
+    "family": "conservative_update_trial",
+    "condition": "anticipatory",
+    "steps": 69632,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\conservative_update_trial\\anticipatory\\recovery.pt",
+    "sha256": "3c65883c1dfde69ea6b181a07fbe688a3ca2583e31be5a9a45279cd7a6f63fc1",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  },
+  {
+    "pid": 35124,
+    "family": "braking_exploration_trial",
+    "condition": "anticipatory",
+    "steps": 49152,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\braking_exploration_trial\\anticipatory\\recovery.pt",
+    "sha256": "0de80e25798223a9f133edbdcac90e69cab1885df3ac3ae7d6cbfc6919da223d",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  },
+  {
+    "pid": 36720,
+    "family": "risk_action_trial",
+    "condition": "anticipatory",
+    "steps": 8192,
+    "checkpoint": "results\\curriculum_keep_20261116\\legacy-recovery\\risk_action_trial\\anticipatory\\recovery.pt",
+    "sha256": "48e1fe24dbb15d4eaf42fdb7d03a76d5620b54ba57dc7fe513d072630306b636",
+    "limitation": "Legacy checkpoint has policy and optimizer; no simulator/RNG exact resume. Original run remains preserved."
+  }
+]

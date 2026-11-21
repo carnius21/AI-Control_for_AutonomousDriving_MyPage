@@ -1,0 +1,9 @@
+{
+  "stage": "blocked_hv",
+  "pid": 170436,
+  "updated": 1794071483.2606862,
+  "git": "1f0bcd80f2b37e0e21454744bbef68510a81d694",
+  "network_sha256": "be949a4a3aae9fb516c3c2832243fef264312975dee6f56df12442659dfea7d9",
+  "simulation_seed_policy": "training: seeded per-episode generator; HV:1001..1003; evaluation:40001..40020",
+  "reason": "HV passage gate failed; dependent AV/training not started"
+}

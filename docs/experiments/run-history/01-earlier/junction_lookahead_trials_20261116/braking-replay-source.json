@@ -1,0 +1,1300 @@
+{
+  "label": "source",
+  "checkpoint_sha": "061ff1a1d64bbcea5d352295fe1c6c7396e9e00da034c276bcd6297bde153528",
+  "seconds": 13.200000000000001,
+  "outcome": "collision",
+  "first_risk": {
+    "t": 9.8,
+    "speed": 27.78,
+    "risk": 0.3179046250235612,
+    "gap": {
+      "gap": 0.0,
+      "lane": 0.0,
+      "ttc": null
+    },
+    "action": [
+      0.7803525328636169,
+      1.0
+    ],
+    "counterfactual_action_without_merge_input": [
+      0.7803525328636169,
+      1.0
+    ],
+    "after_speed": 27.78
+  },
+  "first_brake_after_risk": {
+    "t": 11.4,
+    "speed": 27.78,
+    "risk": 0.5797957233506988,
+    "gap": {
+      "gap": 0.0,
+      "lane": 0.0,
+      "ttc": 3.471889631789322
+    },
+    "action": [
+      -0.9810407757759094,
+      -1.0
+    ],
+    "counterfactual_action_without_merge_input": [
+      -0.9810407757759094,
+      -1.0
+    ],
+    "after_speed": 26.72047596216202
+  },
+  "route_overrides": 0,
+  "trace": [
+    {
+      "t": 0.0,
+      "speed": 21.413414,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5252035856246948,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5252035856246948,
+        1.0
+      ],
+      "after_speed": 21.98063387247467
+    },
+    {
+      "t": 0.2,
+      "speed": 21.98063387247467,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5169105529785156,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5169105529785156,
+        1.0
+      ],
+      "after_speed": 22.538897269691468
+    },
+    {
+      "t": 0.4,
+      "speed": 22.538897269691468,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5086526274681091,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5086526274681091,
+        1.0
+      ],
+      "after_speed": 23.088242107357026
+    },
+    {
+      "t": 0.6000000000000001,
+      "speed": 23.088242107357026,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5815548300743103,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5815548300743103,
+        -1.0
+      ],
+      "after_speed": 23.71632132383728
+    },
+    {
+      "t": 0.8,
+      "speed": 23.71632132383728,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5679330229759216,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5679330229759216,
+        -1.0
+      ],
+      "after_speed": 24.329688988651277
+    },
+    {
+      "t": 1.0,
+      "speed": 24.329688988651277,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5543325543403625,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5543325543403625,
+        -1.0
+      ],
+      "after_speed": 24.92836814733887
+    },
+    {
+      "t": 1.2000000000000002,
+      "speed": 24.92836814733887,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5399896502494812,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5399896502494812,
+        -1.0
+      ],
+      "after_speed": 25.511556969608307
+    },
+    {
+      "t": 1.4000000000000001,
+      "speed": 25.511556969608307,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5246798396110535,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5246798396110535,
+        -1.0
+      ],
+      "after_speed": 26.078211196388246
+    },
+    {
+      "t": 1.6,
+      "speed": 26.078211196388246,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.5095309019088745,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.5095309019088745,
+        -1.0
+      ],
+      "after_speed": 26.62850457044983
+    },
+    {
+      "t": 1.8,
+      "speed": 26.62850457044983,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.49508392810821533,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.49508392810821533,
+        -1.0
+      ],
+      "after_speed": 27.163195212806702
+    },
+    {
+      "t": 2.0,
+      "speed": 27.163195212806702,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.47947564721107483,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.47947564721107483,
+        -1.0
+      ],
+      "after_speed": 27.681028911794662
+    },
+    {
+      "t": 2.2,
+      "speed": 27.681028911794662,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4637792408466339,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4637792408466339,
+        -1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 2.4000000000000004,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.45494452118873596,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.45494452118873596,
+        -1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 2.6,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4481606185436249,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4481606185436249,
+        -1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 2.8000000000000003,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.44315993785858154,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.44315993785858154,
+        -1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 3.0,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4378175139427185,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4378175139427185,
+        -1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 3.2,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 3.4000000000000004,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 3.6,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 3.8000000000000003,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 4.0,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 4.2,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 4.4,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 4.6000000000000005,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.4295917749404907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.4295917749404907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 4.800000000000001,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8415284752845764,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8415284752845764,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 5.0,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8397353887557983,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8397353887557983,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 5.2,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8378403186798096,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8378403186798096,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 5.4,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8358963131904602,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8358963131904602,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 5.6000000000000005,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.833931028842926,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.833931028842926,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 5.800000000000001,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8319443464279175,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8319443464279175,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 6.0,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8298908472061157,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8298908472061157,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 6.2,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8277209401130676,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8277209401130676,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 6.4,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8254941701889038,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8254941701889038,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 6.6000000000000005,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8231619596481323,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8231619596481323,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 6.800000000000001,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8207207918167114,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8207207918167114,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 7.0,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8182492852210999,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8182492852210999,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 7.2,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8157471418380737,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8157471418380737,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 7.4,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.813214123249054,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.813214123249054,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 7.6000000000000005,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8106498718261719,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8106498718261719,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 7.800000000000001,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8080541491508484,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8080541491508484,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 8.0,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8054266571998596,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8054266571998596,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 8.200000000000001,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8027670383453369,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8027670383453369,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 8.4,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.8000751733779907,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.8000751733779907,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 8.6,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7973507642745972,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7973507642745972,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 8.8,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7945933938026428,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7945933938026428,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 9.0,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7920598983764648,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7920598983764648,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 9.200000000000001,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7891932129859924,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7891932129859924,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 9.4,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7864060401916504,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7864060401916504,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 9.600000000000001,
+      "speed": 27.78,
+      "risk": 0.0,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7835568785667419,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7835568785667419,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 9.8,
+      "speed": 27.78,
+      "risk": 0.3179046250235612,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7803525328636169,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7803525328636169,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 10.0,
+      "speed": 27.78,
+      "risk": 0.35067922276235197,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7770485281944275,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7770485281944275,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 10.200000000000001,
+      "speed": 27.78,
+      "risk": 0.3834148995560145,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7736966013908386,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7736966013908386,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 10.4,
+      "speed": 27.78,
+      "risk": 0.41617934527121475,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7703604102134705,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7703604102134705,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 10.600000000000001,
+      "speed": 27.78,
+      "risk": 0.44880574889613606,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7672567367553711,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7672567367553711,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 10.8,
+      "speed": 27.78,
+      "risk": 0.4816691967174314,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7644871473312378,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7644871473312378,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 11.0,
+      "speed": 27.78,
+      "risk": 0.5143365301290833,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7617406249046326,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7617406249046326,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 11.200000000000001,
+      "speed": 27.78,
+      "risk": 0.5470914158347692,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      },
+      "action": [
+        0.7589995265007019,
+        1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        0.7589995265007019,
+        1.0
+      ],
+      "after_speed": 27.78
+    },
+    {
+      "t": 11.4,
+      "speed": 27.78,
+      "risk": 0.5797957233506988,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": 3.471889631789322
+      },
+      "action": [
+        -0.9810407757759094,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9810407757759094,
+        -1.0
+      ],
+      "after_speed": 26.72047596216202
+    },
+    {
+      "t": 11.600000000000001,
+      "speed": 26.72047596216202,
+      "risk": 0.5817917763905637,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": 3.562261237297216
+      },
+      "action": [
+        -0.9795554280281067,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9795554280281067,
+        -1.0
+      ],
+      "after_speed": 25.662556099891663
+    },
+    {
+      "t": 11.8,
+      "speed": 25.662556099891663,
+      "risk": 0.5839510945927525,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": 3.654388289012844
+      },
+      "action": [
+        -0.9777417778968811,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9777417778968811,
+        -1.0
+      ],
+      "after_speed": 24.60659497976303
+    },
+    {
+      "t": 12.0,
+      "speed": 24.60659497976303,
+      "risk": 0.5867981117895407,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": 3.8025262591559663
+      },
+      "action": [
+        -0.9751582145690918,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9751582145690918,
+        -1.0
+      ],
+      "after_speed": 23.553424108028413
+    },
+    {
+      "t": 12.200000000000001,
+      "speed": 23.553424108028413,
+      "risk": 0.5906765666186803,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": 3.970514158387896
+      },
+      "action": [
+        -0.9725873470306396,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9725873470306396,
+        -1.0
+      ],
+      "after_speed": 22.503029773235323
+    },
+    {
+      "t": 12.4,
+      "speed": 22.503029773235323,
+      "risk": 0.5961464459423446,
+      "gap": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": 4.20760933490052
+      },
+      "action": [
+        -0.9692478179931641,
+        -1.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9692478179931641,
+        -1.0
+      ],
+      "after_speed": 21.456242129802707
+    },
+    {
+      "t": 12.600000000000001,
+      "speed": 21.456242129802707,
+      "risk": 0.6511044922497592,
+      "gap": {
+        "gap": 0.5939205919313455,
+        "lane": 0.0,
+        "ttc": 1.7152810422759657
+      },
+      "action": [
+        -0.994131326675415,
+        0.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.994131326675415,
+        0.0
+      ],
+      "after_speed": 20.382580296993257
+    },
+    {
+      "t": 12.8,
+      "speed": 20.382580296993257,
+      "risk": 0.7556020104995587,
+      "gap": {
+        "gap": 0.6974019223894694,
+        "lane": 0.0,
+        "ttc": 1.4025699610477398
+      },
+      "action": [
+        -0.9944081902503967,
+        0.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9944081902503967,
+        0.0
+      ],
+      "after_speed": 19.30861945152283
+    },
+    {
+      "t": 13.0,
+      "speed": 19.30861945152283,
+      "risk": 0.8712441986949128,
+      "gap": {
+        "gap": 0.8046473775214169,
+        "lane": 0.0,
+        "ttc": 1.0138202221507877
+      },
+      "action": [
+        -0.9945825934410095,
+        0.0
+      ],
+      "counterfactual_action_without_merge_input": [
+        -0.9945825934410095,
+        0.0
+      ]
+    }
+  ]
+}

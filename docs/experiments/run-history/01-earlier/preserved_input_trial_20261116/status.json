@@ -1,0 +1,18 @@
+{
+  "stage": "training_complete_final_candidate_rejected",
+  "steps": 200000,
+  "final_partial": {
+    "status": "screen_rejected_partial",
+    "checkpoint": "policy-200000.pt",
+    "checkpoint_sha": "8d93204ad07a3a47f33ee4a0e1666ff39ed8e91778d3ca9ed8459656cbb39224",
+    "observed_traffic": 41,
+    "planned_traffic": 48,
+    "counts": {
+      "arrival": 35,
+      "collision": 6
+    },
+    "partial_sha": "4e3f4765bd2787b4c557cf9c20da9c650ad1d171303c34bde1cda051cc0155bb",
+    "reason": "At least 3 collisions; no full rate reported."
+  },
+  "initial_evaluation": "deferred; partial retained"
+}

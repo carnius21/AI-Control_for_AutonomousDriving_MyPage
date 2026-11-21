@@ -1,0 +1,13 @@
+{
+  "stage": "evaluation",
+  "note": "Trained future checkpoint evaluations complete; initial suite remains queued",
+  "pending": [
+    {
+      "condition": "future",
+      "checkpoint": "policy-0.pt"
+    }
+  ],
+  "pids": [
+    31832
+  ]
+}

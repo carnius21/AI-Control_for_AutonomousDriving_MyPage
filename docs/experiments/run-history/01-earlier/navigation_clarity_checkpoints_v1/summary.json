@@ -1,0 +1,1210 @@
+[
+  {
+    "name": "baseline-11",
+    "mode": "baseline",
+    "seed": 11,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 42,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 50,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 62,
+    "cases": 62,
+    "regressions": 0,
+    "never_observed": 0,
+    "failures": []
+  },
+  {
+    "name": "validity-11",
+    "mode": "validity",
+    "seed": 11,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 62,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 30,
+    "cases": 62,
+    "regressions": 32,
+    "never_observed": 0,
+    "failures": [
+      {
+        "route": "route_03",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_10",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_10",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_10",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_10",
+        "lane": "1",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_11",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_11",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_11",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_11",
+        "lane": "1",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_13",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_13",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_13",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_13",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      }
+    ]
+  },
+  {
+    "name": "validity-22",
+    "mode": "validity",
+    "seed": 22,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 47,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 55,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 62,
+    "cases": 62,
+    "regressions": 0,
+    "never_observed": 0,
+    "failures": []
+  },
+  {
+    "name": "baseline-33",
+    "mode": "baseline",
+    "seed": 33,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 59,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 62,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 52,
+    "cases": 62,
+    "regressions": 10,
+    "never_observed": 0,
+    "failures": [
+      {
+        "route": "route_02",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_02",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_02",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_08",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_08",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_08",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_08",
+        "lane": "2",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_16",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_16",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_16",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      }
+    ]
+  },
+  {
+    "name": "baseline-22",
+    "mode": "baseline",
+    "seed": 22,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 47,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 62,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 59,
+    "cases": 62,
+    "regressions": 3,
+    "never_observed": 0,
+    "failures": [
+      {
+        "route": "route_13",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          600064
+        ]
+      }
+    ]
+  },
+  {
+    "name": "validity-33",
+    "mode": "validity",
+    "seed": 33,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 59,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 59,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 44,
+    "cases": 62,
+    "regressions": 18,
+    "never_observed": 0,
+    "failures": [
+      {
+        "route": "route_03",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_13",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_13",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lookahead-33",
+    "mode": "lookahead",
+    "seed": 33,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 59,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 58,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 58,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 62,
+    "cases": 62,
+    "regressions": 0,
+    "never_observed": 0,
+    "failures": []
+  },
+  {
+    "name": "lookahead-11",
+    "mode": "lookahead",
+    "seed": 11,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 59,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 55,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 58,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 58,
+    "cases": 62,
+    "regressions": 4,
+    "never_observed": 0,
+    "failures": [
+      {
+        "route": "route_07",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_07",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_07",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_07",
+        "lane": "2",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lookahead-22",
+    "mode": "lookahead",
+    "seed": 22,
+    "coarse": [
+      {
+        "step": 200704,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 401408,
+        "arrivals": 62,
+        "cases": 62
+      },
+      {
+        "step": 600064,
+        "arrivals": 40,
+        "cases": 62
+      }
+    ],
+    "final_arrivals": 41,
+    "cases": 62,
+    "regressions": 21,
+    "never_observed": 0,
+    "failures": [
+      {
+        "route": "route_03",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_03",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_04",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_05",
+        "lane": "3",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_13",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_14",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "best",
+        "speed": "max",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "0",
+        "speed": "5",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "0",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      },
+      {
+        "route": "route_15",
+        "lane": "4",
+        "speed": "15",
+        "category": "learned_then_lost",
+        "successful_steps": [
+          200704,
+          401408,
+          600064
+        ]
+      }
+    ]
+  }
+]

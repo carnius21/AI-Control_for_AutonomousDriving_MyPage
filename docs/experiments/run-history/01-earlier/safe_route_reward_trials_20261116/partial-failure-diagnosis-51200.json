@@ -1,0 +1,374 @@
+[
+  {
+    "condition": "combined",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_01",
+    "seed": 79103,
+    "traffic": "reference",
+    "outcome": "collision",
+    "seconds": 13.200000000000001,
+    "category": null,
+    "following": {
+      "risk_steps": 3,
+      "risk_brake_requests": 3,
+      "risky_lane_requests": 0,
+      "risk_actual_decelerations": 2
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 13.0,
+      "edge": "169728849",
+      "lane": 0,
+      "speed": 19.233856759071358,
+      "action": [
+        -0.9980600476264954,
+        0.0
+      ],
+      "safety": {
+        "gap": 0.8132264649203178,
+        "lane": 0.0,
+        "ttc": 0.9779018174710747
+      }
+    },
+    "first_gap_risk_in_saved_tail": {
+      "t": 12.600000000000001,
+      "speed": 21.389051249027258,
+      "action": [
+        -0.9976666569709778,
+        0.0
+      ],
+      "safety": {
+        "gap": 0.6019907766652639,
+        "lane": 0.0,
+        "ttc": 1.6901373399835409
+      }
+    },
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\combined\\policy-51200-partial.json",
+    "source_sha": "57a677ebae6f0e683938214d3a6eb08c5ed89b35ab9f56aa289e6ed984247288"
+  },
+  {
+    "condition": "combined",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_02",
+    "seed": 79102,
+    "traffic": "reference",
+    "outcome": "collision",
+    "seconds": 53.2,
+    "category": null,
+    "following": {
+      "risk_steps": 7,
+      "risk_brake_requests": 7,
+      "risky_lane_requests": 1,
+      "risk_actual_decelerations": 7,
+      "decision_steps": 31,
+      "correct_lane_steps": 8,
+      "moving_decision_steps": 31,
+      "moving_correct_lane_steps": 8,
+      "wrong_lane_steps": 23,
+      "toward_request_steps": 2,
+      "moving_wrong_lane_steps": 23,
+      "moving_toward_request_steps": 2,
+      "toward_actual_changes": 1,
+      "left_correct_lane": 0,
+      "passed_decisions": 1,
+      "passed_from_correct_lane": 1
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 53.0,
+      "edge": "844484877",
+      "lane": 0,
+      "speed": 27.266978344917298,
+      "action": [
+        0.6866463422775269,
+        1.0
+      ],
+      "safety": {
+        "gap": 0.0,
+        "lane": 1.0,
+        "ttc": null
+      }
+    },
+    "first_gap_risk_in_saved_tail": null,
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\combined\\policy-51200-partial.json",
+    "source_sha": "57a677ebae6f0e683938214d3a6eb08c5ed89b35ab9f56aa289e6ed984247288"
+  },
+  {
+    "condition": "combined",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_02",
+    "seed": 79103,
+    "traffic": "reference",
+    "outcome": "collision",
+    "seconds": 13.200000000000001,
+    "category": null,
+    "following": {
+      "risk_steps": 3,
+      "risk_brake_requests": 3,
+      "risky_lane_requests": 0,
+      "risk_actual_decelerations": 2
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 13.0,
+      "edge": "169728849",
+      "lane": 0,
+      "speed": 19.233856759071358,
+      "action": [
+        -0.9980600476264954,
+        0.0
+      ],
+      "safety": {
+        "gap": 0.8132264649203178,
+        "lane": 0.0,
+        "ttc": 0.9779018174710747
+      }
+    },
+    "first_gap_risk_in_saved_tail": {
+      "t": 12.600000000000001,
+      "speed": 21.389051249027258,
+      "action": [
+        -0.9976666569709778,
+        0.0
+      ],
+      "safety": {
+        "gap": 0.6019907766652639,
+        "lane": 0.0,
+        "ttc": 1.6901373399835409
+      }
+    },
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\combined\\policy-51200-partial.json",
+    "source_sha": "57a677ebae6f0e683938214d3a6eb08c5ed89b35ab9f56aa289e6ed984247288"
+  },
+  {
+    "condition": "lateral_zero",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_01",
+    "seed": 79101,
+    "traffic": "none",
+    "outcome": "timeout",
+    "seconds": 10800.0,
+    "category": "route_lane_blocked",
+    "following": {
+      "risk_steps": 0,
+      "risk_brake_requests": 0,
+      "risky_lane_requests": 0,
+      "risk_actual_decelerations": 0,
+      "decision_steps": 53933,
+      "correct_lane_steps": 1,
+      "moving_decision_steps": 12,
+      "moving_correct_lane_steps": 1,
+      "toward_actual_changes": 0,
+      "left_correct_lane": 1,
+      "wrong_lane_steps": 53932,
+      "toward_request_steps": 0,
+      "moving_wrong_lane_steps": 11,
+      "moving_toward_request_steps": 0
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 10799.800000000001,
+      "edge": "169929488#0",
+      "lane": 1,
+      "speed": 0.0,
+      "action": [
+        0.9720105528831482,
+        0.0
+      ],
+      "safety": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      }
+    },
+    "first_gap_risk_in_saved_tail": null,
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\lateral_zero\\policy-51200-partial.json",
+    "source_sha": "b6093107b1da67a48e78aa1646b36498231282adfaad1558924fbef2e6a2d353"
+  },
+  {
+    "condition": "lateral_zero",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_07",
+    "seed": 79101,
+    "traffic": "none",
+    "outcome": "timeout",
+    "seconds": 10800.0,
+    "category": "route_lane_blocked",
+    "following": {
+      "risk_steps": 0,
+      "risk_brake_requests": 0,
+      "risky_lane_requests": 0,
+      "risk_actual_decelerations": 0,
+      "decision_steps": 53933,
+      "correct_lane_steps": 0,
+      "moving_decision_steps": 12,
+      "moving_correct_lane_steps": 0,
+      "wrong_lane_steps": 53933,
+      "toward_request_steps": 0,
+      "moving_wrong_lane_steps": 12,
+      "moving_toward_request_steps": 0,
+      "toward_actual_changes": 0,
+      "left_correct_lane": 0
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 10799.800000000001,
+      "edge": "169929488#0",
+      "lane": 1,
+      "speed": 0.0,
+      "action": [
+        0.9720105528831482,
+        0.0
+      ],
+      "safety": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      }
+    },
+    "first_gap_risk_in_saved_tail": null,
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\lateral_zero\\policy-51200-partial.json",
+    "source_sha": "b6093107b1da67a48e78aa1646b36498231282adfaad1558924fbef2e6a2d353"
+  },
+  {
+    "condition": "safe_reward",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_05",
+    "seed": 79101,
+    "traffic": "none",
+    "outcome": "timeout",
+    "seconds": 10800.0,
+    "category": "route_lane_blocked",
+    "following": {
+      "risk_steps": 0,
+      "risk_brake_requests": 0,
+      "risky_lane_requests": 0,
+      "risk_actual_decelerations": 0,
+      "decision_steps": 53902,
+      "correct_lane_steps": 54,
+      "moving_decision_steps": 64,
+      "moving_correct_lane_steps": 54,
+      "toward_actual_changes": 0,
+      "left_correct_lane": 0,
+      "passed_decisions": 1,
+      "passed_from_correct_lane": 1,
+      "wrong_lane_steps": 53848,
+      "toward_request_steps": 0,
+      "moving_wrong_lane_steps": 10,
+      "moving_toward_request_steps": 0
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 10799.800000000001,
+      "edge": "170059994",
+      "lane": 2,
+      "speed": 0.0,
+      "action": [
+        0.9771789908409119,
+        0.0
+      ],
+      "safety": {
+        "gap": 0.0,
+        "lane": 0.0,
+        "ttc": null
+      }
+    },
+    "first_gap_risk_in_saved_tail": null,
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\safe_reward\\policy-51200-partial.json",
+    "source_sha": "1c7278cbcc8af8354e4133e04719e87fc99325dff37b11efe000648f644ec39c"
+  },
+  {
+    "condition": "safe_reward",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_01",
+    "seed": 79103,
+    "traffic": "reference",
+    "outcome": "collision",
+    "seconds": 13.200000000000001,
+    "category": null,
+    "following": {
+      "risk_steps": 3,
+      "risk_brake_requests": 3,
+      "risky_lane_requests": 0,
+      "risk_actual_decelerations": 2
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 13.0,
+      "edge": "169728849",
+      "lane": 0,
+      "speed": 19.217076129913327,
+      "action": [
+        -0.9975167512893677,
+        -1.0
+      ],
+      "safety": {
+        "gap": 0.8175212993967576,
+        "lane": 0.0,
+        "ttc": 0.9573308843952063
+      }
+    },
+    "first_gap_risk_in_saved_tail": {
+      "t": 12.600000000000001,
+      "speed": 21.371323821544646,
+      "action": [
+        -0.9972431659698486,
+        -1.0
+      ],
+      "safety": {
+        "gap": 0.6059108584929409,
+        "lane": 0.0,
+        "ttc": 1.6758519387215804
+      }
+    },
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\safe_reward\\policy-51200-partial.json",
+    "source_sha": "1c7278cbcc8af8354e4133e04719e87fc99325dff37b11efe000648f644ec39c"
+  },
+  {
+    "condition": "safe_reward",
+    "checkpoint": "policy-51200.pt",
+    "route": "route_02",
+    "seed": 79103,
+    "traffic": "reference",
+    "outcome": "collision",
+    "seconds": 13.200000000000001,
+    "category": null,
+    "following": {
+      "risk_steps": 3,
+      "risk_brake_requests": 3,
+      "risky_lane_requests": 0,
+      "risk_actual_decelerations": 2
+    },
+    "withheld": 0.0,
+    "last": {
+      "t": 13.0,
+      "edge": "169728849",
+      "lane": 0,
+      "speed": 19.217076129913327,
+      "action": [
+        -0.9975167512893677,
+        -1.0
+      ],
+      "safety": {
+        "gap": 0.8175212993967576,
+        "lane": 0.0,
+        "ttc": 0.9573308843952063
+      }
+    },
+    "first_gap_risk_in_saved_tail": {
+      "t": 12.600000000000001,
+      "speed": 21.371323821544646,
+      "action": [
+        -0.9972431659698486,
+        -1.0
+      ],
+      "safety": {
+        "gap": 0.6059108584929409,
+        "lane": 0.0,
+        "ttc": 1.6758519387215804
+      }
+    },
+    "source": "results\\safe_route_reward_trials_20261116\\early-evaluation\\51200\\safe_reward\\policy-51200-partial.json",
+    "source_sha": "1c7278cbcc8af8354e4133e04719e87fc99325dff37b11efe000648f644ec39c"
+  }
+]

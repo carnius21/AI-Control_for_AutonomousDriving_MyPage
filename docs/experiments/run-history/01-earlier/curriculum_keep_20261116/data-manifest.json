@@ -1,0 +1,511 @@
+{
+  "parent_sha": "061ff1a1d64bbcea5d352295fe1c6c7396e9e00da034c276bcd6297bde153528",
+  "episodes": [
+    {
+      "route": "route_01",
+      "seed": 910001,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 172,
+      "keep": {
+        "cruise": 19,
+        "preparation": 14
+      },
+      "safe": 8,
+      "merge_risk_steps": 4,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 12
+    },
+    {
+      "route": "route_02",
+      "seed": 910002,
+      "warmup_steps": 4500,
+      "outcome": "collision",
+      "steps": 67,
+      "keep": {},
+      "safe": 0,
+      "merge_risk_steps": 9,
+      "front_risk_steps": 1,
+      "lane_decision_steps": 0
+    },
+    {
+      "route": "route_03",
+      "seed": 910003,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 322,
+      "keep": {
+        "cruise": 10,
+        "preparation": 23
+      },
+      "safe": 33,
+      "merge_risk_steps": 1,
+      "front_risk_steps": 14,
+      "lane_decision_steps": 163
+    },
+    {
+      "route": "route_04",
+      "seed": 910004,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 406,
+      "keep": {
+        "cruise": 15,
+        "preparation": 30
+      },
+      "safe": 34,
+      "merge_risk_steps": 23,
+      "front_risk_steps": 6,
+      "lane_decision_steps": 180
+    },
+    {
+      "route": "route_05",
+      "seed": 910005,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 580,
+      "keep": {
+        "cruise": 43,
+        "preparation": 33
+      },
+      "safe": 14,
+      "merge_risk_steps": 16,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 221
+    },
+    {
+      "route": "route_06",
+      "seed": 910006,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 302,
+      "keep": {
+        "cruise": 42,
+        "preparation": 13
+      },
+      "safe": 1,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 45
+    },
+    {
+      "route": "route_07",
+      "seed": 910007,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 179,
+      "keep": {
+        "cruise": 19,
+        "preparation": 15
+      },
+      "safe": 3,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 16
+    },
+    {
+      "route": "route_08",
+      "seed": 910008,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 393,
+      "keep": {
+        "cruise": 39,
+        "preparation": 16
+      },
+      "safe": 13,
+      "merge_risk_steps": 9,
+      "front_risk_steps": 1,
+      "lane_decision_steps": 76
+    },
+    {
+      "route": "route_09",
+      "seed": 910009,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 156,
+      "keep": {
+        "cruise": 29
+      },
+      "safe": 0,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 0
+    },
+    {
+      "route": "route_10",
+      "seed": 910010,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 256,
+      "keep": {
+        "cruise": 13,
+        "preparation": 24
+      },
+      "safe": 0,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 125
+    },
+    {
+      "route": "route_11",
+      "seed": 910011,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 552,
+      "keep": {
+        "cruise": 41,
+        "preparation": 43
+      },
+      "safe": 23,
+      "merge_risk_steps": 15,
+      "front_risk_steps": 2,
+      "lane_decision_steps": 243
+    },
+    {
+      "route": "route_12",
+      "seed": 910012,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 191,
+      "keep": {
+        "cruise": 32
+      },
+      "safe": 4,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 0
+    },
+    {
+      "route": "route_13",
+      "seed": 910013,
+      "warmup_steps": 4000,
+      "outcome": "timeout",
+      "steps": 4500,
+      "keep": {},
+      "safe": 0,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 1,
+      "lane_decision_steps": 4181
+    },
+    {
+      "route": "route_14",
+      "seed": 910014,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 388,
+      "keep": {
+        "cruise": 26,
+        "preparation": 40
+      },
+      "safe": 5,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 149
+    },
+    {
+      "route": "route_15",
+      "seed": 910015,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 532,
+      "keep": {
+        "cruise": 65,
+        "preparation": 18
+      },
+      "safe": 2,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 116
+    },
+    {
+      "route": "route_16",
+      "seed": 910016,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 299,
+      "keep": {
+        "preparation": 16,
+        "cruise": 11
+      },
+      "safe": 24,
+      "merge_risk_steps": 14,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 201
+    },
+    {
+      "route": "route_01",
+      "seed": 910017,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 172,
+      "keep": {
+        "cruise": 17,
+        "preparation": 1
+      },
+      "safe": 14,
+      "merge_risk_steps": 10,
+      "front_risk_steps": 3,
+      "lane_decision_steps": 31
+    },
+    {
+      "route": "route_02",
+      "seed": 910018,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 376,
+      "keep": {
+        "cruise": 40,
+        "preparation": 19,
+        "lane_change": 1
+      },
+      "safe": 12,
+      "merge_risk_steps": 15,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 73
+    },
+    {
+      "route": "route_03",
+      "seed": 910019,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 270,
+      "keep": {
+        "cruise": 22,
+        "preparation": 30
+      },
+      "safe": 1,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 169
+    },
+    {
+      "route": "route_04",
+      "seed": 910020,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 412,
+      "keep": {
+        "cruise": 16,
+        "preparation": 33
+      },
+      "safe": 32,
+      "merge_risk_steps": 20,
+      "front_risk_steps": 4,
+      "lane_decision_steps": 218
+    },
+    {
+      "route": "route_05",
+      "seed": 910021,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 519,
+      "keep": {
+        "cruise": 45,
+        "preparation": 29
+      },
+      "safe": 16,
+      "merge_risk_steps": 18,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 179
+    },
+    {
+      "route": "route_06",
+      "seed": 910022,
+      "warmup_steps": 4000,
+      "outcome": "collision",
+      "steps": 88,
+      "keep": {},
+      "safe": 0,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 0
+    },
+    {
+      "route": "route_07",
+      "seed": 910023,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 204,
+      "keep": {
+        "cruise": 19,
+        "preparation": 7
+      },
+      "safe": 22,
+      "merge_risk_steps": 11,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 25
+    },
+    {
+      "route": "route_08",
+      "seed": 910024,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 349,
+      "keep": {
+        "cruise": 38,
+        "preparation": 17
+      },
+      "safe": 6,
+      "merge_risk_steps": 18,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 67
+    },
+    {
+      "route": "route_09",
+      "seed": 910025,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 143,
+      "keep": {
+        "cruise": 17
+      },
+      "safe": 5,
+      "merge_risk_steps": 14,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 0
+    },
+    {
+      "route": "route_10",
+      "seed": 910026,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 260,
+      "keep": {
+        "cruise": 17,
+        "preparation": 33,
+        "lane_change": 2
+      },
+      "safe": 2,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 127
+    },
+    {
+      "route": "route_11",
+      "seed": 910027,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 418,
+      "keep": {
+        "preparation": 27,
+        "cruise": 25,
+        "lane_change": 1
+      },
+      "safe": 24,
+      "merge_risk_steps": 14,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 196
+    },
+    {
+      "route": "route_12",
+      "seed": 910028,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 176,
+      "keep": {
+        "cruise": 33
+      },
+      "safe": 0,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 0
+    },
+    {
+      "route": "route_13",
+      "seed": 910029,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 335,
+      "keep": {
+        "cruise": 25,
+        "preparation": 17
+      },
+      "safe": 11,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 9,
+      "lane_decision_steps": 145
+    },
+    {
+      "route": "route_14",
+      "seed": 910030,
+      "warmup_steps": 5000,
+      "outcome": "arrival",
+      "steps": 427,
+      "keep": {
+        "cruise": 32,
+        "preparation": 35
+      },
+      "safe": 7,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 175
+    },
+    {
+      "route": "route_15",
+      "seed": 910031,
+      "warmup_steps": 4000,
+      "outcome": "arrival",
+      "steps": 541,
+      "keep": {
+        "cruise": 68,
+        "preparation": 38
+      },
+      "safe": 3,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 132
+    },
+    {
+      "route": "route_16",
+      "seed": 910032,
+      "warmup_steps": 4500,
+      "outcome": "arrival",
+      "steps": 299,
+      "keep": {
+        "cruise": 19,
+        "preparation": 22
+      },
+      "safe": 7,
+      "merge_risk_steps": 0,
+      "front_risk_steps": 0,
+      "lane_decision_steps": 197
+    }
+  ],
+  "keep": 1434,
+  "safe": 326,
+  "keep_sha": "0ae117cca688ef29c1b6f92a48de727576a7b5fac51ffc46c69ef74f832a0866",
+  "safe_sha": "72cca32439dbe112cf8cabd211068678a01ddc8b26ccf8a307390dcc0c781ce9",
+  "training_seed_range": [
+    910001,
+    910032
+  ],
+  "development_seeds": [
+    79101,
+    79102,
+    79103
+  ],
+  "final_reserved_seeds": [
+    991001,
+    991002,
+    991003,
+    991004,
+    991005,
+    991006,
+    991007,
+    991008,
+    991009,
+    991010,
+    991011,
+    991012,
+    991013,
+    991014,
+    991015,
+    991016,
+    991017,
+    991018,
+    991019,
+    991020
+  ],
+  "rules": "Arrival episode + per-frame safety and +/-5s filter for keep; safe demonstrations require downstream margins and actual deceleration or safe route-directed change."
+}

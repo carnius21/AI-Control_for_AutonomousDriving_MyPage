@@ -1,0 +1,8 @@
+{
+  "pending_conditions": [],
+  "stage": "running",
+  "active_conditions": [
+    "ahead150",
+    "near50"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "source_file": "VDS_연결로 교통량_1일_1일_20251016.zip",
+  "sha256": "1ac2e262a9b477d578c92226b97eb2a6c2c4cdb690cdd20ebc05ec2599d8829c",
+  "container_actual": "gzip",
+  "encoding": "cp949",
+  "rows": 150725,
+  "units": {
+    "15분": 35465,
+    "1시간": 8867,
+    "5분": 106393
+  },
+  "date_values": [
+    "2025-10-16"
+  ],
+  "location_matches": {
+    "퇴계": 0,
+    "사노": 0,
+    "별내": 0
+  },
+  "route100_locations": [
+    [
+      "1000VDE04650",
+      "서울외곽선 서운JC RMS 램프장비"
+    ]
+  ],
+  "empty_location_rows": 816,
+  "negative_volume_rows": 40422
+}

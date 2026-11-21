@@ -1,0 +1,11 @@
+{
+  "updated": "2026-11-16T15:19:53.006578",
+  "stage": "training",
+  "running": {
+    "collision20": 37276,
+    "anticipatory": 35356,
+    "lane4": 3056
+  },
+  "pending": [],
+  "note": "One separate final-model evaluation slot retained; all three reward conditions now running."
+}

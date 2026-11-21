@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "static_cases": 7,
+  "matched_actions": [
+    {
+      "route": "route_01",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_02",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_03",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_04",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_05",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_06",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_07",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_08",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_09",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_10",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_11",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_12",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_13",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_14",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_15",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    },
+    {
+      "route": "route_16",
+      "matched_action_steps": 40,
+      "modes": 3,
+      "overrides": 0
+    }
+  ],
+  "validation_starts": [
+    {
+      "seed": 20001,
+      "lane": 0,
+      "speed": 0,
+      "inserted": true
+    },
+    {
+      "seed": 20002,
+      "lane": 1,
+      "speed": 0,
+      "inserted": true
+    },
+    {
+      "seed": 20003,
+      "lane": 2,
+      "speed": 0,
+      "inserted": true
+    },
+    {
+      "seed": 20004,
+      "lane": 3,
+      "speed": 0,
+      "inserted": true
+    },
+    {
+      "seed": 20005,
+      "lane": 0,
+      "speed": 5,
+      "inserted": true
+    },
+    {
+      "seed": 20006,
+      "lane": 1,
+      "speed": 5,
+      "inserted": true
+    },
+    {
+      "seed": 20007,
+      "lane": 2,
+      "speed": 5,
+      "inserted": true
+    },
+    {
+      "seed": 20008,
+      "lane": 3,
+      "speed": 5,
+      "inserted": true
+    },
+    {
+      "seed": 20009,
+      "lane": 0,
+      "speed": 10,
+      "inserted": true
+    },
+    {
+      "seed": 20010,
+      "lane": 1,
+      "speed": 10,
+      "inserted": true
+    },
+    {
+      "seed": 20011,
+      "lane": 2,
+      "speed": 10,
+      "inserted": true
+    },
+    {
+      "seed": 20012,
+      "lane": 3,
+      "speed": 10,
+      "inserted": true
+    },
+    {
+      "seed": 20013,
+      "lane": 0,
+      "speed": 15,
+      "inserted": true
+    },
+    {
+      "seed": 20014,
+      "lane": 1,
+      "speed": 15,
+      "inserted": true
+    },
+    {
+      "seed": 20015,
+      "lane": 2,
+      "speed": 15,
+      "inserted": true
+    },
+    {
+      "seed": 20016,
+      "lane": 3,
+      "speed": 15,
+      "inserted": true
+    },
+    {
+      "seed": 20017,
+      "lane": 0,
+      "speed": 20,
+      "inserted": true
+    },
+    {
+      "seed": 20018,
+      "lane": 1,
+      "speed": 20,
+      "inserted": true
+    },
+    {
+      "seed": 20019,
+      "lane": 2,
+      "speed": 20,
+      "inserted": true
+    },
+    {
+      "seed": 20020,
+      "lane": 3,
+      "speed": 20,
+      "inserted": true
+    }
+  ],
+  "git": "c95a421b47a9352edeab25950989299a8949d391",
+  "network_sha256": "be949a4a3aae9fb516c3c2832243fef264312975dee6f56df12442659dfea7d9",
+  "simulation_seed_policy": "training: seeded per-episode generator; evaluation: explicit 20001..20020"
+}

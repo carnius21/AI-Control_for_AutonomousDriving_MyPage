@@ -1,0 +1,61 @@
+{
+  "cases": [
+    "low_exit10",
+    "low_exit25",
+    "low_exit40",
+    "high_exit10",
+    "high_exit25",
+    "high_exit40"
+  ],
+  "seeds": [
+    9101,
+    9102,
+    9103
+  ],
+  "horizon": 10800,
+  "source_quality": [
+    {
+      "file": "hour-10010.xml",
+      "rows": 48,
+      "unique_date_hour_direction": 48,
+      "sha256": "5de557dba5e909f246298a025452b7d28feb3f574f96b467aba71cdb051737d4"
+    },
+    {
+      "file": "hour-10031.xml",
+      "rows": 48,
+      "unique_date_hour_direction": 48,
+      "sha256": "6b52bb9b3f64f347ce9271cac8c13f59984e201fb1df3674c98e9f5991993d38"
+    },
+    {
+      "file": "hour-4306-003.xml",
+      "rows": 144,
+      "unique_date_hour_direction": 48,
+      "sha256": "6fa228b41c24d02202ae8d13eecf7f8aea73c82fbc28f09dde848320a2e6a9c0"
+    },
+    {
+      "file": "hour-4603-000.xml",
+      "rows": 48,
+      "unique_date_hour_direction": 48,
+      "sha256": "6c4aa9bf5da2c379d583e19d29fca716336dcffaff07ed10b699b07cdee1214a"
+    },
+    {
+      "file": "hour-4603-001.xml",
+      "rows": 48,
+      "unique_date_hour_direction": 48,
+      "sha256": "785c9cf7c6a21d91e2ccd9f0cc38395173fc8dec853eadfc13184ba6e7b66f77"
+    },
+    {
+      "file": "hour-4603-002.xml",
+      "rows": 96,
+      "unique_date_hour_direction": 48,
+      "sha256": "67d0e056b4e459f42c7a864faf96af906aaae772a41b7f78ff73be6e34c34dc8"
+    },
+    {
+      "file": "hour-4705-000.xml",
+      "rows": 143,
+      "unique_date_hour_direction": 48,
+      "sha256": "7708b50a745d1d409d7b453a0edb9d0a61e5c4a74658a0a12c0549c4aadc5a20"
+    }
+  ],
+  "prepared_commit": "7fd79c13275ee43bd9d83b0f1cc96a361a8cb307"
+}

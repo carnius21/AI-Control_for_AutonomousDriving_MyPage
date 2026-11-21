@@ -1,0 +1,6 @@
+{
+  "stage": "interrupted_power_loss",
+  "pid": 122332,
+  "recovery": "results/traffic_recovery_auto_20261116",
+  "note": "No trained checkpoint survived; original outputs preserved"
+}

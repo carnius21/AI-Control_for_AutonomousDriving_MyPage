@@ -1,0 +1,16 @@
+{
+  "current_targets": [
+    3.9600000381469727,
+    98.01000213623047
+  ],
+  "boundary_isolated_targets": [
+    3.9600000381469727,
+    3.9600000381469727
+  ],
+  "expected": 3.96,
+  "next_episode_rewards": [
+    0,
+    100
+  ],
+  "note": "Synthetic reproduction of current PPO timeout storage plus actual RolloutBuffer.compute_gae. Not a training fix or proof of measured performance impact."
+}

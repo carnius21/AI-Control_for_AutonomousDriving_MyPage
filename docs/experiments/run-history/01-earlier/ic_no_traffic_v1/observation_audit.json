@@ -1,0 +1,378 @@
+{
+  "method": "First recorded 1-second sample per visited branching edge; no frequency claim about unsampled steps",
+  "cases": [
+    {
+      "case": "R0-11-north_to_west",
+      "branches": [
+        {
+          "edge": "nb_in",
+          "next_edge": "north_exit",
+          "allowed_lanes": [
+            0
+          ],
+          "sample_time": 0.0,
+          "lane": 0,
+          "best_offset": 0,
+          "distance_input": 147.56,
+          "split_input": "nb_in",
+          "raw_lane_action": -1.0,
+          "observation_tail": [
+            0.0,
+            0.7378000020980835,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": "weave",
+          "next_edge": "flyover",
+          "allowed_lanes": [
+            3
+          ],
+          "sample_time": 21.0,
+          "lane": 2,
+          "best_offset": 1,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": -1.0,
+          "observation_tail": [
+            0.3333333432674408,
+            -1.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-11-south_through",
+      "branches": [
+        {
+          "edge": "sb_in",
+          "next_edge": "sb_bridge",
+          "allowed_lanes": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "sample_time": 0.0,
+          "lane": 3,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": -1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-11-south_to_east",
+      "branches": [
+        {
+          "edge": "sb_in",
+          "next_edge": "south_exit",
+          "allowed_lanes": [
+            1
+          ],
+          "sample_time": 0.0,
+          "lane": 1,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": -1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-22-north_to_west",
+      "branches": [
+        {
+          "edge": "nb_in",
+          "next_edge": "north_exit",
+          "allowed_lanes": [
+            0
+          ],
+          "sample_time": 0.0,
+          "lane": 0,
+          "best_offset": 0,
+          "distance_input": 147.56,
+          "split_input": "nb_in",
+          "raw_lane_action": 0.0,
+          "observation_tail": [
+            0.0,
+            0.7378000020980835,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": "weave",
+          "next_edge": "flyover",
+          "allowed_lanes": [
+            3
+          ],
+          "sample_time": 21.0,
+          "lane": 3,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": "west_accel",
+          "next_edge": "west_out",
+          "allowed_lanes": [
+            1,
+            2
+          ],
+          "sample_time": 41.0,
+          "lane": 2,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            0.6997840404510498,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-22-south_through",
+      "branches": [
+        {
+          "edge": "sb_in",
+          "next_edge": "sb_bridge",
+          "allowed_lanes": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "sample_time": 0.0,
+          "lane": 3,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-22-south_to_east",
+      "branches": [
+        {
+          "edge": "sb_in",
+          "next_edge": "south_exit",
+          "allowed_lanes": [
+            1
+          ],
+          "sample_time": 0.0,
+          "lane": 1,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-33-north_to_west",
+      "branches": [
+        {
+          "edge": "nb_in",
+          "next_edge": "north_exit",
+          "allowed_lanes": [
+            0
+          ],
+          "sample_time": 0.0,
+          "lane": 0,
+          "best_offset": 0,
+          "distance_input": 147.56,
+          "split_input": "nb_in",
+          "raw_lane_action": -1.0,
+          "observation_tail": [
+            0.0,
+            0.7378000020980835,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": "weave",
+          "next_edge": "flyover",
+          "allowed_lanes": [
+            3
+          ],
+          "sample_time": 24.0,
+          "lane": 3,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 0.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": "west_accel",
+          "next_edge": "west_out",
+          "allowed_lanes": [
+            1,
+            2
+          ],
+          "sample_time": 49.0,
+          "lane": 0,
+          "best_offset": 1,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 1.0,
+          "observation_tail": [
+            0.3333333432674408,
+            -1.0,
+            0.0,
+            0.6997840404510498,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-33-south_through",
+      "branches": [
+        {
+          "edge": "sb_in",
+          "next_edge": "sb_bridge",
+          "allowed_lanes": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "sample_time": 0.0,
+          "lane": 3,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "R0-33-south_to_east",
+      "branches": [
+        {
+          "edge": "sb_in",
+          "next_edge": "south_exit",
+          "allowed_lanes": [
+            1
+          ],
+          "sample_time": 0.0,
+          "lane": 1,
+          "best_offset": 0,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": -1.0,
+          "observation_tail": [
+            0.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "edge": "weave",
+          "next_edge": "east_ramp",
+          "allowed_lanes": [
+            0,
+            1,
+            2
+          ],
+          "sample_time": 45.0,
+          "lane": 3,
+          "best_offset": -1,
+          "distance_input": null,
+          "split_input": null,
+          "raw_lane_action": 0.0,
+          "observation_tail": [
+            -0.3333333432674408,
+            -1.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "hyperparameters_equal": true,
+  "initial_tensor_equal": true,
+  "inputs_equal": true,
+  "base_reward_equal": true,
+  "existing_source_hashes_equal": true,
+  "smoke": {
+    "condition": "anticipatory",
+    "steps": 32,
+    "model_sha": "6f4741ce6033e02d4229e932011cdf1983d8d8a21eace47c43648bffa983d5b6",
+    "evaluations": 4
+  }
+}

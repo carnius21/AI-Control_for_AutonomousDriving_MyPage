@@ -1,0 +1,8 @@
+{
+  "samples": 326,
+  "lane_requests": 106,
+  "same_edge_executed_changes": 1,
+  "requested_no_same_edge_change": 105,
+  "wrong_direction_requests": 0,
+  "same_edge_samples": 315
+}

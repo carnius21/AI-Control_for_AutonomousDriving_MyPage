@@ -1,0 +1,4 @@
+{
+  "stage": "superseded",
+  "reason": "Integer-rate flows yielded extra vehicles through departure period rounding; preserved and replaced by explicit-number experiment."
+}

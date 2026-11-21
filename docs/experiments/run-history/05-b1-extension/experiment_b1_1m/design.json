@@ -1,0 +1,28 @@
+{
+  "parent": "D:\\\uc790\uc728\uc8fc\ud589\uc778\uacf5\uc9c0\ub2a5\ubc0f\uc81c\uc5b4 \ud300\ud504\ub85c\uc81d\ud2b8\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\experiment_b_20261121",
+  "mode": "B1 policy-only continuation, fresh optimizer/RNG and new episode at boundary",
+  "train_seeds": [
+    11,
+    22,
+    33
+  ],
+  "steps": [
+    600000,
+    650000,
+    700000,
+    750000,
+    800000,
+    850000,
+    900000,
+    950000,
+    1000000
+  ],
+  "selection_base": 810000,
+  "holdout_base": [
+    920000,
+    920100,
+    920200,
+    920300
+  ],
+  "rule": "Compare 600k to 1M on untouched high traffic. Look for paired gains in >=2/3 seeds, both route13-from-1 and route16-from-0, and collision tradeoff. Mixed evidence is inconclusive."
+}

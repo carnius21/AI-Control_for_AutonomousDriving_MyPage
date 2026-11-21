@@ -1,0 +1,92 @@
+[
+  {
+    "s": 11,
+    "seed": 41016,
+    "initial": 1,
+    "passed": false,
+    "result": "timeout",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 398.2
+  },
+  {
+    "s": 11,
+    "seed": 41116,
+    "initial": 1,
+    "passed": false,
+    "result": "timeout",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 397.6
+  },
+  {
+    "s": 11,
+    "seed": 41216,
+    "initial": 1,
+    "passed": false,
+    "result": "timeout",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 398.1
+  },
+  {
+    "s": 22,
+    "seed": 41016,
+    "initial": 1,
+    "passed": false,
+    "result": "collision",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 483.4
+  },
+  {
+    "s": 22,
+    "seed": 41116,
+    "initial": 1,
+    "passed": false,
+    "result": "collision",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 483.4
+  },
+  {
+    "s": 22,
+    "seed": 41216,
+    "initial": 1,
+    "passed": false,
+    "result": "timeout",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 483.4
+  },
+  {
+    "s": 33,
+    "seed": 41016,
+    "initial": 1,
+    "passed": false,
+    "result": "collision",
+    "edge": "86198728",
+    "lane": 1,
+    "right_at": null
+  },
+  {
+    "s": 33,
+    "seed": 41116,
+    "initial": 1,
+    "passed": false,
+    "result": "timeout",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 394.5
+  },
+  {
+    "s": 33,
+    "seed": 41216,
+    "initial": 1,
+    "passed": false,
+    "result": "timeout",
+    "edge": "86198728",
+    "lane": 0,
+    "right_at": 394.5
+  }
+]

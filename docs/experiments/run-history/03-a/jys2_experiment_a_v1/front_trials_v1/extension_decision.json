@@ -1,0 +1,9 @@
+{
+  "sustained": [],
+  "extend": true,
+  "checkpoints": [
+    75000,
+    100000,
+    150000
+  ]
+}

@@ -1,0 +1,434 @@
+[
+  {
+    "route": "route_01",
+    "seed": 41001,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_02.4",
+        "lane": "169728849_0",
+        "pos": 326.0007791571747,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 11.949856599537117
+      }
+    ],
+    "ego": "ego",
+    "time": 72.0
+  },
+  {
+    "route": "route_01",
+    "seed": 41201,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "junction",
+        "collider": "ego",
+        "victim": "flow_route_07.13",
+        "lane": ":1808903166_0_0",
+        "pos": 2.99250577374562,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 10.479405457044349
+      }
+    ],
+    "ego": "ego",
+    "time": 73.0
+  },
+  {
+    "route": "route_02",
+    "seed": 41002,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "junction",
+        "collider": "ego",
+        "victim": "flow_route_07.14",
+        "lane": ":1808903166_0_0",
+        "pos": 0.7274841173056643,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 17.95451559166612
+      }
+    ],
+    "ego": "ego",
+    "time": 73.0
+  },
+  {
+    "route": "route_02",
+    "seed": 41102,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_07.14",
+        "lane": "169929488#0_0",
+        "pos": 2.7518531217551097,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 17.084096175705533
+      }
+    ],
+    "ego": "ego",
+    "time": 73.4
+  },
+  {
+    "route": "route_02",
+    "seed": 41202,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_02.4",
+        "lane": "169728849_0",
+        "pos": 305.11590705741816,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 17.484297923157275
+      }
+    ],
+    "ego": "ego",
+    "time": 71.2
+  },
+  {
+    "route": "route_03",
+    "seed": 41103,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "flow_route_06.86",
+        "victim": "ego",
+        "lane": "52873356_2",
+        "pos": 438.80423491000425,
+        "colliderSpeed": 4.684207103750081,
+        "victimSpeed": 0.0
+      }
+    ],
+    "ego": "ego",
+    "time": 91.8
+  },
+  {
+    "route": "route_06",
+    "seed": 41106,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_06.89",
+        "lane": "844484878#0_2",
+        "pos": 300.2059055770142,
+        "colliderSpeed": 27.307313719578087,
+        "victimSpeed": 23.422707397634035
+      }
+    ],
+    "ego": "ego",
+    "time": 109.0
+  },
+  {
+    "route": "route_06",
+    "seed": 41206,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_06.76",
+        "lane": "844484878#0_2",
+        "pos": 90.35698131454195,
+        "colliderSpeed": 26.80319413349033,
+        "victimSpeed": 22.45706063740079
+      }
+    ],
+    "ego": "ego",
+    "time": 87.0
+  },
+  {
+    "route": "route_07",
+    "seed": 41207,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_08.14",
+        "lane": "544295537_1",
+        "pos": 305.47593744541837,
+        "colliderSpeed": 27.711560210287573,
+        "victimSpeed": 19.67262455551965
+      }
+    ],
+    "ego": "ego",
+    "time": 71.2
+  },
+  {
+    "route": "route_08",
+    "seed": 41008,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_07.14",
+        "lane": "544295537_0",
+        "pos": 334.3306833306183,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 15.76142541750989
+      }
+    ],
+    "ego": "ego",
+    "time": 72.4
+  },
+  {
+    "route": "route_08",
+    "seed": 41108,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_07.14",
+        "lane": "544295537_0",
+        "pos": 218.11593105026566,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 16.498011560340952
+      }
+    ],
+    "ego": "ego",
+    "time": 68.2
+  },
+  {
+    "route": "route_08",
+    "seed": 41208,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_08.14",
+        "lane": "372821396_1",
+        "pos": 77.40916718927,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 24.017070489118623
+      }
+    ],
+    "ego": "ego",
+    "time": 90.8
+  },
+  {
+    "route": "route_09",
+    "seed": 41009,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_09.19",
+        "lane": "169929503#0_0",
+        "pos": 146.4773552315483,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 23.679942330702286
+      }
+    ],
+    "ego": "ego",
+    "time": 68.6
+  },
+  {
+    "route": "route_09",
+    "seed": 41109,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_09.18",
+        "lane": "169929503#1_0",
+        "pos": 119.20962815872896,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 23.250274268785404
+      }
+    ],
+    "ego": "ego",
+    "time": 78.4
+  },
+  {
+    "route": "route_10",
+    "seed": 41010,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_11.6",
+        "lane": "170059993_0",
+        "pos": 38.2251378204045,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 24.12667210402111
+      }
+    ],
+    "ego": "ego",
+    "time": 78.4
+  },
+  {
+    "route": "route_10",
+    "seed": 41110,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_11.6",
+        "lane": "170059993_0",
+        "pos": 49.577999999999676,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 21.692061251826242
+      }
+    ],
+    "ego": "ego",
+    "time": 78.8
+  },
+  {
+    "route": "route_10",
+    "seed": 41210,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_11.6",
+        "lane": "781184662#1_0",
+        "pos": 52.62076044523454,
+        "colliderSpeed": 25.987355525355063,
+        "victimSpeed": 12.63957720499733
+      }
+    ],
+    "ego": "ego",
+    "time": 62.8
+  },
+  {
+    "route": "route_11",
+    "seed": 41011,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_11.6",
+        "lane": "781184662#1_0",
+        "pos": 383.36399999999986,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 18.05104630733993
+      }
+    ],
+    "ego": "ego",
+    "time": 74.0
+  },
+  {
+    "route": "route_11",
+    "seed": 41111,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_11.6",
+        "lane": "170059993_0",
+        "pos": 87.94515016075249,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 22.206667999999997
+      }
+    ],
+    "ego": "ego",
+    "time": 80.2
+  },
+  {
+    "route": "route_11",
+    "seed": 41211,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "junction",
+        "collider": "ego",
+        "victim": "flow_route_10.6",
+        "lane": ":1810879869_0_0",
+        "pos": 12.12799999999968,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 18.007088
+      }
+    ],
+    "ego": "ego",
+    "time": 76.8
+  },
+  {
+    "route": "route_12",
+    "seed": 41112,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_11.6",
+        "lane": "781184662#1_0",
+        "pos": 344.331068596,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 23.795398
+      }
+    ],
+    "ego": "ego",
+    "time": 72.6
+  },
+  {
+    "route": "route_13",
+    "seed": 41013,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "collision",
+        "collider": "ego",
+        "victim": "flow_route_15.3",
+        "lane": "86198728_0",
+        "pos": 216.68400000000014,
+        "colliderSpeed": 27.78,
+        "victimSpeed": 16.859611832362955
+      }
+    ],
+    "ego": "ego",
+    "time": 68.0
+  },
+  {
+    "route": "route_15",
+    "seed": 41015,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "side",
+        "collider": "ego",
+        "victim": "flow_route_16.60",
+        "lane": "86198728_1",
+        "pos": 3.8868462539412287,
+        "colliderSpeed": 19.434231269706142,
+        "victimSpeed": 27.61553084833325
+      }
+    ],
+    "ego": "ego",
+    "time": 60.4
+  },
+  {
+    "route": "route_15",
+    "seed": 41115,
+    "outcome": "collision",
+    "collisions": [
+      {
+        "type": "side",
+        "collider": "flow_route_16.60",
+        "victim": "ego",
+        "lane": "86198728_1",
+        "pos": 43.073399582749715,
+        "colliderSpeed": 23.352979291156608,
+        "victimSpeed": 27.78
+      }
+    ],
+    "ego": "ego",
+    "time": 61.8
+  }
+]

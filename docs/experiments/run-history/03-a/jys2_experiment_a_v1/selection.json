@@ -1,0 +1,29 @@
+{
+  "baseline": "A0",
+  "lane_change_penalty": 0,
+  "source_arm": "A0_no_lc_cost",
+  "stage": "high_real_ratio",
+  "steps": 600000,
+  "by_seed": {
+    "11": {
+      "arrival": 19,
+      "timeout": 28,
+      "collision": 1
+    },
+    "22": {
+      "collision": 25,
+      "arrival": 16,
+      "timeout": 7
+    },
+    "33": {
+      "collision": 28,
+      "arrival": 15,
+      "timeout": 5
+    }
+  },
+  "total": {
+    "arrival": 50,
+    "timeout": 40,
+    "collision": 54
+  }
+}

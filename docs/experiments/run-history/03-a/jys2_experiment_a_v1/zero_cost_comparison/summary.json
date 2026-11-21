@@ -1,0 +1,75 @@
+{
+  "cost": 0,
+  "steps": 600000,
+  "stages": [
+    "none",
+    "low",
+    "high_real_ratio"
+  ],
+  "environment_sha256": "691ec452167bbe7e27f927f17141c076f64521f7b136a9170cbfedfb3c3b0b34",
+  "A0": {
+    "11": {
+      "arrival": 19,
+      "timeout": 28,
+      "collision": 1
+    },
+    "22": {
+      "collision": 25,
+      "arrival": 16,
+      "timeout": 7
+    },
+    "33": {
+      "collision": 28,
+      "arrival": 15,
+      "timeout": 5
+    }
+  },
+  "completed": {
+    "A3_11": {
+      "collision": 26,
+      "timeout": 15,
+      "arrival": 7
+    },
+    "A2_11": {
+      "collision": 29,
+      "timeout": 12,
+      "arrival": 7
+    },
+    "A1_11": {
+      "collision": 31,
+      "timeout": 13,
+      "arrival": 4
+    },
+    "A1_22": {
+      "collision": 31,
+      "timeout": 13,
+      "arrival": 4
+    },
+    "A2_22": {
+      "collision": 23,
+      "timeout": 9,
+      "arrival": 16
+    },
+    "A3_22": {
+      "arrival": 21,
+      "timeout": 24,
+      "collision": 3
+    },
+    "A1_33": {
+      "arrival": 22,
+      "timeout": 24,
+      "collision": 2
+    },
+    "A2_33": {
+      "collision": 27,
+      "timeout": 15,
+      "arrival": 6
+    },
+    "A3_33": {
+      "collision": 26,
+      "arrival": 11,
+      "timeout": 11
+    }
+  },
+  "errors": {}
+}

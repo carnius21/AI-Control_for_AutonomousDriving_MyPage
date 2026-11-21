@@ -1,0 +1,269 @@
+[
+  {
+    "route": "route_13",
+    "seed": 911301,
+    "passed": false,
+    "outcome": "collision",
+    "last_edge": "86198728",
+    "last_lane": 0,
+    "remaining": 471,
+    "changes": [
+      [
+        1,
+        0,
+        483
+      ]
+    ],
+    "failure": {
+      "edge": "86198728",
+      "lane": 0,
+      "targets": [
+        0
+      ],
+      "next_edge": "37927508",
+      "remaining": 470.8,
+      "speed": 20.11,
+      "leader": [
+        "flow_route_15.3",
+        0.5235424980646037
+      ],
+      "split_distance": null,
+      "split_index": null,
+      "prep": [],
+      "command": -1,
+      "accel": -0.91,
+      "kind": "ego_rear_ends",
+      "context": "other_change",
+      "sumo_type": "collision",
+      "collision_lane": "86198728_0",
+      "partner": "flow_route_15.3",
+      "ego_collider": true
+    },
+    "crash": {
+      "collision_unknown": 1
+    }
+  },
+  {
+    "route": "route_16",
+    "seed": 911301,
+    "passed": false,
+    "outcome": "collision",
+    "last_edge": "86198728",
+    "last_lane": 0,
+    "remaining": 471,
+    "changes": [
+      [
+        1,
+        0,
+        483
+      ]
+    ],
+    "failure": {
+      "edge": "86198728",
+      "lane": 0,
+      "targets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "next_edge": "86198725",
+      "remaining": 470.8,
+      "speed": 20.11,
+      "leader": [
+        "flow_route_15.3",
+        0.5235424980646037
+      ],
+      "split_distance": null,
+      "split_index": null,
+      "prep": [],
+      "command": -1,
+      "accel": -0.91,
+      "kind": "ego_rear_ends",
+      "context": "other_change",
+      "sumo_type": "collision",
+      "collision_lane": "86198728_0",
+      "partner": "flow_route_15.3",
+      "ego_collider": true
+    },
+    "crash": {
+      "collision_unknown": 1
+    }
+  },
+  {
+    "route": "route_13",
+    "seed": 911302,
+    "passed": true,
+    "outcome": "collision",
+    "last_edge": "170059995",
+    "last_lane": 0,
+    "remaining": 101,
+    "changes": [
+      [
+        1,
+        0,
+        483
+      ]
+    ],
+    "failure": {
+      "edge": "170059995",
+      "lane": 0,
+      "targets": [
+        0
+      ],
+      "next_edge": "170059994",
+      "remaining": 100.6,
+      "speed": 13.04,
+      "leader": [
+        "flow_route_15.3",
+        0.09495813743287229
+      ],
+      "split_distance": 170.45644984703304,
+      "split_index": 6,
+      "prep": [],
+      "command": -1,
+      "accel": -0.26,
+      "kind": "ego_rear_ends",
+      "context": "no_recent_change",
+      "sumo_type": "collision",
+      "collision_lane": "170059995_0",
+      "partner": "flow_route_15.3",
+      "ego_collider": true
+    },
+    "crash": {
+      "collision_unknown": 1
+    }
+  },
+  {
+    "route": "route_16",
+    "seed": 911302,
+    "passed": true,
+    "outcome": "collision",
+    "last_edge": ":844484877.189_0",
+    "last_lane": 1,
+    "remaining": 7,
+    "changes": [
+      [
+        1,
+        0,
+        483
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "failure": {
+      "edge": ":844484877.189_0",
+      "lane": 1,
+      "targets": [],
+      "next_edge": "844484877#1",
+      "remaining": 6.8,
+      "speed": 2.95,
+      "leader": null,
+      "split_distance": null,
+      "split_index": null,
+      "prep": [],
+      "command": -1,
+      "accel": 0.89,
+      "kind": "junction",
+      "context": "other_change",
+      "sumo_type": "junction",
+      "collision_lane": ":844484877.189_0_1",
+      "partner": "flow_route_16.78",
+      "ego_collider": false
+    },
+    "crash": {
+      "collision_unknown": 1
+    }
+  },
+  {
+    "route": "route_13",
+    "seed": 911303,
+    "passed": true,
+    "outcome": "collision",
+    "last_edge": "170059995",
+    "last_lane": 0,
+    "remaining": 85,
+    "changes": [
+      [
+        1,
+        0,
+        483
+      ]
+    ],
+    "failure": {
+      "edge": "170059995",
+      "lane": 0,
+      "targets": [
+        0
+      ],
+      "next_edge": "170059994",
+      "remaining": 85.1,
+      "speed": 15.41,
+      "leader": [
+        "flow_route_15.3",
+        0.5043919064941633
+      ],
+      "split_distance": 155.00590727861976,
+      "split_index": 6,
+      "prep": [],
+      "command": -1,
+      "accel": -0.22,
+      "kind": "ego_rear_ends",
+      "context": "no_recent_change",
+      "sumo_type": "collision",
+      "collision_lane": "170059995_0",
+      "partner": "flow_route_15.3",
+      "ego_collider": true
+    },
+    "crash": {
+      "collision_unknown": 1
+    }
+  },
+  {
+    "route": "route_16",
+    "seed": 911303,
+    "passed": true,
+    "outcome": "collision",
+    "last_edge": ":844484877.189_0",
+    "last_lane": 1,
+    "remaining": 5,
+    "changes": [
+      [
+        1,
+        0,
+        483
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "failure": {
+      "edge": ":844484877.189_0",
+      "lane": 1,
+      "targets": [],
+      "next_edge": "844484877#1",
+      "remaining": 5.0,
+      "speed": 4.97,
+      "leader": null,
+      "split_distance": null,
+      "split_index": null,
+      "prep": [],
+      "command": -1,
+      "accel": 0.86,
+      "kind": "junction",
+      "context": "no_recent_change",
+      "sumo_type": "junction",
+      "collision_lane": ":844484877.189_0_1",
+      "partner": "flow_route_16.96",
+      "ego_collider": false
+    },
+    "crash": {
+      "collision_unknown": 1
+    }
+  }
+]

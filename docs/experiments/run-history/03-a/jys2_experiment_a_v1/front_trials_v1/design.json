@@ -1,0 +1,22 @@
+{
+  "parent": "D:\\\uc790\uc728\uc8fc\ud589\uc778\uacf5\uc9c0\ub2a5\ubc0f\uc81c\uc5b4 \ud300\ud504\ub85c\uc81d\ud2b8\\Artificial-Intelligence-and-Control-for-Autonomous-Driving\\results\\jys2_experiment_a_v1\\A0_11\\policy_600000.pt",
+  "sha256": "77e178b672f6eb6a875925e7eeb2a6ef5d0711e06507d488b4dc05d666c812ee",
+  "seed": 11,
+  "arms": [
+    "control",
+    "gap",
+    "brake"
+  ],
+  "marks": [
+    10000,
+    20000,
+    30000,
+    40000,
+    50000
+  ],
+  "stage": "high_real_ratio",
+  "risk": "closing>0.5m/s and TTC<2.5s",
+  "penalty": "0.15 per nonterminal at-risk step with accel_raw >= 0",
+  "dt": 0.2,
+  "depart_lane": 0
+}

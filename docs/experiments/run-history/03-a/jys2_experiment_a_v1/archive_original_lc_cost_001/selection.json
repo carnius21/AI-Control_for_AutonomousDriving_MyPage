@@ -1,0 +1,50 @@
+{
+  "scores": {
+    "A0": {
+      "arrival": 23,
+      "timeout": 19,
+      "collision": 6,
+      "wrong_timeout": 11,
+      "at300": 63,
+      "ready300": 45,
+      "risk_attempts": 5,
+      "attempts": 34
+    },
+    "A1": {
+      "arrival": 18,
+      "collision": 8,
+      "timeout": 22,
+      "wrong_timeout": 16,
+      "at300": 59,
+      "ready300": 44,
+      "risk_attempts": 0,
+      "attempts": 9
+    },
+    "A3": {
+      "collision": 24,
+      "timeout": 17,
+      "arrival": 7,
+      "wrong_timeout": 17,
+      "at300": 31,
+      "ready300": 14,
+      "risk_attempts": 3,
+      "attempts": 50
+    },
+    "A2": {
+      "collision": 24,
+      "timeout": 17,
+      "arrival": 7,
+      "wrong_timeout": 17,
+      "at300": 43,
+      "ready300": 28,
+      "risk_attempts": 1,
+      "attempts": 228
+    }
+  },
+  "prep_improved": false,
+  "safety_improved": false,
+  "repeat": [
+    "A0",
+    "A1"
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "route": "route_01",
+    "seed": 63001,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_02",
+    "seed": 63002,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_03",
+    "seed": 63003,
+    "outcome": "arrival"
+  },
+  {
+    "route": "route_04",
+    "seed": 63004,
+    "outcome": "arrival"
+  },
+  {
+    "route": "route_05",
+    "seed": 63005,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_06",
+    "seed": 63006,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_07",
+    "seed": 63007,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_08",
+    "seed": 63008,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_09",
+    "seed": 63009,
+    "outcome": "arrival"
+  },
+  {
+    "route": "route_10",
+    "seed": 63010,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_11",
+    "seed": 63011,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_12",
+    "seed": 63012,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_13",
+    "seed": 63013,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_14",
+    "seed": 63014,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_15",
+    "seed": 63015,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_16",
+    "seed": 63016,
+    "outcome": "collision"
+  }
+]

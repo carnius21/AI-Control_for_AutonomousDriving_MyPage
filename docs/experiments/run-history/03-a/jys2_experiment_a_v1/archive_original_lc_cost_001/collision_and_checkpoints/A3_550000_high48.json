@@ -1,0 +1,242 @@
+[
+  {
+    "route": "route_01",
+    "seed": 41001,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_01",
+    "seed": 41101,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_01",
+    "seed": 41201,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_02",
+    "seed": 41002,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_02",
+    "seed": 41102,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_02",
+    "seed": 41202,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_03",
+    "seed": 41003,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_03",
+    "seed": 41103,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_03",
+    "seed": 41203,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_04",
+    "seed": 41004,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_04",
+    "seed": 41104,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_04",
+    "seed": 41204,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_05",
+    "seed": 41005,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_05",
+    "seed": 41105,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_05",
+    "seed": 41205,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_06",
+    "seed": 41006,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_06",
+    "seed": 41106,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_06",
+    "seed": 41206,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_07",
+    "seed": 41007,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_07",
+    "seed": 41107,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_07",
+    "seed": 41207,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_08",
+    "seed": 41008,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_08",
+    "seed": 41108,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_08",
+    "seed": 41208,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_09",
+    "seed": 41009,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_09",
+    "seed": 41109,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_09",
+    "seed": 41209,
+    "outcome": "arrival"
+  },
+  {
+    "route": "route_10",
+    "seed": 41010,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_10",
+    "seed": 41110,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_10",
+    "seed": 41210,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_11",
+    "seed": 41011,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_11",
+    "seed": 41111,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_11",
+    "seed": 41211,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_12",
+    "seed": 41012,
+    "outcome": "arrival"
+  },
+  {
+    "route": "route_12",
+    "seed": 41112,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_12",
+    "seed": 41212,
+    "outcome": "arrival"
+  },
+  {
+    "route": "route_13",
+    "seed": 41013,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_13",
+    "seed": 41113,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_13",
+    "seed": 41213,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_14",
+    "seed": 41014,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_14",
+    "seed": 41114,
+    "outcome": "timeout"
+  },
+  {
+    "route": "route_14",
+    "seed": 41214,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_15",
+    "seed": 41015,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_15",
+    "seed": 41115,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_15",
+    "seed": 41215,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_16",
+    "seed": 41016,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_16",
+    "seed": 41116,
+    "outcome": "collision"
+  },
+  {
+    "route": "route_16",
+    "seed": 41216,
+    "outcome": "arrival"
+  }
+]

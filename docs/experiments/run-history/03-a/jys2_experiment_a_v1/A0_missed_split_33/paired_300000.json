@@ -1,0 +1,38 @@
+{
+  "A0_no_lc_cost": {
+    "outcomes": {
+      "arrival": 5,
+      "timeout": 5,
+      "collision": 6
+    },
+    "route16": [
+      {
+        "seed": 63016,
+        "outcome": "timeout",
+        "observed_approach": 1,
+        "left_requests": 0,
+        "actual_left": 0,
+        "passed": 0,
+        "miss_penalties": 0
+      }
+    ]
+  },
+  "A0_missed_split": {
+    "outcomes": {
+      "arrival": 5,
+      "timeout": 5,
+      "collision": 6
+    },
+    "route16": [
+      {
+        "seed": 63016,
+        "outcome": "timeout",
+        "observed_approach": 1,
+        "left_requests": 0,
+        "actual_left": 0,
+        "passed": 0,
+        "miss_penalties": 1
+      }
+    ]
+  }
+}

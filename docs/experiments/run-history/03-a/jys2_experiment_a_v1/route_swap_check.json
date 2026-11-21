@@ -1,0 +1,46 @@
+{
+  "route_04 vs route_06": {
+    "edge": "52873356",
+    "changed": [
+      34
+    ],
+    "signs": [
+      -1.0,
+      1.0
+    ],
+    "distance_m": 45.0
+  },
+  "route_14 vs route_16": {
+    "edge": "86198728",
+    "changed": [
+      34
+    ],
+    "signs": [
+      -1.0,
+      1.0
+    ],
+    "distance_m": 45.0
+  },
+  "route_04 vs route_05": {
+    "edge": "170059994",
+    "changed": [
+      34
+    ],
+    "signs": [
+      1.0,
+      -1.0
+    ],
+    "distance_m": 45.0
+  },
+  "route_14 vs route_15": {
+    "edge": "170059994",
+    "changed": [
+      34
+    ],
+    "signs": [
+      1.0,
+      -1.0
+    ],
+    "distance_m": 45.0
+  }
+}

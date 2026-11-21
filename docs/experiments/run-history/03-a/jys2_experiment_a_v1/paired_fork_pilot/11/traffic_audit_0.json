@@ -1,0 +1,248 @@
+[
+  {
+    "route": "route_13",
+    "seed": 911301,
+    "passed": true,
+    "outcome": "timeout",
+    "last_edge": "170059994",
+    "last_lane": 3,
+    "remaining": 0,
+    "changes": [
+      [
+        1,
+        0,
+        397
+      ]
+    ],
+    "failure": {
+      "edge": "170059994",
+      "lane": 3,
+      "targets": [
+        0,
+        1,
+        2
+      ],
+      "next_edge": "1063527748",
+      "remaining": 0.0,
+      "speed": 0.0,
+      "leader": null,
+      "split_distance": 0.0,
+      "split_index": 6,
+      "prep": [
+        0,
+        1,
+        2
+      ],
+      "command": 1,
+      "accel": 0.99,
+      "reason": "incompatible_lane_end"
+    },
+    "crash": {}
+  },
+  {
+    "route": "route_16",
+    "seed": 911301,
+    "passed": false,
+    "outcome": "timeout",
+    "last_edge": "86198728",
+    "last_lane": 0,
+    "remaining": 0,
+    "changes": [
+      [
+        1,
+        0,
+        397
+      ]
+    ],
+    "failure": {
+      "edge": "86198728",
+      "lane": 0,
+      "targets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "next_edge": "86198725",
+      "remaining": 0.0,
+      "speed": 0.0,
+      "leader": null,
+      "split_distance": 0.0,
+      "split_index": 0,
+      "prep": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "command": -1,
+      "accel": 0.96,
+      "reason": "incompatible_lane_end"
+    },
+    "crash": {}
+  },
+  {
+    "route": "route_13",
+    "seed": 911302,
+    "passed": true,
+    "outcome": "timeout",
+    "last_edge": "170059994",
+    "last_lane": 3,
+    "remaining": 0,
+    "changes": [
+      [
+        1,
+        0,
+        397
+      ]
+    ],
+    "failure": {
+      "edge": "170059994",
+      "lane": 3,
+      "targets": [
+        0,
+        1,
+        2
+      ],
+      "next_edge": "1063527748",
+      "remaining": 0.0,
+      "speed": 0.0,
+      "leader": null,
+      "split_distance": 0.0,
+      "split_index": 6,
+      "prep": [
+        0,
+        1,
+        2
+      ],
+      "command": 1,
+      "accel": 0.99,
+      "reason": "incompatible_lane_end"
+    },
+    "crash": {}
+  },
+  {
+    "route": "route_16",
+    "seed": 911302,
+    "passed": false,
+    "outcome": "timeout",
+    "last_edge": "86198728",
+    "last_lane": 0,
+    "remaining": 0,
+    "changes": [
+      [
+        1,
+        0,
+        397
+      ]
+    ],
+    "failure": {
+      "edge": "86198728",
+      "lane": 0,
+      "targets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "next_edge": "86198725",
+      "remaining": 0.0,
+      "speed": 0.0,
+      "leader": null,
+      "split_distance": 0.0,
+      "split_index": 0,
+      "prep": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "command": -1,
+      "accel": 0.98,
+      "reason": "incompatible_lane_end"
+    },
+    "crash": {}
+  },
+  {
+    "route": "route_13",
+    "seed": 911303,
+    "passed": true,
+    "outcome": "timeout",
+    "last_edge": "170059994",
+    "last_lane": 3,
+    "remaining": 0,
+    "changes": [
+      [
+        1,
+        0,
+        399
+      ]
+    ],
+    "failure": {
+      "edge": "170059994",
+      "lane": 3,
+      "targets": [
+        0,
+        1,
+        2
+      ],
+      "next_edge": "1063527748",
+      "remaining": 0.0,
+      "speed": 0.0,
+      "leader": null,
+      "split_distance": 0.0,
+      "split_index": 6,
+      "prep": [
+        0,
+        1,
+        2
+      ],
+      "command": 1,
+      "accel": 0.99,
+      "reason": "incompatible_lane_end"
+    },
+    "crash": {}
+  },
+  {
+    "route": "route_16",
+    "seed": 911303,
+    "passed": false,
+    "outcome": "timeout",
+    "last_edge": "86198728",
+    "last_lane": 0,
+    "remaining": 0,
+    "changes": [
+      [
+        1,
+        0,
+        399
+      ]
+    ],
+    "failure": {
+      "edge": "86198728",
+      "lane": 0,
+      "targets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "next_edge": "86198725",
+      "remaining": 0.0,
+      "speed": 0.0,
+      "leader": null,
+      "split_distance": 0.0,
+      "split_index": 0,
+      "prep": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "command": -1,
+      "accel": 0.96,
+      "reason": "incompatible_lane_end"
+    },
+    "crash": {}
+  }
+]

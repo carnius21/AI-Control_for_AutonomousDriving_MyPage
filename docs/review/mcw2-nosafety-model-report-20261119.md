@@ -78,21 +78,50 @@
 
 ### ④ 안전 간격 판단의 신경망 가중치 내재화 (`distill_safe_policy`, `--distill-passes`)
 - **배경**: 이산(`Categorical`) 차선 헤드는 순수 PPO 확률 샘플링(`sample()`) 중 옆 차선 대기 구간(40스텝)에서 무작위로 차선변경을 뽑아 충돌(`-15.0`)을 맞으면 `p_lane_change`가 `0.01` 이하로 붕괴해 `10/16 (62.5%)`에서 멈추는 한계가 있었습니다.
-- **해결**: 실행/평가 시에는 안전게이트를 100% 끄고(`--no-safety`), 학습 단계에서 신경망이 직접 주행하며 마주친 47차원 관측(`obs`)마다 *"옆 차 간격이 위험하면 `유지(0)`, 안전한 틈이 열리면 `변경(±1)`"*을 신경망 가중치 자체에 학습시키는 On-policy DAgger(`distill_safe_policy`)를 구현했습니다. (이때 출발 첫 도로가 아닌 중간 짧은 엇갈림 구간 `170059994` 등에서는 `spawn_protect` 15m가 라벨을 막지 않도록 보정하고, 보수적 가중치 `v1`과 적극적 가중치 `v2`를 `0.80 : 0.20`으로 보간해 단일 최종 가중치 `best_model.pt`를 생성했습니다.)
+- **해결**: 실행/평가 시에는 안전게이트를 100% 끄고(`--no-safety`), 학습 단계에서 신경망이 직접 주행하며 마주친 47차원 관측(`obs`)마다 *"옆 차 간격이 위험하면 `유지(0)`, 안전한 틈이 열리면 `변경(±1)`"*을 신경망 가중치 자체에 학습시키는 On-policy DAgger(`distill_safe_policy`)를 구현했습니다.
 
 ---
 
-## 4. 팀원 배포용 실행 및 재현 명령어
+## 4. 전체 학습 계보 · 중간 체크포인트(`v1`, `v2`) · 블렌딩 투명 공개
 
-- **80회(`16경로 × 5시드`) `high_real_ratio` `--no-safety` 평가 재현**:
-  ```powershell
-  python -X utf8 -m utils.mcw_train --stage high_real_ratio --eval-only --eval-episodes 5 --no-safety --lc-penalty 0.01 --lane-keep-bias 0.5 --timeout-penalty 15.0 --stall-penalty 0.08 --resume results/mcw_runs/mcw2_nosafety_final/best_model.pt --name eval_mcw2_nosafety_final_80ep
-  ```
-- **SUMO-GUI 주행 재생 확인 (`--no-safety` 및 신규 모델이 기본값으로 설정됨)**:
-  ```powershell
-  python -X utf8 -m utils.mcw_watch --route route_05 --seed 40005
-  ```
-- **단위 테스트**:
-  ```powershell
-  python -m unittest discover -s tests -v
-  ```
+팀원 검증 및 재현을 위해 `mcw2_nosafety_final/best_model.pt`가 생성된 **전체 계보, 중간 체크포인트, 패스별 성적, SHA-256 해시**를 모두 저장소에 함께 포함했습니다.
+
+### ① 학습 계보 및 전제 조건 (명시 사항)
+- **출발 가중치 (`stage3_high_v5_b`)**: `results/mcw_runs/stage3_high_v5_b/best_model.pt` (기존 `--safety=True` 커리큘럼에서 학습된 가중치, `results/mcw_runs/mcw-models-20261116.zip` 포함)
+- **DAgger 학습 중 교사 신호 사용**: 평가/주행 시에는 `lane_change_safety`를 완전히 끄고(`--no-safety`) 순수 신경망 출력만 실행하지만, `distill_safe_policy` 학습 루프 내에서 정답 라벨을 생성할 때는 `_lane_change_is_safe`를 교사(teacher)로 사용했습니다. (이 점이 "완전 처음부터 교사·웜스타트 없이 순수 RL로 학습"하는 방식과의 차이입니다.)
+
+### ② 단계별 체크포인트 및 80회 `--no-safety` 평가 비교
+
+| 단계 | 체크포인트 경로 | SHA-256 (앞 12자리) | 16경로 중간 결과 | 80회 `--no-safety` 결과 (`high_real_ratio`) |
+| :--- | :--- | :---: | :---: | :---: |
+| **0. 출발점 (`v5_b`)** | `results/mcw_runs/stage3_high_v5_b/best_model.pt` | `f4b4d84142f7` | - | 54/80 (67.5%) · 충돌 25 · 타임아웃 1 |
+| **1. `v1` (DAgger 4-Pass)** | `results/mcw_runs/mcw2_v5b_high_real_ratio_dagger/best_model.pt` | `2290a07af35a` | Pass 2: **15/16** (충돌 0, 타임아웃 1) | **74/80 (92.5%)** · 충돌 **1** · 타임아웃 5 (`eval_80ep.json`) |
+| **2. `v2` (DAgger v2 3-Pass)** | `results/mcw_runs/mcw2_v5b_high_real_ratio_dagger_v2/best_model.pt` | `05aaa9726e96` | Pass 2: **15/16** (충돌 1, 타임아웃 0) | **75/80 (93.8%)** · 충돌 5 · 타임아웃 **0** (`eval_80ep.json`) |
+| **3. 최종 블렌드 (`0.80·v1 + 0.20·v2`)** | `results/mcw_runs/mcw2_nosafety_final/best_model.pt` | `39e18c0c9d95` | - | **78/80 (97.5%)** · 충돌 **1** · 타임아웃 **1** (`eval_16routes.json`) |
+
+- **`v1` → `v2` 변화 요약**:
+  - `v1`은 보수적이라 충돌은 `1/80 (1.2%)`으로 매우 적지만 `route_14`(`4/5` 타임아웃)·`route_13`(`1/5` 타임아웃)에서 멈췄습니다.
+  - 원인을 확인한 결과 `170059994`(51.1m 엇갈림 구간) 등 중간 도로에서도 `spawn_protect=15m`가 DAgger 라벨을 막고 있었고, 이를 수정해 `v1`에서 3-Pass 추가 학습한 `v2`는 타임아웃을 `0/80`으로 완전히 없앤 대신 `route_05` 등에서 충돌이 `5/80`으로 늘었습니다.
+  - 같은 가중치 공간에서 연속 학습된 `v1`과 `v2`를 `utils/mcw_blend.py`로 `(1 - 0.20)·v1 + 0.20·v2` 선형 보간해 단일 체크포인트 `mcw2_nosafety_final/best_model.pt`를 생성했습니다.
+
+### ③ 전체 재현 및 검증 명령어
+
+```powershell
+# 1) v1 학습 (stage3_high_v5_b -> mcw2_v5b_high_real_ratio_dagger)
+python -X utf8 -m utils.mcw_train --stage high_real_ratio --steps 0 --distill-passes 4 --lr 3e-4 --lane-keep-bias 0.5 --min-front-gap 3.5 --min-rear-gap 3.5 --rear-tau 0.35 --approach-horizon 1.2 --no-safety --resume results/mcw_runs/stage3_high_v5_b/best_model.pt --name mcw2_v5b_high_real_ratio_dagger
+
+# 2) v2 추가 학습 (v1 best_model -> mcw2_v5b_high_real_ratio_dagger_v2)
+python -X utf8 -m utils.mcw_train --stage high_real_ratio --steps 0 --distill-passes 3 --lr 1.5e-4 --lane-keep-bias 0.5 --min-front-gap 3.5 --min-rear-gap 3.5 --rear-tau 0.35 --approach-horizon 1.2 --no-safety --resume results/mcw_runs/mcw2_v5b_high_real_ratio_dagger/best_model.pt --name mcw2_v5b_high_real_ratio_dagger_v2
+
+# 3) 최종 블렌드 생성 및 SHA-256 일치 검증 (0.80*v1 + 0.20*v2)
+python -X utf8 -m utils.mcw_blend --verify-only
+
+# 4) 80회(16경로 x 5시드) high_real_ratio --no-safety 평가 재현
+python -X utf8 -m utils.mcw_train --stage high_real_ratio --eval-only --eval-episodes 5 --no-safety --lc-penalty 0.01 --lane-keep-bias 0.5 --timeout-penalty 15.0 --stall-penalty 0.08 --resume results/mcw_runs/mcw2_nosafety_final/best_model.pt --name eval_mcw2_nosafety_final_80ep
+
+# 5) SUMO-GUI 주행 재생 확인 (--no-safety 및 신규 모델이 기본값으로 설정됨)
+python -X utf8 -m utils.mcw_watch --route route_05 --seed 40005
+
+# 6) 단위 테스트
+python -m unittest discover -s tests -v
+```

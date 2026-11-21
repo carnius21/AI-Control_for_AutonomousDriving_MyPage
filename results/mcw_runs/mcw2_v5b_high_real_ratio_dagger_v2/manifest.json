@@ -1,0 +1,91 @@
+{
+  "args": {
+    "stage": "high_real_ratio",
+    "steps": 0,
+    "seed": 11,
+    "lr": 0.00015,
+    "lane_entropy": 0.002,
+    "lane_keep_bias": 0.5,
+    "collision_penalty": 15.0,
+    "timeout_penalty": 15.0,
+    "stall_penalty": 0.08,
+    "arrival_bonus": 5.0,
+    "lc_penalty": 0.02,
+    "nav_horizon": 400.0,
+    "safety": false,
+    "min_front_gap": 3.5,
+    "min_rear_gap": 3.5,
+    "rear_tau": 0.35,
+    "approach_horizon": 1.2,
+    "route_conn": true,
+    "ttc_reward": true,
+    "prep_reward": true,
+    "resume": "results/mcw_runs/mcw2_v5b_high_real_ratio_dagger/best_model.pt",
+    "eval_only": false,
+    "eval_episodes": 1,
+    "eval_interval": 25,
+    "distill_passes": 3,
+    "name": "mcw2_v5b_high_real_ratio_dagger_v2",
+    "smoke": false
+  },
+  "hparams": {
+    "lr": 0.00015,
+    "n_steps": 2048,
+    "n_epochs": 10,
+    "minibatch_size": 64,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_eps": 0.2,
+    "value_coef": 0.5,
+    "entropy_coef": 0.0,
+    "lane_entropy_coef": 0.002,
+    "max_grad_norm": 0.5,
+    "normalize_advantage": true,
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "activation": "tanh",
+    "policy_type": "hybrid",
+    "lane_keep_bias": 0.5,
+    "init_log_std": -0.5,
+    "seed": 11,
+    "device": "auto"
+  },
+  "action": {
+    "lane_change_safety": {
+      "enabled": false,
+      "min_front_gap": 3.5,
+      "min_rear_gap": 3.5,
+      "front_tau": 0.3,
+      "rear_tau": 0.35,
+      "approach_horizon": 1.2,
+      "spawn_protect": 15.0
+    },
+    "dim": 2,
+    "accel_index": 0,
+    "lane_change_index": 1,
+    "lane_change_values": [
+      -1,
+      0,
+      1
+    ],
+    "lane_change_threshold": 0.5,
+    "lane_change_duration": 1.0
+  },
+  "reward": {
+    "speed_weight": 0.1,
+    "close_gap_threshold": 6.0,
+    "close_gap_penalty": 0.1,
+    "collision_penalty": 15.0,
+    "arrival_bonus": 5.0,
+    "blocked_penalty": 0.05,
+    "blocked_gap": 20.0,
+    "blocked_speed_frac": 0.7,
+    "lane_change_penalty": 0.02,
+    "invalid_action_penalty": 0.0,
+    "ramp_speed_compliance": false,
+    "early_lane_guidance": false
+  },
+  "device": "cuda"
+}

@@ -1,0 +1,571 @@
+{
+  "total": 80,
+  "arrivals": 74,
+  "collisions": 1,
+  "timeouts": 5,
+  "insertion_failures": 0,
+  "success_rate": 0.925,
+  "collision_rate": 0.0125,
+  "rows": [
+    {
+      "route": "route_01",
+      "seed": 40001,
+      "outcome": "arrival",
+      "steps": 163,
+      "mean_speed": 22.679098082359392
+    },
+    {
+      "route": "route_01",
+      "seed": 40101,
+      "outcome": "arrival",
+      "steps": 251,
+      "mean_speed": 14.65500654344699
+    },
+    {
+      "route": "route_01",
+      "seed": 40201,
+      "outcome": "arrival",
+      "steps": 171,
+      "mean_speed": 21.618245901184807
+    },
+    {
+      "route": "route_01",
+      "seed": 40301,
+      "outcome": "arrival",
+      "steps": 162,
+      "mean_speed": 22.783987192278133
+    },
+    {
+      "route": "route_01",
+      "seed": 40401,
+      "outcome": "arrival",
+      "steps": 170,
+      "mean_speed": 21.676726629100628
+    },
+    {
+      "route": "route_02",
+      "seed": 40002,
+      "outcome": "arrival",
+      "steps": 475,
+      "mean_speed": 17.014278266601778
+    },
+    {
+      "route": "route_02",
+      "seed": 40102,
+      "outcome": "arrival",
+      "steps": 354,
+      "mean_speed": 22.90387482455975
+    },
+    {
+      "route": "route_02",
+      "seed": 40202,
+      "outcome": "arrival",
+      "steps": 523,
+      "mean_speed": 15.452947829858553
+    },
+    {
+      "route": "route_02",
+      "seed": 40302,
+      "outcome": "arrival",
+      "steps": 425,
+      "mean_speed": 19.09331289544507
+    },
+    {
+      "route": "route_02",
+      "seed": 40402,
+      "outcome": "arrival",
+      "steps": 360,
+      "mean_speed": 22.513606485662283
+    },
+    {
+      "route": "route_03",
+      "seed": 40003,
+      "outcome": "arrival",
+      "steps": 336,
+      "mean_speed": 18.525730405376446
+    },
+    {
+      "route": "route_03",
+      "seed": 40103,
+      "outcome": "arrival",
+      "steps": 313,
+      "mean_speed": 19.90482731171143
+    },
+    {
+      "route": "route_03",
+      "seed": 40203,
+      "outcome": "arrival",
+      "steps": 301,
+      "mean_speed": 20.625461891857963
+    },
+    {
+      "route": "route_03",
+      "seed": 40303,
+      "outcome": "arrival",
+      "steps": 270,
+      "mean_speed": 23.01895229075432
+    },
+    {
+      "route": "route_03",
+      "seed": 40403,
+      "outcome": "arrival",
+      "steps": 307,
+      "mean_speed": 20.23953080011266
+    },
+    {
+      "route": "route_04",
+      "seed": 40004,
+      "outcome": "arrival",
+      "steps": 416,
+      "mean_speed": 14.92532969517863
+    },
+    {
+      "route": "route_04",
+      "seed": 40104,
+      "outcome": "arrival",
+      "steps": 403,
+      "mean_speed": 15.425838676600787
+    },
+    {
+      "route": "route_04",
+      "seed": 40204,
+      "outcome": "arrival",
+      "steps": 379,
+      "mean_speed": 16.36588251520142
+    },
+    {
+      "route": "route_04",
+      "seed": 40304,
+      "outcome": "arrival",
+      "steps": 374,
+      "mean_speed": 16.607165421320605
+    },
+    {
+      "route": "route_04",
+      "seed": 40404,
+      "outcome": "arrival",
+      "steps": 419,
+      "mean_speed": 14.852402551963843
+    },
+    {
+      "route": "route_05",
+      "seed": 40005,
+      "outcome": "arrival",
+      "steps": 532,
+      "mean_speed": 16.693185997000448
+    },
+    {
+      "route": "route_05",
+      "seed": 40105,
+      "outcome": "arrival",
+      "steps": 497,
+      "mean_speed": 17.870047655949932
+    },
+    {
+      "route": "route_05",
+      "seed": 40205,
+      "outcome": "arrival",
+      "steps": 494,
+      "mean_speed": 17.966825126993733
+    },
+    {
+      "route": "route_05",
+      "seed": 40305,
+      "outcome": "arrival",
+      "steps": 534,
+      "mean_speed": 16.640387632643986
+    },
+    {
+      "route": "route_05",
+      "seed": 40405,
+      "outcome": "arrival",
+      "steps": 533,
+      "mean_speed": 16.64843049482832
+    },
+    {
+      "route": "route_06",
+      "seed": 40006,
+      "outcome": "arrival",
+      "steps": 282,
+      "mean_speed": 22.170814773375053
+    },
+    {
+      "route": "route_06",
+      "seed": 40106,
+      "outcome": "arrival",
+      "steps": 356,
+      "mean_speed": 17.567050770731008
+    },
+    {
+      "route": "route_06",
+      "seed": 40206,
+      "outcome": "arrival",
+      "steps": 279,
+      "mean_speed": 22.366494474128917
+    },
+    {
+      "route": "route_06",
+      "seed": 40306,
+      "outcome": "arrival",
+      "steps": 285,
+      "mean_speed": 21.937268138096904
+    },
+    {
+      "route": "route_06",
+      "seed": 40406,
+      "outcome": "arrival",
+      "steps": 252,
+      "mean_speed": 24.835583403662582
+    },
+    {
+      "route": "route_07",
+      "seed": 40007,
+      "outcome": "arrival",
+      "steps": 159,
+      "mean_speed": 23.30855448812071
+    },
+    {
+      "route": "route_07",
+      "seed": 40107,
+      "outcome": "arrival",
+      "steps": 181,
+      "mean_speed": 20.50030162097962
+    },
+    {
+      "route": "route_07",
+      "seed": 40207,
+      "outcome": "arrival",
+      "steps": 179,
+      "mean_speed": 20.556622822211423
+    },
+    {
+      "route": "route_07",
+      "seed": 40307,
+      "outcome": "arrival",
+      "steps": 219,
+      "mean_speed": 16.751267989336075
+    },
+    {
+      "route": "route_07",
+      "seed": 40407,
+      "outcome": "arrival",
+      "steps": 178,
+      "mean_speed": 20.60740070676598
+    },
+    {
+      "route": "route_08",
+      "seed": 40008,
+      "outcome": "arrival",
+      "steps": 356,
+      "mean_speed": 22.81659952805471
+    },
+    {
+      "route": "route_08",
+      "seed": 40108,
+      "outcome": "arrival",
+      "steps": 446,
+      "mean_speed": 18.20107289860816
+    },
+    {
+      "route": "route_08",
+      "seed": 40208,
+      "outcome": "arrival",
+      "steps": 377,
+      "mean_speed": 21.518754964249954
+    },
+    {
+      "route": "route_08",
+      "seed": 40308,
+      "outcome": "arrival",
+      "steps": 420,
+      "mean_speed": 19.342404546475603
+    },
+    {
+      "route": "route_08",
+      "seed": 40408,
+      "outcome": "arrival",
+      "steps": 391,
+      "mean_speed": 20.737572703644407
+    },
+    {
+      "route": "route_09",
+      "seed": 40009,
+      "outcome": "arrival",
+      "steps": 136,
+      "mean_speed": 27.733642468906737
+    },
+    {
+      "route": "route_09",
+      "seed": 40109,
+      "outcome": "arrival",
+      "steps": 137,
+      "mean_speed": 27.606658159900945
+    },
+    {
+      "route": "route_09",
+      "seed": 40209,
+      "outcome": "arrival",
+      "steps": 136,
+      "mean_speed": 27.674109940987055
+    },
+    {
+      "route": "route_09",
+      "seed": 40309,
+      "outcome": "arrival",
+      "steps": 138,
+      "mean_speed": 27.338298640386817
+    },
+    {
+      "route": "route_09",
+      "seed": 40409,
+      "outcome": "arrival",
+      "steps": 136,
+      "mean_speed": 27.712402755057102
+    },
+    {
+      "route": "route_10",
+      "seed": 40010,
+      "outcome": "arrival",
+      "steps": 295,
+      "mean_speed": 23.225329618838295
+    },
+    {
+      "route": "route_10",
+      "seed": 40110,
+      "outcome": "arrival",
+      "steps": 253,
+      "mean_speed": 27.13149022780359
+    },
+    {
+      "route": "route_10",
+      "seed": 40210,
+      "outcome": "arrival",
+      "steps": 290,
+      "mean_speed": 23.666159783997262
+    },
+    {
+      "route": "route_10",
+      "seed": 40310,
+      "outcome": "arrival",
+      "steps": 263,
+      "mean_speed": 26.10512161391662
+    },
+    {
+      "route": "route_10",
+      "seed": 40410,
+      "outcome": "arrival",
+      "steps": 299,
+      "mean_speed": 22.91220845359784
+    },
+    {
+      "route": "route_11",
+      "seed": 40011,
+      "outcome": "arrival",
+      "steps": 429,
+      "mean_speed": 22.760912712543313
+    },
+    {
+      "route": "route_11",
+      "seed": 40111,
+      "outcome": "arrival",
+      "steps": 385,
+      "mean_speed": 25.400074408575176
+    },
+    {
+      "route": "route_11",
+      "seed": 40211,
+      "outcome": "arrival",
+      "steps": 406,
+      "mean_speed": 24.089249355537195
+    },
+    {
+      "route": "route_11",
+      "seed": 40311,
+      "outcome": "arrival",
+      "steps": 439,
+      "mean_speed": 22.25801828837737
+    },
+    {
+      "route": "route_11",
+      "seed": 40411,
+      "outcome": "arrival",
+      "steps": 433,
+      "mean_speed": 22.603125398101543
+    },
+    {
+      "route": "route_12",
+      "seed": 40012,
+      "outcome": "arrival",
+      "steps": 176,
+      "mean_speed": 27.698928965376314
+    },
+    {
+      "route": "route_12",
+      "seed": 40112,
+      "outcome": "arrival",
+      "steps": 176,
+      "mean_speed": 27.778908921331865
+    },
+    {
+      "route": "route_12",
+      "seed": 40212,
+      "outcome": "arrival",
+      "steps": 176,
+      "mean_speed": 27.775741801925687
+    },
+    {
+      "route": "route_12",
+      "seed": 40312,
+      "outcome": "arrival",
+      "steps": 176,
+      "mean_speed": 27.780000000000012
+    },
+    {
+      "route": "route_12",
+      "seed": 40412,
+      "outcome": "arrival",
+      "steps": 176,
+      "mean_speed": 27.756627368265264
+    },
+    {
+      "route": "route_13",
+      "seed": 40013,
+      "outcome": "arrival",
+      "steps": 427,
+      "mean_speed": 17.72839102792719
+    },
+    {
+      "route": "route_13",
+      "seed": 40113,
+      "outcome": "timeout",
+      "steps": 3000,
+      "mean_speed": 1.9267487003158918
+    },
+    {
+      "route": "route_13",
+      "seed": 40213,
+      "outcome": "arrival",
+      "steps": 492,
+      "mean_speed": 15.357799123204689
+    },
+    {
+      "route": "route_13",
+      "seed": 40313,
+      "outcome": "arrival",
+      "steps": 528,
+      "mean_speed": 14.350559735502978
+    },
+    {
+      "route": "route_13",
+      "seed": 40413,
+      "outcome": "arrival",
+      "steps": 458,
+      "mean_speed": 16.555188576159697
+    },
+    {
+      "route": "route_14",
+      "seed": 40014,
+      "outcome": "timeout",
+      "steps": 3000,
+      "mean_speed": 1.926632190182032
+    },
+    {
+      "route": "route_14",
+      "seed": 40114,
+      "outcome": "timeout",
+      "steps": 3000,
+      "mean_speed": 1.9278023218092133
+    },
+    {
+      "route": "route_14",
+      "seed": 40214,
+      "outcome": "timeout",
+      "steps": 3000,
+      "mean_speed": 1.930094684818609
+    },
+    {
+      "route": "route_14",
+      "seed": 40314,
+      "outcome": "timeout",
+      "steps": 3000,
+      "mean_speed": 1.927437492948416
+    },
+    {
+      "route": "route_14",
+      "seed": 40414,
+      "outcome": "arrival",
+      "steps": 540,
+      "mean_speed": 13.987948607093296
+    },
+    {
+      "route": "route_15",
+      "seed": 40015,
+      "outcome": "arrival",
+      "steps": 567,
+      "mean_speed": 18.04148569483775
+    },
+    {
+      "route": "route_15",
+      "seed": 40115,
+      "outcome": "collision",
+      "steps": 632,
+      "mean_speed": 15.597227311755745
+    },
+    {
+      "route": "route_15",
+      "seed": 40215,
+      "outcome": "arrival",
+      "steps": 589,
+      "mean_speed": 17.386933140501057
+    },
+    {
+      "route": "route_15",
+      "seed": 40315,
+      "outcome": "arrival",
+      "steps": 529,
+      "mean_speed": 19.358318356803878
+    },
+    {
+      "route": "route_15",
+      "seed": 40415,
+      "outcome": "arrival",
+      "steps": 539,
+      "mean_speed": 18.984742349718562
+    },
+    {
+      "route": "route_16",
+      "seed": 40016,
+      "outcome": "arrival",
+      "steps": 269,
+      "mean_speed": 26.74545775625785
+    },
+    {
+      "route": "route_16",
+      "seed": 40116,
+      "outcome": "arrival",
+      "steps": 262,
+      "mean_speed": 27.434771154670774
+    },
+    {
+      "route": "route_16",
+      "seed": 40216,
+      "outcome": "arrival",
+      "steps": 282,
+      "mean_speed": 25.566571213487997
+    },
+    {
+      "route": "route_16",
+      "seed": 40316,
+      "outcome": "arrival",
+      "steps": 277,
+      "mean_speed": 25.96217426127906
+    },
+    {
+      "route": "route_16",
+      "seed": 40416,
+      "outcome": "arrival",
+      "steps": 294,
+      "mean_speed": 24.49284629035525
+    }
+  ]
+}

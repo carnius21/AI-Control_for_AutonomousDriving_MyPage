@@ -7,18 +7,17 @@
   <meta name="description" content="퇴계원 IC의 엇갈림을 SUMO로 재현하고 16개 경로에서 자율주행 정책의 완주, 충돌, 경로 이탈을 비교한 팀 프로젝트.">
   <title>1팀 퇴계일황 | 퇴계원 IC 자율주행 실험</title>
   <link rel="stylesheet" href="./assets/fonts/pretendard.css">
-  <link rel="stylesheet" href="./assets/project.css">
+  <link rel="stylesheet" href="./assets/project.css?v=nav-route13">
   <script src="./assets/project.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#results">검증 결과로 건너뛰기</a>
 <header class="mast"><nav class="wrap topnav" aria-label="주 메뉴">
   <a class="brand" href="#home">자율주행 인공지능 및 제어</a>
-  <div class="navlinks"><a href="#project">도로 선정</a><a href="#learning">모델 비교</a><a href="#results">최종 검증</a><a href="#resources">자료</a></div>
+  <div class="navlinks"><a href="#project">도로 선정</a><a href="#learning">모델 비교</a><a href="#results">최종 검증</a><a href="#resources">자료</a><a class="repo-button" aria-label="팀 GitHub 저장소" title="팀 GitHub 저장소" href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving"><svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
 </nav></header>
 <main>
 <div class="opening"><section class="hero wrap" id="home" aria-labelledby="hero-title">
-  <a class="repo-button" aria-label="팀 GitHub 저장소" title="팀 GitHub 저장소" href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving"><svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
   <div class="hero-copy">
     <h1 id="hero-title">1팀 퇴계일황</h1>
     <p class="team-members">성지용 · 김영훈 · 문시원 · 박민호 · 이재중</p>
@@ -39,12 +38,12 @@
         <button type="button" id="full" aria-label="전체 화면" title="전체 화면"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v2.5H6.5V10H4zm10 0h6v6h-2.5V6.5H14zM4 14h2.5v3.5H10V20H4zm13.5 0H20v6h-6v-2.5h3.5z"/></svg></button>
       </div>
     </div>
-    <video id="drive-video" controls muted playsinline loop preload="metadata" width="704" height="490" poster="./assets/sumo-gui/ic-weave-4x.webp" aria-label="퇴계원 IC의 3번 경로를 달리는 빨간 자율주행차">
-      <source src="./assets/sumo-gui/ic-weave-4x.mp4" type="video/mp4">
-      <a href="./assets/sumo-gui/ic-weave-4x.mp4">주행 영상 열기</a>
+    <video id="drive-video" controls muted playsinline loop preload="metadata" width="1180" height="818" poster="./assets/sumo-gui/ic-route13.webp" aria-label="퇴계원 IC의 13번 경로에서 램프를 돌아 분기를 통과하는 빨간 자율주행차">
+      <source src="./assets/sumo-gui/ic-route13.mp4" type="video/mp4">
+      <a href="./assets/sumo-gui/ic-route13.mp4">주행 영상 열기</a>
     </video>
     <figcaption class="traffic-caption">
-      <div class="traffic-key"><span>승용차 77%</span><span>소형 화물차 18%</span><span>대형 화물차 4%</span><span>버스 1%</span><span class="av-key">빨간 AV (3번 경로)</span></div>
+      <div class="traffic-key"><span>승용차 77%</span><span>소형 화물차 18%</span><span>대형 화물차 4%</span><span>버스 1%</span><span class="av-key">빨간 AV (13번 경로)</span></div>
       <div class="traffic-links"><span class="driver-info"><button id="driver-trigger" type="button" aria-expanded="false" aria-controls="driver-definition">비협조 운전자 · 승용차의 약 2%</button>
         <span id="driver-definition" hidden>이 실험에서는 다른 차의 차로변경을 돕기 위해 차로를 옮기거나 속도를 조절하는 협조 설정을 껐습니다. 일반 승용차의 차로변경을 막은 일부 경계에서도 이 유형은 차로를 바꿀 수 있습니다. 전체 배경 차량의 약 1.54%에 해당합니다.</span></span>
         <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/eda60ff/docs/experiments/ic-measured-traffic-20261113.md">교통량 조사 자료</a></div>
@@ -221,7 +220,7 @@
 <summary>팀 기여 · 도로부터 정책 평가까지</summary>
 <p>도로망과 일반 차량의 엇갈림은 <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/commits/kyh/">도로 구현 기록</a>, 관측과 시야 가림은 <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/commits/ljj/">주변 차량 관측</a>과 <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/commits/mcw2/">시야 가림 실험</a>에 담았습니다. 전문가 데이터를 보강한 과정은 <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/commits/pmh/">모방학습 기록</a>, 같은 교통에서 보상을 비교한 과정은 <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/commits/jys3/">강화학습 기록</a>에서 볼 수 있습니다.</p>
 </details>
-<details><summary>영상 속 비교 모델의 검증 기록</summary><p>상단 영상은 PMH의 BC + DAgger 모델이 3번 경로를 주행한 장면입니다. 기존 경로 제약에서 245/256회 완주한 가중치를 같은 출발 조건으로 재평가했습니다. 실제 오진입을 반영한 결과는 완주 231회(90.2%), 충돌 1회, 경로 이탈 24회였습니다.</p><p class="link-set"><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/jys3/docs/experiments/jys3-pmh-physical-holdout.md">수정 환경 재평가</a>
+<details><summary>영상 속 비교 모델의 검증 기록</summary><p>상단 영상은 PMH의 BC + DAgger 모델이 13번 경로를 주행한 장면입니다. 기존 경로 제약에서 245/256회 완주한 가중치를 같은 출발 조건으로 재평가했습니다. 실제 오진입을 반영한 결과는 완주 231회(90.2%), 충돌 1회, 경로 이탈 24회였습니다.</p><p class="link-set"><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/jys3/docs/experiments/jys3-pmh-physical-holdout.md">수정 환경 재평가</a>
 <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/pmh/docs/experiments/pmh-jys3-dagger-fix/README.md">비교 모델 학습 기록</a></p></details>
 <dl class="choices resources-list">
 <div>

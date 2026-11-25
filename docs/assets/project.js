@@ -41,6 +41,45 @@ if (video.canPlayType("video/mp4")) {
 }
 
 const navLinks = [...document.querySelectorAll(".navlinks a")];
+let scrollFrame;
+function cancelSectionScroll() {
+  cancelAnimationFrame(scrollFrame);
+}
+
+for (const link of navLinks.filter(link => link.hash)) {
+  link.addEventListener("click", event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey ||
+        event.shiftKey || event.altKey || motion.matches) return;
+
+    const section = document.getElementById(link.hash.slice(1));
+    if (!section) return;
+    event.preventDefault();
+    cancelSectionScroll();
+    const root = document.documentElement;
+    const start = window.scrollY;
+    const inset = parseFloat(getComputedStyle(root).scrollPaddingTop) || 0;
+    const end = Math.min(root.scrollHeight - window.innerHeight,
+      Math.max(0, start + section.getBoundingClientRect().top - inset));
+    const distance = end - start;
+    const duration = Math.min(280, 180 + Math.abs(distance) * 0.035);
+    const began = performance.now();
+    if (location.hash !== link.hash) history.pushState(null, "", link.hash);
+
+    function slide(now) {
+      const t = Math.min(1, Math.max(0, (now - began) / duration));
+      const eased = t * t * (3 - 2 * t);
+      window.scrollTo(0, start + distance * eased);
+      if (t < 1) scrollFrame = requestAnimationFrame(slide);
+      else section.focus({preventScroll: true});
+    }
+    scrollFrame = requestAnimationFrame(slide);
+  });
+}
+
+for (const type of ["wheel", "touchstart", "pointerdown", "keydown", "popstate", "hashchange"]) {
+  window.addEventListener(type, cancelSectionScroll, {passive: true});
+}
+
 const sections = [...document.querySelectorAll("main section[id]")].filter(section => section.id !== "home").map(section => {
   const group = navLinks.some(link => link.hash === "#" + section.id) ? section.id : "learning";
   return [group, section];

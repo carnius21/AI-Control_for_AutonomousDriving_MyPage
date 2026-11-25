@@ -154,6 +154,7 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
 .opening .hero { grid-template-columns: minmax(0, .91fr) minmax(0, 1.15fr); gap: clamp(2rem, 4vw, 4rem); padding-block: clamp(2.5rem, 4vw, 4.25rem); }
 .opening h1 { font-size: clamp(2.75rem, 4.5vw, 4.8rem); line-height: 1.12; }
 .opening .hero-copy p { max-width: 29em; margin: 1rem 0 0; color: #e1eae6; font-size: clamp(1rem, 1.2vw, 1.15rem); }
+.opening .hero-copy .team-members { margin-top: .7rem; font-size: 1rem; }
 .opening .hero-copy .project-subject { margin-top: .55rem; margin-bottom: 1.3rem; font-size: clamp(1.18rem, 1.65vw, 1.55rem); font-weight: 600; }
 .opening .hero-copy strong { font-weight: 600; color: #fff; }
 .hero-outcome { margin-top: 1.55rem; padding-left: .8rem; border-left: 2px solid #afcfc3; }

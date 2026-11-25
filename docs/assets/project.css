@@ -203,24 +203,22 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
 @media (min-width: 801px) {
   .opening .hero { width: min(92%, 92rem); grid-template-columns: minmax(0,.78fr) minmax(0,1.28fr); }
 }
-.drive video { aspect-ratio: 1180 / 818; }
+.drive video { aspect-ratio: 880 / 760; }
 .traffic-caption { position: relative; }
 .traffic-key, .traffic-links { display: flex; align-items: center; flex-wrap: wrap; gap: .2rem .75rem; }
 .traffic-key > span { white-space: nowrap; }
 .traffic-key { column-gap: .55rem; }
 .av-key { color: var(--ink); font-weight: 600; }
-.driver-info { position: relative; }
-.driver-info button { appearance: none; border: 0; padding: .4rem 0; background: transparent; font: inherit; color: var(--accent); cursor: help; text-decoration: underline dotted; text-underline-offset: .22em; }
+.driver-info, .term-info { position: relative; }
+.driver-info button, .term-info button { appearance: none; border: 0; padding: .4rem 0; background: transparent; font: inherit; color: var(--accent); cursor: help; text-decoration: underline dotted; text-underline-offset: .22em; }
 #driver-definition { position: absolute; z-index: 2; left: 0; bottom: 100%; width: min(26rem,calc(100vw - 4.5rem)); padding: .75rem 1rem; background: var(--ink); color: var(--surface); border-radius: 4px; }
 .satellite { margin-top: 1.4rem; }
 .satellite img { display: block; width: 100%; height: auto; }
 .satellite figcaption { margin-top: .45rem; color: var(--quiet); font-size: .87rem; }
 .satellite small { display: block; font-size: .75rem; }
 .route-visuals { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: .6rem; padding: .6rem; align-items: stretch; }
-.route-visuals > div { display: grid; grid-template-rows: 1fr auto; gap: .3rem; min-width: 0; }
 .route-visuals a { display: grid; place-items: center; min-width: 0; }
 .route-visuals img { display: block; width: 100%; height: auto; max-height: 22rem; object-fit: contain; }
-.route-visuals span { text-align: center; font-size: .87rem; color: var(--quiet); }
 .navlinks .repo-button { width: 44px; height: 44px; border-radius: 5px; }
 .repo-button svg { width: 24px; height: 24px; fill: currentColor; }
 .navlinks .repo-button:is(:hover, :focus-visible) { background: var(--accent); color: var(--surface); }
@@ -228,3 +226,7 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
   .driver-info button, .traffic-links a { min-height: 44px; align-content: center; }
   .route-visuals { gap: .35rem; padding: .35rem; }
 }
+
+.term-info button { min-height: 44px; white-space: nowrap; }
+.term-info [role="tooltip"] { position: absolute; left: 0; bottom: 100%; z-index: 3; width: min(16rem, 68vw); padding: .65rem .85rem; border-radius: 4px; background: var(--ink); color: var(--surface); font-size: .88rem; font-weight: 400; line-height: 1.5; text-align: left; }
+.training .term-info [role="tooltip"] { left: auto; right: 0; }

@@ -74,34 +74,35 @@ window.addEventListener("resize", scheduleNavigation);
 window.addEventListener("load", scheduleNavigation);
 updateNavigation();
 
-const driverInfo = document.querySelector(".driver-info");
-const driverButton = document.querySelector("#driver-trigger");
-const driverDefinition = document.querySelector("#driver-definition");
-let driverPinned = false;
+for (const info of document.querySelectorAll(".driver-info, .term-info")) {
+  const button = info.querySelector("button");
+  const definition = document.getElementById(button.getAttribute("aria-controls"));
+  let pinned = false;
 
-function showDriverDefinition(open) {
-  driverDefinition.hidden = !open;
-  driverButton.setAttribute("aria-expanded", String(open));
-  if (!open) driverPinned = false;
+  function showDefinition(open) {
+    definition.hidden = !open;
+    button.setAttribute("aria-expanded", String(open));
+    if (!open) pinned = false;
+  }
+
+  info.addEventListener("pointerenter", event => {
+    if (event.pointerType === "mouse") showDefinition(true);
+  });
+  info.addEventListener("pointerleave", () => {
+    if (!pinned && !button.matches(":focus-visible")) showDefinition(false);
+  });
+  button.addEventListener("focus", () => {
+    if (button.matches(":focus-visible")) showDefinition(true);
+  });
+  button.addEventListener("blur", () => showDefinition(false));
+  button.addEventListener("click", () => {
+    pinned = !pinned;
+    showDefinition(pinned);
+  });
+  document.addEventListener("pointerdown", event => {
+    if (!definition.hidden && !info.contains(event.target)) showDefinition(false);
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !definition.hidden) showDefinition(false);
+  });
 }
-
-driverInfo.addEventListener("pointerenter", event => {
-  if (event.pointerType === "mouse") showDriverDefinition(true);
-});
-driverInfo.addEventListener("pointerleave", () => {
-  if (!driverPinned && !driverButton.matches(":focus-visible")) showDriverDefinition(false);
-});
-driverButton.addEventListener("focus", () => {
-  if (driverButton.matches(":focus-visible")) showDriverDefinition(true);
-});
-driverButton.addEventListener("blur", () => showDriverDefinition(false));
-driverButton.addEventListener("click", () => {
-  driverPinned = !driverPinned;
-  showDriverDefinition(driverPinned);
-});
-document.addEventListener("pointerdown", event => {
-  if (!driverDefinition.hidden && !driverInfo.contains(event.target)) showDriverDefinition(false);
-});
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape" && !driverDefinition.hidden) showDriverDefinition(false);
-});

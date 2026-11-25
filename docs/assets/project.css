@@ -249,10 +249,11 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
 .satellite small { display: block; font-size: .75rem; }
 .route-visuals { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: .6rem; padding: .6rem; align-items: stretch; }
 .route-visuals a { display: grid; place-items: center; min-width: 0; }
-.route-visuals img { display: block; width: 100%; height: auto; max-height: 22rem; object-fit: contain; }
-.navlinks .repo-button { width: 44px; height: 44px; border-radius: 5px; }
-.repo-button svg { width: 24px; height: 24px; fill: currentColor; }
-.navlinks .repo-button:is(:hover, :focus-visible) { background: var(--accent); color: var(--surface); }
+.route-visuals img, .route-film { display: block; width: 100%; height: auto; max-height: 22rem; object-fit: contain; }
+.route-film { align-self: center; }
+.navlinks .repo-button { width: 48px; height: 48px; border-radius: 6px; background: var(--accent); color: var(--surface); }
+.repo-button svg { width: 28px; height: 28px; fill: currentColor; }
+.navlinks .repo-button:is(:hover, :focus-visible) { background: var(--active); color: var(--surface); }
 @media (max-width: 540px) {
   .driver-info button, .traffic-links a { min-height: 44px; align-content: center; }
   .route-visuals { gap: .35rem; padding: .35rem; }

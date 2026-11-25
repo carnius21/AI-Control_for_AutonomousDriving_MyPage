@@ -106,3 +106,39 @@ for (const info of document.querySelectorAll(".driver-info, .term-info")) {
     if (event.key === "Escape" && !definition.hidden) showDefinition(false);
   });
 }
+
+const routePicker = document.querySelector(".route-picker");
+let selectedFilm;
+let filmInView = false;
+
+const filmObserver = new IntersectionObserver((entries) => {
+  for (const entry of entries) {
+    if (entry.target !== selectedFilm) continue;
+    filmInView = entry.intersectionRatio >= 0.25;
+    updateRoutePlayback();
+  }
+}, {threshold: 0.25});
+
+function updateRoutePlayback() {
+  if (!selectedFilm) return;
+  if (!filmInView || document.hidden || motion.matches) selectedFilm.pause();
+  else selectedFilm.play().catch(() => {});
+}
+
+function selectRouteFilm() {
+  const next = routePicker.querySelector("input:checked + label + figure video");
+  if (!next || selectedFilm === next) return;
+  if (selectedFilm) {
+    selectedFilm.pause();
+    filmObserver.unobserve(selectedFilm);
+  }
+  selectedFilm = next;
+  filmInView = false;
+  if (next.readyState) next.currentTime = 0;
+  filmObserver.observe(next);
+}
+
+routePicker.addEventListener("change", selectRouteFilm);
+document.addEventListener("visibilitychange", updateRoutePlayback);
+motion.addEventListener("change", updateRoutePlayback);
+selectRouteFilm();

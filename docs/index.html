@@ -7,7 +7,7 @@
   <meta name="description" content="퇴계원 IC의 엇갈림을 SUMO로 재현하고 16개 경로에서 자율주행 정책의 완주, 충돌, 경로 이탈을 비교한 팀 프로젝트.">
   <title>1팀 퇴계일황 | 퇴계원 IC 자율주행 실험</title>
   <link rel="stylesheet" href="./assets/fonts/pretendard.css">
-  <link rel="stylesheet" href="./assets/project.css?v=north-results">
+  <link rel="stylesheet" href="./assets/project.css?v=map-fit">
   <script src="./assets/project.js?v=north-results" defer></script>
 </head>
 <body>
@@ -18,14 +18,10 @@
 </nav></header>
 <main>
 <div class="opening"><section class="hero wrap" id="home" aria-labelledby="hero-title">
-  <div class="hero-copy">
+  <div class="hero-copy hero-title">
     <h1 id="hero-title">1팀 퇴계일황</h1>
     <p class="team-members">성지용 · 김영훈 · 문시원 · 박민호 · 이재중</p>
     <p class="project-subject">퇴계원 IC 자율주행 실험</p>
-    <p>팀원 한 명이 버스를 몰며 직접 겪은 도로입니다. 퇴계원 IC에서는 본선에 들어가려는 차와 출구로 빠지려는 차가 같은 틈을 두고 서로의 속도를 살핍니다.</p>
-    <p>저희 팀은 이 구간을 SUMO에 옮겼습니다. <strong>하나의 자율주행 모델이 주변 차에 양보하면서도 제 갈림길을 찾아갈 수 있을까요?</strong></p>
-    <div class="hero-outcome"><strong>선정 모델 · BC+DAgger</strong><span>학습에 쓰지 않은 교통 시드에서 완주율 98.4%</span></div>
-    <div class="hero-links"><a href="#learning">세 모델 비교</a><a href="#results">최종 검증 결과</a></div>
   </div>
   <figure class="drive" aria-labelledby="drive-title">
     <div class="drive-heading">
@@ -49,6 +45,12 @@
         <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/eda60ff/docs/experiments/ic-measured-traffic-20261113.md">교통량 조사 자료</a></div>
     </figcaption>
   </figure>
+  <div class="hero-copy hero-intro">
+    <p>팀원 한 명이 버스를 몰며 직접 겪은 도로입니다. 퇴계원 IC에서는 본선에 들어가려는 차와 출구로 빠지려는 차가 같은 틈을 두고 서로의 속도를 살핍니다.</p>
+    <p>저희 팀은 이 구간을 SUMO에 옮겼습니다. <strong>하나의 자율주행 모델이 주변 차에 양보하면서도 제 갈림길을 찾아갈 수 있을까요?</strong></p>
+    <div class="hero-outcome"><strong>선정 모델 · BC+DAgger</strong><span>독립 검증 완주율 98.4%</span></div>
+    <div class="hero-links"><a href="#learning">세 모델 비교</a><a href="#results">최종 검증 결과</a></div>
+  </div>
 </section></div>
 <div class="wrap main-sections">
 <section id="project" class="spread">

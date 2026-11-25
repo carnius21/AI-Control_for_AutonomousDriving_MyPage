@@ -73,3 +73,35 @@ window.addEventListener("scroll", scheduleNavigation, {passive: true});
 window.addEventListener("resize", scheduleNavigation);
 window.addEventListener("load", scheduleNavigation);
 updateNavigation();
+
+const driverInfo = document.querySelector(".driver-info");
+const driverButton = document.querySelector("#driver-trigger");
+const driverDefinition = document.querySelector("#driver-definition");
+let driverPinned = false;
+
+function showDriverDefinition(open) {
+  driverDefinition.hidden = !open;
+  driverButton.setAttribute("aria-expanded", String(open));
+  if (!open) driverPinned = false;
+}
+
+driverInfo.addEventListener("pointerenter", event => {
+  if (event.pointerType === "mouse") showDriverDefinition(true);
+});
+driverInfo.addEventListener("pointerleave", () => {
+  if (!driverPinned && !driverButton.matches(":focus-visible")) showDriverDefinition(false);
+});
+driverButton.addEventListener("focus", () => {
+  if (driverButton.matches(":focus-visible")) showDriverDefinition(true);
+});
+driverButton.addEventListener("blur", () => showDriverDefinition(false));
+driverButton.addEventListener("click", () => {
+  driverPinned = !driverPinned;
+  showDriverDefinition(driverPinned);
+});
+document.addEventListener("pointerdown", event => {
+  if (!driverDefinition.hidden && !driverInfo.contains(event.target)) showDriverDefinition(false);
+});
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape" && !driverDefinition.hidden) showDriverDefinition(false);
+});

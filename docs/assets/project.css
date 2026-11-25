@@ -199,3 +199,33 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
   .selection-data { padding: 1rem; }
   .selection-intro { max-width: 36em; }
 }
+
+@media (min-width: 801px) {
+  .opening .hero { width: min(92%, 92rem); grid-template-columns: minmax(0,.78fr) minmax(0,1.28fr); }
+}
+.drive video { aspect-ratio: 704 / 490; }
+.traffic-caption { position: relative; }
+.traffic-key, .traffic-links { display: flex; align-items: center; flex-wrap: wrap; gap: .2rem .75rem; }
+.traffic-key > span { white-space: nowrap; }
+.traffic-key { column-gap: .55rem; }
+.av-key { color: var(--ink); font-weight: 600; }
+.driver-info { position: relative; }
+.driver-info button { appearance: none; border: 0; padding: .4rem 0; background: transparent; font: inherit; color: var(--accent); cursor: help; text-decoration: underline dotted; text-underline-offset: .22em; }
+#driver-definition { position: absolute; z-index: 2; left: 0; bottom: 100%; width: min(26rem,calc(100vw - 4.5rem)); padding: .75rem 1rem; background: var(--ink); color: var(--surface); border-radius: 4px; }
+.satellite { margin-top: 1.4rem; }
+.satellite img { display: block; width: 100%; height: auto; }
+.satellite figcaption { margin-top: .45rem; color: var(--quiet); font-size: .87rem; }
+.satellite small { display: block; font-size: .75rem; }
+.route-visuals { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: .6rem; padding: .6rem; align-items: stretch; }
+.route-visuals > div { display: grid; grid-template-rows: 1fr auto; gap: .3rem; min-width: 0; }
+.route-visuals a { display: grid; place-items: center; min-width: 0; }
+.route-visuals img { display: block; width: 100%; height: auto; max-height: 22rem; object-fit: contain; }
+.route-visuals span { text-align: center; font-size: .87rem; color: var(--quiet); }
+.link-set .repo-button { position: relative; width: 46px; height: 46px; justify-content: center; border-radius: 6px; background: var(--ink); color: var(--surface); }
+.repo-button svg { width: 24px; height: 24px; fill: currentColor; }
+.link-set .repo-button:hover, .link-set .repo-button:focus-visible { background: var(--accent); color: var(--surface); }
+@media (max-width: 540px) {
+  .driver-info button, .traffic-links a { min-height: 44px; align-content: center; }
+  .route-visuals { gap: .35rem; padding: .35rem; }
+}
+.repo-button:is(:hover,:focus-visible)::after { content: attr(aria-label); position: absolute; left: calc(100% + .6rem); white-space: nowrap; color: var(--ink); font-size: .9rem; }

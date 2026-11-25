@@ -4,7 +4,10 @@ const fullscreen = document.querySelector("#full");
 const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 function updatePlaybackLabel() {
-  playback.textContent = video.paused ? "재생" : "일시정지";
+  const label = video.paused ? "재생" : "일시정지";
+  playback.classList.toggle("playing", !video.paused);
+  playback.setAttribute("aria-label", label);
+  playback.title = label;
 }
 
 function applyMotionPreference() {

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f9f7">
   <meta name="description" content="퇴계원 IC의 엇갈림을 SUMO로 재현하고 16개 경로에서 자율주행 정책의 완주, 충돌, 경로 이탈을 비교한 팀 프로젝트.">
-  <title>퇴계원 IC 자율주행 실험 | 자율주행 인공지능 및 제어</title>
+  <title>1팀 퇴계일황 | 퇴계원 IC 자율주행 실험</title>
   <link rel="stylesheet" href="./assets/fonts/pretendard.css">
   <link rel="stylesheet" href="./assets/project.css">
   <script src="./assets/project.js" defer></script>
@@ -19,19 +19,30 @@
 <main>
 <div class="opening"><section class="hero wrap" id="home" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <h1 id="hero-title">퇴계원 IC에서<br>다음 차로를 고르다</h1>
+    <h1 id="hero-title">1팀 퇴계일황</h1>
+    <p class="project-subject">퇴계원 IC 자율주행 실험</p>
     <p>팀원 한 명이 버스를 몰며 직접 겪은 도로다. 퇴계원 IC에서는 본선에 들어가려는 차와 출구로 빠지려는 차가 같은 틈을 두고 서로의 속도를 살핀다.</p>
     <p>우리는 이 구간을 SUMO에 옮겼다. <strong>하나의 자율주행 모델이 주변 차에 양보하면서도 제 갈림길을 찾아갈 수 있을까?</strong></p>
     <div class="hero-outcome"><strong>선정 모델 · 보강형 DAgger</strong><span>같은 조건 128회에서 125회 완주</span></div>
     <div class="hero-links"><a href="#learning">세 모델 비교</a><a href="#results">최종 검증 결과</a></div>
   </div>
-  <figure class="drive">
-    <video id="drive-video" controls muted playsinline loop preload="metadata" width="824" height="568" poster="./assets/sumo-gui/ic-weave-4x.webp" aria-label="퇴계원 IC 전경에서 빨간 자율주행차가 이동하는 실제 SUMO GUI 녹화">
+  <figure class="drive" aria-labelledby="drive-title">
+    <div class="drive-heading">
+      <h2 id="drive-title">퇴계원 IC 전체 도로</h2>
+      <div class="controls" hidden>
+        <button type="button" id="play" aria-label="재생" title="재생">
+          <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 4.5h4.5v15H5.5zm8.5 0h4.5v15H14z"/></svg>
+        </button>
+        <button type="button" id="full" aria-label="전체 화면" title="전체 화면"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v2.5H6.5V10H4zm10 0h6v6h-2.5V6.5H14zM4 14h2.5v3.5H10V20H4zm13.5 0H20v6h-6v-2.5h3.5z"/></svg></button>
+      </div>
+    </div>
+    <video id="drive-video" controls muted playsinline loop preload="metadata" width="772" height="522" poster="./assets/sumo-gui/ic-weave-4x.webp" aria-label="퇴계원 IC의 3번 경로를 달리는 빨간 자율주행차">
       <source src="./assets/sumo-gui/ic-weave-4x.mp4" type="video/mp4">
-      <a href="./assets/sumo-gui/ic-weave-4x.mp4">SUMO 주행 영상 열기</a>
+      <a href="./assets/sumo-gui/ic-weave-4x.mp4">주행 영상 열기</a>
     </video>
-    <figcaption><span><strong>퇴계원 IC 주행</strong><small>빨간 차는 비교 모델(PMH) · 3번 경로 · 4배속</small></span>
-      <span class="controls" hidden><button type="button" id="play">재생</button><button type="button" id="full">전체 화면</button></span>
+    <figcaption><span>배경 차량 구성 · 승용차 77%, 소형 화물차 18%, 대형 화물차 4%, 버스 1%. 빨간색은 3번 경로를 달리는 자율주행차(AV).</span>
+      <span><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/95c0c19/utils/mcw_train.py#L108-L137">차종 비율 설정</a> · <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/eda60ff/docs/experiments/ic-measured-traffic-20261113.md">퇴계원 IC 인근 교통량 조사 자료</a></span>
     </figcaption>
   </figure>
 </section></div>
@@ -41,12 +52,57 @@
     <p>진입 램프와 다음 출구가 가깝다. 본선으로 들어가는 차는 안쪽 차로를 노리고, 출구로 가는 차는 바깥 차로를 노린다. 합류할 틈을 찾는 동안에도 다음 분기에 쓸 차로를 준비해야 한다.</p>
     <p>13번과 14번은 북쪽 본선에서 함께 출발한다. 마지막 분기에서 13번은 0·1차로, 14번은 2차로로 가야 한다. 같은 위치에서 옆 차와의 간격까지 같아도 목적지가 바뀌면 올바른 행동이 달라진다.</p>
   </div>
-  <fieldset class="routes"><legend>13번과 14번 경로 비교</legend>
-    <input type="radio" name="route" id="route13" checked><label for="route13">13번 경로</label>
-    <input type="radio" name="route" id="route14"><label for="route14">14번 경로</label>
-    <div class="plates">
-      <img class="r13" loading="lazy" src="./assets/toegyewon-routes/route_13.png" width="670" height="900" alt="북쪽 본선에서 동쪽 남측 도로까지 이어지는 13번 경로">
-      <img class="r14" loading="lazy" src="./assets/toegyewon-routes/route_14.png" width="670" height="900" alt="북쪽 본선에서 동쪽 금강로까지 이어지는 14번 경로">
+  <fieldset class="routes"><legend>퇴계원 IC의 16개 주행 경로</legend>
+    <p class="route-guide">번호를 누르면 경로가 바뀐다. 굵은 번호는 정지·분기·본선 복귀를 살펴본 경로다.</p>
+    <div class="route-picker">
+      <input type="radio" id="route1" name="route" aria-label="1번, 동쪽 상단 램프 → 북쪽 본선"><label for="route1">1</label>
+      <figure class="route-panel"><figcaption><strong>1번 · 동쪽 상단 램프 → 북쪽 본선</strong><p>2번과 같은 램프로 진입해 분기에서 북쪽 본선으로 올라간다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_01.png" loading="lazy" width="670" height="900" alt="1번 경로도, 동쪽 상단 램프 → 북쪽 본선"></figure>
+      <input type="radio" id="route2" name="route" aria-label="2번, 동쪽 상단 램프 → 남쪽 본선"><label for="route2">2</label>
+      <figure class="route-panel"><figcaption><strong>2번 · 동쪽 상단 램프 → 남쪽 본선</strong><p>1번과 진입 구간을 공유한 뒤 반대편인 남쪽 본선으로 이어진다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_02.png" loading="lazy" width="670" height="900" alt="2번 경로도, 동쪽 상단 램프 → 남쪽 본선"></figure>
+      <input type="radio" id="route3" name="route" aria-label="3번, 남쪽 본선 → 동쪽 남측 도로"><label for="route3">3</label>
+      <figure class="route-panel"><figcaption><strong>3번 · 남쪽 본선 → 동쪽 남측 도로</strong><p>영상 속 AV의 경로다. 4번과 함께 동쪽으로 향하다 마지막 분기에서 남측 도로로 빠진다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_03.png" loading="lazy" width="670" height="900" alt="3번 경로도, 남쪽 본선 → 동쪽 남측 도로"></figure>
+      <input type="radio" id="route4" name="route" aria-label="4번, 남쪽 본선 → 동쪽 금강로"><label for="route4">4</label>
+      <figure class="route-panel"><figcaption><strong>4번 · 남쪽 본선 → 동쪽 금강로</strong><p>3번과 같은 분기에 접근해 동쪽 금강로로 이어지는 차로를 탄다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_04.png" loading="lazy" width="670" height="900" alt="4번 경로도, 남쪽 본선 → 동쪽 금강로"></figure>
+      <input type="radio" id="route5" name="route" aria-label="5번, 남쪽 본선 → 서쪽 금강로"><label for="route5">5</label>
+      <figure class="route-panel"><figcaption><strong>5번 · 남쪽 본선 → 서쪽 금강로</strong><p>3·4번과 진입 구간을 공유하다 동쪽 분기에 닿기 전에 서쪽 금강로 방향으로 갈라진다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_05.png" loading="lazy" width="670" height="900" alt="5번 경로도, 남쪽 본선 → 서쪽 금강로"></figure>
+      <input type="radio" id="route6" name="route" aria-label="6번, 남쪽 본선 → 북쪽 본선"><label for="route6">6</label>
+      <figure class="route-panel"><figcaption><strong>6번 · 남쪽 본선 → 북쪽 본선</strong><p>남쪽에서 북쪽으로 본선을 따라 IC를 통과한다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_06.png" loading="lazy" width="670" height="900" alt="6번 경로도, 남쪽 본선 → 북쪽 본선"></figure>
+      <input type="radio" id="route7" name="route" aria-label="7번, 동쪽 상단 본선 → 북쪽 본선"><label for="route7">7</label>
+      <figure class="route-panel"><figcaption><strong>7번 · 동쪽 상단 본선 → 북쪽 본선</strong><p>동쪽 상단 본선에서 들어와 1번과 같은 연결 도로를 거쳐 북쪽으로 향한다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_07.png" loading="lazy" width="670" height="900" alt="7번 경로도, 동쪽 상단 본선 → 북쪽 본선"></figure>
+      <input type="radio" id="route8" name="route" aria-label="8번, 동쪽 상단 본선 → 남쪽 본선"><label for="route8" class="key-route">8</label>
+      <figure class="route-panel"><figcaption><strong>8번 · 동쪽 상단 본선 → 남쪽 본선</strong><p>동쪽에서 남쪽으로 이어진다. 최종 모델의 지정 검증에서 차로 끝 정지 2회가 발생한 경로다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_08.png" loading="lazy" width="670" height="900" alt="8번 경로도, 동쪽 상단 본선 → 남쪽 본선"></figure>
+      <input type="radio" id="route9" name="route" aria-label="9번, 동쪽 금강로 → 서쪽 금강로"><label for="route9">9</label>
+      <figure class="route-panel"><figcaption><strong>9번 · 동쪽 금강로 → 서쪽 금강로</strong><p>동쪽에서 서쪽으로 금강로를 따라 IC를 통과한다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_09.png" loading="lazy" width="670" height="900" alt="9번 경로도, 동쪽 금강로 → 서쪽 금강로"></figure>
+      <input type="radio" id="route10" name="route" aria-label="10번, 서쪽 금강로 → 북쪽 본선"><label for="route10">10</label>
+      <figure class="route-panel"><figcaption><strong>10번 · 서쪽 금강로 → 북쪽 본선</strong><p>서쪽 금강로에서 빠져나와 북쪽으로 가는 본선에 합류한다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_10.png" loading="lazy" width="670" height="900" alt="10번 경로도, 서쪽 금강로 → 북쪽 본선"></figure>
+      <input type="radio" id="route11" name="route" aria-label="11번, 서쪽 금강로 → 남쪽 본선"><label for="route11">11</label>
+      <figure class="route-panel"><figcaption><strong>11번 · 서쪽 금강로 → 남쪽 본선</strong><p>10번과 같은 구간에서 진입해 남쪽 본선 방향 연결로를 탄다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_11.png" loading="lazy" width="670" height="900" alt="11번 경로도, 서쪽 금강로 → 남쪽 본선"></figure>
+      <input type="radio" id="route12" name="route" aria-label="12번, 서쪽 금강로 → 동쪽 금강로"><label for="route12">12</label>
+      <figure class="route-panel"><figcaption><strong>12번 · 서쪽 금강로 → 동쪽 금강로</strong><p>서쪽에서 동쪽으로 금강로를 유지한다. 같은 출발지의 10·11번은 본선으로 빠진다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_12.png" loading="lazy" width="670" height="900" alt="12번 경로도, 서쪽 금강로 → 동쪽 금강로"></figure>
+      <input type="radio" id="route13" name="route" aria-label="13번, 북쪽 본선 → 동쪽 남측 도로" checked><label for="route13" class="key-route">13</label>
+      <figure class="route-panel"><figcaption><strong>13번 · 북쪽 본선 → 동쪽 남측 도로</strong><p>14번과 같은 마지막 분기에서 0·1차로를 타고 동쪽 남측 도로로 나간다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_13.png" loading="lazy" width="670" height="900" alt="13번 경로도, 북쪽 본선 → 동쪽 남측 도로"></figure>
+      <input type="radio" id="route14" name="route" aria-label="14번, 북쪽 본선 → 동쪽 금강로"><label for="route14" class="key-route">14</label>
+      <figure class="route-panel"><figcaption><strong>14번 · 북쪽 본선 → 동쪽 금강로</strong><p>13번과 출발지와 접근 도로가 같다. 마지막 분기에서는 2차로로 동쪽 금강로에 진입한다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_14.png" loading="lazy" width="670" height="900" alt="14번 경로도, 북쪽 본선 → 동쪽 금강로"></figure>
+      <input type="radio" id="route15" name="route" aria-label="15번, 북쪽 본선 → 서쪽 금강로"><label for="route15">15</label>
+      <figure class="route-panel"><figcaption><strong>15번 · 북쪽 본선 → 서쪽 금강로</strong><p>13·14번과 접근로를 공유하다 동쪽 분기에 도달하기 전에 서쪽 금강로 방향으로 갈라진다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_15.png" loading="lazy" width="670" height="900" alt="15번 경로도, 북쪽 본선 → 서쪽 금강로"></figure>
+      <input type="radio" id="route16" name="route" aria-label="16번, 북쪽 본선 → 남쪽 본선"><label for="route16" class="key-route">16</label>
+      <figure class="route-panel"><figcaption><strong>16번 · 북쪽 본선 → 남쪽 본선</strong><p>북쪽에서 남쪽 본선을 유지한다. 첫 분기에서 출구 전용 0차로에 있으면 왼쪽으로 복귀해야 한다.</p></figcaption>
+        <img src="./assets/toegyewon-routes/route_16.png" loading="lazy" width="670" height="900" alt="16번 경로도, 북쪽 본선 → 남쪽 본선"></figure>
     </div>
   </fieldset>
 </section>

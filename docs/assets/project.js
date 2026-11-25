@@ -38,15 +38,16 @@ if (video.canPlayType("video/mp4")) {
 }
 
 const navLinks = [...document.querySelectorAll(".navlinks a")];
-const groups = [
-  ["results", ["results"]], ["project", ["project"]],
-  ["learning", ["learning", "decisions", "ppo-results", "roadmap"]], ["resources", ["resources"]]
-];
-const sections = groups.flatMap(([group, ids]) => ids.map(id => [group, document.getElementById(id)]));
+const sections = [...document.querySelectorAll("main section[id]")].filter(section => section.id !== "home").map(section => {
+  const group = navLinks.some(link => link.hash === "#" + section.id) ? section.id : "learning";
+  return [group, section];
+});
 let queued = false;
 
 function updateNavigation() {
-  const threshold = document.querySelector(".mast").getBoundingClientRect().bottom + 28;
+  const headerBottom = document.querySelector(".mast").getBoundingClientRect().bottom;
+  const anchorOffset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+  const threshold = Math.max(headerBottom, anchorOffset) + 4;
   let active = "";
   for (const [group, section] of sections) {
     if (section.getBoundingClientRect().top <= threshold) active = group;

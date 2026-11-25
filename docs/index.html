@@ -14,14 +14,16 @@
 <a class="skip" href="#results">검증 결과로 건너뛰기</a>
 <header class="mast"><nav class="wrap topnav" aria-label="주 메뉴">
   <a class="brand" href="#home">자율주행 인공지능 및 제어</a>
-  <div class="navlinks"><a href="#results">결과</a><a href="#project">도로</a><a href="#learning">학습</a><a href="#resources">자료</a></div>
+  <div class="navlinks"><a href="#project">도로 선정</a><a href="#learning">모델 비교</a><a href="#results">최종 검증</a><a href="#resources">자료</a></div>
 </nav></header>
 <main>
-<section class="hero wrap" id="home" aria-labelledby="hero-title">
+<div class="opening"><section class="hero wrap" id="home" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <h1 id="hero-title">퇴계원 IC,<br>엇갈리는 차들</h1>
-    <p>본선에 합류하는 차와 출구로 빠지는 차가 같은 틈을 노린다. 자율주행차는 언제 양보하고 어느 차로로 옮겨야 할까?</p>
-    <a class="primary" href="#results">16개 경로 검증 결과</a>
+    <h1 id="hero-title">퇴계원 IC에서<br>다음 차로를 고르다</h1>
+    <p>팀원 한 명이 버스를 몰며 직접 겪은 도로다. 퇴계원 IC에서는 본선에 들어가려는 차와 출구로 빠지려는 차가 같은 틈을 두고 서로의 속도를 살핀다.</p>
+    <p>우리는 이 구간을 SUMO에 옮겼다. <strong>하나의 자율주행 모델이 주변 차에 양보하면서도 제 갈림길을 찾아갈 수 있을까?</strong></p>
+    <div class="hero-outcome"><strong>선정 모델 · 보강형 DAgger</strong><span>같은 조건 128회에서 125회 완주</span></div>
+    <div class="hero-links"><a href="#learning">세 모델 비교</a><a href="#results">최종 검증 결과</a></div>
   </div>
   <figure class="drive">
     <video id="drive-video" controls muted playsinline loop preload="metadata" width="824" height="568" poster="./assets/sumo-gui/ic-weave-4x.webp" aria-label="퇴계원 IC 전경에서 빨간 자율주행차가 이동하는 실제 SUMO GUI 녹화">
@@ -32,10 +34,52 @@
       <span class="controls" hidden><button type="button" id="play">재생</button><button type="button" id="full">전체 화면</button></span>
     </figcaption>
   </figure>
+</section></div>
+<div class="wrap main-sections">
+<section id="project" class="spread">
+  <div class="section-copy"><h2>왜 퇴계원 IC인가</h2>
+    <p>진입 램프와 다음 출구가 가깝다. 본선으로 들어가는 차는 안쪽 차로를 노리고, 출구로 가는 차는 바깥 차로를 노린다. 합류할 틈을 찾는 동안에도 다음 분기에 쓸 차로를 준비해야 한다.</p>
+    <p>13번과 14번은 북쪽 본선에서 함께 출발한다. 마지막 분기에서 13번은 0·1차로, 14번은 2차로로 가야 한다. 같은 위치에서 옆 차와의 간격까지 같아도 목적지가 바뀌면 올바른 행동이 달라진다.</p>
+  </div>
+  <fieldset class="routes"><legend>13번과 14번 경로 비교</legend>
+    <input type="radio" name="route" id="route13" checked><label for="route13">13번 경로</label>
+    <input type="radio" name="route" id="route14"><label for="route14">14번 경로</label>
+    <div class="plates">
+      <img class="r13" loading="lazy" src="./assets/toegyewon-routes/route_13.png" width="670" height="900" alt="북쪽 본선에서 동쪽 남측 도로까지 이어지는 13번 경로">
+      <img class="r14" loading="lazy" src="./assets/toegyewon-routes/route_14.png" width="670" height="900" alt="북쪽 본선에서 동쪽 금강로까지 이어지는 14번 경로">
+    </div>
+  </fieldset>
 </section>
+<section id="learning" class="selection">
+  <h2>어떤 주행을 다시 가르칠 것인가</h2>
+  <p class="selection-intro">전문가의 성공 주행 160회를 보고 배운 차는, 차로를 바꿀 기회를 한 번 놓치면 시범에서 드물었던 상황에 놓였다. 그래서 차를 직접 달리게 하고 그 순간 전문가가 취할 행동을 다시 가르쳤다.</p>
+  <div class="comparison">
+    <div class="trial-logic">
+      <h3>같은 출발점에서 두 방법을 비교했다</h3>
+      <p><strong>행동 복제(BC)</strong>로 만든 한 모델에서 두 실험을 각각 시작했다. 직접 달린 양은 둘 다 5라운드, 720회로 맞췄다.</p>
+      <dl><dt>기본 DAgger</dt><dd>16개 경로를 고르게 달리며, 차가 실제로 본 장면에 전문가의 행동을 붙였다.</dd>
+      <dt>보강형 DAgger</dt><dd>실패가 잦은 네 경로를 더 달렸다. 실패 직전 3초와 드문 차로변경 장면을 더 자주 학습했다.</dd></dl>
+    </div>
+    <div class="selection-data"><h3>같은 조건 128회에서 완주한 횟수</h3>
+      <table class="comparison-bars"><thead class="visually-hidden"><tr><th>모델</th><th>완주 횟수</th></tr></thead><tbody>
+        <tr><th scope="row">BC</th><td><span>107회</span><meter min="0" max="128" value="107" aria-label="128회 중 107회 완주"></meter></td></tr>
+        <tr><th scope="row">기본 DAgger</th><td><span>118회</span><meter min="0" max="128" value="118" aria-label="128회 중 118회 완주"></meter></td></tr>
+        <tr class="winner"><th scope="row">보강형 DAgger</th><td><span>125회</span><meter min="0" max="128" value="125" aria-label="128회 중 125회 완주"></meter></td></tr>
+      </tbody></table>
+      <p class="decision"><strong>최종 선정 · 보강형 DAgger</strong>기본형보다 7회 더 완주했다. 충돌은 6회에서 2회로, 경로 이탈은 3회에서 1회로 줄었다.</p>
+      <details><summary>128회 주행의 전체 결과</summary><table class="training"><caption>같은 출발·교통 조건 128회에서 모델별 결과</caption>
+  <thead><tr><th scope="col">모델</th><th scope="col">완주</th><th scope="col">충돌</th><th scope="col">이탈</th><th scope="col">끝 정지</th></tr></thead>
+  <tbody><tr><th scope="row">BC</th><td>107</td><td>17</td><td>4</td><td>0</td></tr>
+  <tr><th scope="row">기본 DAgger</th><td>118</td><td>6</td><td>3</td><td>1</td></tr>
+  <tr class="chosen"><th scope="row">보강형 DAgger</th><td><b>125</b></td><td>2</td><td>1</td><td>0</td></tr></tbody></table>
+  <p class="note">단위는 주행 횟수다. 세 모델 모두 일반 시간초과는 0회였다.</p></details></div>
+  </div>
+  <aside class="ppo-branch"><strong>강화학습(PPO)도 비교했다</strong><p>앞선 별도 실험에서는 PPO를 더했을 때 64회 중 충돌이 18회에서 4회로 줄었지만, 정지·시간초과가 0회에서 51회로 늘었다. 최종 선정에서는 완주와 충돌을 함께 봤다. <a href="#ppo-results">PPO 주행 기록</a></p></aside>
+</section>
+</div>
 <div class="results-band"><section class="wrap spread" id="results" aria-labelledby="main-model">
-  <div class="section-copy"><h2 id="main-model">고교통에서 얼마나 <br>완주했나</h2>
-    <p>보강형 DAgger 모델의 가중치를 고정한 뒤, 시간당 15,000대 수요에서 16개 경로를 각각 16회씩 달렸다. 추가 검증에는 모델 선정 뒤 처음 쓰는 교통 시드를 적용했다.</p>
+  <div class="section-copy"><h2 id="main-model">선정한 모델은 다른 교통에서도 완주할까?</h2>
+    <p>보강형 DAgger의 학습을 마치고 가중치를 고정했다. 시간당 15,000대 수요에서 16개 경로를 각각 16회씩 달렸다. 두 번째 검증은 모델을 고른 뒤 처음 쓰는 교통 조건에서 진행했다.</p>
     <p class="goal">평가 목표 <b>완주율 95% 이상 · 충돌률 5% 미만</b></p>
   </div>
   <div class="evidence"><table class="outcomes"><caption>발표 모델의 고교통 검증 결과</caption>
@@ -55,29 +99,6 @@
 </div>
 </section></div>
 <div class="wrap main-sections">
-<section id="project" class="spread">
-  <div class="section-copy"><h2>이 도로를 고른 이유</h2>
-    <p>퇴계원 IC에서는 진입 램프와 다음 출구가 가깝다. 진입 차량은 본선 안쪽으로, 진출 차량은 바깥쪽으로 움직인다. 두 차량이 짧은 구간에서 서로의 차로를 가로지르는 ‘엇갈림’이 생긴다.</p>
-    <p>13번과 14번은 북쪽 본선에서 함께 출발한다. 마지막 분기에서 13번은 0·1차로로 동쪽 남측 도로에, 14번은 2차로로 동쪽 금강로에 진입한다.</p>
-  </div>
-  <fieldset class="routes"><legend>13번과 14번 경로 비교</legend>
-    <input type="radio" name="route" id="route13" checked><label for="route13">13번 경로</label>
-    <input type="radio" name="route" id="route14"><label for="route14">14번 경로</label>
-    <div class="plates">
-      <img class="r13" loading="lazy" src="./assets/toegyewon-routes/route_13.png" width="670" height="900" alt="북쪽 본선에서 동쪽 남측 도로까지 이어지는 13번 경로">
-      <img class="r14" loading="lazy" src="./assets/toegyewon-routes/route_14.png" width="670" height="900" alt="북쪽 본선에서 동쪽 금강로까지 이어지는 14번 경로">
-    </div>
-  </fieldset>
-</section>
-<section id="learning" class="spread"><div class="section-copy"><h2>실패한 장면을 <br>다시 가르치다</h2>
-  <p>전문가의 성공 주행 160회로 행동 복제(BC)를 시작했다. 학생이 직접 달리자 차로를 바꿀 시점을 놓쳤다. 그 순간에 전문가가 취할 행동을 수집해 다시 학습한 방식이 DAgger다.</p>
-  <p>보강형은 같은 주행 예산을 취약한 네 경로와 실패 직전 3초에 더 배분했다. 기본형과 보강형은 같은 BC에서 출발해 각각 5라운드, 720회씩 주행했다.</p>
-  </div><div class="evidence"><table class="training"><caption>같은 출발·교통 조건 128회에서 모델별 결과</caption>
-  <thead><tr><th scope="col">모델</th><th scope="col">완주</th><th scope="col">충돌</th><th scope="col">이탈</th><th scope="col">끝 정지</th></tr></thead>
-  <tbody><tr><th scope="row">BC</th><td>107</td><td>17</td><td>4</td><td>0</td></tr>
-  <tr><th scope="row">기본 DAgger</th><td>118</td><td>6</td><td>3</td><td>1</td></tr>
-  <tr class="chosen"><th scope="row">보강형 DAgger</th><td><b>125</b></td><td>2</td><td>1</td><td>0</td></tr></tbody></table>
-  <p class="note">단위는 주행 횟수다. 세 모델 모두 일반 시간초과는 0회였다.</p></div></section>
 <section id="decisions" class="spread"><div class="section-copy"><h2>차량이 보는 것과 <br>행동에 주는 점수</h2>
   <p>0.2초마다 도로 단위 경로 안내와 주변 차량의 움직임을 읽고, 가감속과 왼쪽·유지·오른쪽 중 한 가지 차로 명령을 함께 낸다.</p></div>
   <div class="evidence"><details>
@@ -124,8 +145,8 @@
   <thead><tr><th scope="col">시작 정책</th><th scope="col">PPO 전 완주</th><th scope="col">PPO 후 완주</th><th scope="col">충돌 건수<br>전 → 후</th></tr></thead><tbody><tr><th scope="row">무작위 초기화</th><td><div class="rate"><span>11/64 · 17.2%</span><meter min="0" max="64" value="11" aria-label="64회 중 11회 완주"></meter></div></td><td><div class="rate"><span>18/64 · 28.1%</span><meter min="0" max="64" value="18" aria-label="64회 중 18회 완주"></meter></div></td><td>26 → 7</td></tr><tr><th scope="row">BC</th><td><div class="rate"><span>25/64 · 39.1%</span><meter min="0" max="64" value="25" aria-label="64회 중 25회 완주"></meter></div></td><td><div class="rate"><span>24/64 · 37.5%</span><meter min="0" max="64" value="24" aria-label="64회 중 24회 완주"></meter></div></td><td>39 → 7</td></tr><tr><th scope="row">DAgger</th><td><div class="rate"><span>37/64 · 57.8%</span><meter min="0" max="64" value="37" aria-label="64회 중 37회 완주"></meter></div></td><td><div class="rate"><span>2/64 · 3.1%</span><meter min="0" max="64" value="2" aria-label="64회 중 2회 완주"></meter></div></td><td>13 → 15</td></tr><tr><th scope="row">BC + DAgger</th><td><div class="rate"><span>46/64 · 71.9%</span><meter min="0" max="64" value="46" aria-label="64회 중 46회 완주"></meter></div></td><td><div class="rate"><span>9/64 · 14.1%</span><meter min="0" max="64" value="9" aria-label="64회 중 9회 완주"></meter></div></td><td>18 → 4</td></tr></tbody></table><p class="link-set"><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/jys3/docs/experiments/jys3-local-experiments.md">주행별 종료 사유</a></p>
   <details><summary>다른 학습 조건의 완주율과 충돌률</summary><p>모델마다 주행 횟수와 학습량이 다르다. 각 비율 옆에 실제 횟수를 표시했다.</p>
   <table id="ranking"><thead><tr><th scope="col">조건</th><th scope="col">완주</th><th scope="col">충돌</th></tr></thead><tbody><tr><th scope="row">BC + DAgger<small>모방학습 · DAgger · 고교통 64회</small></th><td>53/64 (82.8%)</td><td>11/64 (17.2%)</td></tr><tr><th scope="row">BC + DAgger → PPO<small>16,384스텝 추가 학습 · 독립 교통 시드 64회</small></th><td>47/64 (73.4%)</td><td>14/64 (21.9%)</td></tr><tr><th scope="row">DAgger 단독<small>모방학습 · 고교통 64회</small></th><td>40/64 (62.5%)</td><td>9/64 (14.1%)</td></tr><tr><th scope="row">순수 PPO · 위험 보상 포함<small>60만 스텝 · 3개 학습 시드 192회</small></th><td>82/192 (42.7%)</td><td>16/192 (8.3%)</td></tr><tr><th scope="row">BC 단독<small>행동 복제 · 고교통 64회</small></th><td>23/64 (35.9%)</td><td>41/64 (64.1%)</td></tr><tr><th scope="row">순수 PPO · 기본 보상<small>30만 스텝 · 고교통 64회</small></th><td>16/64 (25.0%)</td><td>2/64 (3.1%)</td></tr></tbody></table></details></div></section>
-<section id="roadmap" class="spread"><div class="section-copy"><h2>실험 진행 기록</h2><p>지도와 교통을 재현한 과정부터 발표 모델을 고른 날까지의 작업 기록이다.</p></div>
-<div class="evidence"><ol class="timeline"><li id="step-1"><span class="date">10.27 – 11.09</span><div><h3>퇴계원 IC 도로 구현</h3><ul><li>OpenStreetMap을 바탕으로 퇴계원 IC와 인접한 산노 IC를 SUMO 도로망으로 구성</li><li>램프·고가 차로 형상과 합류 접선을 다듬고, 서쪽 엇갈림 출구를 추가</li></ul></div></li><li id="step-2"><span class="date">11.12 – 11.13</span><div><h3>교통 시나리오 검증</h3><ul><li>자율주행차 없이 일반 차량만으로 먼저 돌려 병목·교착 지점을 확인</li><li>진입부 전체에 시간당 15,000대의 수요를 설정하고, 합류·진출·본선 유지가 포함된 16개 경로에서 검증</li></ul></div></li><li id="step-3"><span class="date">11.14 – 11.16</span><div><h3>관측·데이터 정의</h3><ul><li>같은 분기에서 서로 다른 목적지를 구별하도록 도로 단위 안내를 추가하고, 대형 차량에 가려진 주변 차량은 관측에서 제외</li><li>분기 7곳을 지도와 대조해, 도로가 휘는 방향과 출구의 실제 좌우 순서가 달랐던 3곳의 안내를 수정</li></ul></div></li><li id="step-4"><span class="date">11.19 – 11.24</span><div><h3>모방학습 (BC · DAgger)</h3><ul><li>규칙 기반 전문가 주행으로 데이터를 모으고 행동 복제(BC)로 첫 정책을 학습</li><li>학생 차량이 차로 끝에 남거나 옆 차량과 엇갈린 장면을 다시 수집해 전문가의 행동으로 보완</li></ul></div></li><li id="step-5"><span class="date">11.24 – 11.25</span><div><h3>PPO 보상 실험</h3><ul><li>완주·충돌·전진·분기 보상 비율을 바꿔 가며 최대 60만 스텝까지 학습</li><li>같은 출발·교통 조건의 주행을 짝지어 비교해 어떤 보상이 어떤 결과를 바꿨는지 추적</li></ul></div></li><li id="step-6"><span class="date">11.26</span><div><h3>발표 모델 선정</h3><ul><li>같은 경로·출발 차로·배경 교통에서 모델을 교체해 완주와 충돌을 비교</li><li>고교통 256회씩 두 차례 검증한 보강형 DAgger R5를 발표 모델로 확정</li></ul></div></li></ol></div></section>
+<section id="roadmap" class="spread"><div class="section-copy"><h2>실험 일지</h2></div>
+<div class="evidence"><details><summary>도로 구현부터 최종 검증까지의 날짜별 기록</summary><ol class="timeline"><li id="step-1"><span class="date">10.27 – 11.09</span><div><h3>퇴계원 IC 도로 구현</h3><ul><li>OpenStreetMap을 바탕으로 퇴계원 IC와 인접한 산노 IC를 SUMO 도로망으로 구성</li><li>램프·고가 차로 형상과 합류 접선을 다듬고, 서쪽 엇갈림 출구를 추가</li></ul></div></li><li id="step-2"><span class="date">11.12 – 11.13</span><div><h3>교통 시나리오 검증</h3><ul><li>자율주행차 없이 일반 차량만으로 먼저 돌려 병목·교착 지점을 확인</li><li>진입부 전체에 시간당 15,000대의 수요를 설정하고, 합류·진출·본선 유지가 포함된 16개 경로에서 검증</li></ul></div></li><li id="step-3"><span class="date">11.14 – 11.16</span><div><h3>관측·데이터 정의</h3><ul><li>같은 분기에서 서로 다른 목적지를 구별하도록 도로 단위 안내를 추가하고, 대형 차량에 가려진 주변 차량은 관측에서 제외</li><li>분기 7곳을 지도와 대조해, 도로가 휘는 방향과 출구의 실제 좌우 순서가 달랐던 3곳의 안내를 수정</li></ul></div></li><li id="step-4"><span class="date">11.19 – 11.24</span><div><h3>모방학습 (BC · DAgger)</h3><ul><li>규칙 기반 전문가 주행으로 데이터를 모으고 행동 복제(BC)로 첫 정책을 학습</li><li>학생 차량이 차로 끝에 남거나 옆 차량과 엇갈린 장면을 다시 수집해 전문가의 행동으로 보완</li></ul></div></li><li id="step-5"><span class="date">11.24 – 11.25</span><div><h3>PPO 보상 실험</h3><ul><li>완주·충돌·전진·분기 보상 비율을 바꿔 가며 최대 60만 스텝까지 학습</li><li>같은 출발·교통 조건의 주행을 짝지어 비교해 어떤 보상이 어떤 결과를 바꿨는지 추적</li></ul></div></li><li id="step-6"><span class="date">11.26</span><div><h3>발표 모델 선정</h3><ul><li>같은 경로·출발 차로·배경 교통에서 모델을 교체해 완주와 충돌을 비교</li><li>고교통 256회씩 두 차례 검증한 보강형 DAgger R5를 발표 모델로 확정</li></ul></div></li></ol></details></div></section>
 <section id="resources" class="spread"><div class="section-copy"><h2>코드와 발표 자료</h2><p class="link-set"><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving">팀 GitHub 저장소</a></p></div>
 <div class="evidence"><details>
 <summary>주행 데이터 · 한 번의 판단을 어떻게 기록하나</summary>

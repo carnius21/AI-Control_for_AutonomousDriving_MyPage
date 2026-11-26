@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9f7">
+  <meta name="description" content="퇴계원 IC의 최종 자율주행 모델로 13번 경로를 내 컴퓨터에서 재생하는 방법과 프로젝트 제출 자료.">
+  <title>동일 환경 구축 | 퇴계원 IC 자율주행 실험</title>
+  <link rel="stylesheet" href="./assets/fonts/pretendard.css">
+  <link rel="stylesheet" href="./assets/project.css?v=r5-setup">
+  <link rel="stylesheet" href="./assets/setup.css">
+</head>
+<body>
+<a class="skip" href="#replay">실행 방법으로 건너뛰기</a>
+<header class="mast"><nav class="wrap topnav" aria-label="주 메뉴">
+  <a class="brand" href="./index.html">26-2학기 자율주행 인공지능 및 제어</a>
+  <div class="navlinks"><a href="./index.html#results">최종 검증</a><a href="#materials">제출 자료</a><a href="./setup.html" aria-current="page">동일 환경 구축</a></div>
+</nav></header>
+<main class="setup wrap">
+  <h1>내 PC에서 대표 주행 재생하기</h1>
+  <p class="setup-intro">최종 모델 <strong>BC + 보강형 DAgger (R5)</strong>로 퇴계원 IC의 13번 경로를 달려 봅니다. SUMO 창에서 빨간 자율주행차가 북쪽 본선을 출발해 분기를 통과하는 모습을 볼 수 있습니다. 학습된 모델과 도로 지도가 코드에 들어 있어 CPU로 바로 재생할 수 있습니다.</p>
+
+  <section id="materials" aria-labelledby="materials-title">
+    <h2 id="materials-title">프로젝트 제출 자료</h2>
+    <dl class="setup-materials">
+      <div><dt>실행 코드 · 모델</dt><dd><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/65493d75f22ee43f92226783858d90d2318c246f">재생에 쓰는 팀 코드</a> · <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/65493d75f22ee43f92226783858d90d2318c246f/docs/experiments/jys3-presentation-main-model.md">모델 선정·검증 기록</a></dd></div>
+      <div><dt>발표자료</dt><dd><a href="https://docs.google.com/presentation/d/1CofRZsbrry0n2Fuv4F4dx9gL8E6CPWy2XWuuHzcx0Fc/edit?slide=id.p#slide=id.p">Google Slides에서 보기</a><small>최종 발표 PDF는 제작 중입니다.</small></dd></div>
+      <div><dt>Hugging Face 데이터셋</dt><dd>공개 준비 중<small>용량을 정리하고 있으며, 데이터와 다운로드 주소는 아직 공개 전입니다.</small></dd></div>
+    </dl>
+  </section>
+
+  <section id="replay" aria-labelledby="replay-title">
+    <h2 id="replay-title">13번 경로 실행 방법</h2>
+    <ol class="setup-steps">
+      <li><h3>코드와 재생 파일 받기</h3>
+        <p>팀 코드 ZIP을 풀고, 재생 파일을 <code>requirements.txt</code>와 같은 폴더에 넣으세요. ZIP은 검증 당시의 <code>jys3</code> 코드와 <code>dagger5.pt</code> 가중치를 포함합니다.</p>
+        <p class="link-set"><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/archive/65493d75f22ee43f92226783858d90d2318c246f.zip">팀 코드 ZIP 받기</a><a href="./assets/replay_r5.py" download="replay_r5.py">재생 파일 받기 (replay_r5.py)</a></p>
+      </li>
+      <li><h3>Python과 SUMO 준비하기</h3>
+        <p>64비트 <a href="https://www.python.org/downloads/release/python-31210/">Python 3.12</a>가 필요합니다. Windows에서는 위 폴더를 열고 탐색기 주소창에 <code>cmd</code>를 입력한 뒤, 아래 명령을 차례로 실행하세요. 설치는 처음 한 번만 하면 됩니다.</p>
+        <pre aria-label="Windows 명령 프롬프트 설치 명령"><code>py -3.12 -m venv .venv
+.venv\Scripts\activate
+python -m pip install -r requirements.txt eclipse-sumo==1.27.1 sumo-data==1.27.1</code></pre>
+        <details><summary>macOS · Linux에서 설치하기</summary>
+          <p>같은 폴더에서 터미널을 열고 실행하세요.</p>
+          <pre aria-label="macOS 및 Linux 설치 명령"><code>python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt eclipse-sumo==1.27.1 sumo-data==1.27.1</code></pre>
+        </details>
+      </li>
+      <li><h3>최종 모델로 주행 재생하기</h3>
+        <p>같은 창에서 아래 명령을 실행하세요. SUMO가 자동으로 열리고, 주행이 끝나면 터미널에 결과가 표시됩니다.</p>
+        <pre aria-label="대표 주행 실행 명령"><code>python replay_r5.py</code></pre>
+        <p>검증 기록에서 이 주행은 <samp>route_13 | arrival | 507 steps</samp>로 끝났습니다. <code>arrival</code>은 목적지에 도착했다는 뜻입니다.</p>
+        <details><summary>화면 없이 결과만 확인하기</summary>
+          <pre><code>python replay_r5.py --headless</code></pre>
+          <p>두 방식 모두 13번 경로의 0번 차로, 같은 교통 시드(104320013)에서 출발합니다.</p>
+        </details>
+      </li>
+    </ol>
+  </section>
+  <a href="./index.html#results">16개 경로의 최종 검증 결과 보기</a>
+</main>
+<footer><div class="wrap"><span>자율주행 인공지능 및 제어 팀 프로젝트</span><a href="./index.html">프로젝트 홈</a></div></footer>
+</body>
+</html>

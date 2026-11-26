@@ -1,0 +1,19 @@
+.setup { max-width: 53rem; padding-block: clamp(2.5rem, 6vw, 5rem); }
+.setup h1 { font-size: clamp(2.25rem, 5vw, 3.8rem); }
+.setup h2 { font-size: clamp(1.6rem, 3.5vw, 2.35rem); }
+.setup-intro { max-width: 48rem; margin-top: 1rem; color: var(--secondary); }
+.setup section { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.setup-materials { margin: .8rem 0 0; }
+.setup-materials div { display: grid; grid-template-columns: minmax(10rem, .55fr) 1.45fr; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.setup-materials dt { font-weight: 650; }
+.setup-materials dd { margin: 0; }
+.setup-materials small { display: block; color: var(--quiet); }
+.setup-steps { padding-left: 1.5rem; }
+.setup-steps li { margin: 1.5rem 0; padding-left: .35rem; }
+.setup-steps li::marker { font-weight: bold; color: var(--accent); }
+.setup-steps p { margin-top: .55rem; }
+.setup pre { padding: .8rem 1rem; overflow-x: auto; background: var(--panel); border-left: .2rem solid var(--accent); }
+.setup code, .setup samp { font-size: .9em; }
+@media (max-width: 540px) {
+  .setup-materials div { grid-template-columns: 1fr; gap: .15rem; }
+}

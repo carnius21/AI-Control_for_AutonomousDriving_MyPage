@@ -203,6 +203,7 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
 }
 
 @media (min-width: 801px) {
+  #project .routes { margin-block-start: clamp(3.5rem, 5vw, 5rem); }
   .opening .hero {
     width: min(92%, 84rem);
     grid-template-columns: minmax(0,.83fr) minmax(0,1.17fr);

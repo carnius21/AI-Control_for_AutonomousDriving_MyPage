@@ -46,6 +46,15 @@ function cancelSectionScroll() {
   cancelAnimationFrame(scrollFrame);
 }
 
+function sectionScrollProgress(t) {
+  const ramp = 0.25;
+  const cruiseSpeed = 1 / (1 - ramp);
+  if (t < ramp) return cruiseSpeed * t * t / (2 * ramp);
+  if (t <= 1 - ramp) return cruiseSpeed * (t - ramp / 2);
+  const remaining = 1 - t;
+  return 1 - cruiseSpeed * remaining * remaining / (2 * ramp);
+}
+
 for (const link of navLinks.filter(link => link.hash)) {
   link.addEventListener("click", event => {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey ||
@@ -67,7 +76,7 @@ for (const link of navLinks.filter(link => link.hash)) {
 
     function slide(now) {
       const t = Math.min(1, Math.max(0, (now - began) / duration));
-      const eased = t * t * (3 - 2 * t);
+      const eased = sectionScrollProgress(t);
       window.scrollTo(0, start + distance * eased);
       if (t < 1) scrollFrame = requestAnimationFrame(slide);
       else section.focus({preventScroll: true});

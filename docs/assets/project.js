@@ -90,7 +90,8 @@ for (const type of ["wheel", "touchstart", "pointerdown", "keydown", "popstate",
 }
 
 const sections = [...document.querySelectorAll("main section[id]")].filter(section => section.id !== "home").map(section => {
-  const group = navLinks.some(link => link.hash === "#" + section.id) ? section.id : "learning";
+  const navSection = section.dataset.navSection || section.id;
+  const group = navLinks.some(link => link.hash === "#" + navSection) ? navSection : "learning";
   return [group, section];
 });
 let queued = false;

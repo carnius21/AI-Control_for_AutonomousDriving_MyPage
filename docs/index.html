@@ -7,11 +7,11 @@
   <meta name="description" content="퇴계원 IC의 엇갈림을 SUMO로 재현하고 16개 경로에서 자율주행 정책의 완주, 충돌, 경로 이탈을 비교한 팀 프로젝트.">
   <title>1팀 퇴계일황 | 퇴계원 IC 자율주행 실험</title>
   <link rel="stylesheet" href="./assets/fonts/pretendard.css">
-  <link rel="stylesheet" href="./assets/project.css?v=r5-setup">
-  <script src="./assets/project.js?v=ramp-nav" defer></script>
+  <link rel="stylesheet" href="./assets/project.css?v=ic-results">
+  <script src="./assets/project.js?v=ic-results" defer></script>
 </head>
 <body>
-<a class="skip" href="#results">검증 결과로 건너뛰기</a>
+<a class="skip" href="#result-summary">핵심 결과로 건너뛰기</a>
 <header class="mast"><nav class="wrap topnav" aria-label="주 메뉴">
   <a class="brand" href="#home">26-2학기 자율주행 인공지능 및 제어</a>
   <div class="navlinks"><a href="#project">도로 선정</a><a href="#learning">모델 비교</a><a href="#results">최종 검증</a><a href="#resources">자료</a><a href="./setup.html">동일 환경 구축</a><a class="repo-button" aria-label="팀 GitHub 저장소" title="팀 GitHub 저장소" href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving"><svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
@@ -49,15 +49,15 @@
     <p>군 운전병 시절, 이재중 팀원은 버스를 몰고 퇴계원 IC에 합류할 때마다 옆 차와 눈치싸움을 했습니다. 퇴계원 IC에서는 본선에 들어가려는 차와 출구로 빠지려는 차가 같은 틈을 두고 서로의 속도를 살핍니다.</p>
     <p>저희 팀은 이 구간을 SUMO에 옮겼습니다. <strong>하나의 자율주행 모델이 주변 차에 양보하면서도 제 갈림길을 찾아갈 수 있을까요?</strong></p>
     <div class="hero-outcome"><strong>최종 선정 · BC + 보강형 DAgger (R5)</strong><span>완주율 · 지정 검증 96.5% / 추가 검증 98.4%</span></div>
-    <div class="hero-links"><a href="#learning">세 모델 비교</a><a href="#results">최종 검증 결과</a></div>
+    <div class="hero-links"><a href="#learning">세 모델 비교</a><a href="#result-summary">완주율과 충돌률</a></div>
   </div>
 </section></div>
 <div class="wrap main-sections">
 <section id="project" tabindex="-1" class="spread">
   <div class="section-copy"><h2>왜 퇴계원 IC인가</h2>
-    <p>진입 램프와 다음 출구가 가깝습니다. 본선으로 들어가는 차는 안쪽 차로를 노리고, 출구로 가는 차는 바깥 차로를 노립니다. 합류할 틈을 찾는 동안에도 다음 분기에 쓸 차로를 준비해야 합니다.</p>
-    <p>13번과 14번은 북쪽 본선에서 함께 출발합니다. 마지막 분기에서 13번은 0·1차로, 14번은 2차로로 가야 합니다. 같은 위치에서 옆 차와의 간격까지 같아도 목적지가 바뀌면 올바른 행동이 달라집니다.</p>
-    <figure class="satellite"><img src="./assets/toegyewon/ic-satellite.webp" width="850" height="680" loading="lazy" alt="퇴계원 IC의 본선과 진출입 램프가 교차하는 모습을 북쪽이 위로 오게 담은 위성지도">
+    <p>엇갈림 구간에서는 두 차가 서로의 진로를 가로질러 차로를 바꿉니다. 옆 차의 속도를 살피고 앞뒤 간격이 충분할 때 들어가야 합니다. 퇴계원 IC는 진입 램프와 다음 출구가 가까워, 본선에 합류하는 차는 안쪽으로, 출구로 빠지는 차는 바깥쪽으로 차로를 옮깁니다. 합류할 틈을 찾는 동안에도 다음 분기에 쓸 차로를 준비해야 합니다.</p>
+    <p>13번과 14번은 북쪽 본선에서 함께 출발합니다. 마지막 분기에서 13번은 0·1차로, 14번은 2차로로 가야 합니다. 같은 위치에서 옆 차와의 간격까지 같아도 목적지가 바뀌면 올바른 행동이 달라집니다.<span class="lane-note">이 페이지에서는 주행 방향을 기준으로 맨 오른쪽을 0차로라 하고, 왼쪽으로 갈수록 1차로, 2차로로 번호를 매깁니다.</span></p>
+    <figure class="satellite"><img src="./assets/toegyewon/ic-satellite.webp?v=ramps" width="880" height="910" loading="lazy" alt="퇴계원 IC 확대 위성지도. 화면 왼쪽 위에서 아래로 이어지는 본선 양옆으로 굽은 진출입 램프가 연결된다.">
       <figcaption>퇴계원 IC 위성지도 · <a href="https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9">Esri World Imagery</a><small>Esri, Vantor, Earthstar Geographics, GIS User Community</small></figcaption>
     </figure>
   </div>
@@ -115,6 +115,21 @@
     </div>
   </fieldset>
 </section>
+<section id="result-summary" class="spread result-summary" tabindex="-1" data-nav-section="results" aria-labelledby="result-summary-title">
+  <div class="section-copy">
+    <h2 id="result-summary-title">최종 모델과 주행 결과</h2>
+    <p><strong>BC + 보강형 DAgger (R5)</strong></p>
+    <p>16개 경로를 16회씩 달렸습니다. 교통 조건을 바꿔 다시 검증해도 완주율 95% 이상, 충돌률 5% 미만이라는 두 목표를 달성했습니다.</p>
+  </div>
+  <table class="summary-table">
+    <caption>고교통 주행 · 검증별 256회</caption>
+    <thead><tr><th scope="col">검증</th><th scope="col">완주율</th><th scope="col">충돌률</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">지정 검증</th><td><b>96.5%</b>247회 완주</td><td><b>1.6%</b>4회 충돌</td></tr>
+      <tr><th scope="row">추가 검증</th><td><b>98.4%</b>252회 완주</td><td><b>0.4%</b>1회 충돌</td></tr>
+    </tbody>
+  </table>
+</section>
 <section id="learning" tabindex="-1" class="selection">
   <h2>어떤 주행을 다시 가르칠 것인가</h2>
   <p class="selection-intro">행동 복제(BC)는 전문가의 성공 주행 160회를 보고 운전을 배웁니다. 그런데 학생 차량이 끼어들 틈을 한 번 놓치면, 시범에서 보지 못한 위치에서 다음 판단을 해야 합니다. DAgger에서는 학생이 직접 운전하고 전문가는 학생이 마주친 장면마다 자신이라면 어떻게 했을지 기록합니다. 이 기록을 시범에 더해 다시 학습하면 작은 실수가 다음 실수로 이어지는 일을 줄일 수 있습니다.</p>
@@ -143,12 +158,7 @@
 </section>
 </div>
 <div class="results-band"><section class="wrap spread" id="results" tabindex="-1" aria-labelledby="main-model">
-  <div class="section-copy"><h2 id="main-model">최종 모델 완주율</h2>
-    <h3 class="selected-policy">BC + 보강형 DAgger (R5)</h3>
-    <dl class="validation-rates">
-      <div><dt>지정 검증</dt><dd><strong>96.5%</strong> 256회 중 247회 완주</dd></div>
-      <div><dt>추가 검증</dt><dd><strong>98.4%</strong> 256회 중 252회 완주</dd></div>
-    </dl>
+  <div class="section-copy"><h2 id="main-model">선정한 모델은 다른 교통에서도 완주할까?</h2>
     <p>다섯 번째 라운드(R5)에서 학습을 마친 모델로 시간당 15,000대 수요에서 16개 경로를 각각 16회씩 달렸습니다. 추가 검증에서는 모델 선정 후 처음 쓰는 교통 시드로 같은 시험을 반복했습니다.</p>
     <p class="goal">평가 목표 <b>완주율 95% 이상 · 충돌률 5% 미만</b></p>
   </div>

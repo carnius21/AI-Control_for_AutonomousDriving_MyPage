@@ -263,15 +263,18 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
 .term-info [role="tooltip"] { position: absolute; left: 0; bottom: 100%; z-index: 3; width: min(16rem, 68vw); padding: .65rem .85rem; border-radius: 4px; background: var(--ink); color: var(--surface); font-size: .88rem; font-weight: 400; line-height: 1.5; text-align: left; }
 .training .term-info [role="tooltip"] { left: auto; right: 0; }
 
-.selected-policy { margin-block: 1.2rem .8rem; }
-.validation-rates { display: flex; flex-wrap: wrap; gap: 1rem 2.4rem; margin: .8rem 0; }
-.validation-rates dt { font-weight: 600; }
-.validation-rates dd { margin: 0; color: var(--secondary); }
-.validation-rates strong { display: block; color: var(--accent); font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.2; font-variant-numeric: tabular-nums; }
+.lane-note { display: block; margin-top: .45rem; color: var(--quiet); font-size: .95rem; }
+.result-summary { background: var(--panel); padding: clamp(1.25rem, 3vw, 2.5rem); align-items: center; }
+.result-summary .section-copy strong { color: var(--accent); font-size: 1.2rem; }
+.summary-table td { color: var(--secondary); }
+.summary-table b { display: block; color: var(--ink); font-size: clamp(1.4rem, 2.8vw, 2.4rem); line-height: 1.25; }
 @media (max-width: 640px) {
   .topnav { position: relative; display: grid; gap: 0; }
   .topnav .brand { min-height: 44px !important; margin-right: 3rem; }
   .navlinks { flex-wrap: wrap; column-gap: .45rem; }
   .navlinks .repo-button { position: absolute; top: 0; right: 0; width: 44px; height: 44px; }
   .navlinks a { min-width: 0; padding-inline: .12rem; }
+}
+@media (max-width: 355px) {
+  .navlinks { column-gap: .25rem; }
 }

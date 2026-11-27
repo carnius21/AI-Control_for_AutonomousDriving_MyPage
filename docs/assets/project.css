@@ -220,6 +220,18 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
     width: min(100%, 46rem, calc((100svh - 16rem) * 880 / 760));
   }
 }
+@media (min-width: 801px) and (min-height: 501px) {
+  .opening .hero {
+    --hero-gap: clamp(2rem, 4vw, 4rem);
+    --columns-width: calc(100% - var(--hero-gap));
+    column-gap: var(--hero-gap);
+    grid-template-columns:
+      minmax(0, calc(var(--columns-width) * .415))
+      minmax(0, min(calc(var(--columns-width) * .585), 46rem, calc((100svh - 16rem) * 880 / 760)));
+    justify-content: center;
+  }
+  .opening .drive { width: 100%; }
+}
 @media (orientation: landscape) and (max-height: 500px) and (min-width: 560px) {
   .opening .hero {
     grid-template-columns: minmax(0,1fr) minmax(0,1fr);

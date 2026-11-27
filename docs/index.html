@@ -14,7 +14,7 @@
 <a class="skip" href="#result-summary">핵심 결과로 건너뛰기</a>
 <header class="mast"><nav class="wrap topnav" aria-label="주 메뉴">
   <a class="brand" href="#home">26-2학기 자율주행 인공지능 및 제어</a>
-  <div class="navlinks"><a href="#project">도로 선정</a><a href="#learning">모델 비교</a><a href="#results">최종 검증</a><a href="#resources">자료</a><a href="./setup.html">동일 환경 구축</a><a class="repo-button" aria-label="팀 GitHub 저장소" title="팀 GitHub 저장소" href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving"><svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></div>
+  <div class="navlinks"><a href="#project">도로 선정</a><a href="#learning">모델 비교</a><a href="#results">최종 검증</a><a href="#resources">자료</a><a href="./setup.html">동일 환경 구축</a><a class="repo-button" aria-label="팀 GitHub 저장소" title="팀 GitHub 저장소" href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving"><svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a class="repo-button hf-button" aria-label="Hugging Face 주행 데이터셋" title="Hugging Face 주행 데이터셋" href="https://huggingface.co/datasets/jy02sung/toegyewon-ic-dagger5-pomdp/tree/main"><img src="./assets/huggingface.svg" width="28" height="28" alt=""></a></div>
 </nav></header>
 <main>
 <div class="opening"><section class="hero wrap" id="home" aria-labelledby="hero-title">
@@ -230,7 +230,7 @@
 <div class="evidence"><details>
 <summary>주행 데이터 · 한 번의 판단을 어떻게 기록하나</summary>
 <p>한 행에는 주행 번호, 시점, 정책이 본 관측, 가감속·차로 명령, 실제 차로변경 여부, 보상, 다음 관측과 종료 사유가 들어갑니다. 같은 시점의 전체 차량 좌표(m)·속도(m/s)·차로를 별도로 저장해 시야에 가린 차가 있었는지도 재생할 수 있습니다. 완주를 집계할 때는 지정한 도로의 순서와 도착을 확인하고, 차량이 강제로 이동한 경우는 제외합니다.</p>
-<p>전체 기록은 압축 JSONL, 학습용 배열은 NPZ로 저장합니다. 수집 목표는 1,000만 스텝입니다. <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/review/pomdp-dataset-checklist.md">데이터 항목과 단위</a></p>
+<p>16개 경로에서 수집한 10,003,923개 전이를 Parquet 형식으로 공개했습니다. <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/docs/review/pomdp-dataset-checklist.md">데이터 항목과 단위</a></p>
 </details>
 <details>
 <summary>팀 기여 · 도로부터 정책 평가까지</summary>
@@ -244,6 +244,8 @@
 <div>
 <dt>실행 코드</dt><dd class="link-set"><a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/pmh">영상 속 모델과 코드</a>
 <a href="https://github.com/jy02sung/Artificial-Intelligence-and-Control-for-Autonomous-Driving/tree/jys3">강화학습 비교 실험</a></dd></div>
+<div>
+<dt>데이터 모음</dt><dd class="link-set"><a href="https://huggingface.co/datasets/jy02sung/toegyewon-ic-dagger5-pomdp/tree/main">수업 제출 데이터셋</a></dd></div>
 <div>
 <dt>수업 자료</dt><dd class="link-set"><a href="https://github.com/bmil-ssu/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/project_materials/6_Project_Evaluation.md">프로젝트 평가 기준</a>
 <a href="https://github.com/bmil-ssu/Artificial-Intelligence-and-Control-for-Autonomous-Driving/blob/main/project_materials/7_Project_Consulting.md">주행 정책 Q&A</a></dd></div>

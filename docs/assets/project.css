@@ -271,9 +271,10 @@ footer .wrap { gap: 1rem; padding-block: 1.5rem; color: var(--quiet); font-size:
 .summary-table b { display: block; color: var(--ink); font-size: clamp(1.4rem, 2.8vw, 2.4rem); line-height: 1.25; }
 @media (max-width: 640px) {
   .topnav { position: relative; display: grid; gap: 0; }
-  .topnav .brand { min-height: 44px !important; margin-right: 3rem; }
+  .topnav .brand { min-height: 44px !important; margin-right: 6rem; }
   .navlinks { flex-wrap: wrap; column-gap: .45rem; }
   .navlinks .repo-button { position: absolute; top: 0; right: 0; width: 44px; height: 44px; }
+  .navlinks .repo-button:has(+ .hf-button) { right: 48px; }
   .navlinks a { min-width: 0; padding-inline: .12rem; }
 }
 @media (max-width: 355px) {
